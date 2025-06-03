@@ -33,7 +33,8 @@ export default function Footer() {
           {/* Address */}
           <div className="flex items-center gap-2">
             <IoLocationOutline className="w-14 h-10 text-yellow-400" />
-            <p>74 Norava Street 542B, Great North Town 51 MT.</p>
+            <p>304, Shiva Tower , G.T Road (Near Chaudhary More) , Ghaziabad, U.P India. – 201001
+  </p>
           </div>
 
           {/* Phone */}

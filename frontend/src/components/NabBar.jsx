@@ -311,7 +311,7 @@ const NavBar = () => {
                           </Link>
                         </li>
                         <li className="hover:text-yellow-400 cursor-pointer">
-                          <Link to="#">Hardware & Networking Management Solutions</Link>
+                          <Link to="/HardwareNetworking">Hardware & Networking Management Solutions</Link>
                         </li>
                         <li className="hover:text-yellow-400 cursor-pointer">
                           <Link to="#">Multimedia & Animation Solutions</Link>

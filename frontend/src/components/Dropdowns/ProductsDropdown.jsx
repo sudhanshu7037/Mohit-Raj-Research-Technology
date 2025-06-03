@@ -20,7 +20,7 @@ const ProductsDropdown = ({handleMouseEnter, handleMouseLeave, activeMenu}) => {
             <div>
               <h1 className="text-lg font-bold mb-2">Eduction Domain</h1>
               <ul className="flex flex-col gap-4 text-sm ">
-                <li>
+                <li className="text-yellow-300">
                   <Link to="#">University Automation Software</Link>
                 </li>
                 <li>

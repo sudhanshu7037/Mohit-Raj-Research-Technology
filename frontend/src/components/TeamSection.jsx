@@ -3,14 +3,14 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTimes } from "react-icons/fa"
 
 const teamMembers = [
   {
-    name: "Amy Jenkins",
-    role: "Financial Analyst",
+    name: "Jitendra Singh Rajput ",
+    role: "Managing Director",
     image: "https://media.licdn.com/dms/image/v2/C4D03AQHbWu84U5FnTA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1516610954126?e=1752710400&v=beta&t=DVtuojlFa11XSht6ZtNPgo4Y_S7ObKjF4AEGil7Tdqw",
   },
   {
-    name: "Jeffrey Mueller",
-    role: "Marketing Analyst",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    name: "Sonali Bhatia",
+    role: "Senior HR Manager",
+    image: "https://media.licdn.com/dms/image/v2/D5603AQEKtUGKDAZ8_Q/profile-displayphoto-shrink_400_400/B56Zc09TmVHoAo-/0/1748940176895?e=1754524800&v=beta&t=SYCRCoPDRssTN1bP999yqrI5Mhu-R77YrW8hs_Ly8wg",
   },
   {
     name: "Anne Arias",
@@ -53,6 +53,7 @@ const TeamSection = () => {
                 <a href="#"><FaInstagram className="hover:text-yellow-500" /></a>
                 <a href="https://www.linkedin.com/in/jitendra-singh-rajput-36192316/  "><FaLinkedinIn className="hover:text-yellow-500" /></a>
               </div>
+              
             </div>
           ))}
         </div>

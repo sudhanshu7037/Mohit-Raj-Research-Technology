@@ -30,6 +30,8 @@ const ErpSolutions = () => {
       <p className="text-gray-700">
         Whether you’re a small business or a large enterprise, our ERP services can be customized and deployed on-premise or on the cloud. Contact us today for a demo or consultation!
       </p>
+      <p>my name is sudhanshu tomaar</p>
+      
     </div>
   );
 };

@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: "Houschka-Medium";
+  src: url("/fonts/Houschka-Medium.woff2") format("woff2"),
+       url("/fonts/Houschka-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+

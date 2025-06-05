@@ -289,7 +289,7 @@ const NavBar = () => {
               onMouseLeave={handleMouseLeave}
             >
               <div className="text-xl font-semibold cursor-pointer hover:text-yellow-300 flex items-center gap-1">
-                SERVICES <MdKeyboardArrowDown />
+                Who we are <MdKeyboardArrowDown />
               </div>
 
               {activeMenu === "services" && (

@@ -33,6 +33,7 @@ const SoftwareDevelopment = () => {
       <button className="bg-yellow-400 text-white px-6 py-3 rounded-md font-semibold hover:bg-yellow-500 transition">
         Contact Us for a Consultation
       </button>
+      <p>Sudhanshu Tomar</p>
 
     </div>
     </>

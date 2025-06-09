@@ -11,7 +11,7 @@ const ProductsDropdown = ({handleMouseEnter, handleMouseLeave, activeMenu}) => {
       onMouseLeave={handleMouseLeave}
     >
       <div className="text-xl font-semibold cursor-pointer hover:text-yellow-300 flex items-center gap-1">
-        What we do <MdKeyboardArrowDown />
+        OUR PRODUCTS <MdKeyboardArrowDown />
       </div>
 
       {activeMenu === "products" && (
@@ -20,7 +20,7 @@ const ProductsDropdown = ({handleMouseEnter, handleMouseLeave, activeMenu}) => {
             <div>
               <h1 className="text-lg font-bold mb-2">Eduction Domain</h1>
               <ul className="flex flex-col gap-4 text-sm ">
-                <li className="text-yellow-300">
+                <li className="hover:text-yellow-300">
                   <Link to="#">University Automation Software</Link>
                 </li>
                 <li>

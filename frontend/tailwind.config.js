@@ -6,8 +6,12 @@ export default {
   ],
   theme: {
     extend: {
-       fontFamily: {
-        houschka: ['"Houschka-Medium"', 'sans-serif'],
+        fontFamily: {
+        basis: ['BasisRegular', 'sans-serif'],
+        basisBold: ['BasisBold', 'sans-serif'],
+        basisMedium: ['BasisMedium', 'sans-serif'],
+        basisLight: ['BasisLight', 'sans-serif'],
+        houschka: ['HouschkaMedium', 'sans-serif'],
       },
     },
   },

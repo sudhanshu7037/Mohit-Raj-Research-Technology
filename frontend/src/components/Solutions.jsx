@@ -97,7 +97,7 @@ const Solutions = () => {
           <p className="text-yellow-500 font-semibold mb-1">
             OUR DEDICATED SOLUTIONS
           </p>
-          <h2 className="text-5xl font-houschka font-bold text-gray-800">
+          <h2 className="text-5xl font-houschka font-bold text-gray-800 ">
             Cutting edge solutions with digital technologies.
           </h2>
         </div>

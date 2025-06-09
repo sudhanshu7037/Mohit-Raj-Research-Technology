@@ -93,7 +93,7 @@ const NavBar = () => {
           <ul className="hidden md:flex gap-6 items-center text-lg font-semibold">
            
             <li className="hover:text-yellow-400 cursor-pointer">
-              <a href="/about">ABOUT</a>
+              <a href="/about">WHO WE ARE</a>
             </li>
 
             {/* Products Dropdown */}
@@ -289,7 +289,7 @@ const NavBar = () => {
               onMouseLeave={handleMouseLeave}
             >
               <div className="text-xl font-semibold cursor-pointer hover:text-yellow-300 flex items-center gap-1">
-                Who we are <MdKeyboardArrowDown />
+                WHAT WE DO <MdKeyboardArrowDown />
               </div>
 
               {activeMenu === "services" && (
@@ -531,6 +531,10 @@ const NavBar = () => {
             <li className="hover:text-yellow-400 cursor-pointer">
               <a href="/blog">BLOG</a>
             </li>
+            <li className="hover:text-yellow-400 cursor-pointer">
+              <a href="/blog">CAREER</a>
+            </li>
+
             <li className="hover:text-yellow-400 cursor-pointer">
               <a href="/contact">CONTACT</a>
             </li>

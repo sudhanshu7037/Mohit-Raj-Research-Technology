@@ -122,12 +122,13 @@ const MainBanner = () => {
     <>
       <section className="py-12 px-4 bg-white md:max-w-[80%] mx-auto flex flex-col items-center gap-4">
         <div className="text-center mb-10">
+          
+          <h2 className="text-5xl font-bold text-gray-800 font-houschka">
+            Excellent Services For Your Business
+          </h2>
           <p className="text-yellow-500 font-semibold mb-1">
             OUR DEDICATED SERVICES
           </p>
-          <h2 className="text-5xl font-bold text-gray-800">
-            Excellent Services For Your Business
-          </h2>
         </div>
         <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {servicesData.map((service) => (

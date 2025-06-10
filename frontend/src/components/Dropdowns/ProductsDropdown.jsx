@@ -10,7 +10,7 @@ const ProductsDropdown = ({handleMouseEnter, handleMouseLeave, activeMenu}) => {
       onMouseEnter={() => handleMouseEnter("products")}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="text-xl font-semibold cursor-pointer hover:text-yellow-300 flex items-center gap-1">
+      <div className="text-md font-semibold cursor-pointer hover:text-yellow-300 flex items-center gap-1 font-basis">
         OUR PRODUCTS <MdKeyboardArrowDown />
       </div>
 

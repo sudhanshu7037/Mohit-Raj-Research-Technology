@@ -90,9 +90,9 @@ const NavBar = () => {
           {/* <h1 className="text-2xl font-bold text-yellow-400">Logo</h1> */}
 
           {/* Desktop Nav */}
-          <ul className="hidden md:flex gap-6 items-center text-lg font-semibold">
+          <ul className="hidden md:flex gap-6 items-center text-md font-semibold font-basis">
            
-            <li className="hover:text-yellow-400 cursor-pointer">
+            <li className="hover:text-yellow-400 cursor-pointer font-basis">
               <a href="/about">WHO WE ARE</a>
             </li>
 
@@ -288,7 +288,7 @@ const NavBar = () => {
               onMouseEnter={() => handleMouseEnter("services")}
               onMouseLeave={handleMouseLeave}
             >
-              <div className="text-xl font-semibold cursor-pointer hover:text-yellow-300 flex items-center gap-1">
+              <div className="text-md font-semibold cursor-pointer hover:text-yellow-300 flex items-center gap-1 font-basis">
                 WHAT WE DO <MdKeyboardArrowDown />
               </div>
 
@@ -418,7 +418,7 @@ const NavBar = () => {
               onMouseEnter={() => handleMouseEnter("solutions")}
               onMouseLeave={handleMouseLeave}
             >
-              <div className="text-xl font-semibold cursor-pointer hover:text-yellow-300 flex items-center gap-1">
+              <div className="text-md font-semibold cursor-pointer hover:text-yellow-300 flex items-center gap-1 font-basis">
                 SOLUTIONS <MdKeyboardArrowDown />
               </div>
 
@@ -487,7 +487,7 @@ const NavBar = () => {
               onMouseEnter={() => handleMouseEnter("industries")}
               onMouseLeave={handleMouseLeave}
             >
-              <div className="text-xl font-semibold cursor-pointer hover:text-yellow-300 flex items-center gap-1">
+              <div className="text-md font-basis font-semibold cursor-pointer hover:text-yellow-300 flex items-center gap-1">
                 INDUSTRIES <MdKeyboardArrowDown />
               </div>
 
@@ -528,10 +528,10 @@ const NavBar = () => {
               )}
             </div>
 
-            <li className="hover:text-yellow-400 cursor-pointer">
+            <li className="hover:text-yellow-400 cursor-pointer text-md font-basis">
               <a href="/blog">BLOG</a>
             </li>
-            <li className="hover:text-yellow-400 cursor-pointer">
+            <li className="hover:text-yellow-400 cursor-pointer text-md font-basis">
               <a href="/blog">CAREER</a>
             </li>
 

@@ -34,13 +34,13 @@ const Banner = () => {
         {/* <div className="absolute inset-0 bg-black bg-opacity-30 z-0" /> */}
 
         {/* Content */}
-        <div className="z-10 max-w-7xl mx-auto px-10">
+        <div className="z-10 max-w-7xl mx-auto px-10 font-houschka ">
           <motion.h1
             key={currentIndex}
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9 }}
-            className="text-4xl md:text-6xl font-bold mb-4"
+            className="text-5xl md:text-6xl font-bold mb-4"
           >
             Excellent Services  For Your Business
           </motion.h1>

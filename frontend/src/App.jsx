@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import Layout from "./Layout";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
+import Career from "./pages/Career"
 import SoftwareDevelopment from "./components/Services/SoftwareDevelopment";
 import DevelopmentHosting from "./components/Services/DevelopmentHosting";
 import HardwareNetworking from "./components/Services/HardwareNetworking";
@@ -23,7 +24,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/who we are" element={<About />} />
+          <Route path ="/career" element= {<Career/>}/>
           <Route path="/SoftwareDevelopment" element={<SoftwareDevelopment />} />
           <Route path="/DevelopmentHosting" element={<DevelopmentHosting />} />
           <Route path="/HardwareNetworking" element={<HardwareNetworking />} />

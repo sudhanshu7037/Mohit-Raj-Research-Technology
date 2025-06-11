@@ -26,7 +26,7 @@ const NavBar = () => {
   const handleMouseLeave = () => {
     return setTimeout(() => {
       setActiveMenu(null);
-    }, 10000);
+    }, 5000);
   };
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -55,10 +55,10 @@ const NavBar = () => {
       <div className="bg-black h-10 flex justify-between px-4 md:px-20 items-center text-white fixed top-0 w-full z-50 text-sm ">
         <div className="flex items-center gap-2">
           <FaPhone />
-          <span>+012 345 6789</span>
+          <span>+9999910150</span>
           <span className="px-2">|</span>
           <FaEnvelope />
-          <span>info@example.com</span>
+          <span><a href="">mohitrajit@gmail.com</a></span>
         </div>
         <div className="hidden md:flex items-center gap-3">
           <a href="https://www.facebook.com/profile.php?id=100066869172911">
@@ -93,7 +93,7 @@ const NavBar = () => {
           <ul className="hidden md:flex gap-6 items-center text-md font-semibold font-basis">
            
             <li className="hover:text-yellow-400 cursor-pointer font-basis">
-              <a href="/about">WHO WE ARE</a>
+              <a href="/who we are">WHO WE ARE</a>
             </li>
 
             {/* Products Dropdown */}
@@ -532,7 +532,7 @@ const NavBar = () => {
               <a href="/blog">BLOG</a>
             </li>
             <li className="hover:text-yellow-400 cursor-pointer text-md font-basis">
-              <a href="/blog">CAREER</a>
+              <a href="/career">CAREER</a>
             </li>
 
             <li className="hover:text-yellow-400 cursor-pointer">

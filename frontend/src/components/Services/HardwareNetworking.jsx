@@ -17,8 +17,7 @@ const HardwareNetworking = () => {
         design, installation, and maintenance.
       </p>
     </div>
-    <p>Sudhanhu Tomar</p>
-  
+   
   
   
   </>;

@@ -19,7 +19,7 @@ export default function VideoSection() {
 
       {/* Content */}
       <div className="relative max-w-4xl mx-auto text-center z-10">
-        <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
+        <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6 font-houschka">
           Whether you are looking for answers,<br />
           would like to solve a any business problem
         </h2>

@@ -34,7 +34,7 @@ const BuisnessDeal = () => {
           <p className="text-[#ffc107] font-semibold uppercase ">
            • About Us
           </p>
-          <h2 className="text-5xl font-bold text-[#001d3d]  ">
+          <h2 className="text-5xl font-bold text-[#001d3d] font-houschka ">
             The essential steps for <br /> business success
           </h2>
           <p className="text-gray-600">

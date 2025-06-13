@@ -180,7 +180,7 @@ const Products = () => {
     <>
       <section className="py-12 px-4 bg-white md:max-w-[80%] mx-auto flex flex-col items-center gap-4">
         <div className="text-center mb-10">
-          <h2 className="text-5xl font-bold text-gray-800">
+          <h2 className="text-5xl font-bold text-gray-800 font-houschka">
             Transform your business with advance  innovative technologies
           </h2>
           <p className="text-yellow-500 font-semibold mb-1 mt-3">

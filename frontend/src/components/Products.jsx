@@ -192,7 +192,7 @@ const Products = () => {
           {servicesData.map((service) => (
             <div
               key={service.id}
-              className="border  rounded-xl text-center shadow-sm p-8 hover:shadow-lg transition"
+              className="border  rounded-xl text-center shadow-sm p-8 hover:shadow-lg transition border-gray-300"
             >
               <div className="text-5xl mb-4">{service.icon}</div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">

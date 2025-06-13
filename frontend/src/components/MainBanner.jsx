@@ -118,6 +118,10 @@ const MainBanner = () => {
 
 
   ];
+
+
+
+  
   return (
     <>
       <section className="py-12 px-4 bg-white md:max-w-[80%] mx-auto flex flex-col items-center gap-4">

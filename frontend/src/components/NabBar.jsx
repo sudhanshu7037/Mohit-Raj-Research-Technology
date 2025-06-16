@@ -299,7 +299,7 @@ const NavBar = () => {
                       {/* <h1 className="text-lg font-bold mb-2">
                         Server Room & Data Center Development
                       </h1> */}
-                      <ul className="flex flex-col gap-4  text-sm">
+                      <ul className="flex flex-col gap-4  text-sm font-basis">
                         <li className="hover:text-yellow-400 cursor-pointer">
                           <Link to="/SoftwareDevelopment">
                             Software Development

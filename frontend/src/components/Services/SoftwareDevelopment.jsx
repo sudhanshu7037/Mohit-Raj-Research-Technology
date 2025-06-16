@@ -3,7 +3,15 @@ import Logo3 from "../../assets/softwaredev.png";
 import Logo1 from "../../assets/SofwareConsulting.png";
 import Logo2 from "../../assets/Custom.png";
 import Logo4 from "../../assets/Erp.png";
-import CityImage from "../../assets/cityimage.jpg";
+import Logo5 from "../../assets/E-Commerce Platform Development.png";
+import Logo6 from "../../assets/Web Application Development.png";
+import Logo7 from "../../assets/Mobile Application Development.png";
+import Logo8 from "../../assets/Software Testing & QA.png";
+import Logo9 from "../../assets/Performance Engineering.png";
+import Logo10 from "../../assets/Software Maintenance & Support.png";
+import Logo11 from "../../assets/Migration & Re-engineering.png";
+import Medical from "../../assets/medical collage.png";
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -36,158 +44,116 @@ const cardsData = [
   {
     img: Logo1,
 
-    title: "Software Consulting & Transformation",
+    title: "Business Consulting & Transformation",
     description:
-      "Superior custom software development services combined with expert resources, and technical prowess to strengthen overall business strategy. Our prototyping approach allows us to create tailored applications from scratch across mobile, web, and cloud platforms.",
-    points: [
-      "Crafted Innovation",
-      "Unique Applications",
-      "Precision Engineering",
-    ],
+      "Empower your company with professional transformation and consulting services designed to promote sustainability and growth. With the help of our knowledgeable staff's creative solutions and strategic direction, realize your full potential.",
+      button : "Download Catalog",
+      button1:"Get a Quote",
   },
   {
     img: Logo4,
 
     title: "ERP Software Development",
     description:
-      "TatvaSoft excels in designing secure, high-performing, and well-documented APIs that help businesses forge new connections, automate processes, and enable seamless communication.",
-    points: [
-      "Integration Innovation",
-      "Communication Gateway",
-      "Service Architecture",
-    ],
+      "Streamline your processes with customized solutions such as University & College Management, Medical & Hospital Information Systems, Online Examination, Police & Banking Systems, E-Library, CRM, E-Company Management, and Business Intelligence platforms .",
+       button : "Download Catalog",
+      button1:"Get a Quote",
   },
   {
     img: Logo2,
 
     title: "Custom Software Development",
     description:
-      "Let us handle all the hassles of cloud infrastructure. We help you transition to cloud models and streamline operations to improve overall agility.",
-    points: [
-      "Infrastructure Management",
-      "Scalable Solutions",
-      "Cloud Migration",
-    ],
+      "Let us handle all the hassles of cloud infrastructure. We help you transition to cloud models and streamline operations to improve overall agility. ",
+      button : "Download Catalog",
+      button1:"Get a Quote",
   },
   {
-    img: Logo2,
+    img: Logo5,
 
     title: "E-Commerce Platform Development",
     description:
-      "Let us handle all the hassles of cloud infrastructure. We help you transition to cloud models and streamline operations to improve overall agility.",
-    points: [
-      "Infrastructure Management",
-      "Scalable Solutions",
-      "Cloud Migration",
-    ],
+      "We create powerful e-commerce storefronts to maximize sales and improve user experience while strengthening your digital retail operations.",
+      button : "Download Catalog",
+      button1:"Get a Quote",
   },
   {
-    img: Logo2,
+    img: Logo6,
 
     title: "Web Application Development",
     description:
-      "Let us handle all the hassles of cloud infrastructure. We help you transition to cloud models and streamline operations to improve overall agility.",
-    points: [
-      "Infrastructure Management",
-      "Scalable Solutions",
-      "Cloud Migration",
-    ],
+      "We develop state-of-the-art web applications designed to attract users and generate web traffic while improving both online visibility and user interaction.",
+      button : "Download Catalog",
+      button1:"Get a Quote",
   },
   {
-    img: Logo2,
+    img: Logo7,
 
     title: "Mobile Application Development",
     description:
-      "Let us handle all the hassles of cloud infrastructure. We help you transition to cloud models and streamline operations to improve overall agility.",
-    points: [
-      "Infrastructure Management",
-      "Scalable Solutions",
-      "Cloud Migration",
-    ],
+      "Our Mobile App Development software delivers accessible mobile applications designed for diverse users while strengthening mobile engagement and presence.",
+      button : "Download Catalog",
+      button1:"Get a Quote",
   },
   {
-    img: Logo2,
+    img: Logo8,
 
     title: "Software Testing & QA",
     description:
-      "Let us handle all the hassles of cloud infrastructure. We help you transition to cloud models and streamline operations to improve overall agility.",
-    points: [
-      "Infrastructure Management",
-      "Scalable Solutions",
-      "Cloud Migration",
-    ],
+      "Our rigorous testing procedures together with performance optimization strategies deliver high-quality software and improved user experiences.",
+      button : "Download Catalog",
+      button1:"Get a Quote",
   },
   {
-    img: Logo2,
+    img: Logo9,
 
     title: "Performance Engineering",
     description:
-      "Let us handle all the hassles of cloud infrastructure. We help you transition to cloud models and streamline operations to improve overall agility.",
-    points: [
-      "Infrastructure Management",
-      "Scalable Solutions",
-      "Cloud Migration",
-    ],
+      "By applying advanced optimization techniques we enhance software performance which results in better speed and reliability while heightening user satisfaction.",
+      button : "Download Catalog",
+      button1:"Get a Quote",
   },
   {
-    img: Logo2,
+    img: Logo11,
+
+    title: "Migration & Re-engineering",
+    description:
+      "Your systems can move smoothly to modern platforms which enhance efficiency while optimizing performance to future-proof your technology stack.",
+      button : "Download Catalog",
+      button1:"Get a Quote",
+  },
+  {
+    img: Logo10,
 
     title: "Software Maintenance & Support",
     description:
       "Let us handle all the hassles of cloud infrastructure. We help you transition to cloud models and streamline operations to improve overall agility.",
-    points: [
-      "Infrastructure Management",
-      "Scalable Solutions",
-      "Cloud Migration",
-    ],
-  },
-  {
-    img: Logo2,
-
-    title: "E-Commerce Platform Development",
-    description:
-      "Let us handle all the hassles of cloud infrastructure. We help you transition to cloud models and streamline operations to improve overall agility.",
-    points: [
-      "Infrastructure Management",
-      "Scalable Solutions",
-      "Cloud Migration",
-    ],
-  },
-  {
-    img: Logo2,
-
-    title: "Migration & Re-engineering",
-    description:
-      "Let us handle all the hassles of cloud infrastructure. We help you transition to cloud models and streamline operations to improve overall agility.",
-    points: [
-      "Infrastructure Management",
-      "Scalable Solutions",
-      "Cloud Migration",
-    ],
+      button : "Download Catalog",
+      button1:"Get a Quote",
   },
 ];
 
 const caseStudies = [
   {
-    title: "Smart City",
-    tags: ["Node.JS", "Energy & Utility"],
+    title: "Medical College Management & Information System",
+    tags: [".NET", "Complete Automation"],
     description:
-      "Leveraging our technical expertise to build a smart city application, we created an integrated system connecting multiple IoT based sensors to achieve a bird's eye view on all climatic parameters of the city. Our solution helped client to overcome roadblocks of inefficient management of lights, floods, air and energy within the city. Know how our software solution transformed client's ecosystem.",
-    image: CityImage,
+      "Hospital Management System is powerful, flexible, easy to use and is designed and developed to deliver real conceivable benefits to hospitals and clinics. And more importantly it is backed by reliable and dependable support.",
+    image: Medical,
   },
   {
     title: "Industrial Automation",
     tags: ["Python", "Manufacturing"],
     description:
       "Developed an intelligent industrial automation system to streamline operations, reduce costs, and improve manufacturing efficiency using AI and IoT.",
-    image: CityImage,
+    image: Medical,
   },
   {
     title: "Healthcare Platform",
     tags: ["React", "Healthcare"],
     description:
       "Built a secure, scalable healthcare platform that connects doctors and patients via telemedicine, AI-driven diagnostics, and health data analytics.",
-    image: CityImage,
+    image: Medical,
   },
 ];
 const techStack = [
@@ -338,41 +304,44 @@ const features = [
 
 const faqs = [
   {
-    question: "What is custom software development?",
+    question:
+      "Mohitraj Research Tech specializes in what kinds of software development services?",
     answer:
-      "Custom software development is the process of creating software applications tailored to meet the specific needs of a business or user.",
+      "We are experts in developing custom software, including web applications, mobile applications (iOS/Android), SaaS products, and enterprise solutions (CRM, ERP). We are also very good at combining blockchain, IoT, and AI/ML technologies.",
   },
   {
-    question: "Why should one go for custom software development?",
+    question:
+      "How is artificial intelligence used in software development by Mohitraj Research Tech?",
     answer:
-      "It allows businesses to have software designed specifically for their unique processes, increasing efficiency and productivity.",
+      "By combining AI, we develop intelligent software that improves user experience and operational efficiency. Examples of this software include generative AI applications  and machine learning models for automation and prediction . .",
   },
   {
-    question: "What technologies are used to develop a custom software?",
+    question: "What is your process  about developing  a software?",
     answer:
-      "It depends on the project, but popular choices include JavaScript, Python, .NET, Java, React, Node.js, and more.",
+      "To guarantee adaptability  and continuous delivery, we use an Agile development methodology. Requirements gathering  , UI/UX design, iterative development, QA and testing, deployment, and continues  support are all the  steps that we follow  in our process.",
   },
   {
-    question: "What technologies are used to develop a custom software?",
+    question:
+      "How do you guarantee about the  security of software you developed ?",
     answer:
-      "It depends on the project, but popular choices include JavaScript, Python, .NET, Java, React, Node.js, and more.",
+      "Security  comes first. We apply secure coding standards, carry  security audits, evaluate vulnerabilities, integrate cybersecurity best practices across the whole SDLC, and guarantee data privacy compliance and the security of the application we developed.",
   },
   {
-    question: "What technologies are used to develop a custom software?",
+    question: "Are you able to assist us in updating our legacy systems ",
     answer:
-      "It depends on the project, but popular choices include JavaScript, Python, .NET, Java, React, Node.js, and more.",
+      "Definitely, By Using  cloud technology to enhance performance and maintenance, that lowers the  operating costs, as well as transferring antiquated software to  scalable architectures like microservices.",
   },
   {
-    question: "What technologies are used to develop a custom software?",
+    question:
+      "How much does a custom software project  cost and how much time will it take?",
     answer:
-      "It depends on the project, but popular choices include JavaScript, Python, .NET, Java, React, Node.js, and more.",
+      "The complexity, scope, and  requirements of the project  tells us about the  timeline and cost of project we developed. After  careful calculations     and consultation, we provide comprehensive proposals  that  guarantees transparency and alignment with your  plan and schedule.",
   },
   {
-    question: "What technologies are used to develop a custom software?",
+    question: "Do you provide maintenance support after development?",
     answer:
-      "It depends on the project, but popular choices include JavaScript, Python, .NET, Java, React, Node.js, and more.",
+      "To guarantee that your software stays stable, secure, and adapts to your company's needs, we offers the  post-launch maintenance and support services that include performance optimization, security and updates.",
   },
-
 ];
 
 const SoftwareDevelopment = () => {
@@ -412,20 +381,23 @@ const SoftwareDevelopment = () => {
 
         {/* Hero Content */}
         <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
-          <h1 className="text-white text-4xl md:text-6xl font-semibold leading-tight mb-6 font-houschka">
-            SOFTWARE DEVELOPMENT SERVICES
-          </h1>
-          <p className="text-white text-base md:text-lg max-w-2xl mb-8">
-            Mohitraj offers reliable custom software development solutions for
-            your unique business requirements. We focus on innovation,
-            scalability, and agility to help your business evolve and gain a
-            competitive edge in a rapidly changing market.
-          </p>
+          <h3 className="text-white text-xl md:text-6xl font-semibold leading-tight mb-6 font-houschka">
+            Transform your Business with Innovative Software Development
+            Technology
+          </h3>
+          {/* <p className="text-white text-base md:text-lg max-w-2xl mb-8 text-justify leading-relaxed  mt-2 ">
+            MOHITRAJ RESEARCH AND TECHNOLOGY PRIVATE LIMITED is the leading
+            software development company in India , it is specializes in
+            software development and delivers many ERP software solutions in
+            educational domain , Healthcare domain and industrial domain that
+            are designed to fulfil the business requirements of all the
+            organizations .
+          </p> */}
           <div className="flex gap-4">
-            <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition">
+            <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition mt-2">
               GET IN TOUCH
             </button>
-            <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition">
+            <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition mt-2">
               VIEW PORTFOLIO
             </button>
           </div>
@@ -434,16 +406,23 @@ const SoftwareDevelopment = () => {
       {/* Second div */}
       <div className="bg-white py-16 px-4 lg:px-24 text-center">
         {/* Top Text */}
-        <p className="text-gray-700 text-base md:text-lg max-w-4xl mx-auto mb-12 leading-relaxed font-basis">
-          The custom software development process encompasses designing,
-          developing, deploying, and maintaining custom software. As a leading
-          custom software development company, our domain experts explicate the
-          client's needs and accordingly create a strategic plan to optimize
-          each stage of the software development life cycle. Our dynamic team of
-          skilled software developers, architects, and project managers, coupled
-          with industry-driven experience, provides a solid foundation for
-          developing high-quality software solutions. We implement dedicated QA
-          practices that align with specific business needs, budget, and time.
+        <h1 className="text-blue-500 text-4xl font-bold">Overview</h1>
+        <p className="text-gray-700 text-base md:text-lg max-w-4xl mx-auto mb-12 leading-relaxed font-basis text-justify mt-4">
+          MOHITRAJ RESEARCH AND TECHNOLOGY PRIVATE LIMITED is the leading
+          software development company in India , it is specializes in software
+          development and delivers many ERP software solutions in educational
+          domain , Healthcare domain and industrial domain that are designed to
+          fulfil the business requirements of all the organizations Empowering
+          business in Delhi NCR region , Our team of experienced developers are
+          combined with the special art of technologies that enables us to boost
+          your digital footprint while transforming your business operations.
+          MOHITRAJ RESEARCH AND TECHNOLOGY PRIVATE LIMITED recognizes the
+          necessity of maintaining market leadership in the competitive business
+          environment of today. Our wide range of bespoke software development
+          services exists to help drive your success. Our dedication to
+          high-quality product delivery extends from ERP, web and mobile app
+          development through custom software solutions which consistently
+          surpass your expectations.
         </p>
 
         {/* Stats Section */}
@@ -488,11 +467,11 @@ const SoftwareDevelopment = () => {
       <div className="bg-white py-16 px-4 lg:px-24 text-center">
         {/* Title */}
         <h2 className="text-4xl md:text-4xl font-bold text-blue-900 mb-4 font-houschka ">
-          Custom Software Development Services
+          Our Software Development Services
         </h2>
-        <p className="text-gray-600 max-w-3xl mx-auto mb-12 text-base md:text-lg">
-          Our tailor-made business solutions comprehensively offer custom
-          software services to multiple businesses.
+        <p className="text-gray-600 max-w-3xl mx-auto mb-12 text-2xl md:text-lg font-semibold ">
+          We offer a comprehensive suite of software development services
+          ,meticulously designed to meet the user requirements.
         </p>
 
         {/* Cards */}
@@ -507,11 +486,21 @@ const SoftwareDevelopment = () => {
                 {card.title}
               </h3>
               <p className="text-gray-600 mb-4">{card.description}</p>
-              <ul className="list-disc list-inside text-blue-800 space-y-1">
+              {/* <ul className="list-disc list-inside text-blue-800 space-y-1">
                 {card.points.map((point, idx) => (
                   <li key={idx}>{point}</li>
                 ))}
-              </ul>
+              </ul> */}
+              {card.button && (
+                <button className="bg-blue-900 text-white px-4 py-2 rounded   hover:bg-blue-700 transition mt-4 mr-8">
+                  {card.button}
+                </button>
+              )}
+              {card.button1 && (
+                <button className="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-700 transition mt-4 ml-8">
+                  {card.button1}
+                </button>
+              )}
             </div>
           ))}
         </div>
@@ -541,7 +530,7 @@ const SoftwareDevelopment = () => {
         >
           {caseStudies.map((caseStudy, index) => (
             <SwiperSlide key={index}>
-              <div className="flex flex-col md:flex-row bg-white  shadow-lg overflow-hidden w-full">
+              <div className="flex flex-col md:flex-row bg-white  shadow-lg overflow-hidden w-full h-[460px] ">
                 {/* Image */}
                 <div className="md:w-1/2">
                   <img
@@ -552,8 +541,8 @@ const SoftwareDevelopment = () => {
                 </div>
 
                 {/* Content */}
-                <div className="md:w-1/2 bg-blue-500 text-white p-8 flex flex-col justify-center">
-                  <h3 className="text-2xl font-semibold mb-4">
+                <div className="md:w-1/2 bg-slate-600 text-white p-8 flex flex-col justify-center">
+                  <h3 className="text-3xl font-houschka font-semibold mb-4">
                     {caseStudy.title}
                   </h3>
 
@@ -573,9 +562,9 @@ const SoftwareDevelopment = () => {
                   <p className="text-gray-200 mb-6">{caseStudy.description}</p>
 
                   {/* Button */}
-                  <button className="border border-white px-2 py-1 text-sm hover:bg-white hover:text-blue-900 transition w-fit ">
+                  <Link to={'/MedicalCollegeManagement'} className="border border-white px-2 py-1 text-sm hover:bg-white hover:text-blue-900 transition w-fit ">
                     VIEW CASE STUDY
-                  </button>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>
@@ -755,14 +744,19 @@ const SoftwareDevelopment = () => {
       </div>
       {/*new  div*/}
       <div className="max-w-3xl mx-auto p-4">
-        <h2 className="text-4xl font-semibold text-center mb-8 font-houschka text-blue-500"> Costum Software Development FAQs</h2>
+        <h2 className="text-4xl font-semibold text-center mb-8 font-houschka text-blue-500">
+          {" "}
+          Costum Software Development FAQs
+        </h2>
         {faqs.map((faq, index) => (
           <div key={index} className="border-b py-4">
             <button
               onClick={() => toggleFAQ(index)}
               className="w-full flex justify-between items-center text-left focus:outline-none"
             >
-              <span className="text-lg font-medium text-gray-700 font-basis">{faq.question}</span>
+              <span className="text-lg font-medium text-gray-700 font-basis">
+                {faq.question}
+              </span>
               {openIndex === index ? <FiChevronUp /> : <FiChevronDown />}
             </button>
             {openIndex === index && (

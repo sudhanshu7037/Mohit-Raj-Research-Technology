@@ -29,7 +29,7 @@ const TeamSection = () => {
     <section className="py-16 px-4 bg-white text-center">
       <div className="max-w-7xl mx-auto">
         <p className="text-yellow-500 font-semibold text-sm uppercase mb-2">• Meet Our Team</p>
-        <h2 className="text-4xl font-bold text-[#001d3d] mb-12">Our Specialized Team</h2>
+        <h2 className="text-4xl font-bold text-blue-500 font-houschka mb-12">Our Specialized Team</h2>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (

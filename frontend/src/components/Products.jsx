@@ -180,7 +180,7 @@ const Products = () => {
     <>
       <section className="py-12 px-4 bg-white md:max-w-[80%] mx-auto flex flex-col items-center gap-4">
         <div className="text-center mb-10">
-          <h2 className="text-5xl font-bold text-gray-800 font-houschka">
+          <h2 className="text-5xl font-bold text-blue-900 font-houschka">
             Transform your business with advance  innovative technologies
           </h2>
           <p className="text-yellow-500 font-semibold mb-1 mt-3">
@@ -192,10 +192,10 @@ const Products = () => {
           {servicesData.map((service) => (
             <div
               key={service.id}
-              className="border  rounded-xl text-center shadow-sm p-8 hover:shadow-lg transition border-gray-300"
+              className="border  rounded-xl text-center  p-8 hover:shadow-lg transition border-gray-500"
             >
               <div className="text-5xl mb-4">{service.icon}</div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">
+              <h3 className="text-md font-bold text-gray-800 mb-2">
                 {service.title}
               </h3>
               <p className="text-gray-500 text-sm mb-6">

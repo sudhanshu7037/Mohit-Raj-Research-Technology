@@ -58,7 +58,9 @@ const NavBar = () => {
           <span>+9999910150</span>
           <span className="px-2">|</span>
           <FaEnvelope />
-          <span><a href="">mohitrajit@gmail.com</a></span>
+          <span>
+            <a href="">mohitrajit@gmail.com</a>
+          </span>
         </div>
         <div className="hidden md:flex items-center gap-3">
           <a href="https://www.facebook.com/profile.php?id=100066869172911">
@@ -81,17 +83,15 @@ const NavBar = () => {
       >
         <div className="h-20 flex justify-between items-center px-4 md:px-20">
           <Link to="/">
-            <img 
-            src={Logo2}
-            alt="MRTPL Logo"
-            className="h-12 md:h-13 lg:h-16 w-auto font-bold items-center cursor-pointer"
-          />
+            <img
+              src={Logo2}
+              alt="MRTPL Logo"
+              className="h-12 md:h-13 lg:h-16 w-auto font-bold items-center cursor-pointer"
+            />
           </Link>
-          {/* <h1 className="text-2xl font-bold text-yellow-400">Logo</h1> */}
-
+          
           {/* Desktop Nav */}
           <ul className="hidden md:flex gap-6 items-center text-md font-semibold font-basis">
-           
             <li className="hover:text-yellow-400 cursor-pointer font-basis">
               <a href="/who we are">WHO WE ARE</a>
             </li>
@@ -103,187 +103,7 @@ const NavBar = () => {
               activeMenu={activeMenu}
             />
 
-            {/* SERVICES Dropdown */}
-            {/* <div
-              className="relative"
-              onMouseEnter={() => handleMouseEnter("services")}
-              onMouseLeave={handleMouseLeave}
-            >
-              <div className="text-xl font-semibold cursor-pointer hover:text-yellow-300 flex items-center gap-1">
-                SERVICES <MdKeyboardArrowDown />
-              </div>
-
-              {activeMenu === "services" && (
-                <div className="fixed top-[104px] left-0 w-screen bg-white text-black p-4 shadow-lg z-50">
-                  <div className="flex gap-8">
-                    <div>
-                      <h1 className="text-lg font-bold mb-2">
-                        Software Development
-                      </h1>
-                      <ul className="flex flex-col gap-2  font-thin ">
-                        <li>
-                          <Link to="#">
-                            Software Consulting & Transformation{" "}
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">ERP Software Development</Link>
-                        </li>
-                        <li>
-                          <Link to="#">Custom Software Development</Link>
-                        </li>
-                        <li>
-                          <Link to="#">E-Commerce Platform Development</Link>
-                        </li>
-                        <li>
-                          <Link to="#">Web Application Development</Link>
-                        </li>
-                        <li>
-                          <Link to="#">Mobile Application Development</Link>
-                        </li>
-                        <li>
-                          <Link to="#">Software Testing & QA</Link>
-                        </li>
-                        <li>
-                          <Link to="#">Migration & Re-engineering</Link>
-                        </li>
-                        <li>
-                          <Link to="#">Performance Engineering</Link>
-                        </li>
-                        <li>
-                          <Link to="#">Software Maintenance & Support</Link>
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h1 className="text-lg font-bold mb-2">
-                        Development , Hosting & Promotion of Website
-                      </h1>
-                      <ul className="flex flex-col gap-2">
-                        <li>
-                          <Link to="#">Domain name Registation</Link>
-                        </li>
-                        <li>
-                          <Link to="#">
-                            Website Hosting & Web Administration
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">Website Development</Link>
-                        </li>
-                        <li>
-                          <Link to="#"> Static Website Development</Link>
-                        </li>
-                        <li>
-                          <Link to="#">Dynamic Website Development</Link>
-                        </li>
-                        <li>
-                          <Link to="#">
-                            E-commerce Platforms (with cart, payment gateway,
-                            inventory)
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">Custom CMS Development </Link>
-                        </li>
-                        <li>
-                          <Link to="#"> Full-Stack Web Applications</Link>
-                        </li>
-                        <li>
-                          <Link to="#">UI/UX Design & Responsiveness</Link>
-                        </li>
-
-                        <li>
-                          <Link to="#">Website Maintenance & Support</Link>
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h1 className="text-lg font-bold mb-2">
-                        {" "}
-                        Networking Management Solutions
-                      </h1>
-                      <ul className="flex flex-col gap-2">
-                        <li>
-                          <Link to="#">Local Area Network (LAN's)</Link>
-                        </li>
-                        <li>
-                          <Link to="#">Wide Area Network (WAN)</Link>
-                        </li>
-                        <li>
-                          <Link to="#">Wireless Networking</Link>
-                        </li>
-                        <li>
-                          <Link to="#">Corporate Internet</Link>
-                        </li>
-                        <li>
-                          <Link to="#">Structured Cabling & Rack Setup</Link>
-                        </li>
-                        <li>
-                          <Link to="#">System Integration</Link>
-                        </li>
-                        <li>
-                          <Link to="#">Network Security Configuration</Link>
-                        </li>
-                        <li>
-                          <Link to="#">Wi-Fi Installation & Optimization</Link>
-                        </li>
-                        <li>
-                          <Link to="#">
-                            Router, Switch & Firewall Configuration
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">
-                            Annual Maintenence Contract(AMC) & Support
-                          </Link>
-                        </li>
-                      </ul>
-                    </div>
-                    <div>
-                      <h1 className="text-lg font-bold mb-2">
-                        Hardware & Networking Solutions
-                      </h1>
-                      <ul className="flex flex-col gap-2">
-                        <li>
-                          <Link to="#">
-                            Computer & Laptop Sales and Support
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="#">Printer & Scanner Installation</Link>
-                        </li>
-                        <li>
-                          <Link to="#">AMC (Annual Maintenance Contracts)</Link>
-                        </li>
-                        <li>
-                          <Link to="#">Server Setup & Configuration</Link>
-                        </li>
-                        <li>
-                          <Link to="#">Biometric Attendance Systems</Link>
-                        </li>
-                        <li>
-                          <Link to="#">Peripheral Device Integration</Link>
-                        </li>
-                        <li>
-                          <Link to="#">Remote Infrastructure Facility</Link>
-                        </li>
-                        <li>
-                          <Link to="#">Data Center Development Facility</Link>
-                        </li>
-                        <li>
-                          <Link to="#">Security & Surveillance Solutions</Link>
-                        </li>
-                        <li>
-                          <Link to="#">Multimedia & Animation Solutions</Link>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div> */}
-               <div
+            <div
               className="relative"
               onMouseEnter={() => handleMouseEnter("services")}
               onMouseLeave={handleMouseLeave}
@@ -296,9 +116,6 @@ const NavBar = () => {
                 <div className="absolute top-full left-0 mt-2 w-[300px] bg-white text-black p-4 shadow-lg z-50 ">
                   <div className="flex gap-8">
                     <div>
-                      {/* <h1 className="text-lg font-bold mb-2">
-                        Server Room & Data Center Development
-                      </h1> */}
                       <ul className="flex flex-col gap-4  text-sm font-basis">
                         <li className="hover:text-yellow-400 cursor-pointer">
                           <Link to="/SoftwareDevelopment">
@@ -307,11 +124,13 @@ const NavBar = () => {
                         </li>
                         <li className="hover:text-yellow-400 cursor-pointer">
                           <Link to="/DevelopmentHosting">
-                           Development, Hosting & Promotion of Websites
+                            Development, Hosting & Promotion of Websites
                           </Link>
                         </li>
                         <li className="hover:text-yellow-400 cursor-pointer">
-                          <Link to="/HardwareNetworking">Hardware & Networking Management Solutions</Link>
+                          <Link to="/HardwareNetworking">
+                            Hardware & Networking Management Solutions
+                          </Link>
                         </li>
                         <li className="hover:text-yellow-400 cursor-pointer">
                           <Link to="#">Multimedia & Animation Solutions</Link>
@@ -326,23 +145,18 @@ const NavBar = () => {
                           <Link to="#">E-Learning </Link>
                         </li>
                         <li className="hover:text-yellow-400 cursor-pointer">
-                          <Link to="#">
-                            Video Conferencing
-                          </Link>
+                          <Link to="#">Video Conferencing</Link>
                         </li>
                         <li className="hover:text-yellow-400 cursor-pointer">
                           <Link to="#">Security & Surveillances Solutions</Link>
                         </li>
-                        
-                        
+
                         <li className="hover:text-yellow-400 cursor-pointer">
                           <Link to="#">Data Digitization Services</Link>
                         </li>
                         <li className="hover:text-yellow-400 cursor-pointer">
                           <Link to="#">Remote Infrastructure Facility</Link>
                         </li>
-
-                        
                       </ul>
                     </div>
                   </div>
@@ -350,67 +164,6 @@ const NavBar = () => {
               )}
             </div>
 
-            {/* Other Services Dropdown */}
-            {/* <div
-              className="relative"
-              onMouseEnter={() => handleMouseEnter("otherServices")}
-              onMouseLeave={handleMouseLeave}
-            >
-              <div className="text-xl font-semibold cursor-pointer hover:text-yellow-300 flex items-center gap-1">
-                OTHER SERVICES <MdKeyboardArrowDown />
-              </div>
-
-              {activeMenu === "otherServices" && (
-                <div className="fixed top-[104px] left-1/2 -translate-x-1/2 w-[300px] bg-white text-black p-4 shadow-lg z-50 ">
-                  <div className="flex gap-8">
-                    <div>
-                      {/* <h1 className="text-lg font-bold mb-2">
-                        Server Room & Data Center Development
-                      </h1> }
-                      <ul className="flex flex-col gap-2">
-                        <li className="hover:text-yellow-400 cursor-pointer">
-                          <Link to="#">Software Development</Link>
-                        </li>
-                        <li className="hover:text-yellow-400 cursor-pointer">
-                          <Link to="#">
-                            Development , Hosting & Promotion of Websites
-                          </Link>
-                        </li>
-                        <li className="hover:text-yellow-400 cursor-pointer">
-                          <Link to="#">
-                            Hardware & Networking Management Solutions
-                          </Link>
-                        </li>
-                        <li className="hover:text-yellow-400 cursor-pointer">
-                          <Link to="#">Remote Infrastructure Facility</Link>
-                        </li>
-                        <li className="hover:text-yellow-400 cursor-pointer">
-                          <Link to="#">Data Center Development Facility</Link>
-                        </li>
-                        <li className="hover:text-yellow-400 cursor-pointer">
-                          <Link to="#">Intetractive Learning </Link>
-                        </li>
-                        <li className="hover:text-yellow-400 cursor-pointer">
-                          <Link to="#">E- Learning</Link>
-                        </li>
-                        <li className="hover:text-yellow-400 cursor-pointer">
-                          <Link to="#">Video Conferencing</Link>
-                        </li>
-                        <li className="hover:text-yellow-400 cursor-pointer">
-                          <Link to="#">Security & Surveillance Solutions</Link>
-                        </li>
-                        <li className="hover:text-yellow-400 cursor-pointer">
-                          <Link to="#">Multimedia & Animation Solutions</Link>
-                        </li>
-                        <li className="hover:text-yellow-400 cursor-pointer">
-                          <Link to="#">Data Digitization Services</Link>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div> */}
             {/* Solutions Dropdown */}
 
             <div

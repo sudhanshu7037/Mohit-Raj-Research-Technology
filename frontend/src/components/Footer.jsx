@@ -11,7 +11,7 @@ import Logo from "../assets/PNG.png"
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-8  bottom-0 w-full">
+    <footer className="bg-blue-900 text-white py-8  bottom-0 w-full">
       <div className="container mx-auto px-4 flex flex-col lg:flex-row justify-between items-center lg:items-start">
         {/* Left Section - Logo */}
         <div className="flex items-center mb-4 lg:mb-0">

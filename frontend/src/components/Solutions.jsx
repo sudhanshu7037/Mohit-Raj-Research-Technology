@@ -86,28 +86,36 @@ const Solutions = () => {
         "Implement AI and ML solutions to enhance business processes.",
       icon: "🤖",
     },
-    
-   
-    
   ];
   return (
     <>
       <section className="py-12 px-4 bg-white md:max-w-[80%] mx-auto flex flex-col items-center gap-4">
         <div className="text-center mb-10">
-          <p className="text-yellow-500 font-semibold mb-1">
-            OUR DEDICATED SOLUTIONS
-          </p>
-          <h2 className="text-5xl font-houschka font-bold text-gray-800 ">
+          <h2 className="text-5xl font-houschka font-bold text-blue-800 ">
             Cutting edge solutions with digital technologies.
           </h2>
+          <p className="text-yellow-500 font-semibold mb-1 mt-3">
+            OUR DEDICATED SOLUTIONS
+          </p>
         </div>
         <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {servicesData.map((service) => (
+            console.log("ICON:", service.icon),
             <div
               key={service.id}
               className="border  rounded-xl text-center shadow-sm p-8 hover:shadow-lg transition"
             >
-              <div className="text-5xl mb-4">{service.icon}</div>
+              <div className="text-5xl mb-4">
+                {typeof service.icon === "string" ? (
+                  service.icon
+                ) : (
+                  <img
+                    src={service.icon}
+                    alt={service.title}
+                    className="w-16 h-16 mx-auto"
+                  />
+                )}
+              </div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">
                 {service.title}
               </h3>

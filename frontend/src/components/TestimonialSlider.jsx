@@ -36,7 +36,7 @@ const TestimonialSlider = () => {
       <p className="text-yellow-500 uppercase font-semibold text-sm tracking-wide">
         ● Testimonials.
       </p>
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mt-2 mb-10">
+      <h2 className="text-3xl md:text-4xl font-bold text-blue-500 font-houschka mt-2 mb-10">
         Reviews of Our Clients
       </h2>
 

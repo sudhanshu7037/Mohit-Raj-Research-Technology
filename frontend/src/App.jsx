@@ -10,6 +10,7 @@ import Career from "./pages/Career"
 import SoftwareDevelopment from "./components/Services/SoftwareDevelopment";
 import DevelopmentHosting from "./components/Services/DevelopmentHosting";
 import HardwareNetworking from "./components/Services/HardwareNetworking";
+import MedicalCollegeManagement from "./pages/casestudies/MedicalCollegeManagement";
 
 
 
@@ -29,6 +30,7 @@ const App = () => {
           <Route path="/SoftwareDevelopment" element={<SoftwareDevelopment />} />
           <Route path="/DevelopmentHosting" element={<DevelopmentHosting />} />
           <Route path="/HardwareNetworking" element={<HardwareNetworking />} />
+           <Route path="/MedicalCollegeManagement" element={<MedicalCollegeManagement />} />
 
 
         </Routes>

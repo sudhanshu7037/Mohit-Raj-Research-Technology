@@ -8,6 +8,7 @@ import bgImage from "../../assets/Backgroundsoftware.jpg";
 import { FaCheckCircle } from "react-icons/fa";
 import video from "../../assets/animation vedio.mp4"
 import { FaTools, FaLaptopCode, FaMagic } from "react-icons/fa";
+import {   FaPalette, FaRocket } from "react-icons/fa";
 
 const techStack = [
   {
@@ -24,6 +25,47 @@ const techStack = [
     icon: <FaTools className="text-blue-500 text-xl" />,
     label: "Editing & Design",
     items: ["Adobe Premiere", "Photoshop", "Illustrator", "Figma"],
+  },
+];
+
+
+
+const multimediaServices = [
+  {
+    title: "2D/3D Animation",
+    description:
+      "Craft stunning visuals that tell compelling stories. From explainer videos to immersive 3D animations, we breathe life into every frame.",
+    icon: <FaVideo className="text-pink-500 text-2xl" />,
+  },
+  {
+    title: "Motion Graphics",
+    description:
+      "Add energy to your content with kinetic typography, moving elements, and visual storytelling that captures audience attention instantly.",
+    icon: <FaRocket className="text-blue-500 text-2xl" />,
+  },
+  {
+    title: "Visual Effects (VFX)",
+    description:
+      "Enhance your visuals with cutting-edge VFX techniques. Perfect for ads, films, and multimedia presentations needing that wow factor.",
+    icon: <FaMagic className="text-purple-500 text-2xl" />,
+  },
+  {
+    title: "Creative Video Editing",
+    description:
+      "From transitions to sound sync, our expert editors craft professional video content with a seamless and engaging flow.",
+    icon: <FaPalette className="text-yellow-500 text-2xl" />,
+  },
+  {
+    title: "Character Design & Storyboarding",
+    description:
+      "We sketch, design, and animate unique characters and storyboard the entire journey—perfect for animated storytelling.",
+    icon: <FaPaintBrush className="text-red-500 text-2xl" />,
+  },
+  {
+    title: "UI/UX Animation",
+    description:
+      "Enhance web or app interactions with subtle micro animations that improve user engagement and experience.",
+    icon: <FaMagic className="text-indigo-500 text-2xl" />,
   },
 ];
 
@@ -81,16 +123,7 @@ const services = [
 
 const MultimediaAnimation = () => {
 
-{/*const industries = [
-    'Film & Entertainment',
-    'Advertising & Marketing',
-    'Education & E-learning',
-    'Gaming Industry',
-    'Corporate Presentations',
-    'Healthcare Visualizations',
-    'Architecture Walkthroughs',
-    'Social Media Content'
-  ];*/}
+
   const points = [
     "2D & 3D Animation Design",
     "Motion Graphics for Brands",
@@ -419,6 +452,33 @@ const MultimediaAnimation = () => {
             </div>
           ))}
         </div>
+      </div>
+    </div>
+
+    <div className="max-w-7xl mx-auto px-4 py-16 text-center">
+      <h2 className="text-4xl font-bold text-blue-900 mb-4 font-houschka">
+        Multimedia & Animation Services We Offer
+      </h2>
+      <p className="text-gray-600 max-w-4xl mx-auto mb-12">
+        Our team combines creativity and technology to create compelling
+        multimedia and animation solutions that bring your vision to life.
+      </p>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+        {multimediaServices.map((service, index) => (
+          <div
+            key={index}
+            className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border-t-4 border-blue-500"
+          >
+            <div className="mb-3">{service.icon}</div>
+            <h3 className="text-xl font-semibold text-blue-900 mb-2">
+              {service.title}
+            </h3>
+            <p className="text-gray-700 text-sm leading-relaxed">
+              {service.description}
+            </p>
+          </div>
+        ))}
       </div>
     </div>
 

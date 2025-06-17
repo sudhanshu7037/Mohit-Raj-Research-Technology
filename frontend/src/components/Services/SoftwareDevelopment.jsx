@@ -505,72 +505,7 @@ const SoftwareDevelopment = () => {
           ))}
         </div>
       </div>
-      {/* Case Study*/}
-      <div className="w-full  ">
-        {/* Heading */}
-        <div className="text-center mb-10">
-          <h2 className="text-4xl md:text-4xl font-bold text-blue-900 mb-4 font-houschka">
-            Custom Software Development Case Studies
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto font-basis">
-            Getting into the nitty-gritty of each software project and achieving
-            a measurable result is what we do for the world's leading companies.
-            Take a look!
-          </p>
-        </div>
-
-        {/* Slider */}
-        <Swiper
-          modules={[Navigation]}
-          navigation
-          spaceBetween={20}
-          slidesPerView={1}
-          loop={true}
-          className="w-full  "
-        >
-          {caseStudies.map((caseStudy, index) => (
-            <SwiperSlide key={index}>
-              <div className="flex flex-col md:flex-row bg-white  shadow-lg overflow-hidden w-full h-[460px] ">
-                {/* Image */}
-                <div className="md:w-1/2">
-                  <img
-                    src={caseStudy.image}
-                    alt={caseStudy.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-
-                {/* Content */}
-                <div className="md:w-1/2 bg-slate-600 text-white p-8 flex flex-col justify-center">
-                  <h3 className="text-3xl font-houschka font-semibold mb-4">
-                    {caseStudy.title}
-                  </h3>
-
-                  {/* Tags */}
-                  <div className="flex gap-2 mb-4">
-                    {caseStudy.tags.map((tag, idx) => (
-                      <span
-                        key={idx}
-                        className="border border-white px-2 py-1 text-sm rounded"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-
-                  {/* Description */}
-                  <p className="text-gray-200 mb-6">{caseStudy.description}</p>
-
-                  {/* Button */}
-                  <Link to={'/MedicalCollegeManagement'} className="border border-white px-2 py-1 text-sm hover:bg-white hover:text-blue-900 transition w-fit ">
-                    VIEW CASE STUDY
-                  </Link>
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+      
 
       {/*Contact us div*/}
       <div className="w-full bg-white py-8 px-4 flex justify-center items-center gap-12 max-w-7xl mx-auto h-[200px]">
@@ -600,7 +535,7 @@ const SoftwareDevelopment = () => {
             Software Development Experience
           </h2>
           <p className="max-w-2xl mx-auto text-lg font-basis">
-            TatvaSoft has successfully completed 1800+ projects with 810+
+             MRT has successfully completed 1800+ projects with 810+
             customers in multiple industries. Here are some of the domains in
             which we have worked:
           </p>
@@ -742,6 +677,105 @@ const SoftwareDevelopment = () => {
           ))}
         </div>
       </div>
+      {/* Benifits*/}
+         
+   <div>
+  <section className="bg-gray-50 py-16 px-4 md:px-16 lg:px-24">
+    <div className="max-w-6xl mx-auto flex flex-col items-start gap-8">
+      {/* Left Side */}
+      <div className="flex-1">
+        <p className="text-2xl uppercase tracking-widest text-blue-600 mb-2 font-houschka font-bold">
+          Benefits
+        </p>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-blue-900 leading-snug font-houschka">
+          Future-proof your business with solutions tailored for you.
+        </h2>
+      </div>
+
+      {/* Right Side */}
+      <div className="flex-1 border-l-4 border-blue-600 pl-6">
+        <ul className="space-y-4 text-gray-700 text-base md:text-lg">
+          <li>• Reimagine new possibilities for your business.</li>
+          <li>• Transform, adapt, and grow with purpose-led ecosystems.</li>
+          <li>• Create new business models and scale rapidly.</li>
+          <li>• Take advantage of new technologies.</li>
+          <li>• Accelerate innovation and unlock new growth potential.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+
+             
+{/* Case Study*/}
+      <div className="w-full mt-4 ">
+        {/* Heading */}
+        <div className="text-center mb-10">
+          <h2 className="text-4xl md:text-4xl font-bold text-blue-900 mb-4 font-houschka">
+            Custom Software Development Case Studies
+          </h2>
+          <p className="text-gray-600 max-w-2xl mx-auto font-basis">
+            Getting into the nitty-gritty of each software project and achieving
+            a measurable result is what we do for the world's leading companies.
+            Take a look!
+          </p>
+        </div>
+
+        {/* Slider */}
+        <Swiper
+          modules={[Navigation]}
+          navigation
+          spaceBetween={20}
+          slidesPerView={1}
+          loop={true}
+          className="w-full  "
+        >
+          {caseStudies.map((caseStudy, index) => (
+            <SwiperSlide key={index}>
+              <div className="flex flex-col md:flex-row bg-white  shadow-lg overflow-hidden w-full h-[460px] ">
+                {/* Image */}
+                <div className="md:w-1/2">
+                  <img
+                    src={caseStudy.image}
+                    alt={caseStudy.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
+                {/* Content */}
+                <div className="md:w-1/2 bg-slate-600 text-white p-8 flex flex-col justify-center">
+                  <h3 className="text-3xl font-houschka font-semibold mb-4">
+                    {caseStudy.title}
+                  </h3>
+
+                  {/* Tags */}
+                  <div className="flex gap-2 mb-4">
+                    {caseStudy.tags.map((tag, idx) => (
+                      <span
+                        key={idx}
+                        className="border border-white px-2 py-1 text-sm rounded"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+
+                  {/* Description */}
+                  <p className="text-gray-200 mb-6">{caseStudy.description}</p>
+
+                  {/* Button */}
+                  <Link to={'/MedicalCollegeManagement'} className="border border-white px-2 py-1 text-sm hover:bg-white hover:text-blue-900 transition w-fit ">
+                    VIEW CASE STUDY
+                  </Link>
+                </div>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+
+
       {/*new  div*/}
       <div className="max-w-3xl mx-auto p-4">
         <h2 className="text-4xl font-semibold text-center mb-8 font-houschka text-blue-500">

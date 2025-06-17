@@ -1,4 +1,9 @@
 import React from "react";
+import police from "../assets/PoliceManagement.png";
+import university from "../assets/university.jpg";
+import medical from "../assets/Medical_Collage[1].png";
+import DigitalEducation from "../assets/DigitalEducation.png";
+import Multimedia from "../assets/mulltimedia[1].png";
 
 const Solutions = () => {
   const servicesData = [
@@ -7,28 +12,28 @@ const Solutions = () => {
       title: "University Digitalization Solutions",
       description:
         "We help a business generate new product ideas with intelligence.",
-      icon: "📝",
+      icon: university,
     },
     {
       id: 2,
       title: "Medical College Digitalization Solutions",
       description:
         "We help a business generate new product ideas with intelligence.",
-      icon: "📊",
+      icon: medical,
     },
     {
       id: 3,
       title: "MRTiON Digital Education Solution",
       description:
         "We help a business generate new product ideas with intelligence.",
-      icon: "📈",
+      icon: DigitalEducation,
     },
     {
       id: 4,
       title: "Multimedia & Animation Solutions ",
       description:
         "We help a business generate new product ideas with intelligence.",
-      icon: "💰",
+      icon: Multimedia,
     },
     {
       id: 5,
@@ -77,7 +82,7 @@ const Solutions = () => {
       title: "Police Automation  Solutions",
       description:
         "Transform data into actionable insights for better decision-making.",
-      icon: "📊",
+      icon: police,
     },
     {
       id: 12,
@@ -106,16 +111,16 @@ const Solutions = () => {
               className="border  rounded-xl text-center shadow-sm p-8 hover:shadow-lg transition"
             >
               <div className="text-5xl mb-4">
-                {typeof service.icon === "string" ? (
-                  service.icon
-                ) : (
-                  <img
-                    src={service.icon}
-                    alt={service.title}
-                    className="w-16 h-16 mx-auto"
-                  />
-                )}
-              </div>
+  {typeof service.icon === "string" && !service.icon.includes("/") ? (
+    service.icon
+  ) : (
+    <img
+      src={service.icon}
+      alt={service.title}
+      className="w-16 h-16 mx-auto"
+    />
+  )}
+</div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">
                 {service.title}
               </h3>

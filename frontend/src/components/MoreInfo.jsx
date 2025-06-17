@@ -20,7 +20,7 @@ const MoreInfo = () => {
 
   const stats = [
     { end: 25, suffix: "+", label: "Years Experience" },
-    { end: 23000, suffix: "k", label: "Project Completed" },
+    { end: 23, suffix: "k", label: "Project Completed" },
     { end: 226, suffix: "+", label: "Consultation" },
     { end: 958, suffix: "+", label: "Happy Clients" },
   ];

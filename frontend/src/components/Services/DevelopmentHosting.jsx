@@ -6,7 +6,7 @@ import Logo3 from "../../assets/softwaredev.png";
 import Logo1 from "../../assets/SofwareConsulting.png";
 import Logo2 from "../../assets/Custom.png";
 import Logo4 from "../../assets/Erp.png";
-import CityImage from "../../assets/cityimage.jpg";
+import CityImage from "../../assets/cityimage.jpeg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";

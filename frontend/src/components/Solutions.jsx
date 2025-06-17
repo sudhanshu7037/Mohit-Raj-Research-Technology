@@ -1,4 +1,9 @@
 import React from "react";
+import police from "../assets/PoliceManagement.png";
+import university from "../assets/university.jpg";
+import medical from "../assets/Medical_Collage[1].png";
+import DigitalEducation from "../assets/DigitalEducation.png";
+import Multimedia from "../assets/mulltimedia[1].png";
 
 const Solutions = () => {
   const servicesData = [
@@ -7,28 +12,28 @@ const Solutions = () => {
       title: "University Digitalization Solutions",
       description:
         "We help a business generate new product ideas with intelligence.",
-      icon: "📝",
+      icon: university,
     },
     {
       id: 2,
       title: "Medical College Digitalization Solutions",
       description:
         "We help a business generate new product ideas with intelligence.",
-      icon: "📊",
+      icon: medical,
     },
     {
       id: 3,
       title: "MRTiON Digital Education Solution",
       description:
         "We help a business generate new product ideas with intelligence.",
-      icon: "📈",
+      icon: DigitalEducation,
     },
     {
       id: 4,
       title: "Multimedia & Animation Solutions ",
       description:
         "We help a business generate new product ideas with intelligence.",
-      icon: "💰",
+      icon: Multimedia,
     },
     {
       id: 5,
@@ -77,7 +82,7 @@ const Solutions = () => {
       title: "Police Automation  Solutions",
       description:
         "Transform data into actionable insights for better decision-making.",
-      icon: "📊",
+      icon: police,
     },
     {
       id: 12,
@@ -86,28 +91,36 @@ const Solutions = () => {
         "Implement AI and ML solutions to enhance business processes.",
       icon: "🤖",
     },
-    
-   
-    
   ];
   return (
     <>
       <section className="py-12 px-4 bg-white md:max-w-[80%] mx-auto flex flex-col items-center gap-4">
         <div className="text-center mb-10">
-          <p className="text-yellow-500 font-semibold mb-1">
-            OUR DEDICATED SOLUTIONS
-          </p>
-          <h2 className="text-5xl font-houschka font-bold text-gray-800 ">
+          <h2 className="text-5xl font-houschka font-bold text-blue-800 ">
             Cutting edge solutions with digital technologies.
           </h2>
+          <p className="text-yellow-500 font-semibold mb-1 mt-3">
+            OUR DEDICATED SOLUTIONS
+          </p>
         </div>
         <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {servicesData.map((service) => (
+            console.log("ICON:", service.icon),
             <div
               key={service.id}
               className="border  rounded-xl text-center shadow-sm p-8 hover:shadow-lg transition"
             >
-              <div className="text-5xl mb-4">{service.icon}</div>
+              <div className="text-5xl mb-4">
+  {typeof service.icon === "string" && !service.icon.includes("/") ? (
+    service.icon
+  ) : (
+    <img
+      src={service.icon}
+      alt={service.title}
+      className="w-16 h-16 mx-auto"
+    />
+  )}
+</div>
               <h3 className="text-xl font-bold text-gray-800 mb-2">
                 {service.title}
               </h3>

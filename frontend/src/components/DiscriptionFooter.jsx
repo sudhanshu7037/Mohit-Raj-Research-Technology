@@ -4,7 +4,7 @@ const DiscriptionFooter = () => {
   return (
     <>
     
-    <div className="bg-[#f5f9fc] text-black p-6 ">
+    <div className="bg-blue-900 text-white p-6 ">
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
         {/* Industries Section */}
         <div className="flex flex-col">
@@ -101,8 +101,10 @@ const DiscriptionFooter = () => {
             <li>The MRT Way</li>
             <li>Who we are</li>
           </ul>
+          
         </div>
       </div>
+      <hr className='mt-2' />
     </div>
     
     

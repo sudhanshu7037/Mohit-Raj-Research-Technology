@@ -79,7 +79,7 @@ const NavBar = () => {
             <img
               src={Logo2}
               alt="MRTPL Logo"
-              className="h-10 md:h-12 lg:h-16 w-auto cursor-pointer"
+              className="h-10 md:h-12 lg:h-16 w-auto cursor-pointer items-center"
             />
           </Link>
 

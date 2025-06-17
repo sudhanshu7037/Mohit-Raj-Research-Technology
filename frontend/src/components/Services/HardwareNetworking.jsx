@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
+
 import { Server } from "lucide-react";
 import backimage from "../../assets/backimage.png";
 import Enterprizes from "../../assets/enterprizes.png";
@@ -20,8 +22,11 @@ import {
   FaClipboardCheck,
   FaArrowRight,
   FaCheckCircle,
+  FaNetworkWired,
+  FaTools,
+  
 } from "react-icons/fa";
-
+import DevImage from "../../assets/whychoseus.png";
 
 const techStack = [
   {
@@ -92,8 +97,109 @@ const techStack = [
 ];
 
 
+ const steps = [
+    {
+      title: "Initial Infrastructure Analysis",
+      description:
+        "We assess your existing hardware and networking setup to plan an efficient and scalable solution.",
+      icon: <FaNetworkWired className="text-blue-600 text-xl" />,
+    },
+    {
+      title: "Hardware Setup & Configuration",
+      description:
+        "Install and configure routers, switches, servers, and workstations as per your business needs.",
+      icon: <FaTools className="text-blue-600 text-xl" />,
+    },
+    {
+      title: "Network Security Implementation",
+      description:
+        "Secure your network using firewalls, antivirus systems, access control, and VPN configurations.",
+      icon: <FaShieldAlt className="text-blue-600 text-xl" />,
+    },
+    {
+      title: "Monitoring & Support",
+      description:
+        "24/7 system monitoring, troubleshooting, updates, and maintenance to ensure smooth operation.",
+      icon: <FaServer className="text-blue-600 text-xl" />,
+    },
+  ];
+
+  const features = [
+  {
+    icon: <FaShieldAlt className="text-3xl text-blue-600" />,
+    title: "Robust Network Security",
+    description:
+      "We implement advanced firewalls, encryption, and access control to protect your data and systems from cyber threats and unauthorized access.",
+  },
+  {
+    icon: <FaUsers className="text-3xl text-blue-600" />,
+    title: "Skilled IT Professionals",
+    description:
+      "Our team includes certified hardware and network engineers who are experienced in handling complex infrastructure setups and resolving critical IT issues.",
+  },
+  {
+    icon: <FaClipboardList className="text-3xl text-blue-600" />,
+    title: "Customized IT Infrastructure",
+    description:
+      "We design and deploy tailor-made hardware and network systems that match your organization’s operational needs and budget.",
+  },
+  {
+    icon: <FaUserFriends className="text-3xl text-blue-600" />,
+    title: "Proactive Support Services",
+    description:
+      "Our customer-focused team provides round-the-clock monitoring, maintenance, and on-site or remote troubleshooting to ensure continuous operations.",
+  },
+];
+
+const faqs = [
+  {
+    question: "What services do hardware and networking companies offer?",
+    answer:
+      "They provide services like hardware setup, network installation, troubleshooting, system maintenance, and security management.",
+  },
+  {
+    question: "Why is network security important for businesses?",
+    answer:
+      "Network security helps protect business data from unauthorized access, viruses, and cyber-attacks, ensuring safe digital operations.",
+  },
+  {
+    question: "What is the role of a network administrator?",
+    answer:
+      "A network administrator manages and maintains computer networks, including routers, switches, firewalls, and ensures connectivity and performance.",
+  },
+  {
+    question: "What types of hardware are essential for networking?",
+    answer:
+      "Routers, switches, firewalls, servers, cables, and network interface cards are essential components in networking.",
+  },
+  {
+    question: "How often should hardware systems be updated or maintained?",
+    answer:
+      "Regular maintenance should be performed quarterly or as needed to prevent system failures and ensure peak performance.",
+  },
+  {
+    question: "Can you assist with remote and on-site network setup?",
+    answer:
+      "Yes, we offer both remote support and on-site services for network installation and troubleshooting based on client needs.",
+  },
+  {
+    question: "Do you offer AMC (Annual Maintenance Contracts) for hardware?",
+    answer:
+      "Yes, we provide customizable AMC plans to maintain your systems regularly and ensure minimal downtime.",
+  },
+];
+
+
+
+
 
 const HardwareNetworking = () => {
+
+  const [openIndex, setOpenIndex] = useState(null);
+  
+    const toggleFAQ = (index) => {
+      setOpenIndex(openIndex === index ? null : index);
+    };
   return (
     <>
       {/* === Hero Section === */}
@@ -431,6 +537,88 @@ const HardwareNetworking = () => {
   </div>
 </div>
 
+{/*new  div*/}
+      <div className="max-w-7xl mx-auto px-4 py-16">
+        <h2 className="text-4xl font-bold text-blue-900 text-center mb-12 font-houschka">
+          How to Start Your hardware and networking Project With MRT
+        </h2>
+
+        <div className="flex flex-col md:flex-row items-center gap-12">
+          {/* Image Section */}
+          <div className="flex-1">
+            <img
+              src={DevImage}
+              alt="Development Process"
+              className=" h-full object-cove "
+            />
+          </div>
+
+          {/* Steps Section */}
+          <div className="flex-1 space-y-8">
+            {steps.map((step, index) => (
+              <div key={index} className="flex items-start gap-4">
+                <div className="mt-1">{step.icon}</div>
+                <div>
+                  <h3 className="text-lg font-semibold text-blue-900">
+                    {step.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm">{step.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/*new  div*/}
+
+      <div className="max-w-7xl mx-auto px-4 py-16">
+        <h2 className="text-4xl font-bold text-blue-900 text-center mb-4 font-houschka">
+          Why Choose MRT
+        </h2>
+        <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+          As a leading software development company, MRT is dedicated to
+          upholding industry standards. Hire MRT as your custom software
+          development partner to leverage our qualities for your benefit.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="border border-gray-500 p-6 rounded-md text-center hover:shadow-lg transition-shadow duration-300"
+            >
+              <div className="flex justify-center mb-4">{feature.icon}</div>
+              <h3 className="text-lg font-semibold text-blue-900 mb-2">
+                {feature.title}
+              </h3>
+              <p className="text-sm text-gray-600">{feature.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+      {/* === Hardware & Networking FAQs Section === */}
+<div className="max-w-3xl mx-auto p-4">
+  <h2 className="text-4xl font-semibold text-center mb-8 font-houschka text-blue-500">
+    Hardware & Networking FAQs
+  </h2>
+  {faqs.map((faq, index) => (
+    <div key={index} className="border-b py-4">
+      <button
+        onClick={() => toggleFAQ(index)}
+        className="w-full flex justify-between items-center text-left focus:outline-none"
+      >
+        <span className="text-lg font-medium text-gray-700 font-basis">
+          {faq.question}
+        </span>
+        {openIndex === index ? <FiChevronUp /> : <FiChevronDown />}
+      </button>
+      {openIndex === index && (
+        <p className="mt-2 text-gray-600 font-basis">{faq.answer}</p>
+      )}
+    </div>
+  ))}
+</div>
 
 
 

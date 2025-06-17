@@ -11,6 +11,7 @@ import SoftwareDevelopment from "./components/Services/SoftwareDevelopment";
 import DevelopmentHosting from "./components/Services/DevelopmentHosting";
 import HardwareNetworking from "./components/Services/HardwareNetworking";
 import MedicalCollegeManagement from "./pages/casestudies/MedicalCollegeManagement";
+import MultimediaAnimation from "./components/Services/MultimediaAnimation";
 
 
 
@@ -31,6 +32,8 @@ const App = () => {
           <Route path="/DevelopmentHosting" element={<DevelopmentHosting />} />
           <Route path="/HardwareNetworking" element={<HardwareNetworking />} />
            <Route path="/MedicalCollegeManagement" element={<MedicalCollegeManagement />} />
+           <Route path="/MultimediaAnimation" element={<MultimediaAnimation />} />
+          
 
 
         </Routes>

@@ -133,7 +133,7 @@ const NavBar = () => {
                           </Link>
                         </li>
                         <li className="hover:text-yellow-400 cursor-pointer">
-                          <Link to="#">Multimedia & Animation Solutions</Link>
+                          <Link to="/MultimediaAnimation">Multimedia & Animation Solutions</Link>
                         </li>
                         <li className="hover:text-yellow-400 cursor-pointer">
                           <Link to="#">Digital Marketing</Link>

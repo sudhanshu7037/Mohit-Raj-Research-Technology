@@ -8,6 +8,9 @@ import bgImage from "../../assets/Backgroundsoftware.jpg";
 import { FaCheckCircle } from "react-icons/fa";
 import video from "../../assets/animation vedio.mp4"
 import { FaTools, FaLaptopCode, FaMagic } from "react-icons/fa";
+import {   FaPalette, FaRocket } from "react-icons/fa";
+import { FaHeadphones, FaRegLightbulb,FaMap, FaUsers, FaClipboardCheck } from "react-icons/fa";
+import DevImage from "../../assets/whychoseus.png";
 
 const techStack = [
   {
@@ -24,6 +27,47 @@ const techStack = [
     icon: <FaTools className="text-blue-500 text-xl" />,
     label: "Editing & Design",
     items: ["Adobe Premiere", "Photoshop", "Illustrator", "Figma"],
+  },
+];
+
+
+
+const multimediaServices = [
+  {
+    title: "2D/3D Animation",
+    description:
+      "Craft stunning visuals that tell compelling stories. From explainer videos to immersive 3D animations, we breathe life into every frame.",
+    icon: <FaVideo className="text-pink-500 text-2xl" />,
+  },
+  {
+    title: "Motion Graphics",
+    description:
+      "Add energy to your content with kinetic typography, moving elements, and visual storytelling that captures audience attention instantly.",
+    icon: <FaRocket className="text-blue-500 text-2xl" />,
+  },
+  {
+    title: "Visual Effects (VFX)",
+    description:
+      "Enhance your visuals with cutting-edge VFX techniques. Perfect for ads, films, and multimedia presentations needing that wow factor.",
+    icon: <FaMagic className="text-purple-500 text-2xl" />,
+  },
+  {
+    title: "Creative Video Editing",
+    description:
+      "From transitions to sound sync, our expert editors craft professional video content with a seamless and engaging flow.",
+    icon: <FaPalette className="text-yellow-500 text-2xl" />,
+  },
+  {
+    title: "Character Design & Storyboarding",
+    description:
+      "We sketch, design, and animate unique characters and storyboard the entire journey—perfect for animated storytelling.",
+    icon: <FaPaintBrush className="text-red-500 text-2xl" />,
+  },
+  {
+    title: "UI/UX Animation",
+    description:
+      "Enhance web or app interactions with subtle micro animations that improve user engagement and experience.",
+    icon: <FaMagic className="text-indigo-500 text-2xl" />,
   },
 ];
 
@@ -79,18 +123,57 @@ const services = [
   },
 ];
 
+const steps = [
+    {
+      icon: <FaHeadphones className="text-xl text-indigo-600" />,
+      title: "Reach Out to MRT",
+      description:
+        "Discuss your multimedia or hosting project ideas with our consultants. MRT's team listens carefully and evaluates your requirements thoroughly.",
+    },
+    {
+      icon: <FaMap className="text-xl text-indigo-600" />,
+      title: "Planning and Tech Mapping",
+      description:
+        "We define the project roadmap, tech stack (media servers, CDN, CMS, etc.), and estimate timelines based on your vision and scope.",
+    },
+    {
+      icon: <FaClipboardCheck className="text-xl text-indigo-600" />,
+      title: "Project Onboarding & Launch",
+      description:
+        "Get started with a skilled team at MRT. Track progress in real-time while we develop, animate, and host your solution to perfection.",
+    },
+  ];
+
+  const multimediaFeatures = [
+  {
+    icon: <FaRegLightbulb className="text-pink-500 text-3xl" />,
+    title: "Creative Strategy",
+    description:
+      "MRT crafts engaging multimedia and animation strategies tailored to captivate your audience and amplify your message.",
+  },
+  {
+    icon: <FaMagic className="text-purple-500 text-3xl" />,
+    title: "Cutting-edge Animation",
+    description:
+      "From 2D motion graphics to 3D product walkthroughs, we bring your imagination to life with stunning visual storytelling.",
+  },
+  {
+    icon: <FaRocket className="text-indigo-500 text-3xl" />,
+    title: "Performance Optimized",
+    description:
+      "Our animations are fast-loading, responsive, and built for web, apps, and social media – ensuring peak user experience.",
+  },
+  {
+    icon: <FaUsers className="text-blue-600 text-3xl" />,
+    title: "Team of Experts",
+    description:
+      "With seasoned animators, UI/UX designers, and editors, MRT guarantees top-tier multimedia production value.",
+  },
+];
+
 const MultimediaAnimation = () => {
 
-{/*const industries = [
-    'Film & Entertainment',
-    'Advertising & Marketing',
-    'Education & E-learning',
-    'Gaming Industry',
-    'Corporate Presentations',
-    'Healthcare Visualizations',
-    'Architecture Walkthroughs',
-    'Social Media Content'
-  ];*/}
+
   const points = [
     "2D & 3D Animation Design",
     "Motion Graphics for Brands",
@@ -257,49 +340,6 @@ const MultimediaAnimation = () => {
           ))}
         </div>
       </div>
-{/* === New Section: Multimedia & Animation === */}
-<section className="bg-gray-100 py-16 px-4 md:px-10 font-sans">
-  <div className="max-w-7xl mx-auto">
-    <div className="flex flex-col md:flex-row gap-10 items-stretch">
-      
-      {/* === Left: Image === */}
-      <div className="w-full md:w-1/2 relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
-        <img
-          src={Logo6}
-          alt="Multimedia & Animation Case Study"
-          className="w-full h-full object-cover transform group-hover:scale-105 transition duration-700"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-50 transition duration-500" />
-      </div>
-
-      {/* === Right: Content === */}
-      <div className="w-full md:w-1/2 bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-center">
-        <h2 className="text-4xl font-bold text-purple-800 mb-4">
-          Multimedia & Animation Solutions
-        </h2>
-        <p className="text-gray-700 text-lg mb-6">
-          Our team helped a creative studio elevate their digital content using
-          powerful animation tools, 3D rendering, and interactive multimedia experiences.
-          From explainer videos to real-time motion graphics, we delivered immersive
-          solutions across platforms.
-        </p>
-        <ul className="list-disc ml-6 text-gray-700 space-y-2">
-          <li>High-Quality 2D/3D Animation Production</li>
-          <li>Interactive UI with Motion Graphics</li>
-          <li>Real-Time Rendering & VFX Integration</li>
-          <li>Custom Multimedia Portfolios & Storytelling</li>
-        </ul>
-<button className="w-28 bg-purple-700 hover:bg-purple-500 text-white text-xs sm:text-sm py-1.5 sm:py-2 rounded-md shadow-sm transition duration-300">
-  View Case Study
-</button>
-
-
-
-      </div>
-
-    </div>
-  </div>
-</section>
 
 
     
@@ -422,6 +462,169 @@ const MultimediaAnimation = () => {
       </div>
     </div>
 
+    <div className="max-w-7xl mx-auto px-4 py-16 text-center">
+      <h2 className="text-4xl font-bold text-blue-900 mb-4 font-houschka">
+        Multimedia & Animation Services We Offer
+      </h2>
+      <p className="text-gray-600 max-w-4xl mx-auto mb-12">
+        Our team combines creativity and technology to create compelling
+        multimedia and animation solutions that bring your vision to life.
+      </p>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+        {multimediaServices.map((service, index) => (
+          <div
+            key={index}
+            className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border-t-4 border-blue-500"
+          >
+            <div className="mb-3">{service.icon}</div>
+            <h3 className="text-xl font-semibold text-blue-900 mb-2">
+              {service.title}
+            </h3>
+            <p className="text-gray-700 text-sm leading-relaxed">
+              {service.description}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div className="max-w-7xl mx-auto px-4 py-16">
+      {/* Section Header */}
+      <h2 className="text-4xl font-bold text-blue-900 text-center mb-4 font-houschka">
+        Start Your Multimedia or Hosting Project with <span className="text-pink-600">MRT</span>
+      </h2>
+      <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+        At MRT, we help businesses deliver immersive multimedia experiences & reliable hosting infrastructure through custom development.
+      </p>
+
+      {/* Main Content */}
+      <div className="flex flex-col md:flex-row items-center gap-12">
+        {/* Animated Dev Image */}
+        <div className="flex-1 relative group transition duration-500 hover:scale-105 hover:shadow-2xl">
+          <img
+            src={DevImage}
+            alt="Multimedia Development"
+            className="rounded-xl w-full h-auto object-cover shadow-lg"
+          />
+          <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-all duration-300 rounded-xl" />
+        </div>
+
+        {/* Steps List */}
+        <div className="flex-1 space-y-8">
+          {steps.map((step, index) => (
+            <div
+              key={index}
+              className="flex items-start gap-4 bg-gray-100 p-4 rounded-md shadow-sm hover:bg-blue-50 transition-all duration-300"
+            >
+              <div className="mt-1">{step.icon}</div>
+              <div>
+                <h3 className="text-lg font-semibold text-blue-900">
+                  {step.title}
+                </h3>
+                <p className="text-gray-600 text-sm">{step.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    {/* Why Choose MRT Section */}
+      <div className="max-w-7xl mx-auto px-4 py-16">
+        <h2 className="text-4xl font-bold text-center text-blue-900 mb-4 font-houschka">
+          Why Choose <span className="text-pink-600">MRT</span>?
+        </h2>
+        <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+          MRT is your one-stop destination for multimedia innovation. We blend storytelling, tech, and motion design to create stunning visual experiences across platforms.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {multimediaFeatures.map((feature, index) => (
+            <div
+              key={index}
+              className="bg-white border-t-4 border-pink-500 p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 text-center"
+            >
+              <div className="mb-4 flex justify-center">{feature.icon}</div>
+              <h3 className="text-lg font-semibold text-blue-900 mb-2">
+                {feature.title}
+              </h3>
+              <p className="text-sm text-gray-600">{feature.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Benefits Section */}
+      <section className="bg-gradient-to-br from-blue-50 to-white py-16 px-4 md:px-16 lg:px-24">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-start">
+          {/* Left Side */}
+          <div>
+            <p className="text-2xl uppercase tracking-wider text-pink-600 mb-2 font-bold font-houschka">
+              Benefits
+            </p>
+            <h2 className="text-4xl md:text-5xl font-bold text-blue-900 font-houschka leading-snug">
+              Empower your brand with multimedia & animation
+            </h2>
+          </div>
+
+          {/* Right Side */}
+          <div className="border-l-4 border-pink-500 pl-6 space-y-4 text-gray-800 text-lg">
+            <p>🎥 Tell your story through immersive animation and visual design.</p>
+            <p>🚀 Drive engagement with scroll-triggered visuals & explainer videos.</p>
+            <p>💡 Simplify complex ideas using intuitive motion graphics.</p>
+            <p>🧠 Build a memorable brand with interactive video content.</p>
+            <p>📱 Optimized for all screens – mobile, desktop, and large displays.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* === New Section: Multimedia & Animation === */}
+<section className="bg-gray-100 py-16 px-4 md:px-10 font-sans">
+  <div className="max-w-7xl mx-auto">
+
+    {/* === Top Heading === */}
+    <h2 className="text-4xl font-bold text-center text-purple-800 mb-12 font-houschka">
+      Multimedia & Animation Case Study
+    </h2>
+
+    <div className="flex flex-col md:flex-row gap-10 items-stretch">
+      
+      {/* === Left: Image === */}
+      <div className="w-full md:w-1/2 relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
+        <img
+          src={Logo6}
+          alt="Multimedia & Animation Case Study"
+          className="w-full h-full object-cover transform group-hover:scale-105 transition duration-700"
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-50 transition duration-500" />
+      </div>
+
+      {/* === Right: Content === */}
+      <div className="w-full md:w-1/2 bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-center">
+        <h2 className="text-3xl font-bold text-purple-800 mb-4">
+          Multimedia & Animation Solutions
+        </h2>
+        <p className="text-gray-700 text-lg mb-6">
+          Our team helped a creative studio elevate their digital content using
+          powerful animation tools, 3D rendering, and interactive multimedia experiences.
+          From explainer videos to real-time motion graphics, we delivered immersive
+          solutions across platforms.
+        </p>
+        <ul className="list-disc ml-6 text-gray-700 space-y-2 mb-6">
+          <li>High-Quality 2D/3D Animation Production</li>
+          <li>Interactive UI with Motion Graphics</li>
+          <li>Real-Time Rendering & VFX Integration</li>
+          <li>Custom Multimedia Portfolios & Storytelling</li>
+        </ul>
+        <button className="w-28 bg-purple-700 hover:bg-purple-500 text-white text-xs sm:text-sm py-1.5 sm:py-2 rounded-md shadow-sm transition duration-300">
+          View Case Study
+        </button>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       
     </>

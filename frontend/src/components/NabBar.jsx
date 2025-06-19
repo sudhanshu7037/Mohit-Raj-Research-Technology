@@ -111,6 +111,8 @@ const NavBar = () => {
                     <li><Link to="/DevelopmentHosting">Development, Hosting & Promotion</Link></li>
                     <li><Link to="/HardwareNetworking">Hardware & Networking</Link></li>
                     <li><Link to="/MultimediaAnimation">Multimedia & Animation</Link></li>
+                    <li><Link to="/DigitalMarketing">Digital Marketing</Link></li>
+                    
                     <li><Link to="#">Digital Marketing</Link></li>
                     <li><Link to="#">Data Centers Development</Link></li>
                     <li><Link to="#">E-Learning</Link></li>

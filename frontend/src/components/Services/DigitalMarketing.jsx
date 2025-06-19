@@ -1,5 +1,69 @@
 import React from 'react';
 import DigitalMarketingimg from "../../assets/DigitalMarketingimg.png";
+import { FaCheckCircle } from "react-icons/fa";
+import bgImage from "../../assets/background.png";
+import { FaBullhorn, FaSearch, FaMailBulk, FaChartLine } from "react-icons/fa";
+const techStack = [
+  {
+    label: "Marketing Tools",
+    icon: <FaBullhorn className="text-orange-500 w-6 h-6" />,
+    items: ["Google Ads", "Meta Ads", "LinkedIn Ads", "HubSpot", "SEMRush"],
+  },
+  {
+    label: "SEO Tools",
+    icon: <FaSearch className="text-green-500 w-6 h-6" />,
+    items: ["Ahrefs", "Ubersuggest", "Google Search Console", "Moz"],
+  },
+  {
+    label: "Email Marketing",
+    icon: <FaMailBulk className="text-purple-500 w-6 h-6" />,
+    items: ["Mailchimp", "ConvertKit", "MailerLite", "ActiveCampaign"],
+  },
+];
+
+const services = [
+  {
+    title: "Search Engine Optimization (SEO)",
+    description:
+      "Boost your visibility in organic search with keyword research, on-page SEO, and technical optimization.",
+  },
+  {
+    title: "Social Media Marketing",
+    description:
+      "Engage your audience with strategic campaigns across Instagram, Facebook, LinkedIn, and more.",
+  },
+  {
+    title: "Content Marketing",
+    description:
+      "Create compelling blogs, videos, and infographics that attract, inform, and convert your target users.",
+  },
+  {
+    title: "Pay-Per-Click (PPC) Advertising",
+    description:
+      "Run high-performing ads with optimized targeting and ROI-focused budgets.",
+  },
+  {
+    title: "Email Campaign Automation",
+    description:
+      "Nurture leads with automated, personalized email campaigns that drive conversions.",
+  },
+  {
+    title: "Analytics & Reporting",
+    description:
+      "Track KPIs, traffic, and ROI with in-depth custom dashboards and performance reviews.",
+  },
+];
+
+const industries = [
+  "E-commerce & Retail Branding",
+  "Healthcare & Pharma SEO",
+  "Finance & Banking Campaigns",
+  "Education & eLearning Ads",
+  "Real Estate Promotions",
+  "Travel & Tourism Outreach",
+  "Entertainment & Media Engagement",
+  "Technology & SaaS Marketing",
+];
 const DigitalMarketing = () => {
      return (
     <>
@@ -185,7 +249,127 @@ const DigitalMarketing = () => {
       <div className="absolute top-0 left-0 w-32 h-32 bg-blue-100 opacity-30 rounded-full blur-2xl animate-float"></div>
       <div className="absolute bottom-0 right-0 w-24 h-24 bg-orange-200 opacity-30 rounded-full blur-2xl animate-float2"></div>
     </div>
+   <div
+      className="relative w-full py-20 px-4 sm:px-6 md:px-12 bg-cover bg-center"
+      style={{
+        backgroundImage: `url(${bgImage})`,
+      }}
+    >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-blue-900/30 to-black/60 backdrop-blur-sm z-0"></div>
 
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto text-white text-center mb-12">
+        <h2 className="text-4xl sm:text-5xl font-bold font-houschka mb-4 tracking-tight">
+          Strategic Digital Marketing Services
+        </h2>
+        <p className="text-base sm:text-lg max-w-3xl mx-auto text-gray-300">
+          At MRT, we specialize in transforming brands across industries with strategic campaigns and advanced performance tools.
+        </p>
+      </div>
+
+      {/* Glass Box */}
+      <div className="relative z-10 max-w-6xl mx-auto bg-white/20 backdrop-blur-md border border-white/30 rounded-2xl p-8 sm:p-12 shadow-xl">
+        <h3 className="text-xl sm:text-2xl text-white font-semibold mb-8 text-center">
+          Industries We Empower
+        </h3>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {industries.map((industry, index) => (
+            <div
+              key={index}
+              className="group p-4 sm:p-6 rounded-xl border border-white/20 bg-white/10 backdrop-blur-lg text-white shadow-md hover:shadow-lg transition-all duration-300 hover:bg-white/20 hover:scale-105 cursor-pointer"
+            >
+              <div className="flex items-start gap-3">
+                <FaCheckCircle className="text-orange-400 mt-1 text-lg sm:text-xl group-hover:text-yellow-400 transition duration-300" />
+                <span className="text-sm sm:text-base font-medium leading-snug text-blue-700 group-hover:text-white">
+                  {industry}
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Floating Shapes */}
+      <div className="absolute top-10 left-10 w-20 h-20 bg-blue-400 rounded-full opacity-20 blur-2xl animate-pulse"></div>
+      <div className="absolute bottom-12 right-16 w-32 h-32 bg-pink-400 rounded-full opacity-20 blur-2xl animate-ping"></div>
+    </div>
+    {/*new section of techstack*/}
+    {/* === Tech Stack Section with Stylish Background === */}
+<div className="relative w-full bg-gradient-to-br from-purple-50 via-white to-blue-100 py-20 px-4 overflow-hidden">
+
+  {/* 🔵 Layered gradient blobs for background style */}
+  <div className="absolute top-[-80px] left-[-80px] w-[300px] h-[300px] bg-purple-300 rounded-full opacity-20 blur-3xl mix-blend-multiply animate-spin-slow z-0"></div>
+  <div className="absolute bottom-[-100px] right-[-60px] w-[260px] h-[260px] bg-pink-200 rounded-full opacity-20 blur-3xl mix-blend-multiply animate-pulse z-0"></div>
+  <div className="absolute top-[40%] left-[40%] w-[200px] h-[200px] bg-blue-300 rounded-full opacity-20 blur-2xl mix-blend-multiply z-0"></div>
+
+  {/* Content */}
+  <div className="relative max-w-6xl mx-auto z-10">
+    <div className="bg-white/80 backdrop-blur-lg border border-purple-200 shadow-2xl rounded-3xl p-10">
+      <h2 className="text-4xl sm:text-5xl font-bold text-center text-purple-800 mb-12 font-houschka tracking-tight hover:text-red-600 hover:drop-shadow-md cursor-pointer transition duration-300">
+  Our Digital Marketing Toolkit
+</h2>
+
+
+      <div className="space-y-12">
+        {techStack.map((section, idx) => (
+          <div
+            key={idx}
+            className="flex flex-col md:flex-row items-start md:items-center gap-6 bg-white border border-gray-200 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300"
+          >
+            {/* Left Label */}
+            <div className="flex items-center gap-3 bg-purple-100 px-5 py-3 rounded-xl shadow-inner border border-purple-300 min-w-[220px]">
+              <div className="text-purple-700 text-2xl">{section.icon}</div>
+              <span className="text-lg sm:text-xl font-semibold text-purple-900">
+                {section.label}
+              </span>
+            </div>
+
+            {/* Right Items */}
+            <div className="flex flex-wrap gap-3">
+              {section.items.map((item, index) => (
+                <span
+                  key={index}
+                  className="px-4 py-2 bg-purple-50 text-purple-800 rounded-full border border-purple-200 text-sm font-medium shadow-sm hover:bg-purple-600 hover:text-white hover:scale-105 transition duration-300"
+                >
+                  {item}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      {/* === Services Section === */}
+      <div className="max-w-7xl mx-auto px-4 py-16 text-center">
+        <h2 className="text-4xl font-bold text-blue-900 mb-4 font-houschka">
+          What We Offer in Digital Marketing
+        </h2>
+        <p className="text-gray-600 max-w-4xl mx-auto mb-12 text-base sm:text-lg">
+          MRT delivers result-driven digital marketing services that align with your business goals and amplify your brand presence.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="group border-t-4 border-blue-500 pt-6 px-5 pb-5 bg-white rounded-xl shadow-md hover:shadow-xl hover:bg-blue-50 transition duration-300"
+            >
+              <h3 className="text-xl font-semibold text-blue-900 mb-2 group-hover:text-orange-500 transition">
+                {service.title}
+              </h3>
+              <p className="text-gray-700 text-sm group-hover:text-blue-800 transition">
+                {service.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
 
 
     </>

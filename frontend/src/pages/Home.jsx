@@ -19,10 +19,11 @@ const Home = () => {
       <NavBar />
       <div className="">
         <Banner />
+        <BuisnessDeal />
         <Products />
         <MainBanner />
         <Solutions />
-        <BuisnessDeal />
+        
         <MoreInfo />
         <TeamSection />
         <TestimonialSlider />

@@ -1,9 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
-const backgrounds = [
-  "https://advisorhtml.websitelayout.net/img/banner/slider-02.jpg",
-  "https://advisorhtml.websitelayout.net/img/banner/slider-01.jpg",
+const slides = [
+  {
+    image: "https://advisorhtml.websitelayout.net/img/banner/slider-02.jpg",
+    title: "Excellent Services For Your Business",
+    description: "We design secure, scalable, and innovative IT solutions for businesses around the globe.",
+  },
+  {
+    image: "https://advisorhtml.websitelayout.net/img/banner/slider-01.jpg",
+    title: "Empowering Your Digital Transformation",
+    description: "Transform your ideas into reality with our cutting-edge technology and expert solutions.",
+  },
 ];
 
 const Banner = () => {
@@ -11,60 +19,53 @@ const Banner = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % backgrounds.length);
+      setCurrentIndex((prev) => (prev + 1) % slides.length);
     }, 5000);
     return () => clearInterval(interval);
   }, []);
 
+  const currentSlide = slides[currentIndex];
+
   return (
-    <>
-      <section
-        className="relative w-full h-[750px] flex items-center text-white transition-all duration-1000"
-        style={{
-          backgroundImage: `url(${backgrounds[currentIndex]})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
+    <section
+      className="relative w-full h-[750px] flex items-center text-white transition-all duration-1000"
+      style={{
+        backgroundImage: `url(${currentSlide.image})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#051b2e] to-transparent z-0" />
 
-        }}
-      >
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#051b2e]   to-transparent  z-0" />
-
-        {/* Optional: dark overlay on top of gradient (stacked) */}
-        {/* <div className="absolute inset-0 bg-black bg-opacity-30 z-0" /> */}
-
-        {/* Content */}
-        <div className="z-10 max-w-7xl mx-auto px-10 font-houschka ">
-          <motion.h1
+      {/* Content - More Left Aligned */}
+      <div className="z-10 max-w-7xl mx-auto px-4 md:px-10 font-houschka text-left justify-start">
+        <AnimatePresence mode="wait">
+          <motion.div
             key={currentIndex}
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9 }}
-            className="text-5xl md:text-6xl font-bold mb-4"
-          >
-            Excellent Services  For Your Business
-          </motion.h1>
-
-          <motion.p
-            initial={{ opacity: 0, x: 100 }}
+            initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
-            className="text-lg mb-6 max-w-xl"
+            exit={{ opacity: 0, x: 50 }}
+            transition={{ duration: 0.8 }}
+            className="max-w-[600px] ml-0 md:ml-4 lg:ml-10" // left shift here
           >
-            We design secure, scalable, and innovative IT solutions for
-            businesses around the globe.
-          </motion.p>
-
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="bg-yellow-400 text-white font-semibold px-6 py-3 rounded-md shadow-lg"
-          >
-            Discover More
-          </motion.button>
-        </div>
-      </section>
-    </>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
+              {currentSlide.title}
+            </h1>
+            <p className="text-lg mb-6 max-w-md">
+              {currentSlide.description}
+            </p>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-yellow-400 text-white font-semibold px-6 py-3 rounded-md shadow-lg"
+            >
+              Discover More
+            </motion.button>
+          </motion.div>
+        </AnimatePresence>
+      </div>
+    </section>
   );
 };
 

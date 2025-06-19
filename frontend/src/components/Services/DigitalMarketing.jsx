@@ -3,6 +3,9 @@ import DigitalMarketingimg from "../../assets/DigitalMarketingimg.png";
 import { FaCheckCircle } from "react-icons/fa";
 import bgImage from "../../assets/background.png";
 import { FaBullhorn, FaSearch, FaMailBulk, FaChartLine } from "react-icons/fa";
+import { FaLightbulb,FaShieldAlt, FaCogs,FaRocket ,FaUsers,FaMobileAlt } from "react-icons/fa";
+import DevImage from "../../assets/project.png";
+
 const techStack = [
   {
     label: "Marketing Tools",
@@ -54,6 +57,29 @@ const services = [
   },
 ];
 
+const steps = [
+  {
+    icon: <FaLightbulb className="text-yellow-500 text-2xl" />,
+    title: "Idea & Goal Identification",
+    description: "Understand your marketing objectives and audience insights to build a clear strategy.",
+  },
+  {
+    icon: <FaCogs className="text-purple-500 text-2xl" />,
+    title: "Plan Custom Campaigns",
+    description: "Design personalized campaigns tailored for each platform using latest marketing tools.",
+  },
+  {
+    icon: <FaChartLine className="text-blue-500 text-2xl" />,
+    title: "Optimize & Execute",
+    description: "Run ads, track SEO, optimize content, and ensure multi-channel reach and consistency.",
+  },
+  {
+    icon: <FaBullhorn className="text-pink-500 text-2xl" />,
+    title: "Measure & Improve",
+    description: "Monitor performance using analytics and refine strategies for better ROI.",
+  },
+];
+
 const industries = [
   "E-commerce & Retail Branding",
   "Healthcare & Pharma SEO",
@@ -64,6 +90,30 @@ const industries = [
   "Entertainment & Media Engagement",
   "Technology & SaaS Marketing",
 ];
+
+const features = [
+  {
+    icon: <FaShieldAlt className="text-blue-600 text-3xl" />,
+    title: "Data-Driven Decisions",
+    description: "Leverage powerful analytics to make smarter marketing moves and boost conversions.",
+  },
+  {
+    icon: <FaRocket className="text-pink-500 text-3xl" />,
+    title: "Accelerated Growth",
+    description: "Implement agile and scalable marketing tactics for fast business growth.",
+  },
+  {
+    icon: <FaUsers className="text-purple-500 text-3xl" />,
+    title: "Customer-Centric Focus",
+    description: "We build campaigns tailored to attract and retain your ideal audience.",
+  },
+  {
+    icon: <FaMobileAlt className="text-yellow-500 text-3xl" />,
+    title: "Omnichannel Presence",
+    description: "Get visibility across devices and platforms for a cohesive brand experience.",
+  },
+];
+
 const DigitalMarketing = () => {
      return (
     <>
@@ -365,6 +415,76 @@ const DigitalMarketing = () => {
               </h3>
               <p className="text-gray-700 text-sm group-hover:text-blue-800 transition">
                 {service.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+      {/*new section for how to start project with MRT*/}
+      <div className="max-w-7xl mx-auto px-4 py-16">
+      
+      
+<h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-houschka bg-gradient-to-r from-red-500 via-green-900 to-pink-400 bg-clip-text text-transparent animate-pulse drop-shadow-lg">
+  How to Start Your Digital Marketing Project With MRT?
+</h2>
+
+
+
+      <div className="flex flex-col md:flex-row items-stretch gap-12">
+        {/* Image Section */}
+        <div className="flex-1">
+          <div className="h-full">
+            <img
+              src={DevImage}
+              alt="Digital Marketing Process"
+              className="rounded-xl shadow-lg hover:scale-105 transition duration-500 w-full h-full object-cover min-h-[500px]"
+            />
+          </div>
+        </div>
+
+        {/* Steps Section */}
+        <div className="flex-1 flex flex-col justify-between space-y-8 h-full">
+          {steps.map((step, index) => (
+            <div
+              key={index}
+              className="flex items-start gap-4 bg-white shadow-md rounded-lg p-4 border-l-4 border-blue-500 hover:border-pink-500 transition-transform transform hover:-translate-y-1 hover:shadow-xl group"
+            >
+              <div className="mt-1">{step.icon}</div>
+              <div>
+                <h3 className="text-lg font-semibold text-blue-900 group-hover:text-pink-600 transition">
+                  {step.title}
+                </h3>
+                <p className="text-gray-600 text-sm group-hover:text-gray-800 transition">
+                  {step.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    {/* Why Choose Us Section with Background Color and Shadow */}
+      <div className="max-w-7xl mx-auto px-4 py-16 rounded-xl shadow-2xl bg-blue ">
+        <h2 className="text-4xl font-bold text-blue-900 text-center mb-4 font-houschka">
+          Why Choose MRT?
+        </h2>
+        <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+          MRT is committed to delivering performance-focused digital marketing strategies to elevate your brand’s success.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="bg-white border border-gray-200 p-6 rounded-xl text-center shadow-md hover:shadow-2xl transition duration-300 hover:scale-[1.03] group"
+            >
+              <div className="flex justify-center mb-4">{feature.icon}</div>
+              <h3 className="text-lg font-bold text-blue-900 group-hover:text-pink-500 transition">
+                {feature.title}
+              </h3>
+              <p className="text-sm text-gray-600 group-hover:text-gray-800">
+                {feature.description}
               </p>
             </div>
           ))}

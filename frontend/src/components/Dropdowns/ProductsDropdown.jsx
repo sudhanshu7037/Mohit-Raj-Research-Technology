@@ -69,7 +69,7 @@ const ProductsDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
       </div>
 
       {activeMenu === "products" && (
-        <div className="fixed left-1/2 top-[110px] transform -translate-x-1/2 w-[80vw] bg-[#fdf1f4] shadow-xl z-50 rounded-md px-6 py-8 border border-pink-200">
+        <div className="fixed left-1/2 top-[120px] transform -translate-x-1/2 w-[80vw] bg-[#fdf1f4] shadow-xl z-50 rounded-md px-6 py-8 border border-pink-200">
           <div className="flex justify-center">
             {/* Sidebar Description */}
             <div className="w-1/4 bg-[#fbeaec] p-6 rounded-md shadow-inner">

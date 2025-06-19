@@ -77,7 +77,7 @@ const NavBar = () => {
         <div className="h-16 md:h-20 flex justify-between items-center px-4 lg:px-20">
           <Link to="/">
             <img
-              src={Logo}
+              src={Logo2}
               alt="MRTPL Logo"
               className="h-10 md:h-12 lg:h-16 w-auto cursor-pointer items-center"
             />

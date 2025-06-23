@@ -27,7 +27,7 @@ const NavBar = () => {
   const handleMouseLeave = () => {
     return setTimeout(() => {
       setActiveMenu(null);
-    }, 5000);
+    }, 10000);
   };
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
@@ -107,19 +107,48 @@ const NavBar = () => {
               {activeMenu === "services" && (
                 <div className="absolute top-full left-0 mt-2 w-[250px] md:w-[300px] bg-white text-black p-4 shadow-lg z-50">
                   <ul className="flex flex-col gap-4 text-xs md:text-sm">
-                    <li><Link to="/SoftwareDevelopment">Software Development</Link></li>
-                    <li><Link to="/DevelopmentHosting">Development, Hosting & Promotion</Link></li>
-                    <li><Link to="/HardwareNetworking">Hardware & Networking</Link></li>
-                    <li><Link to="/MultimediaAnimation">Multimedia & Animation</Link></li>
-                    <li><Link to="/DigitalMarketing">Digital Marketing</Link></li>
-                    
-                    <li><Link to="#">Digital Marketing</Link></li>
-                    <li><Link to="#">Data Centers Development</Link></li>
-                    <li><Link to="#">E-Learning</Link></li>
-                    <li><Link to="#">Video Conferencing</Link></li>
-                    <li><Link to="#">Security & Surveillance</Link></li>
-                    <li><Link to="#">Data Digitization</Link></li>
-                    <li><Link to="#">Remote Infrastructure</Link></li>
+                    <li>
+                      <Link to="/SoftwareDevelopment">
+                        Software Development
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/DevelopmentHosting">
+                        Development, Hosting & Promotion
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/HardwareNetworking">
+                        Hardware & Networking
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/MultimediaAnimation">
+                        Multimedia & Animation
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/DigitalMarketing">Digital Marketing</Link>
+                    </li>
+
+                    <li>
+                      <Link to="#">Data Centers Development</Link>
+                    </li>
+                    <li>
+                      <Link to="#">E-Learning</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Video Conferencing</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Security & Surveillance</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Data Digitization</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Remote Infrastructure</Link>
+                    </li>
                   </ul>
                 </div>
               )}
@@ -137,18 +166,42 @@ const NavBar = () => {
               {activeMenu === "solutions" && (
                 <div className="absolute top-full left-0 mt-2 w-[250px] md:w-[300px] bg-white text-black p-4 shadow-lg z-50">
                   <ul className="flex flex-col gap-4 text-xs md:text-sm">
-                    <li><Link to="#">University Digitalization</Link></li>
-                    <li><Link to="#">Medical College Digitalization</Link></li>
-                    <li><Link to="#">MRTiON Digital Education</Link></li>
-                    <li><Link to="#">Library Digitalization</Link></li>
-                    <li><Link to="#">Digital Marketing Solutions</Link></li>
-                    <li><Link to="#">Smart Learning</Link></li>
-                    <li><Link to="#">Conference Room Solutions</Link></li>
-                    <li><Link to="#">Auditorium Solutions</Link></li>
-                    <li><Link to="#">Security & Surveillance</Link></li>
-                    <li><Link to="#">Multimedia & Animation</Link></li>
-                    <li><Link to="#">Police Automation</Link></li>
-                    <li><Link to="#">Audio Video Broadcasting</Link></li>
+                    <li>
+                      <Link to="#">University Digitalization</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Medical College Digitalization</Link>
+                    </li>
+                    <li>
+                      <Link to="#">MRTiON Digital Education</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Library Digitalization</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Digital Marketing Solutions</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Smart Learning</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Conference Room Solutions</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Auditorium Solutions</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Security & Surveillance</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Multimedia & Animation</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Police Automation</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Audio Video Broadcasting</Link>
+                    </li>
                   </ul>
                 </div>
               )}
@@ -166,21 +219,41 @@ const NavBar = () => {
               {activeMenu === "industries" && (
                 <div className="absolute top-full left-0 mt-2 w-[250px] md:w-[300px] bg-white text-black p-4 shadow-lg z-50">
                   <ul className="flex flex-col gap-4 text-xs md:text-sm">
-                    <li><Link to="#">Education</Link></li>
-                    <li><Link to="#">Healthcare</Link></li>
-                    <li><Link to="#">Banking</Link></li>
-                    <li><Link to="#">Manufacturing</Link></li>
-                    <li><Link to="#">Retail</Link></li>
-                    <li><Link to="#">Life Sciences</Link></li>
-                    <li><Link to="#">Consumer Goods</Link></li>
+                    <li>
+                      <Link to="#">Education</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Healthcare</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Banking</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Manufacturing</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Retail</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Life Sciences</Link>
+                    </li>
+                    <li>
+                      <Link to="#">Consumer Goods</Link>
+                    </li>
                   </ul>
                 </div>
               )}
             </div>
 
-            <li><a href="/blog">BLOG</a></li>
-            <li><a href="/career">CAREER</a></li>
-            <li><a href="/contact">CONTACT</a></li>
+            <li>
+              <a href="/blog">BLOG</a>
+            </li>
+            <li>
+              <a href="/career">CAREER</a>
+            </li>
+            <li>
+              <a href="/contact">CONTACT</a>
+            </li>
           </ul>
 
           {/* Mobile Menu Icon */}

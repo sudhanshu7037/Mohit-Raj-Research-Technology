@@ -58,7 +58,7 @@ const Products = () => {
   return (
     <section className="w-full min-h-[100vh] py-16 px-4 bg-gradient-to-r from-blue-100 via-purple-100 to-pink-100 shadow-2xl flex flex-col justify-center">
       <div className="text-center mb-12">
-        <h2 className="text-5xl font-bold text-blue-900">
+        <h2 className="text-5xl font-bold text-blue-900  font-houschka">
           Transform Your Business with Advanced Technologies
         </h2>
         <p className="text-red-600 font-semibold mt-4 text-lg">OUR DEDICATED PRODUCTS</p>

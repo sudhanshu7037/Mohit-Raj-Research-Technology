@@ -31,7 +31,7 @@ const BuisnessDeal = () => {
           <p className="text-red-600 font-semibold uppercase tracking-wide">
             • About Our Company
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#001d3d] font-houschka">
+          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 font-houschka">
             Empowering Businesses with Creative Tech Solutions
           </h2>
           <p className="text-gray-700 font-basis">

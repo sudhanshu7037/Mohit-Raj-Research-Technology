@@ -47,26 +47,33 @@ const NavBar = () => {
   return (
     <>
       {/* Top Navbar */}
-      <div className="bg-black h-8 md:h-10 flex justify-between px-4 lg:px-20 items-center text-white fixed top-0 w-full z-50 text-xs md:text-sm">
+    <div className="fixed top-0 left-0 w-full z-50 text-white text-xs md:text-sm overflow-hidden h-8 md:h-10">
+      {/* Background */}
+      <div className="absolute inset-0 w-full h-full bg-black">
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-800 transform -skew-x-12 origin-left"></div>
+      </div>
+
+      {/* Foreground */}
+      <div className="relative flex justify-between px-4 lg:px-20 items-center h-full z-10">
+        {/* Left */}
         <div className="flex items-center gap-2">
           <FaPhone />
           <span>+9999910150</span>
           <span className="px-1 md:px-2">|</span>
           <FaEnvelope />
-          <span>
-            <a href="">mohitrajit@gmail.com</a>
-          </span>
+          <a href="#" className="hover:underline">mohitrajit@gmail.com</a>
         </div>
-        <div className="hidden md:flex items-center gap-3">
-          <a href="https://www.facebook.com/profile.php?id=100066869172911">
-            <FaFacebook />
-          </a>
-          <FaTwitter />
-          <FaLinkedin />
-          <FaInstagram />
-          <FaYoutube />
+
+        {/* Right Icons */}
+        <div className="hidden md:flex items-center gap-3 text-orange-500">
+          <a href="#"><FaFacebook /></a>
+          <a href="#"><FaTwitter /></a>
+          <a href="#"><FaLinkedin /></a>
+          <a href="#"><FaInstagram /></a>
+          <a href="#"><FaYoutube /></a>
         </div>
       </div>
+    </div>
 
       {/* Main Navbar */}
       <nav

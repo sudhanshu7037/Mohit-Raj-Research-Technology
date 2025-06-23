@@ -1,11 +1,23 @@
 const express = require('express');
 const connectdb = require("./config/database.js");
- 
+
 require("dotenv").config();
 
 const PORT = process.env.PORT || 5000;
 
-const app = express();
+const app = express();  
+app.use(express.json());
+
+
+
+// import routes
+const authRouter = require("./routes/auth.js");
+
+// use route
+app.use("/", authRouter); 
+
+
+
   connectdb()
   .then(() => {
     console.log("db connected successfully");
@@ -16,3 +28,5 @@ const app = express();
   .catch((err) => {
     console.error("Database connection failed:", err.message);
 });
+
+

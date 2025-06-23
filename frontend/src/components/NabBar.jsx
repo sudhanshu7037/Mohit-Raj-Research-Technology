@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import ServicesDropdown from "./Dropdowns/ServicesDropdown";
+
 import {
   FaPhone,
   FaEnvelope,
@@ -95,64 +97,16 @@ const NavBar = () => {
               activeMenu={activeMenu}
             />
 
-            {/* What We Do Dropdown */}
-            <div
-              className="relative"
-              onMouseEnter={() => handleMouseEnter("services")}
-              onMouseLeave={handleMouseLeave}
-            >
-              <div className="cursor-pointer hover:text-yellow-300 flex items-center gap-1">
-                WHAT WE DO <MdKeyboardArrowDown />
-              </div>
-              {activeMenu === "services" && (
-                <div className="absolute top-full left-0 mt-2 w-[250px] md:w-[300px] bg-white text-black p-4 shadow-lg z-50">
-                  <ul className="flex flex-col gap-4 text-xs md:text-sm">
-                    <li>
-                      <Link to="/SoftwareDevelopment">
-                        Software Development
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/DevelopmentHosting">
-                        Development, Hosting & Promotion
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/HardwareNetworking">
-                        Hardware & Networking
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/MultimediaAnimation">
-                        Multimedia & Animation
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/DigitalMarketing">Digital Marketing</Link>
-                    </li>
+           
+{/*our services(what we do)*/}
 
-                    <li>
-                      <Link to="#">Data Centers Development</Link>
-                    </li>
-                    <li>
-                      <Link to="#">E-Learning</Link>
-                    </li>
-                    <li>
-                      <Link to="#">Video Conferencing</Link>
-                    </li>
-                    <li>
-                      <Link to="#">Security & Surveillance</Link>
-                    </li>
-                    <li>
-                      <Link to="#">Data Digitization</Link>
-                    </li>
-                    <li>
-                      <Link to="#">Remote Infrastructure</Link>
-                    </li>
-                  </ul>
-                </div>
-              )}
-            </div>
+
+<ServicesDropdown
+              handleMouseEnter={handleMouseEnter}
+              handleMouseLeave={handleMouseLeave}
+              activeMenu={activeMenu}
+            />
+
 
             {/* Solutions Dropdown */}
             <div
@@ -266,7 +220,7 @@ const NavBar = () => {
           {/* CTA Button */}
           <div className="hidden md:block">
             <button className="bg-yellow-500 px-3 py-2 rounded-md text-white text-xs md:text-sm">
-              FREE QUOTE
+              LOGIN
             </button>
           </div>
         </div>

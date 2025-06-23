@@ -7,7 +7,7 @@ const ProductsDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
 
   const categories = [
     {
-      icon: <FaUniversity className="text-2xl text-pink-700" />,
+      icon: <FaUniversity className="text-2xl text-red-700" />,
       title: "Education Domain",
       items: [
         "University Automation Software",
@@ -21,7 +21,7 @@ const ProductsDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
       ],
     },
     {
-      icon: <FaHospital className="text-2xl text-pink-700" />,
+      icon: <FaHospital className="text-2xl text-red-700" />,
       title: "Medical Domain",
       items: [
         "Medical College Management and Information System.",
@@ -32,7 +32,7 @@ const ProductsDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
       ],
     },
     {
-      icon: <FaBuilding className="text-2xl text-pink-700" />,
+      icon: <FaBuilding className="text-2xl text-red-700" />,
       title: "Corporate Domain",
       items: [
         "E-Company System",
@@ -48,7 +48,7 @@ const ProductsDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
       ],
     },
     {
-      icon: <FaUsers className="text-2xl text-pink-700" />,
+      icon: <FaUsers className="text-2xl text-red-700" />,
       title: "Public & Mixed Domain",
       items: [
         "Police Management System",
@@ -64,20 +64,20 @@ const ProductsDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
       onMouseEnter={() => handleMouseEnter("products")}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="text-md font-semibold cursor-pointer hover:text-pink-600 flex items-center gap-1">
+      <div className="text-md font-semibold cursor-pointer hover:text-yellow-500 flex items-center gap-1">
         OUR PRODUCTS
       </div>
 
       {activeMenu === "products" && (
-        <div className="fixed left-1/2 top-[120px] transform -translate-x-1/2 w-[80vw] bg-[#fdf1f4] shadow-xl z-50 rounded-md px-6 py-8 border border-pink-200">
+        <div className="fixed left-1/2 top-[120px] transform -translate-x-1/2 w-[80vw] bg-[#fdf1f4] shadow-xl z-50 rounded-md px-6 py-8 border border-red-200">
           <div className="flex justify-center">
             {/* Sidebar Description */}
-            <div className="w-1/4 bg-[#fbeaec] p-6 rounded-md shadow-inner">
+            <div className="w-1/4 bg-[#fdeaea] p-6 rounded-md shadow-inner">
               <h2 className="text-xl font-bold text-red-800 mb-4">Our products</h2>
               <p className="text-sm text-black mb-6">
                 MRTPL offers a variety of software solutions tailored to different sectors to enhance automation and efficiency.
               </p>
-              <button className="bg-blue-500 text-white py-2 px-4 rounded-full shadow-lg hover:bg-green~-600 transition">
+              <button className="bg-blue-500 text-white py-2 px-4 rounded-full shadow-lg hover:bg-green-600 transition">
                 Contact Us
               </button>
             </div>
@@ -85,11 +85,15 @@ const ProductsDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
             {/* Domain and Subdomain */}
             <div className="flex w-3/4 px-6 justify-center">
               {/* Main Domains */}
-              <div className="w-1/3 space-y-4 pr-4 border-r border-pink-300 bg-blue-100 rounded-md p-2">
+              <div className="w-1/3 space-y-4 pr-4 border-r border-red-300 bg-blue-100 rounded-md p-2">
                 {categories.map((cat, idx) => (
                   <div
                     key={idx}
-                    className={`flex items-center gap-3 p-3 rounded cursor-pointer transition-all ${activeDomain === idx ? "bg-white shadow-lg" : "hover:bg-pink-100"}`}
+                    className={`flex items-center gap-3 p-3 rounded cursor-pointer transition-all ${
+                      activeDomain === idx
+                        ? "bg-white shadow-lg"
+                        : "hover:bg-red-100"
+                    }`}
                     onMouseEnter={() => setActiveDomain(idx)}
                   >
                     {cat.icon}

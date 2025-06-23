@@ -22,19 +22,19 @@ const BuisnessDeal = () => {
           />
           <div className="absolute -bottom-6 -left-6 bg-[#001d3d] text-white px-6 py-4 rounded-xl text-center shadow-lg">
             <p className="text-lg">Trusted By</p>
-            <h3 className="text-3xl font-bold">100K+</h3>
+            <h3 className="text-3xl font-bold">50K+</h3>
           </div>
         </div>
 
         {/* Right Text Content */}
         <div className="space-y-6" data-aos="fade-left">
-          <p className="text-yellow-400 font-semibold uppercase tracking-wide">
+          <p className="text-red-600 font-semibold uppercase tracking-wide">
             • About Our Company
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#001d3d]">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#001d3d] font-houschka">
             Empowering Businesses with Creative Tech Solutions
           </h2>
-          <p className="text-gray-700">
+          <p className="text-gray-700 font-basis">
             We deliver exceptional software solutions to transform businesses into future-ready enterprises.
             Our expertise spans across digital innovation, market research, and process automation.
           </p>

@@ -67,7 +67,7 @@ export default function NewsSection() {
         }}
       >
         <p className="text-yellow-400 uppercase tracking-widest mb-2">Lastest News</p>
-        <h2 className="text-4xl font-extrabold mb-12 font-houschka text-blue-500">News & Articles</h2>
+        <h2 className="text-4xl font-extrabold mb-12 font-houschka text-blue-900">News & Articles</h2>
       </motion.div>
 
       {/* Articles Grid */}

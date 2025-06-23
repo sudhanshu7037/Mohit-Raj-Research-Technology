@@ -209,8 +209,8 @@ const ServicesDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
       onMouseEnter={() => handleMouseEnter("services")}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="text-md font-semibold cursor-pointer hover:text-red-600 flex items-center gap-1">
-        What We Do
+      <div className="text-md font-semibold cursor-pointer hover:text-yellow-500 flex items-center gap-1">
+        WHAT WE DO
       </div>
 
       {activeMenu === "services" && (
@@ -233,7 +233,7 @@ const ServicesDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
                 {serviceCategories.map((cat, idx) => (
                   <div
                     key={idx}
-                    className={`flex items-center gap-3 p-3 rounded cursor-pointer transition-all text-blue-800 text-sm font-semibold underline-offset-4 hover:underline decoration-2 decoration-red-600 ${
+                    className={`flex items-center gap-3 p-3 rounded cursor-pointer transition-all text-blue-800 text-sm font-semibold underline-offset-4 hover:underline decoration-2 decoration-blue-600 ${
                       activeService === idx ? "bg-white shadow-md underline" : "hover:bg-red-100"
                     }`}
                     onMouseEnter={() => setActiveService(idx)}

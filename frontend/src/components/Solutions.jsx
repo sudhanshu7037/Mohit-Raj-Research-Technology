@@ -94,44 +94,42 @@ const Solutions = () => {
   ];
   return (
     <>
-      <section className="py-12 px-4 bg-white md:max-w-[80%] mx-auto flex flex-col items-center gap-4">
+      <section className="py-16 px-4 bg-gradient-to-br from-[#e3f2fd] via-[#ffffff] to-[#e3f2fd] w-full flex flex-col items-center gap-4">
         <div className="text-center mb-10">
-          <h2 className="text-5xl font-houschka font-bold text-blue-800 ">
+          <h2 className="text-4xl md:text-5xl font-houschka font-bold text-blue-800 drop-shadow">
             Cutting edge solutions with digital technologies.
           </h2>
-          <p className="text-yellow-500 font-semibold mb-1 mt-3">
+          <p className="text-yellow-500 font-semibold mt-3 tracking-wide uppercase">
             OUR DEDICATED SOLUTIONS
           </p>
         </div>
-        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {servicesData.map((service) => (
-            console.log("ICON:", service.icon),
             <div
               key={service.id}
-              className="border  rounded-xl text-center shadow-sm p-8 hover:shadow-lg transition"
+              className="relative group bg-white border border-gray-200 rounded-2xl shadow-xl p-6 transition-all duration-500 hover:bg-blue-900 hover:shadow-2xl hover:scale-105"
             >
-              <div className="text-5xl mb-4">
-  {typeof service.icon === "string" && !service.icon.includes("/") ? (
-    service.icon
-  ) : (
-    <img
-      src={service.icon}
-      alt={service.title}
-      className="w-16 h-16 mx-auto"
-    />
-  )}
-</div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">
+              <div className="text-5xl mb-4 transition-all duration-500 group-hover:opacity-100 group-hover:text-white">
+                {typeof service.icon === "string" && !service.icon.includes("/") ? (
+                  service.icon
+                ) : (
+                  <img
+                    src={service.icon}
+                    alt={service.title}
+                    className="w-16 h-16 mx-auto rounded-md group-hover:opacity-100"
+                  />
+                )}
+              </div>
+              <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-white">
                 {service.title}
               </h3>
-              <p className="text-gray-500 text-sm mb-6">
+              <p className="text-gray-600 text-sm mb-6 group-hover:text-gray-300">
                 {service.description}
               </p>
-              <button className="bottom-0 group relative inline-flex items-center justify-center w-full overflow-hidden  border-2 px-5 py-2 text-sm font-semibold text-gray-900 transition-all duration-500 ease-in-out hover:text-white">
-                <span className="absolute inset-0 h-full w-full bg-[#051b2e] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0"></span>
-                <span className="relative z-10 flex items-center gap-2">
-                  READ MORE{" "}
-                  <span className="hidden group-hover:flex transform group-hover:translate-x-1 transition-transform duration-300">
+              <button className="relative w-full px-5 py-2 text-sm font-semibold text-blue-700 border-2 border-blue-700 rounded-md bg-white transition-all duration-500 ease-in-out group-hover:text-red-600 group-hover:border-white">
+                <span className="relative z-10 flex items-center justify-center gap-2">
+                  READ MORE
+                  <span className="hidden group-hover:inline-block transform group-hover:translate-x-1 transition-transform duration-300">
                     →
                   </span>
                 </span>
@@ -139,14 +137,12 @@ const Solutions = () => {
             </div>
           ))}
         </div>
-        <div className="flex items-center gap-4 mt-4">
-          <div>
-            <img
-              src={`https://advisorhtml.websitelayout.net/img/icons/11.png`}
-              alt="logo"
-              width={"40px"}
-            />
-          </div>
+        <div className="flex items-center gap-4 mt-8">
+          <img
+            src="https://advisorhtml.websitelayout.net/img/icons/11.png"
+            alt="logo"
+            width="40px"
+          />
           <p className="text-[#68747a] font-semibold text-[1.2rem]">
             We’re committed to create a change that matters!
           </p>

@@ -87,7 +87,7 @@ const NavBar = () => {
 
           {/* Desktop Nav */}
           <ul className="hidden md:flex gap-4 lg:gap-6 items-center text-sm md:text-md font-semibold font-basis">
-            <li className="hover:text-yellow-400 cursor-pointer">
+            <li className="hover:text-yellow-500 cursor-pointer">
               <a href="/who we are">WHO WE ARE</a>
             </li>
 
@@ -108,62 +108,86 @@ const NavBar = () => {
             />
 
 
-            {/* Solutions Dropdown */}
-            <div
-              className="relative"
-              onMouseEnter={() => handleMouseEnter("solutions")}
-              onMouseLeave={handleMouseLeave}
+           {/* Solutions Dropdown */}
+<div
+  className="relative"
+  onMouseEnter={() => handleMouseEnter("solutions")}
+  onMouseLeave={handleMouseLeave}
+>
+  <div className="cursor-pointer hover:text-yellow-500 flex items-center gap-1">
+    SOLUTIONS <MdKeyboardArrowDown />
+  </div>
+  {activeMenu === "solutions" && (
+    <div className="absolute top-full left-0 mt-2 w-[250px] md:w-[300px] bg-blue-100 text-black p-4 shadow-lg z-50">
+      <ul className="flex flex-col gap-2 text-xs md:text-sm">
+        {[
+          "University Digitalization",
+          "Medical College Digitalization",
+          "MRTiON Digital Education",
+          "Library Digitalization",
+          "Digital Marketing Solutions",
+          "Smart Learning",
+          "Conference Room Solutions",
+          "Auditorium Solutions",
+          "Security & Surveillance",
+          "Multimedia & Animation",
+          "Police Automation",
+          "Audio Video Broadcasting",
+        ].map((item, index) => (
+          <li key={index}>
+            <Link
+              to="#"
+              className="inline-block pb-1 hover:border-b-2 hover:border-blue-500 hover:text-orange-500 transition duration-200"
             >
-              <div className="cursor-pointer hover:text-yellow-300 flex items-center gap-1">
-                SOLUTIONS <MdKeyboardArrowDown />
-              </div>
-              {activeMenu === "solutions" && (
-                <div className="absolute top-full left-0 mt-2 w-[250px] md:w-[300px] bg-white text-black p-4 shadow-lg z-50">
-                  <ul className="flex flex-col gap-4 text-xs md:text-sm">
-                    <li><Link to="#">University Digitalization</Link></li>
-                    <li><Link to="#">Medical College Digitalization</Link></li>
-                    <li><Link to="#">MRTiON Digital Education</Link></li>
-                    <li><Link to="#">Library Digitalization</Link></li>
-                    <li><Link to="#">Digital Marketing Solutions</Link></li>
-                    <li><Link to="#">Smart Learning</Link></li>
-                    <li><Link to="#">Conference Room Solutions</Link></li>
-                    <li><Link to="#">Auditorium Solutions</Link></li>
-                    <li><Link to="#">Security & Surveillance</Link></li>
-                    <li><Link to="#">Multimedia & Animation</Link></li>
-                    <li><Link to="#">Police Automation</Link></li>
-                    <li><Link to="#">Audio Video Broadcasting</Link></li>
-                  </ul>
-                </div>
-              )}
-            </div>
+              {item}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
+</div>
+
 
             {/* Industries Dropdown */}
-            <div
-              className="relative"
-              onMouseEnter={() => handleMouseEnter("industries")}
-              onMouseLeave={handleMouseLeave}
+<div
+  className="relative"
+  onMouseEnter={() => handleMouseEnter("industries")}
+  onMouseLeave={handleMouseLeave}
+>
+  <div className="cursor-pointer hover:text-yellow-500 flex items-center gap-1">
+    INDUSTRIES <MdKeyboardArrowDown />
+  </div>
+  {activeMenu === "industries" && (
+    <div className="absolute top-full left-0 mt-2 w-[250px] md:w-[300px] bg-blue-100 text-black p-4 shadow-lg z-50">
+      <ul className="flex flex-col gap-2 text-xs md:text-sm">
+        {[
+          "Education",
+          "Healthcare",
+          "Banking",
+          "Manufacturing",
+          "Retail",
+          "Life Sciences",
+          "Consumer Goods",
+        ].map((item, index) => (
+          <li key={index}>
+            <Link
+              to="#"
+              className="inline-block pb-1 hover:border-b-2 hover:border-blue-500 hover:text-orange-500 transition duration-200"
             >
-              <div className="cursor-pointer hover:text-yellow-300 flex items-center gap-1">
-                INDUSTRIES <MdKeyboardArrowDown />
-              </div>
-              {activeMenu === "industries" && (
-                <div className="absolute top-full left-0 mt-2 w-[250px] md:w-[300px] bg-white text-black p-4 shadow-lg z-50">
-                  <ul className="flex flex-col gap-4 text-xs md:text-sm">
-                    <li><Link to="#">Education</Link></li>
-                    <li><Link to="#">Healthcare</Link></li>
-                    <li><Link to="#">Banking</Link></li>
-                    <li><Link to="#">Manufacturing</Link></li>
-                    <li><Link to="#">Retail</Link></li>
-                    <li><Link to="#">Life Sciences</Link></li>
-                    <li><Link to="#">Consumer Goods</Link></li>
-                  </ul>
-                </div>
-              )}
-            </div>
+              {item}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )}
+</div>
 
-            <li><a href="/blog">BLOG</a></li>
-            <li><a href="/career">CAREER</a></li>
-            <li><a href="/contact">CONTACT</a></li>
+
+            <li className="cursor-pointer hover:text-yellow-500"><a href="/blog">BLOG</a></li>
+            <li className="cursor-pointer hover:text-yellow-500"><a href="/career">CAREER</a></li>
+            <li className="cursor-pointer hover:text-yellow-500"><a href="/contact">CONTACT</a></li>
           </ul>
 
           {/* Mobile Menu Icon */}

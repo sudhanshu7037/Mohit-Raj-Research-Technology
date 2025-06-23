@@ -1,5 +1,5 @@
 import React from 'react';
-import bgFooter from "../assets/mrt.png"; // 👈 apni image import karo
+import bgFooter from "../assets/new mrt.jpg"; // 👈 apni image import karo
 
 const DiscriptionFooter = () => {
   return (
@@ -8,19 +8,25 @@ const DiscriptionFooter = () => {
       style={{ backgroundImage: `url(${bgFooter})` }}
     >
       {/* Overlay for text visibility */}
-      <div className="bg-black bg-opacity-60 p-6 rounded-md">
+      <div className=" bg-opacity-10 p-6 rounded-md">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Industries Section */}
           <div className="flex flex-col">
-            <h2 className="text-lg font-bold mb-2">Industries</h2>
+            <h1 className="text-lg font-bold italic mb-2 text-white relative inline-block">
+  <span className="relative inline-block">
+    Industries
+    <span className="absolute left-0 -bottom-1 h-[4px] w-full bg-gradient-to-r from-yellow-400 to-pink-500 rounded-full"></span>
+  </span>
+</h1>
+
             <ul className="space-y-1 text-sm">
-              <li>Banking</li>
-              <li>Capital Markets</li>
-              <li>Consumer Packaged Goods and Distribution</li>
-              <li>Communications, Media, and Information Services</li>
-              <li>Education</li>
-              <li>Energy, Resources, and Utilities</li>
+              <li>Educatio</li>
               <li>Healthcare</li>
+              <li>Banking</li>
+              <li>Manufacturing</li>
+              <li>Retail</li>
+              <li>Life Science</li>
+              <li>Consumer Goods</li>
               <li>High Tech</li>
               <li>Insurance</li>
               <li>Life Sciences</li>
@@ -33,19 +39,25 @@ const DiscriptionFooter = () => {
 
           {/* Services Section */}
           <div className="flex flex-col">
-            <h2 className="text-lg font-bold mb-2">Services</h2>
+             <h1 className="text-lg font-bold italic mb-2 text-white relative inline-block">
+  <span className="relative inline-block">
+    Services
+    <span className="absolute left-0 -bottom-1 h-[4px] w-full bg-gradient-to-r from-yellow-400 to-pink-500 rounded-full"></span>
+  </span>
+</h1>
+ 
             <ul className="space-y-1 text-sm">
-              <li>Artificial Intelligence</li>
-              <li>Cloud</li>
-              <li>Cognitive Business Operations</li>
-              <li>Consulting</li>
-              <li>Cybersecurity</li>
-              <li>Data and Analytics</li>
-              <li>Enterprise Solutions</li>
-              <li>IoT and Digital Engineering</li>
-              <li>Sustainability Services</li>
-              <li>Network Solutions and Services</li>
-              <li>MRT Interactive</li>
+              <li>Software Development</li>
+              <li>Development,Hosting & Promotion</li>
+              <li>Hardware & Networking</li>
+              <li>Multimedia & Animation</li>
+              <li>Digital Marketing</li>
+              <li>Data Centers Development</li>
+              <li>E-Learning</li>
+              <li>Video Conferencing</li>
+              <li>Security and surveillance</li>
+              <li>Data Digitization</li>
+              <li>Remote Infrastructure</li>
               <li>MRT and AWS Cloud</li>
               <li>MRT Enterprise Cloud</li>
               <li>MRT and Google Cloud</li>
@@ -55,12 +67,18 @@ const DiscriptionFooter = () => {
 
           {/* Products and Platforms Section */}
           <div className="flex flex-col">
-            <h2 className="text-lg font-bold mb-2">Products and Platforms</h2>
+              <h1 className="text-lg font-bold italic mb-2 text-white relative inline-block">
+  <span className="relative inline-block">
+    Products & Platform
+    <span className="absolute left-0 -bottom-1 h-[4px] w-full bg-gradient-to-r from-yellow-400 to-pink-500 rounded-full"></span>
+  </span>
+</h1>
+
             <ul className="space-y-1 text-sm">
-              <li>TCS ADD™</li>
-              <li>MRT BaNCS™</li>
-              <li>MRT BFSI Platforms</li>
-              <li>MRT CHROMA™</li>
+              <li>Education Domain</li>
+              <li>Medical Domain</li>
+              <li>corporate Domain</li>
+              <li>Public & Mixed Domain</li>
               <li>MRT Customer Intelligence & Insights™</li>
               <li>MRT ERP on Cloud</li>
               <li>ignio™</li>
@@ -80,7 +98,13 @@ const DiscriptionFooter = () => {
 
           {/* Insights Section */}
           <div className="flex flex-col">
-            <h2 className="text-lg font-bold mb-2">Insights</h2>
+             <h1 className="text-lg font-bold italic mb-2 text-white relative inline-block">
+  <span className="relative inline-block">
+    Insights
+    <span className="absolute left-0 -bottom-1 h-[4px] w-full bg-gradient-to-r from-yellow-400 to-pink-500 rounded-full"></span>
+  </span>
+</h1>
+
             <ul className="space-y-1 text-sm">
               <li>Insights</li>
               <li>Customer Stories</li>
@@ -107,7 +131,7 @@ const DiscriptionFooter = () => {
             </ul>
           </div>
         </div>
-        <hr className="mt-6 border-gray-300 opacity-50" />
+
       </div>
     </div>
   );

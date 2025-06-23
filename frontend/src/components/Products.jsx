@@ -61,7 +61,7 @@ const Products = () => {
         <h2 className="text-5xl font-bold text-blue-900">
           Transform Your Business with Advanced Technologies
         </h2>
-        <p className="text-pink-600 font-semibold mt-4 text-lg">OUR DEDICATED PRODUCTS</p>
+        <p className="text-red-600 font-semibold mt-4 text-lg">OUR DEDICATED PRODUCTS</p>
       </div>
 
       <Swiper

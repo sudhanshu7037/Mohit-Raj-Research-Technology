@@ -1,4 +1,6 @@
 import React from "react";
+import bgImage from "../assets/sft.png";
+
 
 const MainBanner = () => {
   const servicesData = [
@@ -8,7 +10,6 @@ const MainBanner = () => {
       description:
         "We help a business generate new product ideas with intelligence.",
       icon: "📝",
-      
     },
     {
       id: 2,
@@ -115,43 +116,40 @@ const MainBanner = () => {
         "Create immersive experiences with VR and AR technologies.",
       icon: "🕶️",
     },
-
-
   ];
 
-
-
-  
   return (
     <>
-      <section className="py-12 px-4 bg-white md:max-w-[80%] mx-auto flex flex-col items-center gap-4">
+      <section
+        className="py-16 px-4 w-full flex flex-col items-center gap-4 rounded-none shadow-inner bg-cover bg-center"
+        style={{ backgroundImage: `url(${bgImage })`, backgroundColor: "#fff4f7" }}
+      >
         <div className="text-center mb-10">
-          
-          <h2 className="text-5xl font-bold text-blue-900 font-houschka">
+          <h2 className="text-5xl font-bold text-[#2b2a7f] font-houschka drop-shadow-md">
             Excellent Services For Your Business
           </h2>
-          <p className="text-yellow-500 font-semibold mb-1 mt-3">
-            OUR DEDICATED SERVICES
+          <p className="text-[#ff4d4f] font-semibold mb-1 mt-3 tracking-wide uppercase">
+            Our Dedicated Services
           </p>
         </div>
-        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {servicesData.map((service) => (
             <div
               key={service.id}
-              className="border border-gray-500 rounded-xl text-center shadow-sm p-8 hover:shadow-lg transition"
+              className="bg-white border border-gray-200 rounded-3xl text-center shadow-xl hover:shadow-2xl p-8 transition-all duration-300 transform hover:scale-105 hover:border-[#2b2a7f] hover:bg-[#f1f5ff] group"
             >
-              <div className="text-5xl mb-4">{service.icon}</div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">
+              <div className="text-5xl mb-4 group-hover:animate-bounce">{service.icon}</div>
+              <h3 className="text-xl font-bold text-[#2b2a7f] mb-2 group-hover:text-[#ff4d4f]">
                 {service.title}
               </h3>
-              <p className="text-gray-500 text-sm mb-6">
+              <p className="text-gray-600 text-sm mb-6 group-hover:text-gray-700">
                 {service.description}
               </p>
-              <button className= "bottom-0 group relative inline-flex items-center justify-center w-full overflow-hidden  border-2 px-5 py-2 text-sm font-semibold text-gray-900 transition-all duration-500 ease-in-out hover:text-white">
-              <span className="absolute inset-0 h-full w-full bg-[#051b2e] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0"></span>
-                <span className="relative z-10 flex items-center gap-2">
-                  READ MORE{" "}
-                  <span className="hidden group-hover:flex transform group-hover:translate-x-1 transition-transform duration-300">
+              <button className="relative group overflow-hidden w-full border-2 px-5 py-2 text-sm font-semibold text-[#2b2a7f] transition-all duration-500 ease-in-out hover:text-white border-[#2b2a7f] rounded-md">
+                <span className="absolute inset-0 bg-[#2b2a7f] translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-0"></span>
+                <span className="relative z-10 flex items-center justify-center gap-2">
+                  READ MORE
+                  <span className="hidden group-hover:inline-block transform group-hover:translate-x-1 transition-transform duration-300">
                     →
                   </span>
                 </span>
@@ -159,15 +157,17 @@ const MainBanner = () => {
             </div>
           ))}
         </div>
-          <div className="flex items-center gap-4 mt-4" >
-            <div>
-              <img src={`https://advisorhtml.websitelayout.net/img/icons/11.png`} alt="logo" width={'40px'}/>
-            </div>
-            <p className="text-[#68747a] font-semibold text-[1.2rem]">We’re committed to create a change that matters!</p>
-          </div>
-
+        <div className="flex items-center gap-4 mt-6">
+          <img
+            src="https://advisorhtml.websitelayout.net/img/icons/11.png"
+            alt="logo"
+            width="40px"
+          />
+          <p className="text-[#4c4c4c] font-semibold text-[1.2rem]">
+            We’re committed to create a change that matters!
+          </p>
+        </div>
       </section>
-
     </>
   );
 };

@@ -465,32 +465,33 @@ const DigitalMarketing = () => {
     </div>
 
     {/* Why Choose Us Section with Background Color and Shadow */}
-      <div className="max-w-7xl mx-auto px-4 py-16 rounded-xl shadow-2xl bg-blue ">
-        <h2 className="text-4xl font-bold text-blue-900 text-center mb-4 font-houschka">
-          Why Choose MRT?
-        </h2>
-        <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-          MRT is committed to delivering performance-focused digital marketing strategies to elevate your brand’s success.
-        </p>
+<div className="w-full bg-blue-50 py-24 px-4">
+  <div className="max-w-7xl mx-auto rounded-xl shadow-2xl px-4 sm:px-6 lg:px-8">
+    <h2 className="text-4xl font-bold text-blue-900 text-center mb-6 font-houschka">
+      Why Choose MRT?
+    </h2>
+    <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+      MRT is committed to delivering performance-focused digital marketing strategies to elevate your brand’s success.
+    </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="bg-white border border-gray-200 p-6 rounded-xl text-center shadow-md hover:shadow-2xl transition duration-300 hover:scale-[1.03] group"
-            >
-              <div className="flex justify-center mb-4">{feature.icon}</div>
-              <h3 className="text-lg font-bold text-blue-900 group-hover:text-pink-500 transition">
-                {feature.title}
-              </h3>
-              <p className="text-sm text-gray-600 group-hover:text-gray-800">
-                {feature.description}
-              </p>
-            </div>
-          ))}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {features.map((feature, index) => (
+        <div
+          key={index}
+          className="bg-white border border-gray-200 p-6 rounded-xl text-center shadow-md hover:shadow-2xl transition duration-300 hover:scale-[1.03] group"
+        >
+          <div className="flex justify-center mb-4">{feature.icon}</div>
+          <h3 className="text-lg font-bold text-blue-900 group-hover:text-pink-500 transition">
+            {feature.title}
+          </h3>
+          <p className="text-sm text-gray-600 group-hover:text-gray-800">
+            {feature.description}
+          </p>
         </div>
-      </div>
-
+      ))}
+    </div>
+  </div>
+</div>
 
     </>
         

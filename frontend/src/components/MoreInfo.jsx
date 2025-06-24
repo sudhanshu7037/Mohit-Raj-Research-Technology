@@ -37,7 +37,7 @@ const MoreInfo = () => {
         <div className="absolute inset-0 bg-black opacity-60" />
 
         <div className="relative z-10 text-center px-4">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 font-houschka">
             Offering the best experience of <br /> business consulting
           </h1>
           <button className="mt-4 bg-yellow-400 text-black font-semibold px-6 py-3 rounded hover:bg-yellow-500 transition">

@@ -8,7 +8,7 @@ import TeamSection from "../components/TeamSection";
 import TestimonialSlider from "../components/TestimonialSlider";
 import VideoSection from "../components/VideoSection";
 import NewsSection from "../components/NewsSection";
-import Footer from "../components/Footer";
+
 import Products from "../components/Products";
 import Solutions from "../components/Solutions";
 import DiscriptionFooter from "../components/DiscriptionFooter";
@@ -23,14 +23,14 @@ const Home = () => {
         <Products />
         <MainBanner />
         <Solutions />
-        
+
         <MoreInfo />
         <TeamSection />
         <TestimonialSlider />
         <VideoSection />
         <NewsSection />
-        <DiscriptionFooter/>
-        {/* <Footer /> */}
+        <DiscriptionFooter />
+        
       </div>
     </div>
   );

@@ -13,6 +13,9 @@ import HardwareNetworking from "./components/Services/HardwareNetworking";
 import MedicalCollegeManagement from "./pages/casestudies/MedicalCollegeManagement";
 import MultimediaAnimation from "./components/Services/MultimediaAnimation";
 import DigitalMarketing  from "./components/Services/DigitalMarketing";
+import DataCentersDevelopment  from "./components/Services/DataCentersDevelopment";
+import  Elearning from "./components/Services/Elearning";
+
 
 
 
@@ -35,6 +38,8 @@ const App = () => {
            <Route path="/MedicalCollegeManagement" element={<MedicalCollegeManagement />} />
            <Route path="/MultimediaAnimation" element={<MultimediaAnimation />} />
           <Route path="/DigitalMarketing" element={<DigitalMarketing />} />
+          <Route path="/DataCentersDevelopment" element={<DataCentersDevelopment />} />
+          <Route path="/Elearning" element={<Elearning/>} />
           
 
 

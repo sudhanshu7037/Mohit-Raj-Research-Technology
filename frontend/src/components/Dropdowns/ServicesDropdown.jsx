@@ -108,7 +108,7 @@ const ServicesDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
     {
       icon: <FaServer className="text-xl text-red-700" />, 
       title: "Data Centers Development",
-      path: "/data-centers",
+      path: "/DataCentersDevelopment",
       items: [
         "Web Servers",
         "Application Servers",
@@ -126,7 +126,7 @@ const ServicesDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
     {
       icon: <FaBook className="text-xl text-red-700" />, 
       title: "E-Learning",
-      path: "/e-learning",
+      path: "/Elearning",
       items: [
         "E-Learning Consultancy",
         "E-Learning Lectures Development",

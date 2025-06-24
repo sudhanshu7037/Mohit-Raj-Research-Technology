@@ -258,7 +258,7 @@ const DigitalMarketing = () => {
 
   </div>
 </div>
- 
+ {/*new section*/}
  <div className="group relative bg-gradient-to-tr from-white via-blue-50 to-orange-100 py-14 px-6 sm:px-10 md:px-20 rounded-2xl shadow-xl overflow-hidden transition-all duration-300 
     hover:from-blue-100 hover:to-orange-200 hover:bg-opacity-80 hover:cursor-pointer">
 
@@ -294,6 +294,8 @@ const DigitalMarketing = () => {
           <div className="absolute -top-4 -right-4 w-10 h-10 bg-orange-300 blur-2xl opacity-40 rounded-full animate-ping"></div>
         </div>
       </div>
+
+      {/*new section*/}
 
       {/* Floating Decorative Blobs */}
       <div className="absolute top-0 left-0 w-32 h-32 bg-blue-100 opacity-30 rounded-full blur-2xl animate-float"></div>
@@ -345,6 +347,8 @@ const DigitalMarketing = () => {
       <div className="absolute top-10 left-10 w-20 h-20 bg-blue-400 rounded-full opacity-20 blur-2xl animate-pulse"></div>
       <div className="absolute bottom-12 right-16 w-32 h-32 bg-pink-400 rounded-full opacity-20 blur-2xl animate-ping"></div>
     </div>
+
+
     {/*new section of techstack*/}
     {/* === Tech Stack Section with Stylish Background === */}
 <div className="relative w-full bg-gradient-to-br from-purple-50 via-white to-blue-100 py-20 px-4 overflow-hidden">

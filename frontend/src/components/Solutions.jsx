@@ -1,155 +1,116 @@
-import React from "react";
-import police from "../assets/PoliceManagement.png";
-import university from "../assets/university.jpg";
-import medical from "../assets/Medical_Collage[1].png";
-import DigitalEducation from "../assets/DigitalEducation.png";
-import Multimedia from "../assets/mulltimedia[1].png";
+import React, { useState } from "react";
+import image1 from "../assets/homepageimages/Solutionimages/university_image[1].png";
+import image2 from "../assets/homepageimages/Solutionimages/medical collage.png"
 
-const Solutions = () => {
-  const servicesData = [
-    {
-      id: 1,
-      title: "University Digitalization Solutions",
-      description:
-        "We help a business generate new product ideas with intelligence.",
-      icon: university,
-    },
-    {
-      id: 2,
-      title: "Medical College Digitalization Solutions",
-      description:
-        "We help a business generate new product ideas with intelligence.",
-      icon: medical,
-    },
-    {
-      id: 3,
-      title: "MRTiON Digital Education Solution",
-      description:
-        "We help a business generate new product ideas with intelligence.",
-      icon: DigitalEducation,
-    },
-    {
-      id: 4,
-      title: "Multimedia & Animation Solutions ",
-      description:
-        "We help a business generate new product ideas with intelligence.",
-      icon: Multimedia,
-    },
-    {
-      id: 5,
-      title: "Digital Marketing Solutions",
-      description:
-        "Digitalize attendance, homework, exams, and parent communication easily.",
-      icon: "🏫",
-    },
-    {
-      id: 6,
-      title: "Library Digitalization Solution",
-      description:
-        "Efficiently track and manage books, journals, and digital resources.",
-      icon: "📚",
-    },
-    {
-      id: 7,
-      title: "Interactive Conference Room Solutions",
-      description:
-        "Manage room allocations, complaints, and student records hassle-free.",
-      icon: "🏠",
-    },
-    {
-      id: 8,
-      title: "Interactive Auditorium Solutions",
-      description:
-        "Track vehicles, routes, and schedules for safe student transportation.",
-      icon: "🚌",
-    },
-    {
-      id: 9,
-      title: "Security & Surveillance Solutions",
-      description:
-        "Leverage the power of the cloud for scalable and flexible solutions.",
-      icon: "☁️",
-    },
-    {
-      id: 10,
-      title: "Multimedia & Animation Solutions",
-      description:
-        "Protect your digital assets with our comprehensive cybersecurity services.",
-      icon: "🔒",
-    },
-    {
-      id: 11,
-      title: "Police Automation  Solutions",
-      description:
-        "Transform data into actionable insights for better decision-making.",
-      icon: police,
-    },
-    {
-      id: 12,
-      title: "Audio Video Recording And Broadcasting Solution",
-      description:
-        "Implement AI and ML solutions to enhance business processes.",
-      icon: "🤖",
-    },
-  ];
+
+const services = [
+  {
+    title: "University Digitalization",
+    image: image1
+      
+  },
+  {
+    title: "Medical College Digitalization",
+    image:image2,
+  },
+  {
+    title: "MRTiON Digital Educations",
+    image: "",
+  },
+  {
+    title: "Library Digitalization",
+    image:
+      "https://img.freepik.com/free-photo/team-meeting-brainstorming-working-office_1303-21043.jpg",
+  },
+  {
+    title: "Digital Marketing Solutions",
+    image:
+      "https://img.freepik.com/free-photo/business-analytics-technology_53876-120667.jpg",
+  },
+  {
+    title: "Smart Learning",
+    image:
+      "https://img.freepik.com/free-photo/lock-icon-security-data-privacy-digital-concept_53876-124998.jpg",
+  },
+  {
+    title: "Conference Room Solutions",
+    image:
+      "https://img.freepik.com/free-photo/business-people-working-together-project_23-2149153795.jpg",
+  },
+  {
+    title: "Auditorium Solutions",
+    image:
+      "https://img.freepik.com/free-photo/social-media-marketing-concept_53876-121044.jpg",
+  },
+  {
+    title: "Security & Surveillance",
+    image:
+      "https://img.freepik.com/free-photo/social-media-marketing-concept_53876-121044.jpg",
+  },
+  {    title: "Multimedia & Animation",
+    image:    
+
+      "https://img.freepik.com/free-photo/business-people-working-together-project_23-2149153795.jpg",
+  },
+  {
+    title: "Police Automation",
+    image:
+      "https://img.freepik.com/free-photo/business-people-working-together-project_23-2149153795.jpg",
+  },
+  {
+    title: "Audio Video Broadcasting",
+    image:
+      "https://img.freepik.com/free-photo/business-people-working-together-project_23-2149153795.jpg",
+  },  
+
+];
+
+const ServicesSection = () => {
+  const [showAll, setShowAll] = useState(false);
+
+  const visibleServices = showAll ? services : services.slice(0, 4);
+
   return (
-    <>
-      <section className="py-16 px-4 bg-gradient-to-br from-[#e3f2fd] via-[#ffffff] to-[#e3f2fd] w-full flex flex-col items-center gap-4">
-        <div className="text-center mb-10">
+    <section className="bg-blue-100 text-white py-12 px-6 md:px-20">
+      <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-houschka font-bold text-blue-800 drop-shadow">
-            Cutting edge solutions with digital technologies.
+            Cutting edge solutions with digital technologies
           </h2>
-          <p className="text-yellow-500 font-semibold mt-3 tracking-wide uppercase">
+          <p className="text-[#ff4d4f] font-semibold mt-3 tracking-wide uppercase text-2xl">
             OUR DEDICATED SOLUTIONS
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {servicesData.map((service) => (
-            <div
-              key={service.id}
-              className="relative group bg-white border border-gray-200 rounded-2xl shadow-xl p-6 transition-all duration-500 hover:bg-blue-900 hover:shadow-2xl hover:scale-105"
-            >
-              <div className="text-5xl mb-4 transition-all duration-500 group-hover:opacity-100 group-hover:text-white">
-                {typeof service.icon === "string" && !service.icon.includes("/") ? (
-                  service.icon
-                ) : (
-                  <img
-                    src={service.icon}
-                    alt={service.title}
-                    className="w-16 h-16 mx-auto rounded-md group-hover:opacity-100"
-                  />
-                )}
-              </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-white">
-                {service.title}
-              </h3>
-              <p className="text-gray-600 text-sm mb-6 group-hover:text-gray-300">
-                {service.description}
-              </p>
-              <button className="relative w-full px-5 py-2 text-sm font-semibold text-blue-700 border-2 border-blue-700 rounded-md bg-white transition-all duration-500 ease-in-out group-hover:text-red-600 group-hover:border-white">
-                <span className="relative z-10 flex items-center justify-center gap-2">
-                  READ MORE
-                  <span className="hidden group-hover:inline-block transform group-hover:translate-x-1 transition-transform duration-300">
-                    →
-                  </span>
-                </span>
-              </button>
-            </div>
-          ))}
-        </div>
-        <div className="flex items-center gap-4 mt-8">
-          <img
-            src="https://advisorhtml.websitelayout.net/img/icons/11.png"
-            alt="logo"
-            width="40px"
-          />
-          <p className="text-[#68747a] font-semibold text-[1.2rem]">
-            We’re committed to create a change that matters!
-          </p>
-        </div>
-      </section>
-    </>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {visibleServices.map((service, index) => (
+          <div
+            key={index}
+            className="rounded-xl overflow-hidden relative h-96 group shadow-lg cursor-pointer"
+          >
+            <img
+              src={service.image}
+              alt={service.title}
+              className="w-full h-full object-cover brightness-75 group-hover:scale-105 transition-transform duration-300"
+            />
+            <div className="absolute inset-0 bg-black/40" />
+            <h3 className="absolute top-6 left-6 right-6 text-xl font-semibold font-basis">
+              {service.title}
+            </h3>
+          </div>
+        ))}
+      </div>
+
+      {/* Show More / Show Less Button */}
+      <div className="mt-10 text-center">
+        <button
+          onClick={() => setShowAll(!showAll)}
+          className="px-6 py-2 bg-blue-900 text-black font-medium rounded-full hover:bg-[#ff4d4f] transition"
+        >
+          {showAll ? "Show Less" : "Show More"}
+        </button>
+      </div>
+    </section>
   );
 };
 
-export default Solutions;
+export default ServicesSection;

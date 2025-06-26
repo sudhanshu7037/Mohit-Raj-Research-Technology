@@ -61,7 +61,7 @@ const Products = () => {
         <h2 className="text-5xl font-bold text-blue-900  font-houschka">
           Transform Your Business with Advanced Technologies
         </h2>
-        <p className="text-red-600 font-semibold mt-4 text-xl">
+        <p className="text-red-600 font-semibold mt-4 text-2xl">
           OUR DEDICATED PRODUCTS
         </p>
       </div>

@@ -13,6 +13,11 @@ import HardwareNetworking from "./components/Services/HardwareNetworking";
 import MedicalCollegeManagement from "./pages/casestudies/MedicalCollegeManagement";
 import MultimediaAnimation from "./components/Services/MultimediaAnimation";
 import DigitalMarketing  from "./components/Services/DigitalMarketing";
+import AdminLogin from "./components/backendpages/AdminLogin";
+import AdminDashboard from "./components/backendpages/AdminDashboard";
+import ProtectedRoute from "./components/backendpages/ProtectedRoute";
+
+
 
 
 
@@ -32,9 +37,18 @@ const App = () => {
           <Route path="/SoftwareDevelopment" element={<SoftwareDevelopment />} />
           <Route path="/DevelopmentHosting" element={<DevelopmentHosting />} />
           <Route path="/HardwareNetworking" element={<HardwareNetworking />} />
-           <Route path="/MedicalCollegeManagement" element={<MedicalCollegeManagement />} />
-           <Route path="/MultimediaAnimation" element={<MultimediaAnimation />} />
+          <Route path="/MedicalCollegeManagement" element={<MedicalCollegeManagement />} />
+          <Route path="/MultimediaAnimation" element={<MultimediaAnimation />} />
           <Route path="/DigitalMarketing" element={<DigitalMarketing />} />
+          <Route path="/admin/login" element={<AdminLogin />} />
+          <Route
+          path="/admin/dashboard"
+          element={
+            <ProtectedRoute>
+              <AdminDashboard />
+            </ProtectedRoute>
+          }
+        />
           
 
 

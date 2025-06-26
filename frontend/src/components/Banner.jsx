@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
+import Banner3 from "../assets/bannerimages/digital_university_solutions[1].png"
 const slides = [
   {
     image: "https://advisorhtml.websitelayout.net/img/banner/slider-02.jpg",
@@ -11,6 +11,11 @@ const slides = [
     image: "https://advisorhtml.websitelayout.net/img/banner/slider-01.jpg",
     title: "Empowering Your Digital Transformation",
     description: "Transform your ideas into reality with our cutting-edge technology and expert solutions.",
+  },
+  {
+    image: Banner3,
+    title: "",
+    description: "Stay ahead of the competition with our innovative approach to solving complex business challenges.",
   },
 ];
 

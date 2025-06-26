@@ -35,7 +35,7 @@ const BuisnessDeal = () => {
             Empowering Businesses with Creative Tech Solutions
           </h2>
           <p className="text-gray-700 font-basis">
-           Mohitraj Research Tech Pvt. Ltd. Company Incorporated under Company Act 1956 by the Registrar of companies, NCT of Delhi & Haryana. Company Provides world class consultancy and service in the field of Education & Development, IT enables services, marketing research, Industrial Research, Media Research, Social Research, Feed back Analysis & Advertising etc.
+           We at Mohitraj Research and Technology Private Limited  are experts in providing innovative software development  for multiple platforms and domains , IT consulting solutions and IT Infrastructure development  that empower enterprises to succeed in the constantly changing digital world. From idea to code, strategy to scaling, we help organizations convert ideas into smart, scalable, and secure digital solutions.
           </p>
 
           {/* Feature Cards */}

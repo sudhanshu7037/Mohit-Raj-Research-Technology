@@ -12,6 +12,11 @@ const slides = [
     title: "Empowering Your Digital Transformation",
     description: "Transform your ideas into reality with our cutting-edge technology and expert solutions.",
   },
+   {
+    image: "https://advisorhtml.websitelayout.net/img/banner/slider-01.jpg",
+    title: "University digitalization solution for digital transformation of universities ",
+    description: "Revolutionizing Learning , Innovative Education, Elevate Excellence by our unique Digital University Solution  Digital Transformation for Higher Education.",
+  },
 ];
 
 const Banner = () => {

@@ -12,7 +12,11 @@ const AdminLogin = () => {
     e.preventDefault();
     try {
       const res = await axios.post("http://localhost:4000/login", formData);
+      
+
       localStorage.setItem("adminToken", res.data.token);
+      localStorage.setItem("userInfo", JSON.stringify(res.data.user));
+
       window.location.href = "/admin/dashboard";
     } catch (error) {
       alert("Invalid Credentials");
@@ -20,8 +24,17 @@ const AdminLogin = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <form onSubmit={handleLogin} className="bg-white shadow-md p-8 rounded w-full max-w-sm">
+    <>
+     <div>
+        <img src="https://advisorhtml.websitelayout.net/img/banner/page-title.jpg" alt="" className="w-full h-64 object-cover" />
+      </div>
+
+    
+    <div className="bg-gray-100 flex justify-center pt-10 pb-20 min-h-[85vh]  ">
+      <form
+        onSubmit={handleLogin}
+        className="bg-white shadow-md p-8 rounded w-full max-w-sm"  
+      >
         <h2 className="text-2xl font-bold text-center mb-6">Admin Login</h2>
         <input
           type="email"
@@ -47,6 +60,7 @@ const AdminLogin = () => {
         </button>
       </form>
     </div>
+    </>
   );
 };
 

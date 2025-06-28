@@ -124,7 +124,7 @@ const ServicesDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
     {
       icon: <FaServer className="text-xl text-red-700" />, 
       title: "Data Centers Development",
-      path: "/data-centers",
+      path: "/DataCentersDevelopment",
       items: [
         "Web Servers",
         "Application Servers",
@@ -142,7 +142,7 @@ const ServicesDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
     {
       icon: <FaBook className="text-xl text-red-700" />, 
       title: "E-Learning",
-      path: "/e-learning",
+      path: "/Elearning",
       items: [
         "E-Learning Consultancy",
         "E-Learning Lectures Development",
@@ -159,7 +159,7 @@ const ServicesDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
      {
       icon: <FaVideo className="text-xl text-red-700" />, 
       title: "Video Conferencing",
-      path: "/video-conferencing",
+      path: "/VideoConferencing",
       items: [
         "Reservation Based Video Conference",
         "Reservation Less Video Conference",
@@ -174,7 +174,7 @@ const ServicesDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
     {
       icon: <FaLock className="text-xl text-red-700" />, 
       title: "Security & Surveillance",
-      path: "/security-surveillance",
+      path: "/SecuritySurvillance",
       items: [
         "Banking",
         "Education",
@@ -195,7 +195,8 @@ const ServicesDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
     {
       icon: <FaDatabase className="text-xl text-red-700" />, 
       title: "Data Digitization",
-      path: "/data-digitization",
+      path: "/DataDigitization",
+
       items: [
         "Document Scanning",
         "Data Entry Services",
@@ -210,7 +211,7 @@ const ServicesDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
     {
       icon: <FaDatabase className="text-xl text-red-700" />, 
       title: "Remote Infrastructure",
-      path: "/remote-infrastructure",
+      path: "/RemoteInfrastructure",
       items: [
         "Remote Monitoring",
         "Remote Infrastructure Management",

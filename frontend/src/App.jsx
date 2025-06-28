@@ -13,9 +13,18 @@ import HardwareNetworking from "./components/Services/HardwareNetworking";
 import MedicalCollegeManagement from "./pages/casestudies/MedicalCollegeManagement";
 import MultimediaAnimation from "./components/Services/MultimediaAnimation";
 import DigitalMarketing  from "./components/Services/DigitalMarketing";
+import DataCentersDevelopment  from "./components/Services/DataCentersDevelopment";
+import  Elearning from "./components/Services/Elearning";
+import  VideoConferencing from "./components/Services/VideoConferencing";
+import SecuritySurvillance  from "./components/Services/SecuritySurvillance";
+import DataDigitization from "./components/Services/DataDigitization";
+import RemoteInfrastructure from "./components/Services/RemoteInfrastructure";
+
+
 import AdminLogin from "./components/backendpages/AdminLogin";
 import AdminDashboard from "./components/backendpages/AdminDashboard";
 import ProtectedRoute from "./components/backendpages/ProtectedRoute";
+
 
 
 
@@ -39,8 +48,7 @@ const App = () => {
           <Route path="/MedicalCollegeManagement" element={<MedicalCollegeManagement />} />
           <Route path="/MultimediaAnimation" element={<MultimediaAnimation />} />
           <Route path="/DigitalMarketing" element={<DigitalMarketing />} />
-          <Route path="/login" element={<AdminLogin />} />
-
+          <Route path="/admin/login" element={<AdminLogin />} />
           <Route
           path="/admin/dashboard"
           element={

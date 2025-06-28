@@ -341,7 +341,7 @@ const MultimediaAnimation = () => {
         </div>
       </div>
 
-
+{/*fourth div*/}
     
 <section className="w-full bg-gradient-to-r from-blue-900 via-indigo-900 to-purple-900 text-white py-14 px-4">
   <div className="max-w-7xl mx-auto group transition-transform duration-500 hover:scale-[1.02] hover:shadow-[0_25px_60px_-10px_rgba(255,255,255,0.2)] rounded-2xl p-6 bg-opacity-60 backdrop-blur-lg">
@@ -424,7 +424,7 @@ const MultimediaAnimation = () => {
       <div className="max-w-7xl mx-auto">
         {/* Title */}
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-14 font-houschka text-pink-400 drop-shadow-lg">
-          Creative Technology Stack
+           Technology Stack
         </h2>
 
         {/* Stack Sections */}
@@ -461,10 +461,10 @@ const MultimediaAnimation = () => {
         </div>
       </div>
     </div>
-
+{/*new section*/}
     <div className="max-w-7xl mx-auto px-4 py-16 text-center">
       <h2 className="text-4xl font-bold text-blue-900 mb-4 font-houschka">
-        Multimedia & Animation Services We Offer
+         custom Multimedia & Animation Services We Offer
       </h2>
       <p className="text-gray-600 max-w-4xl mx-auto mb-12">
         Our team combines creativity and technology to create compelling
@@ -488,7 +488,7 @@ const MultimediaAnimation = () => {
         ))}
       </div>
     </div>
-
+{/*new section*/}
     <div className="max-w-7xl mx-auto px-4 py-16">
       {/* Section Header */}
       <h2 className="text-4xl font-bold text-blue-900 text-center mb-4 font-houschka">
@@ -625,6 +625,8 @@ const MultimediaAnimation = () => {
     </div>
   </div>
 </section>
+
+
 
       
     </>

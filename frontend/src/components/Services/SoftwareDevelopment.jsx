@@ -385,14 +385,7 @@ const SoftwareDevelopment = () => {
             Transform your Business with Innovative Software Development
             Technology
           </h3>
-          {/* <p className="text-white text-base md:text-lg max-w-2xl mb-8 text-justify leading-relaxed  mt-2 ">
-            MOHITRAJ RESEARCH AND TECHNOLOGY PRIVATE LIMITED is the leading
-            software development company in India , it is specializes in
-            software development and delivers many ERP software solutions in
-            educational domain , Healthcare domain and industrial domain that
-            are designed to fulfil the business requirements of all the
-            organizations .
-          </p> */}
+          
           <div className="flex gap-4">
             <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition mt-2">
               GET IN TOUCH
@@ -621,7 +614,7 @@ const SoftwareDevelopment = () => {
       {/*new  div*/}
       <div className="max-w-7xl mx-auto px-4 py-16">
         <h2 className="text-4xl font-bold text-blue-900 text-center mb-12 font-houschka">
-          How to Start Your Custom Software Development Project With TatvaSoft?
+          How to Start Your Custom Software Development Project With MRT?
         </h2>
 
         <div className="flex flex-col md:flex-row items-center gap-12">
@@ -799,6 +792,8 @@ const SoftwareDevelopment = () => {
           </div>
         ))}
       </div>
+
+      
 
       
 

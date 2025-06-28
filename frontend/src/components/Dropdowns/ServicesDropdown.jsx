@@ -97,8 +97,8 @@ const ServicesDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
     },
     {
       icon: <FaFilm className="text-xl text-red-700" />, 
-      title: "Multimedia & Animation",
-      path: "/MultimediaAnimation",
+      title: "Digital marketing",
+      path: "/DigitalMarketing",
       items: [
         "Multimedia DVD / CDROM",
         "Multimedia Presentation",

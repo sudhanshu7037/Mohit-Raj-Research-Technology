@@ -48,6 +48,12 @@ const App = () => {
           <Route path="/MedicalCollegeManagement" element={<MedicalCollegeManagement />} />
           <Route path="/MultimediaAnimation" element={<MultimediaAnimation />} />
           <Route path="/DigitalMarketing" element={<DigitalMarketing />} />
+          <Route path="/DataCentersDevelopment" element={<DataCentersDevelopment />} />
+          <Route path="/Elearning" element={<Elearning/>} />
+          <Route path="/VideoConferencing" element={<VideoConferencing/>} />
+          <Route path="/SecuritySurvillance" element={<SecuritySurvillance />} />
+          <Route path="/DataDigitization" element={<DataDigitization />} />
+          <Route path="/RemoteInfrastructure" element={<RemoteInfrastructure />} />
           <Route path="/admin/login" element={<AdminLogin />} />
           <Route
           path="/admin/dashboard"

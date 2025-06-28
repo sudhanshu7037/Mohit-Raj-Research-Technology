@@ -11,7 +11,7 @@ const AdminLogin = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:4000/login", formData);
+      const res = await axios.post("http://localhost:4000/login", formData, {withCredentials: true});
 
       localStorage.setItem("adminToken", res.data.token);
       localStorage.setItem("userInfo", JSON.stringify(res.data.user));

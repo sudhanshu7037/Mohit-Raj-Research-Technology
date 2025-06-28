@@ -1,19 +1,22 @@
-import React, { useState } from "react";
+import React, {  useState } from "react";
 import {
   ChevronDown,
   ChevronRight,
   UserCircle,
+  FileText,
+  Briefcase,
+  Inbox,
+  Download,
   LogOut,
   LayoutDashboard,
   Menu,
   X,
 } from "lucide-react";
+import ContactPage from "./ContactPage";
 
 const AdminDashboard = () => {
-  const [openMenu, setOpenMenu] = useState({ user: false });
+  const [openMenu, setOpenMenu] = useState({});
   const [activeSubTab, setActiveSubTab] = useState("");
-  const [users, setUsers] = useState([]);
-  const [formData, setFormData] = useState({ firstname: "", email: "" });
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const handleLogout = () => {
@@ -26,76 +29,36 @@ const AdminDashboard = () => {
     setOpenMenu((prev) => ({ ...prev, [key]: !prev[key] }));
   };
 
-  const handleUserSubmit = (e) => {
-    e.preventDefault();
-    if (!formData.firstname || !formData.email) return alert("All fields required");
-    setUsers((prev) => [...prev, formData]);
-    setFormData({ firstname: "", email: "" });
-  };
+ 
 
   const renderContent = () => {
-    if (activeSubTab === "add-user") {
-      return (
-        <div>
-          <h2 className="text-2xl font-semibold mb-4">Add User</h2>
-          <form onSubmit={handleUserSubmit} className="mb-6 space-y-4">
-            <input
-              type="text"
-              placeholder="Full Name"
-              value={formData.firstname}
-              onChange={(e) => setFormData({ ...formData, firstname: e.target.value })}
-              className="w-full p-2 border rounded"
-              required
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              value={formData.email}
-              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              className="w-full p-2 border rounded"
-              required
-            />
-            <button
-              type="submit"
-              className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
-            >
-              Add User
-            </button>
-          </form>
-
-          {/* User list */}
+    switch (activeSubTab) {
+      case "add-blog":
+        return <h2 className="text-2xl">📝 Add Blog (to be implemented)</h2>;
+      case "view-jobs":
+        return <h2 className="text-2xl">💼 View Jobs (to be implemented)</h2>;
+      case "view-applications":
+        return (
+          <h2 className="text-2xl">📩 Job Applications (to be implemented)</h2>
+        );
+      case "view-contacts":
+        return <ContactPage />
+      case "catalogue":
+        return (
+          <h2 className="text-2xl">📦 Product Catalogue (to be implemented)</h2>
+        );
+      default:
+        return (
           <div>
-            <h3 className="text-xl font-semibold mb-2">User List</h3>
-            {users.length === 0 ? (
-              <p className="text-gray-500">No users added yet.</p>
-            ) : (
-              <ul className="space-y-2">
-                {users.map((user, idx) => (
-                  <li key={idx} className="p-3 bg-gray-100 rounded shadow">
-                    <strong>{user.firstname}</strong> - {user.email}
-                  </li>
-                ))}
-              </ul>
-            )}
+            <h2 className="text-2xl font-semibold mb-4">
+              Welcome to Admin Dashboard
+            </h2>
+            <p className="text-gray-600">
+              Select a submenu from sidebar to manage content.
+            </p>
           </div>
-        </div>
-      );
+        );
     }
-
-    if (activeSubTab === "edit-user") {
-      return <h2 className="text-2xl text-yellow-600">🛠️ Edit User Section (to be implemented)</h2>;
-    }
-
-    if (activeSubTab === "delete-user") {
-      return <h2 className="text-2xl text-red-600">🗑️ Delete User Section (to be implemented)</h2>;
-    }
-
-    return (
-      <div>
-        <h2 className="text-2xl font-semibold mb-4">Welcome to Admin Dashboard</h2>
-        <p className="text-gray-600">Select a submenu from sidebar to manage users.</p>
-      </div>
-    );
   };
 
   return (
@@ -108,7 +71,7 @@ const AdminDashboard = () => {
         />
       </div>
 
-      {/* Header (for mobile menu + logout) */}
+      {/* Header for Mobile */}
       <div className="flex md:hidden justify-between items-center p-4 bg-white shadow">
         <button onClick={() => setSidebarOpen(!sidebarOpen)}>
           {sidebarOpen ? <X size={24} /> : <Menu size={24} />}
@@ -130,42 +93,87 @@ const AdminDashboard = () => {
         >
           <h2 className="text-2xl font-bold mb-6 text-blue-600">Admin Panel</h2>
 
+          {/* Blog Management */}
           <div>
             <div
               className="flex items-center justify-between cursor-pointer text-gray-800 hover:text-blue-600 mb-2"
-              onClick={() => toggleMenu("user")}
+              onClick={() => toggleMenu("blog")}
             >
               <div className="flex gap-2 items-center">
-                <UserCircle className="w-5 h-5" />
-                <span>User Management</span>
+                <FileText className="w-5 h-5" />
+                <span>Blog Management</span>
               </div>
-              {openMenu.user ? <ChevronDown size={16} /> : <ChevronRight size={16} />}
+              {openMenu.blog ? (
+                <ChevronDown size={16} />
+              ) : (
+                <ChevronRight size={16} />
+              )}
             </div>
-            {openMenu.user && (
+            {openMenu.blog && (
               <ul className="ml-6 text-sm space-y-2 text-gray-600">
                 <li
                   className="cursor-pointer hover:text-blue-600"
-                  onClick={() => setActiveSubTab("add-user")}
+                  onClick={() => setActiveSubTab("add-blog")}
                 >
-                  ➕ Add User
-                </li>
-                <li
-                  className="cursor-pointer hover:text-blue-600"
-                  onClick={() => setActiveSubTab("edit-user")}
-                >
-                  ✏️ Edit User
-                </li>
-                <li
-                  className="cursor-pointer hover:text-blue-600"
-                  onClick={() => setActiveSubTab("delete-user")}
-                >
-                  🗑️ Delete User
+                  ➕ Add Blog
                 </li>
               </ul>
             )}
           </div>
 
-          {/* Sidebar Logout (only desktop) */}
+          {/* Career / Jobs */}
+          <div>
+            <div
+              className="flex items-center justify-between cursor-pointer text-gray-800 hover:text-blue-600 mb-2 mt-4"
+              onClick={() => toggleMenu("jobs")}
+            >
+              <div className="flex gap-2 items-center">
+                <Briefcase className="w-5 h-5" />
+                <span>Careers</span>
+              </div>
+              {openMenu.jobs ? (
+                <ChevronDown size={16} />
+              ) : (
+                <ChevronRight size={16} />
+              )}
+            </div>
+            {openMenu.jobs && (
+              <ul className="ml-6 text-sm space-y-2 text-gray-600">
+                <li
+                  className="cursor-pointer hover:text-blue-600"
+                  onClick={() => setActiveSubTab("view-jobs")}
+                >
+                  📋 View Jobs
+                </li>
+                <li
+                  className="cursor-pointer hover:text-blue-600"
+                  onClick={() => setActiveSubTab("view-applications")}
+                >
+                  📩 Applications
+                </li>
+              </ul>
+            )}
+          </div>
+
+          {/* Contact Messages */}
+          <div
+            className="cursor-pointer flex gap-2 items-center mt-4 text-gray-800 hover:text-blue-600"
+            onClick={() => setActiveSubTab("view-contacts")}
+          >
+            <Inbox className="w-5 h-5" />
+            <span>Contact Messages</span>
+          </div>
+
+          {/* Catalogue */}
+          <div
+            className="cursor-pointer flex gap-2 items-center mt-4 text-gray-800 hover:text-blue-600"
+            onClick={() => setActiveSubTab("catalogue")}
+          >
+            <Download className="w-5 h-5" />
+            <span>Product Catalogue</span>
+          </div>
+
+          {/* Sidebar Logout (desktop) */}
           <div
             onClick={handleLogout}
             className="mt-8 text-red-600 hover:text-red-800 cursor-pointer flex items-center gap-2"

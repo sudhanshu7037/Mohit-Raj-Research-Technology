@@ -3,7 +3,6 @@ const User = require("../models/user.js");
 const bcrypt = require("bcrypt");
 const { validateRegisterData } = require("../utils/validation.js");
 
-
 const authRouter = express.Router();
 
 authRouter.post("/register", async (req, res) => {
@@ -37,19 +36,15 @@ authRouter.post("/login", async (req, res) => {
     if (isPasswordValid) {
       // Create a token for the user
       const token = await user.getJWT();
-      // Add the token to the cookie and send response back to the user
-      res.cookie("token", token, {
-        expires: new Date(Date.now() + 8 * 63600000),
+        res.cookie("token", token, {
+        httpOnly: true,
+        secure: false, 
+        expires: new Date(Date.now() + 8 * 3600000),
       });
+
       res.status(200).json({
-  token,
-  user: {
-    id: user._id,
-    firstname: user.firstname,
-    lastname: user.lastname,
-    email: user.email,
-  }
-});
+        message: "Login successful",
+      });
     } else {
       throw new Error("passwas is not correct");
     }

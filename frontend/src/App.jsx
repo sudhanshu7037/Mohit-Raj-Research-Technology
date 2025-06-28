@@ -15,6 +15,13 @@ import MultimediaAnimation from "./components/Services/MultimediaAnimation";
 import DigitalMarketing  from "./components/Services/DigitalMarketing";
 import DataCentersDevelopment  from "./components/Services/DataCentersDevelopment";
 import  Elearning from "./components/Services/Elearning";
+import  VideoConferencing from "./components/Services/VideoConferencing";
+import SecuritySurvillance  from "./components/Services/SecuritySurvillance";
+import DataDigitization from "./components/Services/DataDigitization";
+import RemoteInfrastructure from "./components/Services/RemoteInfrastructure";
+
+
+
 
 
 
@@ -40,6 +47,10 @@ const App = () => {
           <Route path="/DigitalMarketing" element={<DigitalMarketing />} />
           <Route path="/DataCentersDevelopment" element={<DataCentersDevelopment />} />
           <Route path="/Elearning" element={<Elearning/>} />
+          <Route path="/VideoConferencing" element={<VideoConferencing/>} />
+          <Route path="/SecuritySurvillance" element={<SecuritySurvillance />} />
+          <Route path="/DataDigitization" element={<DataDigitization />} />
+          <Route path="/RemoteInfrastructure" element={<RemoteInfrastructure />} />
           
 
 

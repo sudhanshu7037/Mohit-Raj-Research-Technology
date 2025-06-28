@@ -8,7 +8,7 @@ import Footer from './components/Footer'
 const Layout = ({children}) => {
   return (
     <>
-    {/* <NavBar/> */}
+    <NavBar/>
     <main className="min-h-[80vh]">{children}</main>
     <Footer/>
     </>

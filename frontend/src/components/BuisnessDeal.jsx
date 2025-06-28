@@ -29,14 +29,13 @@ const BuisnessDeal = () => {
         {/* Right Text Content */}
         <div className="space-y-6" data-aos="fade-left">
           <p className="text-red-600 font-semibold uppercase tracking-wide">
-            • About Our Company
+            • About Mohitraj
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-blue-900 font-houschka">
             Empowering Businesses with Creative Tech Solutions
           </h2>
           <p className="text-gray-700 font-basis">
-            We deliver exceptional software solutions to transform businesses into future-ready enterprises.
-            Our expertise spans across digital innovation, market research, and process automation.
+           Mohitraj Research Tech Pvt. Ltd. Company Incorporated under Company Act 1956 by the Registrar of companies, NCT of Delhi & Haryana. Company Provides world class consultancy and service in the field of Education & Development, IT enables services, marketing research, Industrial Research, Media Research, Social Research, Feed back Analysis & Advertising etc.
           </p>
 
           {/* Feature Cards */}

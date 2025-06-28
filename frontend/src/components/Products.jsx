@@ -61,7 +61,9 @@ const Products = () => {
         <h2 className="text-5xl font-bold text-blue-900  font-houschka">
           Transform Your Business with Advanced Technologies
         </h2>
-        <p className="text-red-600 font-semibold mt-4 text-lg">OUR DEDICATED PRODUCTS</p>
+        <p className="text-red-600 font-semibold mt-4 text-xl">
+          OUR DEDICATED PRODUCTS
+        </p>
       </div>
 
       <Swiper
@@ -96,17 +98,6 @@ const Products = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-
-      <div className="flex items-center gap-4 mt-10 justify-center">
-        <img
-          src="https://advisorhtml.websitelayout.net/img/icons/11.png"
-          alt="logo"
-          width={45}
-        />
-        <p className="text-[#555] font-medium text-[1.2rem]">
-          We’re committed to create a change that matters!
-        </p>
-      </div>
     </section>
   );
 };

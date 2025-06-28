@@ -424,7 +424,7 @@ const MultimediaAnimation = () => {
       <div className="max-w-7xl mx-auto">
         {/* Title */}
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-14 font-houschka text-pink-400 drop-shadow-lg">
-          Creative Technology Stack
+           Technology Stack
         </h2>
 
         {/* Stack Sections */}

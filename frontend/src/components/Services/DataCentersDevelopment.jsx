@@ -376,7 +376,7 @@ const DataCentersDevelopment = () => {
     </div>
 {/*fourth section*/}
     <div
-      className="w-full py-16 px-4 text-white bg-gradient-to-br from-indigo-900 via-blue-900 to-purple-900"
+      className="w-full py-16 px-4 text-white bg-red-100"
     >
       <div className="max-w-7xl mx-auto scale-[1.02] shadow-[0_25px_60px_-10px_rgba(255,255,255,0.2)] rounded-2xl p-6 bg-red-100 bg-opacity-10 backdrop-blur-lg hover:scale-[1.04] transition-transform duration-500">
         {/* Content Wrapper */}
@@ -392,7 +392,7 @@ const DataCentersDevelopment = () => {
                 Powering Digital Infrastructure <br className="hidden md:block" />
                 with Data Center Excellence
               </h2>
-              <p className="text-white max-w-md text-sm md:text-base">
+              <p className="text-black max-w-md text-sm md:text-base">
                 Our state-of-the-art data centers provide secure, scalable, and reliable environments for enterprise-level applications and services. Drive performance with infrastructure that grows with your needs.
               </p>
             </div>
@@ -493,7 +493,7 @@ const DataCentersDevelopment = () => {
         </div>
       </div>
 {/*new section*/}
-      <div className="max-w-7xl mx-auto px-4 py-16 text-center">
+      <div className="max-w-7xl mx-auto px-4 py-16 text-center bg-blue-200">
       <h2 className="text-4xl font-bold text-blue-900 mb-4 font-houschka">
         Custom Data Center Development Services We Offer
       </h2>
@@ -501,7 +501,7 @@ const DataCentersDevelopment = () => {
         We specialize in delivering end-to-end data center development solutions designed to meet the specific needs of businesses seeking scalability, security, and high performance.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left bg-red-500">
         {dataCenterServices.map((service, index) => (
           <div
             key={index}

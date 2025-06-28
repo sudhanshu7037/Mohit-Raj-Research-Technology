@@ -438,6 +438,7 @@ const industries = [
               </div>
             </div>
           </div>
+          
           <div className="bg-white py-16 px-4 lg:px-24 text-center">
         {/* Top Text */}
         <p className="text-gray-700 text-base md:text-lg max-w-4xl mx-auto mb-12 leading-relaxed font-basis">
@@ -772,6 +773,8 @@ const industries = [
                       </div>
                     ))}
                   </div>
+
+                  
                 
               
             

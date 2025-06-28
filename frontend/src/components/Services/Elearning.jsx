@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useState } from "react";
 import backimage from "../../assets/backimage.png";
-import { FaCheckCircle,FaLaptopCode, FaChalkboardTeacher, FaBookOpen, FaMobileAlt, FaVideo,FaCloud } from "react-icons/fa";
+import DevImage from "../../assets/backimage.png";
+import {FaChalkboard, FaGraduationCap,  FaLaptop,FaUsers, FaCheckCircle,FaLaptopCode, FaChalkboardTeacher, FaBookOpen, FaMobileAlt, FaVideo,FaCloud } from "react-icons/fa";
+import { FiChevronDown,FiChevronUp } from 'react-icons/fi';
+
 
 
 const elearningservices = [
@@ -77,11 +80,101 @@ const techStack = [
     items: ["Figma", "After Effects", "Camtasia", "Vimeo API"]
   }
 ];
+{/*custom services*/}
+const elearningServices = [
+  {
+    icon: <FaGraduationCap className="text-3xl text-blue-600" />, 
+    title: "Interactive Course Videos",
+    description: "Designing visually rich educational videos with animation and narration for effective learning."
+  },
+  {
+    icon: <FaVideo className="text-3xl text-blue-600" />, 
+    title: "2D & 3D Animation",
+    description: "Creating immersive animated content to explain complex e-learning topics visually."
+  },
+  {
+    icon: <FaChalkboard className="text-3xl text-blue-600" />, 
+    title: "Virtual Classrooms",
+    description: "Enabling real-time teaching sessions with whiteboard, chat, and multimedia support."
+  },
+  {
+    icon: <FaLaptop className="text-3xl text-blue-600" />, 
+    title: "E-Learning Content Editing",
+    description: "Professional editing of audio, video, and visuals to enhance content quality."
+  },
+  {
+    icon: <FaBookOpen className="text-3xl text-blue-600" />, 
+    title: "Gamified Assessments",
+    description: "Building game-based quizzes and modules to improve learner engagement."
+  },
+  {
+    icon: <FaMobileAlt className="text-3xl text-blue-600" />, 
+    title: "Mobile-First Media",
+    description: "Optimizing multimedia content for mobile devices for on-the-go learning."
+  }
+];
+const elearningSteps = [
+  {
+    icon: <FaChalkboardTeacher className="text-blue-600 text-2xl" />,
+    title: "Requirement Analysis",
+    description: "We understand your learning goals and define the content structure accordingly.",
+  },
+  {
+    icon: <FaUsers className="text-blue-600 text-2xl" />,
+    title: "Content Design",
+    description: "Our team creates interactive, multimedia-rich modules tailored to your audience.",
+  },
+  {
+    icon: <FaLaptopCode className="text-blue-600 text-2xl" />,
+    title: "Platform Integration",
+    description: "We integrate your content into LMS platforms for easy distribution and management.",
+  },
+  {
+    icon: <FaCheckCircle className="text-blue-600 text-2xl" />,
+    title: "Testing & Launch",
+    description: "Before deployment, we ensure your content is polished, responsive, and accessible.",
+  },
+];
+
+
+const elearningFaqs = [
+  {
+    question: "What types of e-learning content do you develop?",
+    answer:
+      "We create interactive modules, video lectures, quizzes, animations, and mobile-friendly lessons tailored to your learning objectives.",
+  },
+  {
+    question: "Can you integrate the content with my LMS?",
+    answer:
+      "Yes, we provide seamless integration with popular Learning Management Systems like Moodle, Canvas, TalentLMS, and more.",
+  },
+  {
+    question: "Is the content mobile responsive?",
+    answer:
+      "Absolutely. All our e-learning content is optimized for desktops, tablets, and smartphones to ensure smooth learning across devices.",
+  },
+  {
+    question: "Do you provide SCORM or xAPI-compliant content?",
+    answer:
+      "Yes, we build content that adheres to SCORM, xAPI, and AICC standards for compatibility and tracking within LMS platforms.",
+  },
+];
+
+
+
 
 
 
 
 const Elearning = () => {
+
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+  
   return (
     <>
  {/* === Hero Section === */}
@@ -307,8 +400,157 @@ const Elearning = () => {
       </div>
       {/*new section*/}
 
+<div className="max-w-7xl mx-auto px-4 py-16 text-center">
+      <h2 className="text-4xl font-bold text-blue-900 mb-4 font-houschka">
+        Custom E-Learning Services We Offer
+      </h2>
+      <p className="text-gray-600 max-w-4xl mx-auto mb-12">
+        We provide end-to-end e-learning content development services that combine technology and creativity to boost learning outcomes.
+      </p>
 
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+        {elearningServices.map((service, index) => (
+          <div
+            key={index}
+            className="bg-red-200 hover:bg-blue-200 p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border-t-4 border-blue-500"
+          >
+            <div className="mb-3 text-blue-600 group-hover:text-white transition-colors duration-300">
+              {service.icon}
+            </div>
+            <h3 className="text-xl font-semibold text-blue-900 group-hover:text-white mb-2 transition-colors duration-300">
+              {service.title}
+            </h3>
+            <p className="text-gray-700 group-hover:text-blue-900 text-sm leading-relaxed transition-colors duration-300">
+              {service.description}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+    {/* New Section */}
+<div className="max-w-7xl mx-auto px-4 py-16">
+  {/* Section Header */}
+  <h2 className="text-4xl font-bold text-blue-900 text-center mb-4 font-houschka">
+    Start Your <span className="text-pink-600">E-Learning</span> Project with MRT
+  </h2>
+  <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+    MRT provides complete e-learning development solutions using interactive content, animations, and intuitive LMS integration.
+  </p>
 
+  {/* Content */}
+  <div className="grid md:grid-cols-2 gap-12 items-stretch">
+    {/* Left Image */}
+    <div className="relative group w-full h-full">
+      <div className="h-full w-full rounded-xl overflow-hidden shadow-lg group-hover:shadow-2xl transition-all duration-500">
+        <img
+          src={DevImage}
+          alt="E-learning Development"
+          className="w-full h-full object-cover min-h-[100%]"
+        />
+        <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-all duration-300" />
+      </div>
+    </div>
+
+    {/* Right Steps */}
+    <div className="flex flex-col justify-center space-y-8 h-full">
+      {elearningSteps.map((step, index) => (
+        <div
+          key={index}
+          className="flex items-start gap-4 bg-white/90 p-5 rounded-xl shadow-md hover:bg-red-100 hover:scale-[1.02] hover:shadow-xl transition-all duration-300"
+        >
+          <div className="mt-1">{step.icon}</div>
+          <div>
+            <h3 className="text-lg font-semibold text-blue-900">
+              {step.title}
+            </h3>
+            <p className="text-gray-700 text-sm leading-relaxed">{step.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
+{/* Why Choose MRT Section for E-Learning */}
+<div className="max-w-7xl mx-auto px-4 py-16">
+  <h2 className="text-4xl font-bold text-center text-blue-900 mb-4 font-houschka">
+    Why Choose <span className="text-pink-600">MRT</span> for E-Learning?
+  </h2>
+  <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+    MRT is your trusted partner in delivering high-impact e-learning solutions. From interactive modules to mobile-ready content, we help educators and businesses transform learning experiences.
+  </p>
+
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {[
+      {
+        icon: <FaChalkboardTeacher className="text-3xl text-pink-500" />,
+        title: "Expert Instructional Design",
+        description: "We create learner-centric modules tailored to your training goals."
+      },
+      {
+        icon: <FaLaptopCode className="text-3xl text-pink-500" />,
+        title: "Custom LMS Integration",
+        description: "Seamless LMS development and integration for smooth learner tracking."
+      },
+      {
+        icon: <FaBookOpen className="text-3xl text-pink-500" />,
+        title: "Content Interactivity",
+        description: "Engage users with quizzes, animations, and real-time assessments."
+      },
+      {
+        icon: <FaMobileAlt className="text-3xl text-pink-500" />,
+        title: "Mobile-Optimized Learning",
+        description: "Deliver smooth learning experiences across all screen sizes and devices."
+      },
+    ].map((feature, index) => (
+      <div
+        key={index}
+        className="bg-white border-t-4 border-pink-500 p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 text-center"
+      >
+        <div className="mb-4 flex justify-center">{feature.icon}</div>
+        <h3 className="text-lg font-semibold text-blue-900 mb-2">
+          {feature.title}
+        </h3>
+        <p className="text-sm text-gray-600">{feature.description}</p>
+      </div>
+    ))}
+  </div>
+</div>
+{/*new section*/}
+<div className="max-w-4xl mx-auto px-4 py-16 bg-blue-300">
+      <h2 className="text-4xl font-bold text-center text-blue-900 mb-10 font-houschka">
+        E-Learning Development FAQs
+      </h2>
+
+      <div className="space-y-4 bg-red-300">
+        {elearningFaqs.map((faq, index) => (
+          <div
+            key={index}
+            className={`border rounded-xl p-5 transition-all duration-300 shadow-sm hover:shadow-lg hover:border-blue-400 ${
+              openIndex === index ? "bg-blue-100" : "bg-white"
+            }`}
+          >
+            <button
+              onClick={() => toggleFAQ(index)}
+              className="w-full flex justify-between items-center text-left focus:outline-none"
+            >
+              <span className="text-lg font-medium text-blue-900">
+                {faq.question}
+              </span>
+              {openIndex === index ? (
+                <FiChevronUp className="text-blue-600" />
+              ) : (
+                <FiChevronDown className="text-gray-500" />
+              )}
+            </button>
+            {openIndex === index && (
+              <p className="mt-3 text-gray-700 leading-relaxed transition-all duration-300">
+                {faq.answer}
+              </p>
+            )}
+          </div>
+        ))}
+      </div>
+    </div>
     </>
       
     

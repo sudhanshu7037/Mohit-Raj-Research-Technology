@@ -1,9 +1,19 @@
-import { useState } from "react";
+import React from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaUniversity, FaHospital, FaBuilding, FaUsers } from "react-icons/fa";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
-const ProductsDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) => {
+const ProductsDropdown = ({ openDropdown, handleDropdownToggle }) => {
+  const isOpen = openDropdown === "products";
   const [activeDomain, setActiveDomain] = useState(null);
+
+  // 💥 Reset activeDomain when dropdown is closed
+  useEffect(() => {
+    if (!isOpen) {
+      setActiveDomain(null);
+    }
+  }, [isOpen]);
 
   const categories = [
     {
@@ -59,19 +69,22 @@ const ProductsDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
   ];
 
   return (
-    <div
-      className="relative"
-      onMouseEnter={() => handleMouseEnter("products")}
-      onMouseLeave={handleMouseLeave}
-    >
-      <div className="text-md font-semibold cursor-pointer hover:text-yellow-500 flex items-center gap-1">
+    <div className="relative">
+      <div
+        className="text-md font-semibold cursor-pointer hover:text-yellow-500 flex items-center gap-1"
+        onClick={() => handleDropdownToggle("products")}
+      >
         OUR PRODUCTS
+        {isOpen ? (
+          <MdKeyboardArrowDown className="rotate-180 transition-transform duration-300" />
+        ) : (
+          <MdKeyboardArrowDown className="transition-transform duration-300" />
+        )}
       </div>
 
-      {activeMenu === "products" && (
+      {isOpen && (
         <div className="fixed left-1/2 top-[120px] transform -translate-x-1/2 w-[80vw] bg-[#fdf1f4] shadow-xl z-50 rounded-md px-6 py-8 border border-red-200">
           <div className="flex justify-center">
-            {/* Sidebar Description */}
             <div className="w-1/4 bg-[#fdeaea] p-6 rounded-md shadow-inner">
               <h2 className="text-xl font-bold text-red-800 mb-4">Our products</h2>
               <p className="text-sm text-black mb-6">
@@ -82,9 +95,7 @@ const ProductsDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
               </button>
             </div>
 
-            {/* Domain and Subdomain */}
             <div className="flex w-3/4 px-6 justify-center">
-              {/* Main Domains */}
               <div className="w-1/3 space-y-4 pr-4 border-r border-red-300 bg-blue-100 rounded-md p-2">
                 {categories.map((cat, idx) => (
                   <div
@@ -102,7 +113,6 @@ const ProductsDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
                 ))}
               </div>
 
-              {/* Subdomains */}
               <div className="w-2/3 pl-6">
                 {activeDomain !== null && (
                   <ul className="space-y-2">

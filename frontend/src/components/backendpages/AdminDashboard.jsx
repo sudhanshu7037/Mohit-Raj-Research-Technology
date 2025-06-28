@@ -3,10 +3,10 @@ import {
   ChevronDown,
   ChevronRight,
   UserCircle,
-  ShieldCheck,
-  FileText,
   LogOut,
   LayoutDashboard,
+  Menu,
+  X,
 } from "lucide-react";
 
 const AdminDashboard = () => {
@@ -14,6 +14,7 @@ const AdminDashboard = () => {
   const [activeSubTab, setActiveSubTab] = useState("");
   const [users, setUsers] = useState([]);
   const [formData, setFormData] = useState({ firstname: "", email: "" });
+  const [sidebarOpen, setSidebarOpen] = useState(false);
 
   const handleLogout = () => {
     localStorage.removeItem("adminToken");
@@ -107,12 +108,28 @@ const AdminDashboard = () => {
         />
       </div>
 
-      <div className="min-h-screen flex bg-gray-100">
+      {/* Header (for mobile menu + logout) */}
+      <div className="flex md:hidden justify-between items-center p-4 bg-white shadow">
+        <button onClick={() => setSidebarOpen(!sidebarOpen)}>
+          {sidebarOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+        <button
+          onClick={handleLogout}
+          className="bg-red-500 text-white px-4 py-1 rounded text-sm"
+        >
+          Logout
+        </button>
+      </div>
+
+      <div className="flex flex-col md:flex-row min-h-screen">
         {/* Sidebar */}
-        <aside className="w-72 bg-white shadow-md p-6">
+        <aside
+          className={`${
+            sidebarOpen ? "block" : "hidden"
+          } md:block w-full md:w-72 bg-white shadow-md p-6`}
+        >
           <h2 className="text-2xl font-bold mb-6 text-blue-600">Admin Panel</h2>
 
-          {/* User Management */}
           <div>
             <div
               className="flex items-center justify-between cursor-pointer text-gray-800 hover:text-blue-600 mb-2"
@@ -148,7 +165,7 @@ const AdminDashboard = () => {
             )}
           </div>
 
-          {/* Logout */}
+          {/* Sidebar Logout (only desktop) */}
           <div
             onClick={handleLogout}
             className="mt-8 text-red-600 hover:text-red-800 cursor-pointer flex items-center gap-2"
@@ -165,12 +182,6 @@ const AdminDashboard = () => {
               <LayoutDashboard className="w-7 h-7 text-blue-600" />
               Dashboard
             </h1>
-            <button
-              onClick={handleLogout}
-              className="md:hidden block bg-red-500 text-white px-4 py-2 rounded"
-            >
-              Logout
-            </button>
           </div>
           {renderContent()}
         </main>

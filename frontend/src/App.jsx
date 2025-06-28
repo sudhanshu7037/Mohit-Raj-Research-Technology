@@ -23,7 +23,6 @@ import ProtectedRoute from "./components/backendpages/ProtectedRoute";
 
 
 
-
 const App = () => {
   return (
     <div>
@@ -40,7 +39,8 @@ const App = () => {
           <Route path="/MedicalCollegeManagement" element={<MedicalCollegeManagement />} />
           <Route path="/MultimediaAnimation" element={<MultimediaAnimation />} />
           <Route path="/DigitalMarketing" element={<DigitalMarketing />} />
-          <Route path="/admin/login" element={<AdminLogin />} />
+          <Route path="/login" element={<AdminLogin />} />
+
           <Route
           path="/admin/dashboard"
           element={

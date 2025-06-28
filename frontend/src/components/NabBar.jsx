@@ -143,9 +143,9 @@ const NavBar = () => {
           </div>
 
           <div className="hidden md:block">
-            <Link to="/admin/login" className="bg-yellow-500 font-semibold px-5 py-2 rounded-md text-white text-2xl md:text-sm">
-              Login
-            </Link>
+            <button  className="bg-yellow-500 font-semibold px-5 py-2 rounded-md text-white text-2xl md:text-sm">
+              Get in Touch
+            </button>
           </div>
         </div>
 

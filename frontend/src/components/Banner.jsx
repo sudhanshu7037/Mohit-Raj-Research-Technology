@@ -14,14 +14,10 @@ const slides = [
   },
   {
     image: Banner3,
-    title: "",
-    description: "Stay ahead of the competition with our innovative approach to solving complex business challenges.",
+    title: "University digitalization solution for digital transformation of universities",
+    description: "Revolutionizing Learning , Innovative Education, Elevate Excellence by our unique Digital University Solution" ,
   },
-  {
-    image: "https://advisorhtml.websitelayout.net/img/banner/slider-01.jpg",
-    title: "University digitalization solution for digital transformation of universities ",
-    description: "Revolutionizing Learning , Innovative Education, Elevate Excellence by our unique Digital University Solution  Digital Transformation for Higher Education.",
-  },
+ 
 ];
 
 const Banner = () => {

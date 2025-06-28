@@ -23,7 +23,6 @@ const Home = () => {
         <Products />
         <MainBanner />
         <Solutions />
-
         <MoreInfo />
         <TeamSection />
         <TestimonialSlider />

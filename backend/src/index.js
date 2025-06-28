@@ -1,11 +1,18 @@
 const express = require('express');
 const connectdb = require("./config/database.js");
+const cors = require("cors"); 
 
 require("dotenv").config();
 
 const PORT = process.env.PORT || 5000;
 
-const app = express();  
+const app = express(); 
+  
+// middleware
+app.use(cors({
+  origin: "http://localhost:5173", // ✅ Allow frontend origin
+  credentials: true, // Agar cookies use kar rahe ho future me
+}));
 app.use(express.json());
 
 

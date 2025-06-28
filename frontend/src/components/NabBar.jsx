@@ -94,7 +94,7 @@ const NavBar = () => {
       <nav className={`fixed top-8 md:top-10 w-full z-50 transition-all duration-300 ${
         isScrolled
           ? "bg-white text-black shadow-md"
-          : "bg-transparent text-white border-b border-gray-600"
+          : "bg-transparent text-white "
       }`}>
         <div className="h-16 md:h-20 flex justify-between items-center px-4 lg:px-20">
           <Link to="/">
@@ -144,7 +144,7 @@ const NavBar = () => {
 
           <div className="hidden md:block">
             <button className="bg-yellow-500 px-3 py-2 rounded-md text-white text-xs md:text-sm">
-              LOGIN
+             Get in Touch
             </button>
           </div>
         </div>

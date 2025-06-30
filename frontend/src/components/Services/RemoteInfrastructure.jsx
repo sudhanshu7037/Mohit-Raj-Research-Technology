@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from "react";
 import bgImage from "../../assets/background.png";
 import Banner from "../../assets/background.png";
 import Image from "../../assets/background.png";
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
 
 import {
@@ -121,9 +122,44 @@ const Features = [
   },
 ];
 
+const remoteInfraFaqs = [
+  {
+    question: "What is remote infrastructure management?",
+    answer:
+      "Remote infrastructure management (RIM) involves monitoring and managing IT systems like servers, networks, and storage from a remote location using automation tools and secure access.",
+  },
+  {
+    question: "What components can be managed remotely?",
+    answer:
+      "Almost all IT infrastructure components including cloud servers, firewalls, VPNs, databases, storage devices, and virtual machines can be managed remotely.",
+  },
+  {
+    question: "Is remote infrastructure secure?",
+    answer:
+      "Yes, with encryption protocols, firewalls, role-based access control, and VPNs, remote infrastructure can be managed securely and compliantly.",
+  },
+  {
+    question: "Can remote systems handle critical outages?",
+    answer:
+      "Absolutely. Monitoring tools and auto-alert systems help detect failures early and trigger auto-recovery mechanisms or alert engineers for intervention.",
+  },
+  {
+    question: "Do I need cloud infrastructure for remote management?",
+    answer:
+      "Not necessarily. Remote management works with both on-premise and cloud systems, though cloud environments offer greater flexibility and scalability.",
+  },
+];
+
+
 
 
 const RemoteInfrastructure = () => {
+
+   const [openIndex, setOpenIndex] = useState(null);
+  
+    const toggleFAQ = (index) => {
+      setOpenIndex(openIndex === index ? null : index);
+    };
   return (
     
       
@@ -521,6 +557,44 @@ const RemoteInfrastructure = () => {
         ))}
       </div>
     </div>
+
+    {/*new section*/}
+<div className="max-w-4xl mx-auto px-4 py-16 bg-blue-300 mb-5">
+  <h2 className="text-4xl font-bold text-center text-blue-900 mb-10 font-houschka">
+    Remote Infrastructure FAQs
+  </h2>
+
+  <div className="space-y-4 bg-red-300">
+    {remoteInfraFaqs.map((faq, index) => (
+      <div
+        key={index}
+        className={`border rounded-xl p-5 transition-all duration-300 shadow-sm hover:shadow-lg hover:border-blue-400 ${
+          openIndex === index ? "bg-blue-100" : "bg-white"
+        }`}
+      >
+        <button
+          onClick={() => toggleFAQ(index)}
+          className="w-full flex justify-between items-center text-left focus:outline-none"
+        >
+          <span className="text-lg font-medium text-blue-900">
+            {faq.question}
+          </span>
+          {openIndex === index ? (
+            <FiChevronUp className="text-blue-600" />
+          ) : (
+            <FiChevronDown className="text-gray-500" />
+          )}
+        </button>
+        {openIndex === index && (
+          <p className="mt-3 text-gray-700 leading-relaxed transition-all duration-300">
+            {faq.answer}
+          </p>
+        )}
+      </div>
+    ))}
+  </div>
+</div>
+
 
 
 

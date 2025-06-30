@@ -456,49 +456,62 @@ const SoftwareDevelopment = () => {
         {/* Divider Line */}
         <hr className="border-gray-300 max-w-5xl mx-auto" />
       </div>
-      {/* Third  div */}
-      <div className="bg-white py-16 px-4 lg:px-24 text-center">
+
+      {/* Third div */}
+<div className="bg-red-100 hover:bg-blue-100 py-16 px-4 lg:px-24 text-center">
+  {/* Title */}
+  <h2 className="text-4xl md:text-4xl font-bold text-blue-900 mb-4 font-houschka">
+    Our Software Development Services
+  </h2>
+  <p className="text-gray-600 max-w-3xl mx-auto mb-12 text-2xl md:text-lg font-semibold">
+    We offer a comprehensive suite of software development services, meticulously designed to meet the user requirements.
+  </p>
+
+  {/* Cards */}
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+    {cardsData.map((card, index) => (
+      <div
+        key={index}
+        className="relative backdrop-blur-xl bg-white/80 hover:bg-white border border-blue-200 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden group"
+      >
+        {/* Glowing Edge */}
+        <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-pink-400 to-purple-500 rounded-2xl blur-lg opacity-0 group-hover:opacity-40 transition-all duration-500 pointer-events-none" />
+
+        {/* Image */}
+        <img
+          src={card.img}
+          alt={card.alt}
+          className="h-16 mb-5 mx-auto group-hover:scale-110 transition-transform duration-300"
+        />
+
         {/* Title */}
-        <h2 className="text-4xl md:text-4xl font-bold text-blue-900 mb-4 font-houschka ">
-          Our Software Development Services
-        </h2>
-        <p className="text-gray-600 max-w-3xl mx-auto mb-12 text-2xl md:text-lg font-semibold ">
-          We offer a comprehensive suite of software development services
-          ,meticulously designed to meet the user requirements.
+        <h3 className="text-xl font-bold text-blue-900 mb-2 group-hover:text-pink-600 transition-all duration-300">
+          {card.title}
+        </h3>
+
+        {/* Description */}
+        <p className="text-gray-700 text-sm mb-4 leading-relaxed">
+          {card.description}
         </p>
 
-        {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto ">
-          {cardsData.map((card, index) => (
-            <div
-              key={index}
-              className="border  border-black  p-6 text-left  transition"
-            >
-              <img src={card.img} alt={card.alt} className="h-16 mb-4" />
-              <h3 className="text-xl font-semibold text-blue-900 mb-2">
-                {card.title}
-              </h3>
-              <p className="text-gray-600 mb-4">{card.description}</p>
-              {/* <ul className="list-disc list-inside text-blue-800 space-y-1">
-                {card.points.map((point, idx) => (
-                  <li key={idx}>{point}</li>
-                ))}
-              </ul> */}
-              {card.button && (
-                <button className="bg-blue-900 text-white px-4 py-2 rounded   hover:bg-blue-700 transition mt-4 mr-8">
-                  {card.button}
-                </button>
-              )}
-              {card.button1 && (
-                <button className="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-700 transition mt-4 ml-8">
-                  {card.button1}
-                </button>
-              )}
-            </div>
-          ))}
+        {/* Buttons */}
+        <div className="flex flex-wrap gap-3 justify-center mt-4">
+          {card.button && (
+            <button className="bg-gradient-to-r from-blue-700 to-blue-900 text-white px-4 py-2 rounded-md hover:from-pink-600 hover:to-purple-700 transition-all duration-300">
+              {card.button}
+            </button>
+          )}
+          {card.button1 && (
+            <button className="bg-gradient-to-r from-blue-700 to-blue-900 text-white px-4 py-2 rounded-md hover:from-pink-600 hover:to-purple-700 transition-all duration-300">
+              {card.button1}
+            </button>
+          )}
         </div>
       </div>
-      
+    ))}
+  </div>
+</div>
+
 
       {/*Contact us div*/}
       <div className="w-full bg-white py-8 px-4 flex justify-center items-center gap-12 max-w-7xl mx-auto h-[200px]">
@@ -555,18 +568,18 @@ const SoftwareDevelopment = () => {
         </div>
       </div>
       {/*new  div*/}
-      <div className="max-w-7xl mx-auto px-4 py-16">
+      <div className="max-w-7xl mx-auto px-4 py-16 bg-blue-100">
         <h2 className="text-4xl text-center font-bold text-blue-900 mb-12 font-houschka">
           Technology Stack
         </h2>
-        <div className="space-y-10">
+        <div className="space-y-10 ">
           {techStack.map((section, idx) => (
             <div
               key={idx}
-              className="flex flex-col md:flex-row items-start md:items-center gap-6"
+              className="flex flex-col md:flex-row items-start md:items-center gap-6 "
             >
               {/* Left Label */}
-              <div className="flex items-center min-w-[180px] gap-3 border p-2  border-black">
+              <div className="flex items-center min-w-[180px] gap-3 border p-2  border-black text-white bg-blue-900">
                 {section.icon}
                 <span className="text-lg font-semibold text-blue-800">
                   {section.label}
@@ -579,7 +592,7 @@ const SoftwareDevelopment = () => {
                 {section.items.map((item, index) => (
                   <div
                     key={index}
-                    className="bg-gray-100 hover:bg-blue-100 text-gray-800 px-4 py-2  border border-black text-sm font-medium"
+                    className="bg-gray-100 bg-red-200 hover:bg-white text-gray-800 px-4 py-2  border border-black text-sm font-medium"
                   >
                     {item}
                   </div>
@@ -589,28 +602,34 @@ const SoftwareDevelopment = () => {
           ))}
         </div>
       </div>
-      {/*new  div*/}
-      <div className="max-w-7xl mx-auto px-4 py-16 text-center">
-        <h2 className="text-4xl font-bold text-blue-900 mb-4 font-houschka">
-          Custom Software Types, We Offer
-        </h2>
-        <p className="text-gray-600 max-w-4xl mx-auto mb-12">
-          TatvaSoft specializes in creating various software solutions to fit
-          unique business requirements. Our experts offer tailor-made services
-          to drive growth and efficiency in your business.
-        </p>
+      {/* New Section – Custom Software Types we offer */}
+<div className="max-w-7xl mx-auto px-4 py-16 text-center">
+  <h2 className="text-4xl font-bold text-blue-900 mb-4 font-houschka">
+    Custom Software Types, We Offer
+  </h2>
+  <p className="text-gray-600 max-w-4xl mx-auto mb-12">
+    TatvaSoft specializes in creating various software solutions to fit
+    unique business requirements. Our experts offer tailor-made services
+    to drive growth and efficiency in your business.
+  </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
-          {services.map((service, index) => (
-            <div key={index} className="border-t-4 border-blue-500 pt-4">
-              <h3 className="text-lg font-semibold text-blue-900 mb-2">
-                {service.title}
-              </h3>
-              <p className="text-gray-700 text-sm">{service.description}</p>
-            </div>
-          ))}
-        </div>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left ">
+    {services.map((service, index) => (
+      <div
+        key={index}
+        className={`bg-white  hover:bg-red-100 rounded-xl border-t-4 border-red-500 p-6 shadow-md hover:shadow-xl transition-all duration-300 ${
+          index === 1 ? "bg-blue-100" : ""
+        }`}
+      >
+        <h3 className="text-xl font-semibold text-blue-900 mb-2">
+          {service.title}
+        </h3>
+        <p className="text-gray-700 text-sm">{service.description}</p>
       </div>
+    ))}
+  </div>
+</div>
+
       {/*new  div*/}
       <div className="max-w-7xl mx-auto px-4 py-16">
         <h2 className="text-4xl font-bold text-blue-900 text-center mb-12 font-houschka">

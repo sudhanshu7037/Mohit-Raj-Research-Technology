@@ -41,7 +41,15 @@ authRouter.post("/login", async (req, res) => {
       res.cookie("token", token, {
         expires: new Date(Date.now() + 8 * 63600000),
       });
-      res.send(user);
+      res.status(200).json({
+  token,
+  user: {
+    id: user._id,
+    firstname: user.firstname,
+    lastname: user.lastname,
+    email: user.email,
+  }
+});
     } else {
       throw new Error("passwas is not correct");
     }

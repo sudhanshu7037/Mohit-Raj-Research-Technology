@@ -19,6 +19,7 @@ import  VideoConferencing from "./components/Services/VideoConferencing";
 import SecuritySurvillance  from "./components/Services/SecuritySurvillance";
 import DataDigitization from "./components/Services/DataDigitization";
 import RemoteInfrastructure from "./components/Services/RemoteInfrastructure";
+import Education from "./components/Industries/Education";
 
 
 import AdminLogin from "./components/backendpages/AdminLogin";
@@ -54,6 +55,9 @@ const App = () => {
           <Route path="/SecuritySurvillance" element={<SecuritySurvillance />} />
           <Route path="/DataDigitization" element={<DataDigitization />} />
           <Route path="/RemoteInfrastructure" element={<RemoteInfrastructure />} />
+          <Route path="/Education" element={<Education />} />
+
+
           <Route path="/admin/login" element={<AdminLogin />} />
           <Route
           path="/admin/dashboard"

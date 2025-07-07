@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import bgImage from "../../assets/software.jpg";
+import bgImage from "../../assets/securitybanner.png";
 import Image from "../../assets/backimage.png";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 

@@ -106,30 +106,27 @@ const NavBar = () => {
               <a href="/who we are">WHO WE ARE</a>
             </li>
 
-            <ProductsDropdown
-              openDropdown={openDropdown}
-  handleDropdownToggle={handleDropdownToggle}
-            />
+           <ProductsDropdown
+  openDropdown={openDropdown}
+  setOpenDropdown={setOpenDropdown}
+/>
 
-            <ServicesDropdown
-              openDropdown={openDropdown}
-  handleDropdownToggle={handleDropdownToggle}
-            />
+<ServicesDropdown
+  openDropdown={openDropdown}
+  setOpenDropdown={setOpenDropdown}
+/>
+         
+            <SolutionsDropdown
+    openDropdown={openDropdown}
+    setOpenDropdown={setOpenDropdown}
+  />
+           
+           
 
-            {/* Solutions */}
-           <SolutionsDropdown 
-           
-           openDropdown={openDropdown}
-  handleDropdownToggle={handleDropdownToggle}
-           
-           />
-
-            {/* Industries */}
-           <IndustriesDropdown
-            openDropdown={openDropdown}
-  handleDropdownToggle={handleDropdownToggle}
-           
-           />
+            <IndustriesDropdown
+    openDropdown={openDropdown}
+    setOpenDropdown={setOpenDropdown}
+  />
 
             <li><a href="/blog">BLOG</a></li>
             <li><a href="/career">CAREER</a></li>

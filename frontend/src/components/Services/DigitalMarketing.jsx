@@ -1,10 +1,10 @@
 import React from 'react';
-import DigitalMarketingimg from "../../assets/DigitalMarketingimg.png";
+import DigitalMarketingimg from "../../assets/digitalmarketingbanner.png";
 import { FaCheckCircle } from "react-icons/fa";
 import bgImage from "../../assets/background.png";
 import { FaBullhorn, FaSearch, FaMailBulk, FaChartLine } from "react-icons/fa";
 import { FaLightbulb,FaShieldAlt, FaCogs,FaRocket ,FaUsers,FaMobileAlt } from "react-icons/fa";
-import DevImage from "../../assets/project.png";
+import DevImage from "../../assets/digitalmarket2.png";
 
 const techStack = [
   {
@@ -28,12 +28,12 @@ const services = [
   {
     title: "Search Engine Optimization (SEO)",
     description:
-      "Boost your visibility in organic search with keyword research, on-page SEO, and technical optimization.",
+      "Achieve heightened brand prominence on all major search engines by utilizing our SEO services. We improve your website's structure, content, and backlinks to enhance organic visibility and to ensure that you receive quality traffic.",
   },
   {
-    title: "Social Media Marketing",
+    title: "Pay-Per-Click Advertising (PPC)",
     description:
-      "Engage your audience with strategic campaigns across Instagram, Facebook, LinkedIn, and more.",
+      "Enjoy increased return on investment as a result of our PPC advertising services on Google Ads and other social media platforms. We design and manage cutting edge advertisement campaigns that are capable of delivering instant results.",
   },
   {
     title: "Content Marketing",
@@ -129,8 +129,8 @@ const DigitalMarketing = () => {
       DIGITAL MARKETING SERVICES
     </h1>
     <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed mb-6 sm:mb-8">
-      Amplify your brand visibility, engage your target audience, and achieve measurable results
-      with our result-driven digital marketing strategies including SEO, PPC, Social Media, and more.
+      All-Inclusive Digital Marketing Solutions Provided by Mohitraj Research and Technology Pvt. Ltd. 
+
     </p>
     <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
       <button className="bg-blue-600 hover:bg-blue-700 px-4 py-2 sm:px-6 sm:py-3 rounded-md text-sm sm:text-base md:text-lg font-medium transition">
@@ -147,7 +147,7 @@ const DigitalMarketing = () => {
 <section className="py-10 sm:py-14 md:py-16 px-4 sm:px-6 bg-white text-gray-800">
   <div className="max-w-6xl mx-auto text-center mb-8 sm:mb-10 md:mb-14">
     <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed font-medium text-gray-700">
-      With a decade of digital expertise, we empower brands with data-driven strategies, innovative content, and high-converting campaigns. From SEO to social media, we’ve helped 100s of clients scale their online presence and revenue through tailored marketing solutions.
+      Here at Mohitraj Research and Technology Private Limited, our full range of offerings in digital marketing will enable your business to succeed in the ever-changing online world. With a focus on improving brand recognition, enhancing customer relations, and achieving tangible growth through creative data driven approaches, our services will deliver business results. 
     </p>
   </div>
 
@@ -178,7 +178,8 @@ const DigitalMarketing = () => {
     Our Digital Marketing Services
   </h2>
   <p className="text-gray-600 max-w-3xl mx-auto mb-12 text-base md:text-lg leading-relaxed font-basis animate-fade-in">
-    Boost your business visibility and engagement through tailored digital marketing strategies. We drive results across search, social, email, and beyond.
+    As Our Clients You Will Enjoy The Following Key Services 
+
   </p>
 
   {/* Cards */}

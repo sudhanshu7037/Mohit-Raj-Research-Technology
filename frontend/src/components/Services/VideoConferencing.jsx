@@ -1,8 +1,8 @@
 
 import React, { useState } from "react";
-import image1 from "../../assets/software.jpg"
+import image1 from "../../assets/videoconferencingbanner.png"
 import Banner from "../../assets/Banner.png"
-import enterprizes from "../../assets/enterprizes.png"
+import enterprizes from "../../assets/videoconferencingbanner.png"
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
 
@@ -611,7 +611,7 @@ const VideoConferencing=() =>{
       {/* === Left: Image === */}
       <div className="w-full md:w-1/2 relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
         <img
-          src="/assets/video-conferencing-case.png" // ✅ replace with your real image path
+          src="/assets/image1.png" // ✅ replace with your real image path
           alt="Video Conferencing Case Study"
           className="w-full h-full object-cover transform group-hover:scale-105 transition duration-700"
         />

@@ -1,11 +1,10 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
-const SolutionsDropdown = () => {
-  const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
-
-  const toggleSolutions = () => setIsSolutionsOpen(!isSolutionsOpen);
+const SolutionsDropdown = ({ openDropdown, setOpenDropdown }) => {
+  const isSolutionsOpen = openDropdown === "solutions";
+  const timeoutRef = useRef(null);
 
   const solutionItems = [
     "University Digitalization",
@@ -22,20 +21,34 @@ const SolutionsDropdown = () => {
     "Audio Video Broadcasting",
   ];
 
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setOpenDropdown("solutions");
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setOpenDropdown(null);
+    }, 1000); // 1 seconds
+  };
+
   return (
-    <div className="relative">
-      <div
-        className="cursor-pointer hover:text-yellow-500 flex items-center gap-1"
-        onClick={toggleSolutions} 
-      >
+    <div
+      className="relative"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <div className="cursor-pointer hover:text-yellow-500 flex items-center gap-1">
         SOLUTIONS
         <MdKeyboardArrowDown
-          className={`transition-transform duration-300 ${isSolutionsOpen ? "rotate-180" : ""}`} // rotate upar niche
+          className={`transition-transform duration-300 ${
+            isSolutionsOpen ? "rotate-180" : ""
+          }`}
         />
       </div>
 
       {isSolutionsOpen && (
-        <div className="absolute top-full left-0 mt-2 w-[250px] md:w-[300px] bg-blue-100 text-black p-4 shadow-lg z-50">
+        <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[250px] md:w-[300px] bg-blue-100 text-black p-4 shadow-lg z-50 rounded-md">
           <ul className="flex flex-col gap-2 text-xs md:text-sm">
             {solutionItems.map((item, index) => (
               <li key={index}>

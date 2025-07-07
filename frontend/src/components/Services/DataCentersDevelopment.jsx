@@ -1,6 +1,6 @@
 
 import React from 'react';
-import bgImage from "../../assets/Backgroundsoftware.jpg";
+import bgImage from "../../assets/Datacenterbanner.png";
 import ImagebgEx from "../../assets/ImagebgEx.jpg";
 import Logo6 from "../../assets/NEWIMG.png";
 import Logo1 from "../../assets/SofwareConsulting.png";

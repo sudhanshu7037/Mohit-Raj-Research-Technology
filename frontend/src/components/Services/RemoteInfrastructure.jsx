@@ -3,6 +3,7 @@ import bgImage from "../../assets/Remoteinfrastructurebanner.png";
 import Banner from "../../assets/background.png";
 import Image from "../../assets/background.png";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
+import { FaCheckCircle } from "react-icons/fa";
 
 
 import {
@@ -26,92 +27,47 @@ import {
 const steps = [
   {
     icon: <FaServer className="text-2xl text-blue-600" />,
-    title: "Remote Server Deployment",
-    description: "Provision and configure servers remotely to host applications, databases, and storage systems with zero downtime.",
-  },
+    title: "Remote Server Provisioning",
+    description: "Our remote server provisioning experts can configure and manage servers seamlessly for applications, databases, and data storage platforms. Critical systems are secured with controlled access, and we guarantee high availability and zero downtime.",},
   {
     icon: <FaNetworkWired className="text-2xl text-blue-600" />,
-    title: "Network Infrastructure Setup",
-    description: "Design and deploy secure and scalable networks remotely, including VPNs, firewalls, and traffic control.",
+    title: "Implementation of Network Infrastructure",
+    description: "We create and maintain custom-tailored scalable remote network infrastructures with integrated security for your organization. To enable strong interconnectedness and secure data flow within distributed systems, our solutions include VPN configuration, firewall deployment, and traffic management.",
   },
   {
     icon: <FaShieldAlt className="text-2xl text-blue-600" />,
-    title: "Security Management",
-    description: "Implement remote monitoring, intrusion detection, firewall rules, and access control for infrastructure security.",
+    title: "Support for Cloud Infrastructure",
+    description: "Providing expert support for cloud environments includes AWS, Azure and Google Cloud Platform. We manage and automatically scale compute, storage, and networking resources and infrastructure optimizations which can all be deployed seamlessly and entirely remotely.",
   },
   {
     icon: <FaCloud className="text-2xl text-blue-600" />,
-    title: "Cloud Infrastructure Support",
-    description: "Manage AWS, Azure, GCP infrastructure remotely—scaling compute, storage, and deployment automation.",
+    title: "IT Maintenance",
+    description: "Our 24 by 7 remote IT maintenance enables uninterrupted operation from anywhere. With monitoring, continuous oversight, fortification of digital perimeters with security patches, and performance adjustments ensures sustained uptime for your IT infrastructure.",
   },
-  {
-    icon: <FaTools className="text-2xl text-blue-600" />,
-    title: "Remote IT Maintenance",
-    description: "Ensure your infrastructure is updated, monitored, patched and performing optimally 24/7 from any location.",
-  },
+  
   
 ];
 
 const Features = [
   {
     icon: <FaServer className="text-3xl text-blue-600" />,
-    title: " End-to-End Remote Infrastructure Services",
-    description: "We provide complete remote infrastructure solutions including server setup, cloud migration, and infrastructure automation tailored to your business goals.",
+    title: " Proven Expertise in Remote IT Infrastructure",
+    description: "MRT has knowledgeable years of experience with remote infrastructure management. We offer consistent and redundancy-aligned scalable solutions tailored to your business goals. Fully certified engineers on staff carry out the integration, deployment, and support processes, guaranteeing effortless automated systems in place. ",
   },
   {
     icon: <FaNetworkWired className="text-3xl text-blue-600" />,
-    title: "Expertise in Cloud and DevOps",
-    description: "Our team specializes in cloud infrastructure management, DevOps automation, and deployment pipelines to ensure seamless operations and faster development cycles.",
+    title: "Comprehensive Remote Development Services",
+    description: "Networking and security solutions as well as network architecture integrated into IT environments is offered comprehensively along with the remote server deployment and cloud integration as part of the high-performance IT environment construction and maintenance.",
   },
   {
     icon: <FaShieldAlt className="text-3xl text-blue-600" />,
-    title: "Secure & Scalable Solutions",
-    description: "We build secure, scalable, and performance-optimized environments to support remote teams and growing enterprise needs with confidence.",
+    title: "Tailored Solutions for Your Business Needs",
+    description: "Every business is unique. That’s why we design tailored infrastructure strategies to meet your specific requirements—whether you're a startup scaling fast or an enterprise modernizing legacy systems.",
   },
-  {
-    icon: <FaCloud className="text-3xl text-blue-600" />,
-    title: " 24/7 Monitoring & Support",
-    description: "Our proactive support team ensures continuous monitoring, regular updates, and immediate issue resolution for uninterrupted business continuity.",
-  },
-  {
-    icon: <FaTools className="text-3xl text-blue-600" />,
-    title: " Customized Development Environments",
-    description: "We design custom remote development environments that align with your workflows, tools, and security policies.",
-  },
-  {
-    icon: <FaSyncAlt className="text-3xl text-blue-600" />,
-    title: "Cost-Effective and Efficient",
-    description: "Reduce infrastructure costs with our cloud-based remote IT solutions while enhancing performance and agility.",
-  },
+  
 ];
 
-const remoteInfraFaqs = [
-  {
-    question: "What is remote infrastructure management, and how does Mohitraj Research and Technology Pvt. Ltd. support it? ",
-    answer:
-      "Remote Infrastructure Management involves monitoring, managing, and maintaining an organization's IT infrastructure from a remote location. At Mohitraj Research and Technology Pvt. Ltd., we offer end-to-end remote IT infrastructure management services.",
-  },
-  {
-    question: "Do you offer 24/7 infrastructure support and monitoring? ",
-    answer:
-      "Yes, our 24/7 monitoring services ensure round-the-clock surveillance of your servers, applications, and networks.",
-  },
-  {
-    question: "How do your offshore development services benefit global clients? ",
-    answer:
-      "Our offshore development services help businesses reduce operational costs while gaining access to a skilled development team",
-  },
-  {
-    question: "Can you assist with cloud migration and deployment?",
-    answer:
-      "Absolutely. We specialize in secure cloud migration services, helping enterprises transition to cloud platforms like AWS, Azure, or Google Cloud with minimal downtime and full compliance.",
-  },
-  {
-    question: "What technologies do you use for remote infrastructure management? ",
-    answer:
-      "We leverage industry-standard tools and technologies such as Nagios, Zabbix, SolarWinds, AWS CloudWatch, and Microsoft Azure Monitor to deliver high-performance cloud infrastructure support and monitoring across hybrid, on-premise, and multi-cloud environments.",
-  },
-];
+
 
 
 
@@ -146,7 +102,8 @@ const RemoteInfrastructure = () => {
     </h3>
 
     <p className="text-white max-w-3xl text-base md:text-lg mb-6">
-      Welcome to Mohitraj Research and Technology Private Limited, your most reliable companion in Remote Infrastructure Facility solutions.
+      
+
 
     </p>
 
@@ -167,9 +124,9 @@ const RemoteInfrastructure = () => {
   {/* Top Text */}
   <h1 className="text-blue-500 text-4xl font-bold">Overview</h1>
   <p className="text-gray-700 text-base md:text-lg max-w-4xl mx-auto mb-12 leading-relaxed font-basis text-justify mt-4">
-    We encompass a number of innovative services and technology, professional support for simple and correct operation of your business operations, regardless of your location.
-<br></br>
- From cloud solutions to remote infrastructure management, we offer agile, reliable, and scalable services that enable your business to thrive in today’s fast-paced digital environment.
+    Welcome to Mohitraj Research and Technology Private Limited, your most reliable companion in Remote Infrastructure Facility solutions.
+We encompass a number of innovative services and technology, professional support for simple and correct operation of your business operations, regardless of your location.
+
 
 
   </p>
@@ -306,33 +263,38 @@ const RemoteInfrastructure = () => {
   {/* Content */}
   <div className="relative max-w-7xl mx-auto px-6">
     <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-12">
-      Remote Infrastructure Experience
+     Integrated Remote Infrastructure Management Experience  
+
     </h2>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-gray-800">
       {/* Column 1 */}
       <div className="bg-white bg-opacity-90 p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105">
-        <h3 className="text-2xl font-semibold mb-4">24/7 Monitoring</h3>
+        <h3 className="text-2xl font-semibold mb-4">Round the Clock Infrastructure Surveillance  </h3>
         <p>
-          Run your infrastructure efficiently with our technical experts providing 24/7 monitoring and offer proactive maintenance.
+          Achieve peak performance and tight security of IT systems with our round the clock remote surveillance services.
+           Skilled technical professionals resolve issues proactively on a round the clock basis, reducing downtime and enabling business continuity.Take advantage of always-on system monitoring** alongside remote support  customized for your enterprise
 
         </p>
       </div>
 
       {/* Column 2 */}
       <div className="bg-white bg-opacity-90 p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105">
-        <h3 className="text-2xl font-semibold mb-4">Scalability of Solutions</h3>
+        <h3 className="text-2xl font-semibold mb-4">IT Services for Expanding Enterprises  </h3>
         <p>
-          Scale-up your infrastructure quickly according to your business growth, ensuring flexibility and efficiency in your operations
+          Change and grow with our remote infrastructure solutions. Whether optimizing current resources or expanding operations, 
+          we provide tailored and affordable scaling of IT infrastructure to suit organizational needs. Achieve improved operational efficiency drive digital transformation, and prepare your systems for the future.  
+
+
         </p>
       </div>
 
       {/* Column 3 */}
       <div className="bg-white bg-opacity-90 p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105">
-        <h3 className="text-2xl font-semibold mb-4">Disaster Recovery</h3>
+        <h3 className="text-2xl font-semibold mb-4">Concerned about business continuity?</h3>
         <p>
-          Scale-up your infrastructure quickly according to your business growth, ensuring flexibility and efficiency in your operations
-        </p>
+          Protect essential business data with our business continuity and disaster recovery solutions.
+           We aid in rapid infrastructure recovery, thus aiding in preserving critical information. Our approach padding your mission critical systems ensures business resilience along with minimal downtime</p>
       </div>
     </div>
   </div>
@@ -421,7 +383,8 @@ const RemoteInfrastructure = () => {
       <div className="max-w-7xl mx-auto px-4 py-16">
       {/* Section Header */}
       <h2 className="text-4xl font-bold text-blue-900 text-center mb-4 font-houschka">
-        Start Your Remote Infrastructure Project with <span className="text-pink-600">MRT</span>
+        Kick Off Your Remote Infrastructure Project with 
+ <span className="text-pink-600"> MRT</span>
       </h2>
       <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
         MRT offers complete remote infrastructure development solutions including server setup, network deployment, cloud support, and more — ensuring your systems are stable and secure.
@@ -459,12 +422,72 @@ const RemoteInfrastructure = () => {
       </div>
     </div>
 
+    {/*benefits*/}
+
+
+    <section className="bg-gray-50 py-16 px-4 md:px-16 lg:px-24">
+      <div className="max-w-6xl mx-auto">
+        {/* Section Heading */}
+        <p className="text-2xl uppercase tracking-widest text-blue-600 mb-2 font-bold font-houschka">
+          Features
+        </p>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-blue-900 leading-snug font-houschka mb-6">
+          Power Up Your IT with <span className="text-pink-600">US</span> 
+        </h2>
+
+        {/* Bullet List */}
+        <ul className="space-y-4 text-gray-800 text-base md:text-lg list-none">
+          <li className="flex items-start gap-3">
+            <FaCheckCircle className="text-blue-600 mt-1" />
+            <span>
+              <strong>Data Security:</strong> Safeguard your confidential data with our recent in security measures and robust encryption protocols.
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <FaCheckCircle className="text-blue-600 mt-1" />
+            <span>
+              <strong>24/7 Monitoring:</strong> Run your infrastructure efficiently with our technical experts providing 24/7 monitoring and offer proactive maintenance.
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <FaCheckCircle className="text-blue-600 mt-1" />
+            <span>
+              <strong>Scalability of Solutions:</strong> Scale-up your infrastructure quickly according to your business growth, ensuring flexibility and efficiency in your operations.
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <FaCheckCircle className="text-blue-600 mt-1" />
+            <span>
+              <strong>Disaster Recovery:</strong> Mitigate all the risks and keep your business running with our trustworthy disaster recovery processes designed specifically for your needs.
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <FaCheckCircle className="text-blue-600 mt-1" />
+            <span>
+              <strong>Remote Support:</strong> Get remote support from our experts for instant help and troubleshooting at any given time.
+            </span>
+          </li>
+          <li className="flex items-start gap-3">
+            <FaCheckCircle className="text-blue-600 mt-1" />
+            <span>
+              <strong>Cost-Effectiveness:</strong> Achieve optimal ROIs with our affordable infrastructure services that meet your budget and business needs.
+            </span>
+          </li>
+        </ul>
+      </div>
+    </section>
+{/*why chose us*/}
     <div className="max-w-7xl mx-auto px-4 py-16">
       <h2 className="text-4xl font-bold text-center text-blue-900 mb-4 font-houschka">
-        Why Choose <span className="text-pink-600">MRT</span>?
+        Why <span className="text-pink-600">MRT</span> IS Best for Remote Infrastructure Services ?
       </h2>
       <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-        We are dedicated to delivering high-quality Remote Infrastructure Facility services that incorporate the latest technology geeks with professional guidance at Mohitraj Research and Technology Private Limited.
+        At Mohitraj Research Technology Pvt. Ltd. (MRT), we focus on innovation and a strong methodology to offer reliable, 
+        remote infrastructure, and development solutions. With our focused and bespoke services, 
+        organizations can enhance operational efficiency, minimize downtime, and scale even more in a
+         digitally-first global landscape. 
+
+
 
 
       </p>
@@ -485,43 +508,7 @@ const RemoteInfrastructure = () => {
       </div>
     </div>
 
-    {/*new section*/}
-<div className="max-w-4xl mx-auto px-4 py-16 bg-blue-300 mb-5">
-  <h2 className="text-4xl font-bold text-center text-blue-900 mb-10 font-houschka">
-    Remote Infrastructure FAQs
-  </h2>
-
-  <div className="space-y-4 bg-red-300">
-    {remoteInfraFaqs.map((faq, index) => (
-      <div
-        key={index}
-        className={`border rounded-xl p-5 transition-all duration-300 shadow-sm hover:shadow-lg hover:border-blue-400 ${
-          openIndex === index ? "bg-blue-100" : "bg-white"
-        }`}
-      >
-        <button
-          onClick={() => toggleFAQ(index)}
-          className="w-full flex justify-between items-center text-left focus:outline-none"
-        >
-          <span className="text-lg font-medium text-blue-900">
-            {faq.question}
-          </span>
-          {openIndex === index ? (
-            <FiChevronUp className="text-blue-600" />
-          ) : (
-            <FiChevronDown className="text-gray-500" />
-          )}
-        </button>
-        {openIndex === index && (
-          <p className="mt-3 text-gray-700 leading-relaxed transition-all duration-300">
-            {faq.answer}
-          </p>
-        )}
-      </div>
-    ))}
-  </div>
-</div>
-
+    
 
 
 

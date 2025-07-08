@@ -22,7 +22,7 @@ const services = [
   {
     title: "Web Servers",
     description:
-      "Reliable hosting solutions to power your online applications and websites.",
+      "Host and serve websites, web applications, and services with high reliability and performance Infrastructure that scales and provides smooth user experiences even under heavy traffic loads.",
     img: Logo6,
     alt: "Web Servers",
     points: ["High uptime", "Secure access", "Scalable infrastructure"],
@@ -30,7 +30,7 @@ const services = [
   {
     title: "Application Servers",
     description:
-      "Optimized platforms to deploy and run your enterprise-grade applications.",
+      "Offer a secure platform to execute critical enterprise applications and services.Enable effective implementation of business logic, bridging front-end clients and back-end systems.",
     img: Logo1,
     alt: "Application Servers",
     points: ["Fast performance", "Middleware support", "Managed solutions"],
@@ -38,7 +38,7 @@ const services = [
   {
     title: "Database Server",
     description:
-      "Robust and secure database solutions for structured data management.",
+      "Handle and store structured data with high integrity, security, and accessibility.Tuned for high-performance querying, data replication, and backup operations.",
     img: Logo2,
     alt: "Database Server",
     points: ["Data integrity", "High availability", "Backup support"],
@@ -46,7 +46,7 @@ const services = [
   {
     title: "Staging Server",
     description:
-      "Isolated environments for testing new features before going live.",
+      "Act as a replica environment for pre-deployment testing and validation of updates or new features.Reduce downtime and production issues by maintaining quality control in a controlled environment.",
     img: Logo4,
     alt: "Staging Server",
     points: ["Safe testing", "Bug tracking", "Integration workflows"],
@@ -54,15 +54,15 @@ const services = [
   {
     title: "Backup Server",
     description:
-      "Keep your data protected with regular and secure backups.",
+      "Maintain data redundancy and business continuity through scheduled and incremental backups.	Essential for disaster recovery planning and regulatory compliance.",
     img: Logo6,
     alt: "Backup Server",
     points: ["Disaster recovery", "Automated backups", "Cloud storage"],
   },
   {
-    title: "Firewall & Security Servers",
+    title: "Directory Server, DNS & DHCP Server",
     description:
-      "Ensure your network is secure with real-time protection and monitoring.",
+      "Efficiently manage centralized authentication, network identity, and resource allocation.Offer automated IP address management and domain name resolution for smooth connectivity.",
     img: Logo1,
     alt: "Firewall Servers",
     points: ["Threat detection", "Access control", "Firewall setup"],
@@ -111,99 +111,99 @@ const dataCenterIndustries = [
 
 const dataCenterServices = [
   {
-    title: "Custom Infrastructure Solutions",
+    title: "Firewall Server",
     icon: <FaCogs className="text-blue-500 text-3xl" />, 
     description:
-      "Tailored physical and virtual infrastructure designed for high availability, performance, and scalability."
+      "Secure the data center perimeter by blocking unauthorized traffic and stopping cyber attacks.Incorporated with advanced threat detection for real-time enforcement of network security."
   },
   {
-    title: "Custom Network Architecture",
+    title: "Management Server",
     icon: <FaNetworkWired className="text-blue-500 text-3xl" />, 
     description:
-      "Specialized network design with optimal routing, low latency, and secure access controls."
+      "Empower centralized control of server infrastructure, network monitoring, and system administration.Ease IT operations using automation tools, alerts, and performance dashboards."
   },
   {
-    title: "Custom Storage Architecture",
+    title: "Helpdesk System",
     icon: <FaDatabase className="text-blue-500 text-3xl" />, 
     description:
-      "Custom SAN, NAS, or hybrid storage systems with focus on reliability, speed, and expandability."
+      "Simplify support and incident fixing with an integrated ticketing and response system.	Enhance service quality and user satisfaction through structured IT support workflows."
   },
   {
-    title: "Cloud & Virtualization Services",
+    title: "Intrusion Detection Server",
     icon: <FaCloud className="text-blue-500 text-3xl" />, 
     description:
-      "Integration of private/hybrid cloud platforms with seamless virtualization for modern workloads."
+      "Monitor activity in the network to identify and alert on malicious activity.Improve cybersecurity stance through real-time intrusion detection and incident response capability."
   },
   {
-    title: "Security & Regulatory Compliance",
+    title: "",
     icon: <FaShieldAlt className="text-blue-500 text-3xl" />, 
     description:
-      "Design and implementation of comprehensive security protocols and regulatory frameworks."
+      ""
   },
   {
-    title: "Maintenance & Lifecycle Management",
+    title: "",
     icon: <FaTools className="text-blue-500 text-3xl" />, 
     description:
-      "Ongoing optimization, proactive monitoring, and lifecycle maintenance to ensure peak performance."
+      ""
   }
 ];
 
 const steps = [
   {
-    title: "Define Your Requirements",
+    title: " Requirement Analysis",
     icon: <FaClipboardList className="text-blue-500 text-2xl" />,
     description:
-      "Work with our experts to outline your data center needs, goals, and compliance requirements."
+      "Join hands with our experts to determine your existing IT infrastructure, business objectives, scalability requirements, and compliance demands. This step lays the groundwork for an optimal solution that is tailored to your enterprise in every respect."
   },
   {
-    title: "Architecture & Design Planning",
+    title: " Strategic  Design Consultation",
     icon: <FaCogs className="text-blue-500 text-2xl" />,
     description:
-      "We create a scalable, secure, and optimized blueprint tailored for your enterprise workloads."
+      "We create a tailored, secure, and scalable data center design, merging high-performance architecture and future-proof capacity planning — optimized to fulfill your workload and budget objectives."
   },
   {
-    title: "Network & Infrastructure Setup",
+    title: "Infrastructure Deployment",
     icon: <FaNetworkWired className="text-blue-500 text-2xl" />,
     description:
-      "We implement robust physical and cloud infrastructure with high-performance connectivity."
+      "Our engineers implement a smooth deployment of physical and cloud infrastructure, such as server systems, storage, networking devices, and top-level cabling — all for maximum uptime and performance."
   },
   {
-    title: "Security & Backup Integration",
+    title: "Configuration, Integration & Testing",
     icon: <FaShieldAlt className="text-blue-500 text-2xl" />,
     description:
-      "Our solutions incorporate disaster recovery, encrypted access, and full regulatory compliance."
+      "We provide seamless integration of core systems, layers of security, and backups. Performance and stress testing under strict conditions are conducted to ensure readiness prior to go-live."
   },
   {
-    title: "Launch & Ongoing Optimization",
+    title: "Support & Continuous Optimization",
     icon: <FaCloudUploadAlt className="text-blue-500 text-2xl" />,
     description:
-      "Your custom-built data center goes live with continued monitoring and support from MRT."
+      "After deployment, we provide 24/7 monitoring, SLA-supported support, and ongoing optimization to accommodate your business growth, security patches, and future technology changes."
   }
 ];
 const dataCenterFeatures = [
   {
     icon: <FaServer className="text-blue-600 text-3xl" />,
-    title: "High-Performance Infrastructure",
+    title: "Enterprise-Grade Infrastructure",
     description:
-      "MRT delivers robust, scalable data center environments tailored for high-demand enterprise applications."
+      "MRT develops and implements high-performance, scalable data center infrastructures designed to support mission-critical workloads. Our infrastructure is architected for flexibility, velocity, and future expansion."
   },
   {
     icon: <FaShieldAlt className="text-blue-600 text-3xl" />,
-    title: "End-to-End Security",
+    title: "Comprehensive Security Framework",
     description:
-      "We integrate top-tier security protocols to protect your infrastructure, ensuring compliance and data protection."
+      "We deploy multi-layered security measures such as encryption, firewall hardening, and access controls to provide complete compliance, data privacy, and defense against rising cyber threats."
   },
   {
     icon: <FaNetworkWired className="text-blue-600 text-3xl" />,
-    title: "Reliable Connectivity",
+    title: "Resilient & Redundant Connectivity",
     description:
-      "Our data centers offer redundant connectivity options for maximum uptime and minimal latency."
+      "Enjoy zero downtime operations with MRT's redundant network designs, load balancing, and high-speed connectivity. We provide seamless business continuity with minimal latency."
   },
   {
     icon: <FaRegClock className="text-blue-600 text-3xl" />,
-    title: "24/7 Monitoring & Support",
+    title: "24/7 Proactive Monitoring & Support",
     description:
-      "MRT's dedicated team provides continuous monitoring and real-time support for uninterrupted performance."
+      "Our dedicated support team continuously monitors your infrastructure, offering real-time alerts and rapid incident response to maintain peak performance and operational integrity—around the clock."
   }
 ];
 
@@ -231,14 +231,7 @@ const DataCentersDevelopment = () => {
                 Transform your Business with Innovative Software Development
                 Technology
               </h3>
-              {/* <p className="text-white text-base md:text-lg max-w-2xl mb-8 text-justify leading-relaxed  mt-2 ">
-                MOHITRAJ RESEARCH AND TECHNOLOGY PRIVATE LIMITED is the leading
-                software development company in India , it is specializes in
-                software development and delivers many ERP software solutions in
-                educational domain , Healthcare domain and industrial domain that
-                are designed to fulfil the business requirements of all the
-                organizations .
-              </p> */}
+              <p className='text-white'>MOHITRAJ RESEARCH AND TECHNOLOGY PRIVATE LIMITED is a reliable leader in Data Center Development, providing next-generation infrastructure solutions that meet the changing demands of businesses today</p>
               <div className="flex gap-4">
                 <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition mt-2">
                   GET IN TOUCH
@@ -256,21 +249,12 @@ const DataCentersDevelopment = () => {
         {/* Top Text */}
         <h1 className="text-blue-500 text-4xl font-bold">Overview</h1>
         <p className="text-gray-700 text-base md:text-lg max-w-4xl mx-auto mb-12 leading-relaxed font-basis text-justify mt-4">
-          MOHITRAJ RESEARCH AND TECHNOLOGY PRIVATE LIMITED is the leading
-          software development company in India , it is specializes in software
-          development and delivers many ERP software solutions in educational
-          domain , Healthcare domain and industrial domain that are designed to
-          fulfil the business requirements of all the organizations Empowering
-          business in Delhi NCR region , Our team of experienced developers are
-          combined with the special art of technologies that enables us to boost
-          your digital footprint while transforming your business operations.
-          MOHITRAJ RESEARCH AND TECHNOLOGY PRIVATE LIMITED recognizes the
-          necessity of maintaining market leadership in the competitive business
-          environment of today. Our wide range of bespoke software development
-          services exists to help drive your success. Our dedication to
-          high-quality product delivery extends from ERP, web and mobile app
-          development through custom software solutions which consistently
-          surpass your expectations.
+         
+          At Mohitraj, we understand that data centers power digital transformation. Our dedication to performance, security, and quality guarantees every deployment improves uptime, enhances data security, and increases your enterprise's resilience and agility in a competitive economy.
+From server room optimization to modular data center design, network cabling, power management, and disaster recovery planning, we provide a complete set of data center development services that add value and scalability to your operation.
+
+ Our goal is to develop robust infrastructures that serve your growth today—and well beyond the horizon.
+
         </p>
 
         {/* Stats Section */}
@@ -493,7 +477,7 @@ const DataCentersDevelopment = () => {
         </div>
       </div>
 {/*new section*/}
-      <div className="max-w-7xl mx-auto px-4 py-16 text-center bg-blue-200">
+      <div className="max-w-7xl mx-auto px-4 py-16 text-center bg-blue-100">
       <h2 className="text-4xl font-bold text-blue-900 mb-4 font-houschka">
         Custom Data Center Development Services We Offer
       </h2>
@@ -501,7 +485,7 @@ const DataCentersDevelopment = () => {
         We specialize in delivering end-to-end data center development solutions designed to meet the specific needs of businesses seeking scalability, security, and high performance.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left bg-red-500">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left bg-red-100">
         {dataCenterServices.map((service, index) => (
           <div
             key={index}
@@ -586,46 +570,7 @@ const DataCentersDevelopment = () => {
       </div>
     </div>
 
-    {/* === New Section: Data Center Case Study === */}
-      <section className="bg-gray-100 py-16 px-4 md:px-10 font-sans">
-        <div className="max-w-7xl mx-auto">
-          {/* === Top Heading === */}
-          <h2 className="text-4xl font-bold text-center text-blue-900 mb-12 font-houschka">
-            Data Center Development Case Study
-          </h2>
-
-          <div className="flex flex-col md:flex-row gap-10 items-stretch">
-            {/* === Left: Image === */}
-            <div className="w-full md:w-1/2 relative group overflow-hidden rounded-2xl shadow-xl cursor-pointer">
-              <img
-                src={Image}
-                alt="Data Center Case Study"
-                className="w-full h-full object-cover transform group-hover:scale-105 transition duration-700"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-50 transition duration-500" />
-            </div>
-
-            {/* === Right: Content === */}
-            <div className="w-full md:w-1/2 bg-white rounded-2xl shadow-xl p-6 flex flex-col justify-center hover:shadow-2xl transition duration-500">
-              <h2 className="text-3xl font-bold text-blue-800 mb-4">
-                Data Center Infrastructure Solutions
-              </h2>
-              <p className="text-gray-700 text-lg mb-6">
-                We helped an enterprise transition to a highly scalable data center model with modern infrastructure, virtualization, and proactive monitoring—enabling 99.99% uptime and enhanced security.
-              </p>
-              <ul className="list-disc ml-6 text-gray-700 space-y-2 mb-6">
-                <li>Redundant Networking & Scalable Storage</li>
-                <li>Energy-Efficient & Modular Setup</li>
-                <li>Advanced Cooling & Environmental Control</li>
-                <li>Centralized Monitoring Dashboards</li>
-              </ul>
-              <button className="w-32 bg-blue-700 hover:bg-blue-500 text-white text-sm py-2 rounded-md shadow-md hover:shadow-lg transition duration-300">
-                View Case Study
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+   
     
       
     </>

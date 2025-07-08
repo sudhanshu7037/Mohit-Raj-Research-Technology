@@ -205,14 +205,14 @@ const VideoConferencing=() =>{
         Our platform offers scalable, secure, and feature-rich video conferencing capabilities to empower e-learning and corporate collaboration.
       </p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left bg-blue-200">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left bg-white">
         {videoConferencingServices.map((service, index) => (
           <div
             key={index}
             className="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border-t-4 border-blue-500 "
           >
             <div className="mb-3 ">{service.icon}</div>
-            <h3 className="text-xl font-semibold text-blue-900 bg-red-300 mb-2">
+            <h3 className="text-xl font-semibold text-blue-900  mb-2">
               {service.title}
             </h3>
             <p className="text-gray-700 text-sm leading-relaxed">
@@ -264,8 +264,9 @@ const VideoConferencing=() =>{
       <div className="bg-white bg-opacity-90 p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105">
         <h3 className="text-2xl font-semibold mb-4">HD Video & Audio</h3>
         <p>
-          Enjoy smooth high-definition video and noise-free audio during meetings.
-          Perfect for remote collaboration, webinars, and virtual conferences.
+          Seamless communication is achieved through high-definition video and noise-free audio, which is crucial for collaboration, remote work, webinars, and virtual meetings. Our platform significantly boosts productivity and engagement.  
+
+
         </p>
       </div>
 
@@ -273,17 +274,15 @@ const VideoConferencing=() =>{
       <div className="bg-white bg-opacity-90 p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105">
         <h3 className="text-2xl font-semibold mb-4">Secure Communication</h3>
         <p>
-          Protect your conversations with end-to-end encryption, password-protected
-          rooms, and secure links for guests—ensuring confidentiality and trust.
+          Ensure complete confidentiality of sensitive conversations with stringent end-to-end encryption, password-protected meeting rooms, guest links, and other advanced security features. All necessary security standards are strictly followed.  
         </p>
       </div>
 
       {/* Column 3 */}
       <div className="bg-white bg-opacity-90 p-6 rounded-lg shadow-md transition-transform duration-300 hover:scale-105">
-        <h3 className="text-2xl font-semibold mb-4">Cross-Platform Access</h3>
+        <h3 className="text-2xl font-semibold mb-4">Cross-Platform Access  </h3>
         <p>
-          Connect anytime, anywhere—from phones, tablets, or desktops. Our system
-          supports Android, iOS, Windows, and macOS for total flexibility.
+          Achieve full device and location mobility without interruptions or loss in connectivity. With full flexibility across smartphones, tablets, and desktops, our solution works seamlessly on Android, iOS, Windows, and macOS.
         </p>
       </div>
     </div>
@@ -372,7 +371,7 @@ const VideoConferencing=() =>{
 </div>
 {/*new section*/}
 {/* === Custom Video Conferencing Services Section === */}
-<div className="max-w-7xl mx-auto px-4 py-16 text-center bg-red-200">
+<div className="max-w-7xl mx-auto px-4 py-16 text-center bg-red-100">
   <h2 className="text-4xl font-bold text-blue-900 mb-4 font-houschka">
     Custom Video Conferencing Services We Offer
   </h2>
@@ -384,27 +383,27 @@ const VideoConferencing=() =>{
     {[
       {
         icon: <FaVideo className="text-3xl text-blue-600" />,
-        title: "HD Video & Audio Integration",
+        title: "Custom Tailored Video Conferencing Solutions",
         description:
-          "We provide high-quality video and noise-free audio setup for uninterrupted virtual meetings, webinars, and live events.",
+          "We design video conferencing solutions specifically for businesses, educational institutions, and hybrid workforces. From advanced multifunctional features to holistic integration, persistent assistance, and everything in between—full service is guaranteed.",
       },
       {
         icon: <FaLock className="text-3xl text-blue-600" />,
-        title: "End-to-End Encryption",
+        title: "HD Video & Audio Integration",
         description:
-          "Your meetings are safe with strong encryption protocols, user access controls, and secure authentication layers.",
+          "Our noise-canceling audio and high-definition cameras enhance the clarity of your feeds. This ensures that all virtual meetings, webinars, and live streamed events are noise-free and uninterrupted.",
       },
       {
         icon: <FaCogs className="text-3xl text-blue-600" />,
-        title: "Custom Conferencing Solutions",
+        title: "End-to-End Encryption",
         description:
-          "From Zoom and Jitsi to custom WebRTC-based platforms, we build video systems that suit your organization's needs.",
+          "Your privacy and data security are our main concerns. Secure and confidential communications are achieved by use of advanced encryption, access control, and multi-layered authentication mechanisms.",
       },
       {
         icon: <FaCloud className="text-3xl text-blue-600" />,
-        title: "Cloud-Based Conferencing",
+        title: "Custom Conferencing Solutions",
         description:
-          "Host secure, scalable meetings using cloud infrastructure with minimal latency and maximum reliability.",
+          "We design video conferencing solutions using platforms like Zoom and Jitsi as well as fully customized systems based on WebRTC to meet your organizational technical and operational requirements.",
       },
       {
         icon: <FaMobileAlt className="text-3xl text-blue-600" />,
@@ -421,7 +420,7 @@ const VideoConferencing=() =>{
     ].map((service, index) => (
       <div
         key={index}
-        className="bg-blue-200 hover:bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border-t-4 border-blue-500"
+        className="bg-white hover:bg-blue-200 p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border-t-4 border-blue-500"
       >
         <div className="mb-3 text-blue-600 group-hover:text-white transition-colors duration-300">
           {service.icon}
@@ -515,7 +514,7 @@ const VideoConferencing=() =>{
 </div>
 
 {/* === Why Choose MRT for Video Conferencing === */}
-<div className="max-w-7xl mx-auto px-4 py-16 bg-blue-100">
+<div className="max-w-7xl mx-auto px-4 py-16 bg-blue-50">
   <h2 className="text-4xl font-bold text-blue-900 text-center mb-4 font-houschka">
     Why Choose MRT for Video Conferencing?
   </h2>
@@ -597,51 +596,7 @@ const VideoConferencing=() =>{
 {/*case study*/}
 
 
-{/* === New Section: Video Conferencing Case Study === */}
-<section className="bg-gray-100 py-16 px-4 md:px-10 font-sans">
-  <div className="max-w-7xl mx-auto">
 
-    {/* === Top Heading === */}
-    <h2 className="text-4xl font-bold text-center text-purple-800 mb-12 font-houschka">
-      Video Conferencing Case Study
-    </h2>
-
-    <div className="flex flex-col md:flex-row gap-10 items-stretch">
-      
-      {/* === Left: Image === */}
-      <div className="w-full md:w-1/2 relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
-        <img
-          src="/assets/image1.png" // ✅ replace with your real image path
-          alt="Video Conferencing Case Study"
-          className="w-full h-full object-cover transform group-hover:scale-105 transition duration-700"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-50 transition duration-500" />
-      </div>
-
-      {/* === Right: Content === */}
-      <div className="w-full md:w-1/2 bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-center">
-        <h2 className="text-3xl font-bold text-purple-800 mb-4">
-          Video Conferencing Platform Solutions
-        </h2>
-        <p className="text-gray-700 text-lg mb-6">
-          Our team delivered a full-featured video conferencing solution supporting
-          encrypted communication, screen sharing, and real-time collaboration for
-          a global enterprise. The system is built for stability and scalability.
-        </p>
-        <ul className="list-disc ml-6 text-gray-700 space-y-2 mb-6">
-          <li>Custom-built using WebRTC and scalable cloud backend</li>
-          <li>HD audio-video streaming with adaptive bandwidth</li>
-          <li>Interactive tools: chat, screen share, whiteboard</li>
-          <li>Role-based access & secure authentication</li>
-        </ul>
-        <button className="w-28 bg-purple-700 hover:bg-purple-500 text-white text-xs sm:text-sm py-1.5 sm:py-2 rounded-md shadow-sm transition duration-300">
-          View Case Study
-        </button>
-      </div>
-
-    </div>
-  </div>
-</section>
 {/*faqs*/}
 <div className="max-w-3xl mx-auto px-4 py-16">
       <h2 className="text-4xl font-bold text-center mb-10 font-houschka text-blue-600 drop-shadow">

@@ -18,11 +18,15 @@ import VideoConferencing from "./components/Services/VideoConferencing";
 import SecuritySurvillance from "./components/Services/SecuritySurvillance";
 import DataDigitization from "./components/Services/DataDigitization";
 import RemoteInfrastructure from "./components/Services/RemoteInfrastructure";
-import AdminLogin from "./components/backendpages/AdminLogin";
-import AdminDashboard from "./components/backendpages/AdminDashboard";
-import ProtectedRoute from "./components/backendpages/ProtectedRoute";
-import NotFound from "./pages/NotFound";
+import AdminDashboard from "./Admin/AdminDashboard";
 
+import NotFound from "./pages/NotFound";
+import AdminLogin from "./Admin/AdminLogin";
+import Register from "./Admin/Register";
+import AdminRoute from "./Admin/AdminRoute";
+import UniversityAutomationProductsPage from "./components/Products/Education/UniversityAutomation";
+import EngineeringCollegeMgt from "./components/Products/Education/EngineeringCollegeMgt";
+import UniversityDigitalization from "./components/solution/UniversityDigitalization";
 
 const App = () => {
   return (
@@ -64,14 +68,20 @@ const App = () => {
             path="/RemoteInfrastructure"
             element={<RemoteInfrastructure />}
           />
-          <Route path="/admin/login" element={<AdminLogin />} />
+
           <Route path="/*" element={<NotFound />} />
+
+          <Route path="/admin/login" element={<AdminLogin />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/university-automation-software" element= {<UniversityAutomationProductsPage/>} />
+          <Route path = "/engineering-college-management-system" element = {<EngineeringCollegeMgt/>} />
+          <Route path = "/UniversityDigitalizatio" element = {<UniversityDigitalization/>} />
           <Route
             path="/admin/dashboard"
             element={
-              <ProtectedRoute>
+              <AdminRoute>
                 <AdminDashboard />
-              </ProtectedRoute>
+              </AdminRoute>
             }
           />
         </Routes>

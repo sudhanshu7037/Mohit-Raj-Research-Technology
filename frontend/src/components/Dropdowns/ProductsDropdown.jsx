@@ -1,5 +1,4 @@
-import React from "react";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaUniversity, FaHospital, FaBuilding, FaUsers } from "react-icons/fa";
 import { MdKeyboardArrowDown } from "react-icons/md";
@@ -8,7 +7,6 @@ const ProductsDropdown = ({ openDropdown, handleDropdownToggle }) => {
   const isOpen = openDropdown === "products";
   const [activeDomain, setActiveDomain] = useState(null);
 
-  // 💥 Reset activeDomain when dropdown is closed
   useEffect(() => {
     if (!isOpen) {
       setActiveDomain(null);
@@ -20,50 +18,50 @@ const ProductsDropdown = ({ openDropdown, handleDropdownToggle }) => {
       icon: <FaUniversity className="text-2xl text-red-700" />,
       title: "Education Domain",
       items: [
-        "University Automation Software",
-        "Engineering College Management and Information System",
-        "College/Institute Management Systems",
-        "School Management System",
-        "Online Examination Management System",
-        "Entrance Exam Management and Information System",
-        "Smart Learning & Content Management System (SLCMS)",
-        "Library Management System",
+        { name: "University Automation Software", path: "/university-automation-software" },
+        { name: "Engineering College Management and Information System", path: "/engineering-college-management-system" },
+        { name: "College/Institute Management Systems", path: "/college-institute-management" },
+        { name: "School Management System", path: "/school-management-system" },
+        { name: "Online Examination Management System", path: "/online-examination-management" },
+        { name: "Entrance Exam Management and Information System", path: "/entrance-exam-management" },
+        { name: "Smart Learning & Content Management System (SLCMS)", path: "/smart-learning-content-management" },
+        { name: "Library Management System", path: "/library-management-system" },
       ],
     },
     {
       icon: <FaHospital className="text-2xl text-red-700" />,
       title: "Medical Domain",
       items: [
-        "Medical College Management and Information System.",
-        "Hospital Management & Information system.",
-        "E-Hospital Management",
-        "E-clinic Management",
-        "Bioinformatics Management and Information System",
+        { name: "Medical College Management and Information System.", path: "/medical-college-management" },
+        { name: "Hospital Management & Information system.", path: "/hospital-management-system" },
+        { name: "E-Hospital Management", path: "/e-hospital-management" },
+        { name: "E-clinic Management", path: "/e-clinic-management" },
+        { name: "Bioinformatics Management and Information System", path: "/bioinformatics-management" },
       ],
     },
     {
       icon: <FaBuilding className="text-2xl text-red-700" />,
       title: "Corporate Domain",
       items: [
-        "E-Company System",
-        "E- Business Management",
-        "CRM Software",
-        "Account Management System (Trulymax-S)",
-        "Account Management System (Trulymax-M)",
-        "Finance Account Management System (Trulymax-L)",
-        "Human Resource Management System",
-        "Inventory Management System",
-        "Purchase Management System",
-        "E-Banking Management System",
+        { name: "E-Company System", path: "/e-company-system" },
+        { name: "E- Business Management", path: "/e-business-management" },
+        { name: "CRM Software", path: "/crm-software" },
+        { name: "Account Management System (Trulymax-S)", path: "/account-management-trulymax-s" },
+        { name: "Account Management System (Trulymax-M)", path: "/account-management-trulymax-m" },
+        { name: "Finance Account Management System (Trulymax-L)", path: "/finance-account-management-trulymax-l" },
+        { name: "Human Resource Management System", path: "/human-resource-management" },
+        { name: "Inventory Management System", path: "/inventory-management" },
+        { name: "Purchase Management System", path: "/purchase-management" },
+        { name: "E-Banking Management System", path: "/e-banking-management" },
       ],
     },
     {
       icon: <FaUsers className="text-2xl text-red-700" />,
       title: "Public & Mixed Domain",
       items: [
-        "Police Management System",
-        "E-Govt.Office Management System",
-        "Credit Cooperative Society Management Information System",
+        { name: "Police Management System", path: "/police-management-system" },
+        { name: "E-Govt.Office Management System", path: "/e-govt-office-management" },
+        { name: "Credit Cooperative Society Management Information System", path: "/credit-cooperative-society-management" },
       ],
     },
   ];
@@ -75,11 +73,9 @@ const ProductsDropdown = ({ openDropdown, handleDropdownToggle }) => {
         onClick={() => handleDropdownToggle("products")}
       >
         OUR PRODUCTS
-        {isOpen ? (
-          <MdKeyboardArrowDown className="rotate-180 transition-transform duration-300" />
-        ) : (
-          <MdKeyboardArrowDown className="transition-transform duration-300" />
-        )}
+        <MdKeyboardArrowDown
+          className={`transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
+        />
       </div>
 
       {isOpen && (
@@ -101,9 +97,7 @@ const ProductsDropdown = ({ openDropdown, handleDropdownToggle }) => {
                   <div
                     key={idx}
                     className={`flex items-center gap-3 p-3 rounded cursor-pointer transition-all ${
-                      activeDomain === idx
-                        ? "bg-white shadow-lg"
-                        : "hover:bg-red-100"
+                      activeDomain === idx ? "bg-white shadow-lg" : "hover:bg-red-100"
                     }`}
                     onMouseEnter={() => setActiveDomain(idx)}
                   >
@@ -121,7 +115,7 @@ const ProductsDropdown = ({ openDropdown, handleDropdownToggle }) => {
                         key={idx}
                         className="bg-white rounded-md px-4 py-2 text-sm text-gray-800 hover:text-orange-600 hover:underline hover:underline-offset-2 hover:decoration-blue-600 transition cursor-pointer"
                       >
-                        <Link to="#">{item}</Link>
+                        <Link to={item.path}>{item.name}</Link>
                       </li>
                     ))}
                   </ul>

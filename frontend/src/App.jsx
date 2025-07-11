@@ -18,11 +18,8 @@ import VideoConferencing from "./components/Services/VideoConferencing";
 import SecuritySurvillance from "./components/Services/SecuritySurvillance";
 import DataDigitization from "./components/Services/DataDigitization";
 import RemoteInfrastructure from "./components/Services/RemoteInfrastructure";
-<<<<<<< HEAD
 import Education from "./components/Industries/Education";
-=======
 import AdminDashboard from "./Admin/AdminDashboard";
->>>>>>> 22f8367cee0285a2ef3a4e47dfc45a003988978c
 
 import NotFound from "./pages/NotFound";
 import AdminLogin from "./Admin/AdminLogin";
@@ -48,22 +45,6 @@ const App = () => {
           />
           <Route path="/DevelopmentHosting" element={<DevelopmentHosting />} />
           <Route path="/HardwareNetworking" element={<HardwareNetworking />} />
-<<<<<<< HEAD
-          <Route path="/MedicalCollegeManagement" element={<MedicalCollegeManagement />} />
-          <Route path="/MultimediaAnimation" element={<MultimediaAnimation />} />
-          <Route path="/DigitalMarketing" element={<DigitalMarketing />} />
-          <Route path="/DataCentersDevelopment" element={<DataCentersDevelopment />} />
-          <Route path="/Elearning" element={<Elearning/>} />
-          <Route path="/VideoConferencing" element={<VideoConferencing/>} />
-          <Route path="/SecuritySurvillance" element={<SecuritySurvillance />} />
-          <Route path="/DataDigitization" element={<DataDigitization />} />
-          <Route path="/RemoteInfrastructure" element={<RemoteInfrastructure />} />
-          <Route path="/Education" element={<Education />} />
-
-
-          <Route path="/admin/login" element={<AdminLogin />} />
-=======
->>>>>>> 22f8367cee0285a2ef3a4e47dfc45a003988978c
           <Route
             path="/MedicalCollegeManagement"
             element={<MedicalCollegeManagement />}

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import React, { useEffect, useState, useRef } from "react";
-=======
-import React, { useEffect, useState } from "react";
->>>>>>> 22f8367cee0285a2ef3a4e47dfc45a003988978c
+import React, { useEffect, useState , useRef} from "react";
 import { Link } from "react-router-dom";
 import { FaUniversity, FaHospital, FaBuilding, FaUsers } from "react-icons/fa";
 import { MdKeyboardArrowDown } from "react-icons/md";
@@ -136,17 +132,7 @@ const ProductsDropdown = ({ openDropdown, setOpenDropdown }) => {
                         key={idx}
                         className="bg-white rounded-md px-4 py-2 text-sm text-gray-800 hover:text-orange-600 hover:underline hover:underline-offset-2 hover:decoration-blue-600 transition cursor-pointer"
                       >
-<<<<<<< HEAD
-                        {activeDomain === 0 ? (
-                          <Link to="/education" state={{ subdomain: item }}>
-                            {item}
-                          </Link>
-                        ) : (
-                          <span>{item}</span>
-                        )}
-=======
                         <Link to={item.path}>{item.name}</Link>
->>>>>>> 22f8367cee0285a2ef3a4e47dfc45a003988978c
                       </li>
                     ))}
                   </ul>

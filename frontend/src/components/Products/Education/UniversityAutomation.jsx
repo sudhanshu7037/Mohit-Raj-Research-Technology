@@ -156,6 +156,71 @@ const functionality = [
           </button> 
         </div>
       </div>
+     <section className="bg-white px-4 md:px-12 lg:px-20 py-16 text-gray-800">
+      <div className="max-w-7xl mx-auto text-center mb-10">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          University Management System Features and Functionalities
+        </h2>
+        <p className="text-gray-600 max-w-4xl mx-auto">
+          EduSec university management solution assists in enhancing the decision-making procedures,
+          save efforts and time of faculties and other staff, connect stakeholders, and enables end-to-end
+          academic management, which improves operational effectiveness and university management results.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+        {functionality.map((feature, idx) => (
+          <div
+            key={idx}
+            className="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition-all duration-300"
+          >
+            <div className="flex items-center space-x-2 mb-3">
+              {feature.icon}
+              <h3 className="text-lg font-semibold">{feature.title}</h3>
+            </div>
+            <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
+              {feature.points.map((point, i) => (
+                <li key={i}>{point}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </section>
+      <section className="bg-white px-4 md:px-12 lg:px-20 py-16 text-gray-800">
+      <div className="max-w-7xl mx-auto text-center mb-10">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          How Mohitraj Research Tech Empowers Businesses to Scale
+        </h2>
+        <p className="text-gray-600 max-w-3xl mx-auto">
+          With our intelligent software platforms, Mohitraj Research Tech Pvt. Ltd. enables businesses
+          to automate operations, streamline project delivery, and enhance workforce productivity
+          — all from a single connected ecosystem.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {features.map((feature, idx) => (
+          <div
+            key={idx}
+            className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition duration-300 text-left"
+          >
+            <img
+              src={feature.img}
+              alt={feature.title}
+              className="h-48 w-full object-contain mb-4"
+            />
+            <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
+            <ul className="list-disc list-inside text-gray-700 space-y-1 text-sm">
+              {feature.points.map((point, i) => (
+                <li key={i}>{point}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </section>
+    
      <section className="px-4 md:px-12 lg:px-20 py-16 bg-white text-gray-800">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-10 items-start">
         {/* Left: Text Section */}
@@ -219,70 +284,6 @@ const functionality = [
             </p>
           </div>
         </div>
-      </div>
-    </section>
-      <section className="bg-white px-4 md:px-12 lg:px-20 py-16 text-gray-800">
-      <div className="max-w-7xl mx-auto text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          How Mohitraj Research Tech Empowers Businesses to Scale
-        </h2>
-        <p className="text-gray-600 max-w-3xl mx-auto">
-          With our intelligent software platforms, Mohitraj Research Tech Pvt. Ltd. enables businesses
-          to automate operations, streamline project delivery, and enhance workforce productivity
-          — all from a single connected ecosystem.
-        </p>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {features.map((feature, idx) => (
-          <div
-            key={idx}
-            className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition duration-300 text-left"
-          >
-            <img
-              src={feature.img}
-              alt={feature.title}
-              className="h-48 w-full object-contain mb-4"
-            />
-            <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-            <ul className="list-disc list-inside text-gray-700 space-y-1 text-sm">
-              {feature.points.map((point, i) => (
-                <li key={i}>{point}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-    </section>
-     <section className="bg-white px-4 md:px-12 lg:px-20 py-16 text-gray-800">
-      <div className="max-w-7xl mx-auto text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
-          University Management System Features and Functionalities
-        </h2>
-        <p className="text-gray-600 max-w-4xl mx-auto">
-          EduSec university management solution assists in enhancing the decision-making procedures,
-          save efforts and time of faculties and other staff, connect stakeholders, and enables end-to-end
-          academic management, which improves operational effectiveness and university management results.
-        </p>
-      </div>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-        {functionality.map((feature, idx) => (
-          <div
-            key={idx}
-            className="bg-white shadow-md rounded-lg p-6 hover:shadow-xl transition-all duration-300"
-          >
-            <div className="flex items-center space-x-2 mb-3">
-              {feature.icon}
-              <h3 className="text-lg font-semibold">{feature.title}</h3>
-            </div>
-            <ul className="list-disc list-inside text-gray-700 text-sm space-y-1">
-              {feature.points.map((point, i) => (
-                <li key={i}>{point}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
       </div>
     </section>
       <section className="bg-green-700 bg-dotted-pattern text-white py-16 px-4 text-center">

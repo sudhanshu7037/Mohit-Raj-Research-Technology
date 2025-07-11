@@ -76,6 +76,7 @@ const App = () => {
           <Route path="/university-automation-software" element= {<UniversityAutomationProductsPage/>} />
           <Route path = "/engineering-college-management-system" element = {<EngineeringCollegeMgt/>} />
           <Route path = "/UniversityDigitalizatio" element = {<UniversityDigitalization/>} />
+          <Route path = "solutions/university-digitalization" element = {<UniversityDigitalization/>} />
           <Route
             path="/admin/dashboard"
             element={

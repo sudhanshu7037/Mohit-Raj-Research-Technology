@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 
-import image1 from "../../assets/software.jpg"
+import image1 from "../../assets/developmenthostingbanner.png"
 import Logo3 from "../../assets/softwaredev.png";
 import Logo1 from "../../assets/SofwareConsulting.png";
 import Logo2 from "../../assets/Custom.png";
@@ -12,7 +12,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import bgImage from "../../assets/Backgroundsoftware.jpg";
-import DevImage from "../../assets/whychoseus.png";
+import DevImage from "../../assets/Dproject.png";
 import {
   FaServer,
   FaLaptopCode,
@@ -40,57 +40,45 @@ const cardsData = [
   {
     img: Logo1,
 
-    title: "Software Consulting & Transformation",
+    title: "Web Development Services",
     description:
-      "Superior custom software development services combined with expert resources, and technical prowess to strengthen overall business strategy. Our prototyping approach allows us to create tailored applications from scratch across mobile, web, and cloud platforms.",
+      "Mohitraj Research and Technology Pvt. Ltd. provides personalized web development services employing innovative technologies to develop secure, responsive, and scalable websites designed to suit your business objectives.",
     points: [
-      "Crafted Innovation",
-      "Unique Applications",
-      "Precision Engineering",
+      "Custom websites",
+      "Responsive design",
+      "Scalable tech",
     ],
   },
   {
     img: Logo4,
 
-    title: "ERP Software Development",
+    title: "Cloud Hosting Solutions",
     description:
-      "TatvaSoft excels in designing secure, high-performing, and well-documented APIs that help businesses forge new connections, automate processes, and enable seamless communication.",
+      "Our cloud hosting solutions offers rapid, flexible, and secure infrastructure with  uptime, promising hassle-free scalability and performance for mission-critical applications.",
     points: [
-      "Integration Innovation",
-      "Communication Gateway",
-      "Service Architecture",
+      "99.9% uptime",
+      "Scalable infra",
+      "Data security",
     ],
   },
   {
     img: Logo2,
 
-    title: "Custom Software Development",
+    title: "Website Promotion & SEO",
     description:
-      "Let us handle all the hassles of cloud infrastructure. We help you transition to cloud models and streamline operations to improve overall agility.",
+      "We are SEO and website promotion experts specializing in search engine rankings, targeted traffic, and online visibility for your brand.",
     points: [
-      "Infrastructure Management",
-      "Scalable Solutions",
-      "Cloud Migration",
+      "SEO ranking",
+      "Targeted traffic",
+      "Online visibility",
     ],
   },
   {
     img: Logo2,
 
-    title: "E-Commerce Platform Development",
+    title: "Server Management",
     description:
-      "Let us handle all the hassles of cloud infrastructure. We help you transition to cloud models and streamline operations to improve overall agility.",
-    points: [
-      "Infrastructure Management",
-      "Scalable Solutions",
-      "Cloud Migration",
-    ],
-  },
-  {
-    img: Logo2,
-
-    title: "Web Application Development",
-    description:
-      "Let us handle all the hassles of cloud infrastructure. We help you transition to cloud models and streamline operations to improve overall agility.",
+      "Our experienced team delivers enterprise-grade server management services, such as monitoring, security hardening, performance optimization, and 24/7 support for seamless operations.",
     points: [
       "Infrastructure Management",
       "Scalable Solutions",
@@ -100,9 +88,9 @@ const cardsData = [
   {
     img: Logo2,
 
-    title: "Mobile Application Development",
+    title: "Content Delivery Network (CDN) Integration",
     description:
-      "Let us handle all the hassles of cloud infrastructure. We help you transition to cloud models and streamline operations to improve overall agility.",
+      "Give your website a speed boost and global presence with our CDN integration services, optimizing content delivery and improving user experience across geographies.",
     points: [
       "Infrastructure Management",
       "Scalable Solutions",
@@ -112,9 +100,9 @@ const cardsData = [
   {
     img: Logo2,
 
-    title: "Software Testing & QA",
+    title: "Domain Registration & Management",
     description:
-      "Let us handle all the hassles of cloud infrastructure. We help you transition to cloud models and streamline operations to improve overall agility.",
+      "Streamline your online presence with our domain registration and management solutions, such as DNS configuration, renewals, and domain protection in one reliable roof.",
     points: [
       "Infrastructure Management",
       "Scalable Solutions",
@@ -124,9 +112,9 @@ const cardsData = [
   {
     img: Logo2,
 
-    title: "Performance Engineering",
+    title: "E-Marketing Campaigns",
     description:
-      "Let us handle all the hassles of cloud infrastructure. We help you transition to cloud models and streamline operations to improve overall agility.",
+      "Reach out to your brand's maximum audience with data-driven e-marketing campaigns, such as email marketing, paid advertising, and social media engagement optimised for your audience.",
     points: [
       "Infrastructure Management",
       "Scalable Solutions",
@@ -136,9 +124,9 @@ const cardsData = [
   {
     img: Logo2,
 
-    title: "Software Maintenance & Support",
+    title: "Website Maintenance",
     description:
-      "Let us handle all the hassles of cloud infrastructure. We help you transition to cloud models and streamline operations to improve overall agility.",
+      "Keep your site secure, up-to-date, and fully operational with our professional website maintenance services, from regular backups, bug fixes, and content updates.",
     points: [
       "Infrastructure Management",
       "Scalable Solutions",
@@ -148,9 +136,9 @@ const cardsData = [
   {
     img: Logo2,
 
-    title: "E-Commerce Platform Development",
+    title: "Progressive Web App (PWA) Development",
     description:
-      "Let us handle all the hassles of cloud infrastructure. We help you transition to cloud models and streamline operations to improve overall agility.",
+      "We are experts at Progressive Web App development that provides native app-like performance with web technologies. Our PWAs provide instant loading, offline capability, and frictionless user experience on every device—keeping your business connected with customers at any time, anywhere.",
     points: [
       "Infrastructure Management",
       "Scalable Solutions",
@@ -160,9 +148,21 @@ const cardsData = [
   {
     img: Logo2,
 
-    title: "Migration & Re-engineering",
+    title: "DevOps & CI/CD Integration",
     description:
-      "Let us handle all the hassles of cloud infrastructure. We help you transition to cloud models and streamline operations to improve overall agility.",
+      "Boost your software delivery pipeline with our Continuous Integration/Continuous Deployment (CI/CD) and DevOps services. We automate infrastructure provisioning, deployment, and testing to accelerate release cycles and enhance the quality of your web applications.",
+    points: [
+      "Infrastructure Management",
+      "Scalable Solutions",
+      "Cloud Migration",
+    ],
+  },
+  {
+    img: Logo2,
+
+    title: "Scalable E-Commerce Platform Development",
+    description:
+      "Create solid and scalable web stores through our bespoke e-commerce solutions. From payment gateway integration to product management and customer analysis, we offer SEO-friendly, mobile-based solutions optimized for online commerce success.",
     points: [
       "Infrastructure Management",
       "Scalable Solutions",
@@ -170,29 +170,7 @@ const cardsData = [
     ],
   },
 ];
-const caseStudies = [
-  {
-    title: "Smart City",
-    tags: ["Node.JS", "Energy & Utility"],
-    description:
-      "Leveraging our technical expertise to build a smart city application, we created an integrated system connecting multiple IoT based sensors to achieve a bird's eye view on all climatic parameters of the city. Our solution helped client to overcome roadblocks of inefficient management of lights, floods, air and energy within the city. Know how our software solution transformed client's ecosystem.",
-    image: CityImage,
-  },
-  {
-    title: "Industrial Automation",
-    tags: ["Python", "Manufacturing"],
-    description:
-      "Developed an intelligent industrial automation system to streamline operations, reduce costs, and improve manufacturing efficiency using AI and IoT.",
-    image: CityImage,
-  },
-  {
-    title: "Healthcare Platform",
-    tags: ["React", "Healthcare"],
-    description:
-      "Built a secure, scalable healthcare platform that connects doctors and patients via telemedicine, AI-driven diagnostics, and health data analytics.",
-    image: CityImage,
-  },
-];
+
 
 const techStack = [
   {
@@ -263,34 +241,34 @@ const techStack = [
 ];
 const services = [
   {
-    title: "Industry-Specific Software",
+    title: "Custom Web Development",
     description:
-      "Professionals at TatvaSoft have experience in different sectors. They understand your unique requirements and help build custom solutions like ERP and CRM with industry-specific features and functionalities.",
+      "We specialize in crafting custom websites that truly reflect your brand identity and align with your business goals. Our websites are not only search engine optimized but also responsive, dynamic  as per customer requirement ensuring they perform well across all devices and browsers.",
   },
   {
-    title: "Business Process Automation (BPA)",
+    title: "CMS-Based Website Solutions",
     description:
-      "Collaborate with TatvaSoft to automate your business processes and streamline the workflow. Our experts deliver custom business applications for document management, task and project management that drive organizational productivity and efficiency.",
+      "Unlock the full potential of platforms like WordPress, Joomla, and Drupal with our tailored CMS development services. We offer user-friendly, secure, and scalable content management systems that cater to businesses of all sizes.",
   },
   {
-    title: "Customer-facing Applications",
+    title: "E-Commerce Website Development",
     description:
-      "We develop solutions keeping users in mind. That’s why TatvaSoft excels at creating customer-facing software like eCommerce, booking engines, and various mobile apps. They feature user-friendly interfaces and are specially created to meet your customers’ needs.",
+      "Boost your online sales with our personalized e-commerce website design solutions. From seamless shopping cart integration to secure payment processing, we create scalable, mobile-friendly online stores that turn visitors into loyal customers.",
   },
   {
-    title: "Integration and Middleware solutions",
+    title: " Secure Web Hosting Solutions",
     description:
-      "Our custom-built software facilitates seamless integration with various apps and databases. It ensures effortless data exchange between systems and that different programs and workflows function together without any conflict.",
+      "Experience lightning-fast speed and robust security with our secure web hosting solutions, boasting 99.9% uptime. We offer a range of hosting packages, including shared, VPS, and dedicated options, tailored to meet your business needs.",
   },
   {
-    title: "Enterprise Solutions",
+    title: "Website Performance Optimization",
     description:
-      "With over two decades of experience, TatvaSoft can develop and deploy enterprise software solutions of varying complexities including ERP asset management and SCM. Our experts help you scale business infrastructure and strengthen core operational KPIs.",
+      "Enhance user experience and improve your search rankings with our website performance optimization services. We focus on optimizing page load times, mobile responsiveness, and overall site effectiveness through expert fine-tuning.",
   },
   {
-    title: "Analytical Tools",
+    title: " Scalable Cloud Hosting Infrastructure",
     description:
-      "TatvaSoft assists you in leveraging big data, BI tools, and advanced analytics to unlock endless business opportunities. Our experts deliver data management and analytics systems to help you gain holistic visibility and actionable insights.",
+      "Deploy your applications on our scalable cloud hosting infrastructure, featuring real-time monitoring, auto-scaling, and high availability. It's the ideal solution for everyone from startups to large enterprises seeking a robust cloud architecture.",
   },
 ];
 
@@ -317,27 +295,27 @@ const steps = [
 const features = [
   {
     icon: <FaShieldAlt className="text-3xl text-blue-600" />,
-    title: "Quality and Security",
+    title: "One-Stop All-Inclusive Web Solutions",
     description:
-      "Our programmers adhere to best coding practices to write clean code and test it thoroughly to eliminate security vulnerabilities. We also obtain customer feedback to ensure your product meets expectations.",
+      "From bespoke website design to a robust web hosting infrastructure, we provide a complete spectrum of services. You won't need to deal with multiple vendors—our integrated process ensures faster delivery and increased reliability.",
   },
   {
     icon: <FaUsers className="text-3xl text-blue-600" />,
-    title: "Experienced Developers",
+    title: "Customized and Scalable Web Development",
     description:
-      "Our software developers have experience in diverse fields and technologies. They understand your unique business requirements or complex challenges and help you successfully navigate through them.",
+      "We develop custom-made websites and applications that grow with your business. Be it a nascent startup or a large enterprise, our solutions are designed to scale seamlessly without compromise on performance.",
   },
   {
     icon: <FaClipboardList className="text-3xl text-blue-600" />,
-    title: "Truly-Tailored Solutions",
+    title: "Hostile Infrastructure",
     description:
-      "We provide robust solutions that work independently or integrate seamlessly with a variety of applications. Our experts can craft a custom solution that suits your unique business requirements.",
+      "Our dedicated and cloud-based hosting services guarantee uptime, incredibly fast speeds, and enterprise-level security. ",
   },
   {
     icon: <FaUserFriends className="text-3xl text-blue-600" />,
-    title: "Customer-Centric Approach",
+    title: "SEO-Friendly and Mobile-Responsive Designs",
     description:
-      "Our professionals pursue software development keeping customers in mind at every step. We offer flexible engagement models, seamless communication, regular project updates and seek client feedback.",
+      "We create SEO-friendly websites that are well-ranked on search engines and offer seamless experiences on any device. Our responsive design focus maximizes engagement and reach.",
   },
 ];
 
@@ -423,10 +401,9 @@ const industries = [
                  DEVELOPMENT & HOSTING SERVICES
               </h1>
               <p className="text-white text-base md:text-lg max-w-2xl mb-8">
-                Mohitraj offers reliable custom software development solutions for
-                your unique business requirements. We focus on innovation,
-                scalability, and agility to help your business evolve and gain a
-                competitive edge in a rapidly changing market.
+                We, at Mohitraj Research & Technology Pvt. Ltd., have expertise in providing customized software development and secure hosting services designed to fulfill your specific business requirements. 
+                Our team of experts uses this  latest technology to develop strong, scalable, and nimble digital solutions that facilitate business change.
+
               </p>
               <div className="flex gap-4">
                 <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition">
@@ -442,15 +419,9 @@ const industries = [
           <div className="bg-white py-16 px-4 lg:px-24 text-center">
         {/* Top Text */}
         <p className="text-gray-700 text-base md:text-lg max-w-4xl mx-auto mb-12 leading-relaxed font-basis">
-          The custom software development process encompasses designing,
-          developing, deploying, and maintaining custom software. As a leading
-          custom software development company, our domain experts explicate the
-          client's needs and accordingly create a strategic plan to optimize
-          each stage of the software development life cycle. Our dynamic team of
-          skilled software developers, architects, and project managers, coupled
-          with industry-driven experience, provides a solid foundation for
-          developing high-quality software solutions. We implement dedicated QA
-          practices that align with specific business needs, budget, and time.
+          At Mohitraj Research and Technology Private Limited, we are experts in providing end-to-end development and hosting solutions for the specific demands of contemporary businesses.
+
+With our custom software development, we aim to turn your vision into high-performance, scalable applications. From web application development and mobile app solutions to cloud integration and eCommerce platforms, we provide a full-fledged list of digital development requirements.
         </p>
 
         {/* Stats Section */}
@@ -510,73 +481,7 @@ const industries = [
             </div>
           ))}
         </div>
-        {/* Case Study*/}
-        <div className="w-full  ">
-              {/* Heading */}
-              <div className="text-center mb-10">
-                <h2 className="text-4xl md:text-4xl font-bold text-blue-900 mb-4 font-houschka">
-                  Our App Development & Hosting Servicces
-                </h2>
-                <p className="text-gray-600 max-w-2xl mx-auto font-basis">
-                  Getting into the nitty-gritty of each software project and achieving
-                  a measurable result is what we do for the world's leading companies.
-                  Take a look!
-                </p>
-              </div>
-      
-              {/* Slider */}
-              <Swiper
-                modules={[Navigation]}
-                navigation
-                spaceBetween={20}
-                slidesPerView={1}
-                loop={true}
-                className="w-full  "
-              >
-                {caseStudies.map((caseStudy, index) => (
-                  <SwiperSlide key={index}>
-                    <div className="flex flex-col md:flex-row bg-white  shadow-lg overflow-hidden w-full">
-                      {/* Image */}
-                      <div className="md:w-1/2">
-                        <img
-                          src={caseStudy.image}
-                          alt={caseStudy.title}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-      
-                      {/* Content */}
-                      <div className="md:w-1/2 bg-blue-500 text-white p-8 flex flex-col justify-center">
-                        <h3 className="text-2xl font-semibold mb-4">
-                          {caseStudy.title}
-                        </h3>
-      
-                        {/* Tags */}
-                        <div className="flex gap-2 mb-4">
-                          {caseStudy.tags.map((tag, idx) => (
-                            <span
-                              key={idx}
-                              className="border border-white px-2 py-1 text-sm rounded"
-                            >
-                              {tag}
-                            </span>
-                          ))}
-                        </div>
-      
-                        {/* Description */}
-                        <p className="text-gray-200 mb-6">{caseStudy.description}</p>
-      
-                        {/* Button */}
-                        <button className="border border-white px-2 py-1 text-sm hover:bg-white hover:text-blue-900 transition w-fit ">
-                          VIEW CASE STUDY
-                        </button>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
-
+        
             {/*Contact us div*/}
                  <div className="w-full bg-white py-8 px-4 flex justify-center items-center gap-12 max-w-7xl mx-auto h-[200px]">
                    {/* Left Side */}
@@ -673,9 +578,8 @@ const industries = [
           Custom Development & Hosting Types, We Offer
         </h2>
         <p className="text-gray-600 max-w-4xl mx-auto mb-12">
-          MRT specializes in creating various software solutions to fit
-          unique business requirements. Our experts offer tailor-made services
-          to drive growth and efficiency in your business.
+         Welcome to our full-service Website Development, Hosting & Promotion company,
+         where we specialize in creating cutting-edge websites, providing reliable hosting solutions, and implementing effective promotion strategies to boost your online presence.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
@@ -730,9 +634,10 @@ const industries = [
                       Why Choose MRT?
                     </h2>
                     <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-                      As a leading software development company, TatvaSoft is dedicated to
-                      upholding industry standards. Hire TatvaSoft as your custom software
-                      development partner to leverage our qualities for your benefit.
+                      Why You Should Choose Mohitraj Research and Technology Pvt. Ltd. for Your Web Hosting and Development Requirements :-
+At Mohitraj Research and Technology Private Limited, we do not merely build websites—we craft secure, scalable, and high-performance digital experiences that make your business flourish. 
+
+
                     </p>
             
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

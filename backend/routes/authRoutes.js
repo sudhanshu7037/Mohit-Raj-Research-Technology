@@ -1,14 +1,13 @@
-
-const express = require("express");
+// routes/authRoutes.js
+import express from "express";
+import { registerUser } from "../controllers/authController.js";
+import { loginUser } from "../controllers/authController.js"; // Assuming you have a loginUser function
 const router = express.Router();
-const {
-  registerUser,
-  loginUser,
-  logoutUser,
-} = require("../controllers/authController");
 
 router.post("/register", registerUser);
+ // Public route
+ // routes/authRoutes.js (add to the same file)
 router.post("/login", loginUser);
-router.post("/logout", logoutUser); 
 
-module.exports = router;  
+
+export default router;

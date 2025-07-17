@@ -1,5 +1,5 @@
 import React from "react";
-import image1 from "../assets/whoweareimages/background_image[1].png";
+import image1 from "../assets/homepageimages/whoweareimages/background_image[1].png";
 
 
 const About = () => {

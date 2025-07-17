@@ -1,37 +1,43 @@
-const express = require("express");
-const connectdb = require("./config/database.js");
-const authRoutes = require("./routes/authRoutes"); 
-const cookieParser = require("cookie-parser");
-const cors = require("cors");
+// index.mjs or index.js (with "type": "module" in package.json)
 
+import express from "express";
+import connectdb from "./config/db.js";
+import cors from "cors";
+import cookieParser from "cookie-parser";
+import path from "path";
+import dotenv from "dotenv";
 
-require("dotenv").config();
+dotenv.config();
 
 const PORT = process.env.PORT || 5000;
 
 const app = express();
-app.use(cookieParser()); 
+app.use(cookieParser());
 app.use(express.json());
+// app.use("/uploads", express.static(path.join(__dirname, "./uploads")));
+
+// middleware
+ app.use(
+   cors({
+     origin: "http://localhost:5173", // ✅ Allow frontend origin
+     credentials: true, // Agar cookies use kar rahe ho future me
+   })
+ );
+
+// import routes
+import authRoutes from "./routes/authRoutes.js";
+import adminRoutes from "./routes/adminRoutes.js";
 
 
-app.use(
-  cors({
-    origin: "http://localhost:5173", // ✅ Allow frontend origin
-    credentials: true, // Agar cookies use kar rahe ho future me
-  })
-);
-
-
-app.use("/api/auth", authRoutes); 
-
-
-
+// api route
+app.use("/", authRoutes);
+app.use("/", adminRoutes);
 
 connectdb()
   .then(() => {
     console.log("DB connected successfully");
     app.listen(PORT, () => {
-      console.log(`Server running on port ${PORT}...`);
+      console.log(`Server is running on port ${PORT}...`);
     });
   })
   .catch((err) => {

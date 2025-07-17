@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { RxCross2 } from "react-icons/rx";
+import videobg from "../assets/homepageimages/videosectionbgimage/videobg.png"
 
 export default function VideoSection() {
   const [isOpen, setIsOpen] = useState(false)
@@ -11,7 +12,7 @@ export default function VideoSection() {
       {/* Background image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('https://advisorhtml.websitelayout.net/img/bg/bg-04.jpg')" }}
+        style={{ backgroundImage: `url(${videobg})` }}
       ></div>
 
       {/* Overlay */}

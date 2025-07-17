@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import bgImage from "../../assets/backimage.png";
-import Image from "../../assets/digitalmarketingimg.png";
+import bgImage from "../../assets/newdigitalbanner.png";
+import Image from "../../assets/datadigital2.png";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
 import {
@@ -52,7 +52,9 @@ const DataDigitization = () => {
     </h3>
 
     <p className="text-white max-w-2xl text-base md:text-lg mb-6">
-      Transform physical records into digital assets for faster access, secure storage, and streamlined operations.
+      Welcome to Mohitraj Research and Technology Private Limited's Data Digitization Services.
+"Unlocking the Power of Digital Transformation"
+Our dedication to accuracy and innovation ensures your precious data is precisely digitized and kept safe
     </p>
 
     <div className="flex flex-wrap gap-4 justify-center">
@@ -71,10 +73,8 @@ const DataDigitization = () => {
   {/* Top Text */}
   <h1 className="text-blue-500 text-4xl font-bold">Overview</h1>
   <p className="text-gray-700 text-base md:text-lg max-w-4xl mx-auto mb-12 leading-relaxed font-basis text-justify mt-4">
-    MOHITRAJ RESEARCH AND TECHNOLOGY PRIVATE LIMITED offers advanced <strong>Data Digitization solutions</strong> to help businesses transition from paper-based workflows to efficient digital systems. Our services include document scanning, OCR-based data extraction, secure archiving, and customized digital conversion tailored to your organization’s needs.
-    <br />
-    <br />
-    With a focus on accuracy, security, and scalability, we enable organizations to preserve legacy documents, improve information access, and streamline operations. Whether you’re digitizing government records, medical files, educational archives, or enterprise data, our expert team ensures seamless and secure digital transformation that aligns with global data management standards.
+    We at Mohitraj Research and Technology Private Limited, a premier software development  and Data Digitization company, provide unmatched Data Digitilization Services that will accelerate your business by providing smooth digital transformation. We also provides end-to-end solutions for handling pre-examination and post-examination processes in multiple sectors
+
   </p>
 
   {/* Stats Section */}
@@ -122,50 +122,51 @@ const DataDigitization = () => {
     Our Data Digitization Services
   </h2>
   <p className="text-gray-600 max-w-3xl mx-auto mb-12 text-base md:text-lg leading-relaxed font-basis animate-fade-in">
-    Digitize your documents and physical records with high precision, accuracy, and efficiency using our intelligent data capture and conversion solutions powered by OCR/ICR technologies.
+    We specialize in providing cutting-edge solutions for OMR/OCR Sheets processing and comprehensive Data Digitization Services , we are  laying the cornerstone for our  future expansion. 
+
   </p>
 
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-7xl mx-auto">
     {[
       {
-        title: "Document Scanning",
+        title: "OMR/OCR Sheets Processing",
         description:
-          "Convert paper documents into high-resolution digital formats for easy storage and retrieval.",
+          "We provides end-to-end solutions for handling pre-examination and post-examination processes in multiple sectors like Medical, Engineering, and other examinations. Our experience includes automated data capture with the use of advanced OMR, ICR, and OCR applications for streamlining result processing efficiently and timely",
         icon: <FaFileAlt className="text-3xl text-blue-700 mx-auto mb-3" />,
         points: ["Bulk scanning", "Searchable PDFs", "Secure storage"],
       },
       {
-        title: "OCR & ICR Processing",
+        title: "Data Scanning and  Indexing services",
         description:
-          "Extract text from printed and handwritten forms using advanced recognition technology.",
+          "We provides professional document scanning and indexing services to facilitate information retrieval and maximize organizational efficiency. Our domain expertise in document indexing guarantees precise and accessible grouping of your valuable content.",
         icon: <FaSearch className="text-3xl text-blue-700 mx-auto mb-3" />,
         points: ["Accurate text recognition", "Multi-language support", "Handwriting conversion"],
       },
       {
-        title: "Data Entry Services",
+        title: "Data Conversion Services",
         description:
-          "Manual and automated data entry with quality checks and structured output.",
+          "We provides professional data conversion services to facilitate smooth transformation of your valuable information into various digital formats. Our domain expertise guarantees accurate and streamlined conversion for maximum accessibility and compatibility.",
         icon: <FaKeyboard className="text-3xl text-blue-700 mx-auto mb-3" />,
         points: ["High accuracy", "Validated outputs", "Multiple formats"],
       },
       {
-        title: "Image Processing",
+        title: "Data Editing",
         description:
-          "Enhance and organize image-based documents with clarity and proper indexing.",
+          "We provides professional data editing services to refine and perfect your content. Our careful editing procedure guarantees accuracy and consistency, as well as improving the quality and effectiveness of your data.",
         icon: <FaImage className="text-3xl text-blue-700 mx-auto mb-3" />,
         points: ["Auto-cropping", "Brightness correction", "Multi-page handling"],
       },
       {
-        title: "Document Management",
+        title: "Data Entry Services",
         description:
-          "Tag, classify, and manage your digital documents with our smart filing system.",
+          "Drive efficiency and organization with our professional data entry solutions specially designed to address your unique business requirements.",
         icon: <FaFolderOpen className="text-3xl text-blue-700 mx-auto mb-3" />,
         points: ["Indexed search", "Role-based access", "Audit trails"],
       },
       {
-        title: "Archiving & Retrieval",
+        title: "Data Processing Services",
         description:
-          "Store your digitized data securely and retrieve it quickly when needed.",
+          "Mohitraj Research and Technology Private Limited provides high-end data processing services to make your information management process more efficient. From cleansing to analysis, our professional services guarantee correct, efficient, and reliable data processing for your valuable data.",
         icon: <FaArchive className="text-3xl text-blue-700 mx-auto mb-3" />,
         points: ["Cloud/On-premise", "Encrypted backup", "Fast searchability"],
       },
@@ -366,7 +367,8 @@ const DataDigitization = () => {
     Custom Data Digitization Services
   </h2>
   <p className="text-gray-600 max-w-4xl mx-auto mb-12">
-    We provide customized digitization solutions for businesses and institutions to securely convert, manage, and retrieve critical data from physical to digital formats.
+    At Mohitraj Research and Technology Private Limited, we focus on providing customized data digitization services aimed at providing organizations to transform their physical records into secure, searchable, and easily accessible digital formats. 
+
   </p>
 
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
@@ -374,25 +376,25 @@ const DataDigitization = () => {
       {
         title: "Document Scanning",
         description:
-          "High-speed scanning of paper documents, files, registers, and books using industry-grade scanners.",
+          "We offer fast document scanning for paper files, registers, blueprints, books, and other physical documents.",
         icon: <FaFileAlt className="text-3xl text-blue-600" />,
       },
       {
-        title: "OCR & ICR Processing",
+        title: "OCR & ICR Data Processing",
         description:
-          "Extract text from printed or handwritten documents using OCR/ICR for searchable content.",
+          "Thanks to our cutting-edge Optical Character Recognition (OCR) and Intelligent Character Recognition (ICR) technologies, we can automatically extract data from both printed and handwritten documents.",
         icon: <FaSearch className="text-3xl text-blue-600" />,
       },
       {
         title: "Data Entry & Validation",
         description:
-          "Accurate manual and automated data entry with double-key verification and quality checks.",
+          "Our data entry services are accurate, utilizing both manual and automated methods. With processes like double-key verification and strict quality control, we ensure that your data is accurate and reliable during digitization.",
         icon: <FaKeyboard className="text-3xl text-blue-600" />,
       },
       {
-        title: "Image Enhancement",
+        title: "Image Enhancement & Optimization ",
         description:
-          "Enhance scanned images using de-skewing, cropping, contrast adjustment, and noise removal.",
+          "Improves the readability and quality of your scanned documents with our image processing tools.",
         icon: <FaImage className="text-3xl text-blue-600" />,
       },
       {
@@ -445,27 +447,27 @@ const DataDigitization = () => {
     <div className="flex flex-col justify-between h-full space-y-6">
       {[
         {
-          title: "Requirement Analysis",
+          title: "Schedule a Free Consultation session",
           description:
-            "We assess your document types, volumes, quality, and final usage requirements to define the best approach.",
+            "Schedule a Free Consultation session with our experts for a free consultation where we understand your  data digitization process.",
           icon: <FaClipboardList className="text-purple-600 text-2xl" />,
         },
         {
-          title: "Scanning & OCR Processing",
+          title: " Custom Digitization Plan:",
           description:
-            "Documents are scanned using high-speed machines and processed with OCR/ICR to extract editable/searchable text.",
+            "After carefully  reviewing your database, we will conduct a thorough data assessment and create a customized digitization plan tailored to meets  your requirement.",
           icon: <FaFileAlt className="text-purple-600 text-2xl" />,
         },
         {
-          title: "Data Structuring & Validation",
+          title: "Secure Data Digitization process:",
           description:
-            "Extracted data is entered, formatted, and verified using strict quality checks and validation protocols.",
+            "Our team securely collects your physical data and applies strict data confidentiality .We offers both on-site and off-site scanning options.",
           icon: <FaKeyboard className="text-purple-600 text-2xl" />,
         },
         {
-          title: "Delivery & Cloud Integration",
+          title: "Delivery & Cloud Integration ",
           description:
-            "Final digital files are delivered in preferred formats and optionally integrated with cloud or DMS systems.",
+            "You will Receive your digitized documents in your desired format along with options for cloud storage integration .",
           icon: <FaCloudUploadAlt className="text-purple-600 text-2xl" />,
         },
       ].map((step, index) => (
@@ -582,29 +584,29 @@ const DataDigitization = () => {
   <div className="space-y-4">
     {[
       {
-        question: "What is data digitization?",
+        question: "What is data digitization and what is the need of data digitization ?",
         answer:
-          "Data digitization is the process of converting physical documents, records, or images into digital formats for easier storage, access, and processing.",
+          "Data digitization refers to the process of turning physical records like paper documents into digital formats. This is important because it allows for secure storage, easier access, and long-term preservation. ",
       },
       {
-        question: "What types of documents can be digitized?",
+        question: "What kind of documents can be digitized by MRT?",
         answer:
-          "We digitize paper documents, forms, books, microfilms, photos, engineering drawings, ID proofs, invoices, and more.",
+          "We offers document scanning services for a variety of assets.It includes:-Office files and records,Legal documents, Engineering drawings,Books and manuals, Registers, forms, and more.",
       },
       {
-        question: "Is my data secure after digitization?",
+        question: "How does MRT maintains data security and integrity during data digitization process?",
         answer:
-          "Yes. We follow strict data privacy protocols with encryption, controlled access, and secure backups to keep your data protected.",
+          "At MRT, we adhere to strict data confidentiality protocols. Our trained professionals manage your documents in secure environments, whether on-site or off-site. We utilize encrypted storage, controlled access, and secure data transfer methods to safeguard your sensitive information throughout the digitization process.",
       },
       {
-        question: "Can you integrate the digitized data into my existing system?",
+        question: "What is OCR and how does it help in data digitization?",
         answer:
-          "Absolutely. We ensure seamless integration with your document management systems, ERPs, CRMs, or any custom platform.",
+          "OCR (Optical Character Recognition) and ICR (Intelligent Character Recognition) are technologies designed to extract text from scanned documents, regardless of whether it's typed or handwritten. ",
       },
       {
-        question: "Do you offer OCR & ICR services?",
+        question: "Do you offer custom digitization workflows for specific industries?",
         answer:
-          "Yes. We offer Optical Character Recognition (OCR) and Intelligent Character Recognition (ICR) to extract editable text from scanned files.",
+          "Absolutely! Mohitraj Research and Technology Private Limited specializes in creating custom digitization workflows that are tailored to various industries—be it healthcare, government, education, legal, or manufacturing",
       },
     ].map((faq, index) => (
       <div
@@ -638,30 +640,6 @@ const DataDigitization = () => {
   </div>
 </div>
 
-{/* Fourth Section: Contact Us - Security & Surveillance Related */}
-<div className="relative z-10 -mt-30 mb-5 px-6 ">
-  <div className="w-full bg-red-300 py-10 px-6 flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto rounded-xl shadow-xl hover:shadow-2xl transition duration-300 border border-blue-200">
-    
-    {/* Left Side */}
-    <div className="flex items-center gap-4">
-      <div className="w-1 h-16 bg-blue-600"></div>
-      <h2 className="text-2xl md:text-3xl font-semibold text-blue-900 leading-snug">
-        Looking for Smart Security & Surveillance <br /> Solutions for Your Premises?
-      </h2>
-    </div>
-
-    {/* Right Side */}
-    <div className="flex items-center gap-3 group cursor-pointer">
-      <span className="text-blue-700 font-medium text-lg group-hover:underline">
-        Contact Us
-      </span>
-      <div className="w-9 h-9 rounded-full bg-blue-600 flex items-center justify-center group-hover:bg-blue-800 transition">
-        <FaArrowRight className="text-white text-base" />
-      </div>
-    </div>
-
-  </div>
-</div>
 
 
 

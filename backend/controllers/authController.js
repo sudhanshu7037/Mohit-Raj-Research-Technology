@@ -1,95 +1,78 @@
+// controllers/authController.js
+import User from "../models/user.js";
+import bcrypt from "bcrypt";
+import { generateUserId } from "../utils/generateUserId.js"; // Helper to generate EMP001 etc.
 
-const User = require("../models/user");
-const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
-
-// REGISTER API
-exports.registerUser = async (req, res) => {
+export const registerUser = async (req, res) => {
   try {
-    const { firstname, lastname, email, password } = req.body;
+    const {
+      firstName,
+      middleName,
+      lastName,
+      email,
+      password,
+      mobile,
+      phone,
+      gender,
+      age,
+      qualification,
+      dateOfBirth,
+      department,
+      designation,
+    } = req.body;
 
-    // check if user already exists
     const existingUser = await User.findOne({ email });
-    if (existingUser) {
-      return res.status(400).json({ message: "User already exists!" });
-    }
+    if (existingUser)
+      return res.status(400).json({ message: "Email already exists" });
 
-    // hash password
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    // first user becomes admin
-    const isFirstUser = (await User.countDocuments()) === 0;
-
-    const newUser = await User.create({
-      firstname,
-      lastname,
+    const newUser = new User({
+      userId: await generateUserId(), // e.g., EMP001
+      firstName,
+      middleName,
+      lastName,
       email,
       password: hashedPassword,
-      role: isFirstUser ? "admin" : "user", // ✅ First user is admin
+      mobile,
+      phone,
+      gender,
+      age,
+      qualification,
+      dateOfBirth,
+      department,
+      designation,
+      userType: "Pending", // default
+      isActive: false, // default
     });
 
-    const token = await newUser.getJWT();
-
+    await newUser.save();
     res.status(201).json({
-      message: "User registered successfully",
-      token,
-      user: {
-        _id: newUser._id,
-        firstname: newUser.firstname,
-        lastname: newUser.lastname,
-        email: newUser.email,
-        role: newUser.role,
-      },
+      message: "Registration successful. Awaiting admin approval.",
+      user: newUser,
     });
   } catch (error) {
-    res
-      .status(500)
-      .json({ message: "Registration failed", error: error.message });
+    res.status(500).json({ message: "Registration failed", error });
   }
+
 };
 
-// LOGIN API
-exports.loginUser = async (req, res) => {
-  try {
-    const { email, password } = req.body;
+export const loginUser = async (req, res) => {
+  const { email, password } = req.body;
 
-    const user = await User.findOne({ email });
-    if (!user) return res.status(400).json({ message: "Invalid credentials please register" });
+  const user = await User.findOne({ email });
+  if (!user) return res.status(404).json({ message: "User not found" });
 
-    const isMatch = await user.validatePassword(password);
-    if (!isMatch)
-      return res.status(400).json({ message: "Invalid credentials " });
+  if (!user.isActive) return res.status(403).json({ message: "User is not activated" });
 
-    const token = await user.getJWT();
-     // ✅ Set token in cookie
-    res.cookie("token", token, {
-      httpOnly: true,         // ❌ Cannot access via JavaScript
-      secure: false,          // ✅ Set to true only in HTTPS (prod)
-      sameSite: "lax",        // ✅ Protects against CSRF
-      maxAge: 24 * 60 * 60 * 1000, // 1 day
-    });
+  const isMatch = await bcrypt.compare(password, user.password);
+  if (!isMatch) return res.status(401).json({ message: "Invalid credentials" });
 
+  const token = jwt.sign({ id: user._id, role: user.userType }, process.env.JWT_SECRET, {
+    expiresIn: "7d",
+  });
 
-    res.status(200).json({
-      message: "Login successful",
-      token,
-      user: {
-        _id: user._id,
-        firstname: user.firstname,
-        lastname: user.lastname,
-        email: user.email,
-        role: user.role,
-      },
-    });
-  } catch (error) {
-    res.status(500).json({ message: "Login failed", error: error.message });
-  }
+  res.json({ token, user });
 };
 
-// LOGOUT API (Client-side only: just delete token)
-exports.logoutUser = async (req, res) => {
-  res
-    .status(200)
-    .json({ message: "Logout successful (delete token on client)" });
-};
 

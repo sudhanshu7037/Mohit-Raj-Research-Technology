@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo6 from "../../assets/NEWIMG.png";
+import Logo6 from "../../assets/Multimediabanner.png";
 import Logo1 from "../../assets/SofwareConsulting.png";
 import Logo2 from "../../assets/Custom.png";
 import Logo4 from "../../assets/Erp.png";
@@ -34,39 +34,39 @@ const techStack = [
 
 const multimediaServices = [
   {
-    title: "2D/3D Animation",
+    title: "2D & 3D Animation Services ",
     description:
-      "Craft stunning visuals that tell compelling stories. From explainer videos to immersive 3D animations, we breathe life into every frame.",
+      "Bring your ideas to life with our visually striking 2D and 3D animations. From explainer videos to product demos to educational content and ads, we design animations that not only look great but also connect with your audience. ",
     icon: <FaVideo className="text-pink-500 text-2xl" />,
   },
   {
     title: "Motion Graphics",
     description:
-      "Add energy to your content with kinetic typography, moving elements, and visual storytelling that captures audience attention instantly.",
+      "Make your content pop with professionally designed motion graphics. Perfect for presentations, social media, mobile apps, and promo videos—our graphics add movement and clarity to your message while reflecting your brand's personality. ",
     icon: <FaRocket className="text-blue-500 text-2xl" />,
   },
   {
     title: "Visual Effects (VFX)",
     description:
-      "Enhance your visuals with cutting-edge VFX techniques. Perfect for ads, films, and multimedia presentations needing that wow factor.",
+      "Add a cinematic touch to your videos with our VFX services. We handle CGI, green screen editing, and advanced compositing to produce eye-catching effects that elevate your content, whether for commercials, short films, or digital campaigns. ",
     icon: <FaMagic className="text-purple-500 text-2xl" />,
   },
   {
-    title: "Creative Video Editing",
+    title: "Professional Video Editing",
     description:
-      "From transitions to sound sync, our expert editors craft professional video content with a seamless and engaging flow.",
+      "Got raw footage? We turn it into polished, high-quality videos. Our video editing services include smooth transitions, audio balancing, color grading, and everything else needed to make your visuals stand out and feel professional.",
     icon: <FaPalette className="text-yellow-500 text-2xl" />,
   },
   {
-    title: "Character Design & Storyboarding",
+    title: "Explainer Video Creation",
     description:
-      "We sketch, design, and animate unique characters and storyboard the entire journey—perfect for animated storytelling.",
+      "Simplify complex ideas with clear, creative explainer videos. Ideal for startups, product launches, employee training, or service walkthroughs—these videos are a great way to inform and engage in a short span.",
     icon: <FaPaintBrush className="text-red-500 text-2xl" />,
   },
   {
-    title: "UI/UX Animation",
+    title: " Logo Animation & Brand Intro Videos",
     description:
-      "Enhance web or app interactions with subtle micro animations that improve user engagement and experience.",
+      "Make your brand memorable with custom logo animations and intro videos. These short, high-impact visuals are perfect for websites, YouTube channels, presentations, and digital ads—instantly giving your content a branded, professional feel.",
     icon: <FaMagic className="text-indigo-500 text-2xl" />,
   },
 ];
@@ -76,7 +76,7 @@ const services = [
   {
     title: "2D & 3D Animation",
     description:
-      "We create visually engaging 2D and 3D animations that bring your ideas to life. From explainer videos to animated commercials, our animations are designed to captivate and communicate effectively.",
+      "Turn your imagination, or your ideas, into spectacular 3D animation that can showcase your ideas , products, services or concepts, with accurate detail.Our animators can construct immersive worlds to capture your audience's imagination.",
     img: Logo6,
     alt: "2D & 3D Animation",
     points: ["High-quality visuals", "Custom animations", "Engaging storytelling"],
@@ -100,7 +100,7 @@ const services = [
   {
     title: "Character Design & Storyboarding",
     description:
-      "Our creative team crafts unique characters and detailed storyboards to visualize concepts before production begins. This ensures storytelling clarity and artistic alignment from the start.",
+      "Bring your story to life! With our visual storytelling capability, whether a promotional video, an interactive presentation, or an animated explainers, we can produce visuals essential to showcasing your brand's story.",
     img: Logo4,
     alt: "Character Design & Storyboarding",
     points: ["Unique character creation", "Detailed storyboards", "Concept visualization"],
@@ -108,7 +108,7 @@ const services = [
   {
     title: "Multimedia Presentations",
     description:
-      "We design multimedia presentations that combine audio, video, text, and animations to make your corporate or educational content compelling and memorable.",
+      "Make an impact on your audience and engage them with compelling dynamic and engaging interactive multimedia presentations.",
     img: Logo6,
     alt: "Multimedia Presentations",
     points: ["Engaging presentations", "Multimedia integration", "Corporate branding"],
@@ -126,48 +126,48 @@ const services = [
 const steps = [
     {
       icon: <FaHeadphones className="text-xl text-indigo-600" />,
-      title: "Reach Out to MRT",
+      title: "Connect with MRT",
       description:
-        "Discuss your multimedia or hosting project ideas with our consultants. MRT's team listens carefully and evaluates your requirements thoroughly.",
+        "Share your multimedia or hosting project requirements with our expert consultants. We take the time to understand your goals and offer tailored guidance that aligns with your business needs.",
     },
     {
       icon: <FaMap className="text-xl text-indigo-600" />,
-      title: "Planning and Tech Mapping",
+      title: " Project Planning & Technical Roadmap",
       description:
-        "We define the project roadmap, tech stack (media servers, CDN, CMS, etc.), and estimate timelines based on your vision and scope.",
+        "We outline a clear project roadmap, that  defines the ideal tech stack (including media servers, CDNs, CMS platforms, and more), and provide accurate timelines based on your scope and objectives.",
     },
     {
       icon: <FaClipboardCheck className="text-xl text-indigo-600" />,
-      title: "Project Onboarding & Launch",
+      title: "Onboarding & Project Launch",
       description:
-        "Get started with a skilled team at MRT. Track progress in real-time while we develop, animate, and host your solution to perfection.",
+        "Once aligned, our dedicated team gets to work. From design to deployment, we keep you updated with real-time progress while ensuring quality, scalability, and performance every step of the way.",
     },
   ];
 
   const multimediaFeatures = [
   {
     icon: <FaRegLightbulb className="text-pink-500 text-3xl" />,
-    title: "Creative Strategy",
+    title: "Creative Direction + Technical Expertise",
     description:
-      "MRT crafts engaging multimedia and animation strategies tailored to captivate your audience and amplify your message.",
+      " Our team combines creative direction with leading edge animation tools and VFX to deliver high quality results—optimised for web, mobile, presentations and digital campaigns.",
   },
   {
     icon: <FaMagic className="text-purple-500 text-3xl" />,
-    title: "Cutting-edge Animation",
+    title: "Creative Excellence with a Strategic Mindset",
     description:
-      "From 2D motion graphics to 3D product walkthroughs, we bring your imagination to life with stunning visual storytelling.",
+      "We don’t just animate—we think about your goals, audience and message. Every project is purposeful whether it’s a product explainer, brand intro or marketing video.",
   },
   {
     icon: <FaRocket className="text-indigo-500 text-3xl" />,
-    title: "Performance Optimized",
+    title: "Full Service Multimedia",
     description:
-      "Our animations are fast-loading, responsive, and built for web, apps, and social media – ensuring peak user experience.",
+      "From concept to storyboarding to final production we offer all-in-one multimedia services. Whether it’s 2D/3D animation, motion graphics or video editing we handle everything.",
   },
   {
     icon: <FaUsers className="text-blue-600 text-3xl" />,
-    title: "Team of Experts",
+    title: "Custom Visual Content",
     description:
-      "With seasoned animators, UI/UX designers, and editors, MRT guarantees top-tier multimedia production value.",
+      "No templates. No one-size-fits-all. Every animation or video we create is bespoke for your brand’s tone, values and visuals—ensuring brand consistency across all platforms.",
   },
 ];
 
@@ -205,9 +205,8 @@ const MultimediaAnimation = () => {
             MULTIMEDIA & ANIMATION SERVICES
           </h1>
           <p className="text-white text-base md:text-lg max-w-2xl mb-8">
-            We bring your ideas to life through stunning animations, interactive
-            media, and captivating visuals. Our multimedia and animation services
-            help you communicate your message creatively and effectively across digital platforms.
+            Explore Our Cutting-Edge Multimedia & Animation Solutions for Transformative Visual Experiences At MohitRaj Research and Technology Private Limited
+            we understands the need of multimedia and animation for enhancing your digital experience with transformational potential. 
           </p>
           <div className="flex gap-4 flex-wrap justify-center">
             <button
@@ -232,10 +231,10 @@ const MultimediaAnimation = () => {
       <div className="bg-white py-16 px-4 lg:px-24 text-center">
         {/* Top Text */}
         <p className="text-gray-700 text-base md:text-lg max-w-4xl mx-auto mb-12 leading-relaxed font-basis">
-          Our multimedia and animation services transform concepts into visual experiences.
-          From 2D/3D animations to interactive videos and visual effects, we blend creativity with
-          technology to bring stories to life. With a team of skilled animators, designers, and motion artists,
-          we deliver content that enhances user engagement, marketing impact, and brand value across digital platforms.
+          Our expertise in multimedia and animation offers the flexibility to you to engage with your audience, and tell stories through a visual experience.
+           Let us work together to leverage the collaborative creativity of multimedia experiences that can engage your audience and create a connection. 
+
+
         </p>
 
         {/* Stats Section */}
@@ -467,8 +466,8 @@ const MultimediaAnimation = () => {
          custom Multimedia & Animation Services We Offer
       </h2>
       <p className="text-gray-600 max-w-4xl mx-auto mb-12">
-        Our team combines creativity and technology to create compelling
-        multimedia and animation solutions that bring your vision to life.
+        We don’t just create visuals—we craft immersive experiences that helps  brand to communicate, engage, and grow with their respective audience . Whether it's for marketing, branding, or storytelling, our multimedia and animation solutions are built to leave a lasting impact. 
+
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
@@ -495,7 +494,7 @@ const MultimediaAnimation = () => {
         Start Your Multimedia or Hosting Project with <span className="text-pink-600">MRT</span>
       </h2>
       <p className="text-center text-gray-600 max-w-2xl mx-auto mb-12">
-        At MRT, we help businesses deliver immersive multimedia experiences & reliable hosting infrastructure through custom development.
+        At Mohitraj Research and Technology Private Limited, we empower businesses to deliver immersive multimedia experiences and robust hosting infrastructure through customized development solutions. From idea to execution, we ensure a seamless and strategic approach to every project.
       </p>
 
       {/* Main Content */}
@@ -536,7 +535,8 @@ const MultimediaAnimation = () => {
           Why Choose <span className="text-pink-600">MRT</span>?
         </h2>
         <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-          MRT is your one-stop destination for multimedia innovation. We blend storytelling, tech, and motion design to create stunning visual experiences across platforms.
+          Enhancing Brand Identity Using Animation And Multimedia
+
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -605,16 +605,30 @@ const MultimediaAnimation = () => {
         <h2 className="text-3xl font-bold text-purple-800 mb-4">
           Multimedia & Animation Solutions
         </h2>
+
         <p className="text-gray-700 text-lg mb-6">
-          Our team helped a creative studio elevate their digital content using
-          powerful animation tools, 3D rendering, and interactive multimedia experiences.
-          From explainer videos to real-time motion graphics, we delivered immersive
-          solutions across platforms.
+          Mohitraj Research and Technology Pvt. Ltd. was approached by a rapidly expanding creative studio looking to add more vibrance, clarity, and interactivity to their digital content. Their existing assets felt too static, and they strived to achieve a higher level of audience engagement visually across multiple platforms.
+<br></br>
+<br></br>
+<b>Our Strategy</b>
+<br></br>
+
+We didn’t just complete the animations. 
+<br></br>
+
+We completed an intent-driven visual narrative.
+<br></br>
+To meet the client’s requirements, we carefully crafted a multimedia approach that incorporated high-quality 2D/3D animations, interactive motion graphics, and real-time rendering to reflect the client’s brand voice, capture attention, and command interest across every screen.
+
+Solutions Delivered
+
+
+
         </p>
         <ul className="list-disc ml-6 text-gray-700 space-y-2 mb-6">
-          <li>High-Quality 2D/3D Animation Production</li>
-          <li>Interactive UI with Motion Graphics</li>
-          <li>Real-Time Rendering & VFX Integration</li>
+          <li> 2D & 3D Animation Production</li>
+          <li>Motion Graphics for UI/UX </li>
+          <li>Real Time Rendering + VFX</li>
           <li>Custom Multimedia Portfolios & Storytelling</li>
         </ul>
         <button className="w-28 bg-purple-700 hover:bg-purple-500 text-white text-xs sm:text-sm py-1.5 sm:py-2 rounded-md shadow-sm transition duration-300">

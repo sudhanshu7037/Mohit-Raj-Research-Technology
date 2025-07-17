@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Aboutus from "../assets/homepageimages/aboutusimage/aboutus.png";
 
 const BuisnessDeal = () => {
   useEffect(() => {
@@ -16,7 +17,7 @@ const BuisnessDeal = () => {
         {/* Left Image */}
         <div data-aos="fade-up" className="relative">
           <img
-            src="https://advisorhtml.websitelayout.net/img/content/about-01.jpg"
+            src={Aboutus}
             alt="Teamwork"
             className="rounded-3xl shadow-2xl"
           />

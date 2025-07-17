@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import CountUp from "react-countup";
+import projectcomplete from "../assets/homepageimages/ProjectcompleteBackgroundImage/projectcomplete.png";
 
 const MoreInfo = () => {
   const [inView, setInView] = useState(false);
@@ -30,8 +31,7 @@ const MoreInfo = () => {
       <div
         className="relative h-[450px] md:h-[500px] bg-cover bg-center flex items-center justify-center text-white"
         style={{
-          backgroundImage:
-            "url('https://img.freepik.com/free-photo/businessman-analyzing-data_53876-95808.jpg')",
+          backgroundImage: `url(${projectcomplete})`,
         }}
       >
         <div className="absolute inset-0 bg-black opacity-60" />

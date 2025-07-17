@@ -1,10 +1,10 @@
 import React from 'react';
-import DigitalMarketingimg from "../../assets/DigitalMarketingimg.png";
+import DigitalMarketingimg from "../../assets/digitalmarketingbanner.png";
 import { FaCheckCircle } from "react-icons/fa";
 import bgImage from "../../assets/background.png";
 import { FaBullhorn, FaSearch, FaMailBulk, FaChartLine } from "react-icons/fa";
 import { FaLightbulb,FaShieldAlt, FaCogs,FaRocket ,FaUsers,FaMobileAlt } from "react-icons/fa";
-import DevImage from "../../assets/project.png";
+import DevImage from "../../assets/digitalmarket2.png";
 
 const techStack = [
   {
@@ -26,24 +26,24 @@ const techStack = [
 
 const services = [
   {
-    title: "Search Engine Optimization (SEO)",
+    title: "Customized SEO Strategy",
     description:
-      "Boost your visibility in organic search with keyword research, on-page SEO, and technical optimization.",
+      "Our experts create personalized Search Engine Optimization (SEO) plans that suit your business needs. Our SEO specialists concentrate on keyword research, on-page SEO, link creation, and technical SEO to improve search rankings and organic traffic.",
   },
   {
-    title: "Social Media Marketing",
+    title: "Performance-Driven Social Media Marketing",
     description:
-      "Engage your audience with strategic campaigns across Instagram, Facebook, LinkedIn, and more.",
+      "Our social media professionals create customized campaigns across platforms such as Facebook, Instagram, LinkedIn, and X (Twitter) to enhance brand visibility, user engagement, and lead conversion.",
   },
   {
-    title: "Content Marketing",
+    title: "Industry-Specific Content Marketing Solutions",
     description:
-      "Create compelling blogs, videos, and infographics that attract, inform, and convert your target users.",
+      "We create specialized, search-engine-optimized content through blogs, videos, and graphics that appeal to your audience and establish long-term brand influence in your field.",
   },
   {
-    title: "Pay-Per-Click (PPC) Advertising",
+    title: "Conversion-Oriented PPC Campaign Management",
     description:
-      "Run high-performing ads with optimized targeting and ROI-focused budgets.",
+      "We provide tailor-made Pay-Per-Click (PPC) advertising solutions on Google Ads, Bing Ads, and social networks. Our PPC professionals ensure each click is maximized, with increased ROI and minimized wastage of advertisement expenses.",
   },
   {
     title: "Email Campaign Automation",
@@ -129,8 +129,8 @@ const DigitalMarketing = () => {
       DIGITAL MARKETING SERVICES
     </h1>
     <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed mb-6 sm:mb-8">
-      Amplify your brand visibility, engage your target audience, and achieve measurable results
-      with our result-driven digital marketing strategies including SEO, PPC, Social Media, and more.
+      All-Inclusive Digital Marketing Solutions Provided by Mohitraj Research and Technology Pvt. Ltd. 
+
     </p>
     <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
       <button className="bg-blue-600 hover:bg-blue-700 px-4 py-2 sm:px-6 sm:py-3 rounded-md text-sm sm:text-base md:text-lg font-medium transition">
@@ -147,7 +147,7 @@ const DigitalMarketing = () => {
 <section className="py-10 sm:py-14 md:py-16 px-4 sm:px-6 bg-white text-gray-800">
   <div className="max-w-6xl mx-auto text-center mb-8 sm:mb-10 md:mb-14">
     <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed font-medium text-gray-700">
-      With a decade of digital expertise, we empower brands with data-driven strategies, innovative content, and high-converting campaigns. From SEO to social media, we’ve helped 100s of clients scale their online presence and revenue through tailored marketing solutions.
+      Here at Mohitraj Research and Technology Private Limited, our full range of offerings in digital marketing will enable your business to succeed in the ever-changing online world. With a focus on improving brand recognition, enhancing customer relations, and achieving tangible growth through creative data driven approaches, our services will deliver business results. 
     </p>
   </div>
 
@@ -178,7 +178,8 @@ const DigitalMarketing = () => {
     Our Digital Marketing Services
   </h2>
   <p className="text-gray-600 max-w-3xl mx-auto mb-12 text-base md:text-lg leading-relaxed font-basis animate-fade-in">
-    Boost your business visibility and engagement through tailored digital marketing strategies. We drive results across search, social, email, and beyond.
+    As Our Clients You Will Enjoy The Following Key Services 
+
   </p>
 
   {/* Cards */}
@@ -188,7 +189,7 @@ const DigitalMarketing = () => {
     <div className="bg-white rounded-xl shadow-lg p-6 text-left transition hover:scale-105 hover:shadow-2xl border border-gray-100 hover:border-blue-500">
       <img src="https://cdn-icons-png.flaticon.com/512/2198/2198161.png" alt="SEO Optimization" className="w-12 h-12 mb-4" />
       <h3 className="text-xl font-semibold text-blue-900 mb-2">SEO Optimization</h3>
-      <p className="text-gray-600 text-sm mb-3">Rank higher on search engines and get organic traffic with advanced SEO techniques.</p>
+      <p className="text-gray-600 text-sm mb-3">Achieve heightened brand prominence on all major search engines by utilizing our SEO services. We improve your website's structure, content, and backlinks to enhance organic visibility and to ensure that you receive quality traffic. </p>
       <ul className="list-disc pl-5 text-sm text-blue-800 space-y-1">
         <li>On-Page & Off-Page SEO</li>
         <li>Site Audit</li>
@@ -199,8 +200,8 @@ const DigitalMarketing = () => {
     {/* Card 2 - Social Media */}
     <div className="bg-white rounded-xl shadow-lg p-6 text-left transition hover:scale-105 hover:shadow-2xl border border-gray-100 hover:border-blue-500">
       <img src="https://cdn-icons-png.flaticon.com/512/2334/2334378.png" alt="Social Media" className="w-12 h-12 mb-4" />
-      <h3 className="text-xl font-semibold text-blue-900 mb-2">Social Media Marketing</h3>
-      <p className="text-gray-600 text-sm mb-3">Engage users through powerful content across Facebook, Instagram, LinkedIn, and more.</p>
+      <h3 className="text-xl font-semibold text-blue-900 mb-2"> Pay-Per-Click Advertising (PPC)</h3>
+      <p className="text-gray-600 text-sm mb-3">Enjoy increased return on investment as a result of our PPC advertising services on Google Ads and other social media platforms. We design and manage cutting edge advertisement campaigns that are capable of delivering instant results.</p>
       <ul className="list-disc pl-5 text-sm text-blue-800 space-y-1">
         <li>Post Design & Strategy</li>
         <li>Ad Campaigns</li>
@@ -211,8 +212,8 @@ const DigitalMarketing = () => {
     {/* Card 3 - Email Marketing */}
     <div className="bg-white rounded-xl shadow-lg p-6 text-left transition hover:scale-105 hover:shadow-2xl border border-gray-100 hover:border-blue-500">
       <img src="https://cdn-icons-png.flaticon.com/512/5525/5525772.png" alt="Email Campaign" className="w-12 h-12 mb-4" />
-      <h3 className="text-xl font-semibold text-blue-900 mb-2">Email Campaigns</h3>
-      <p className="text-gray-600 text-sm mb-3">Stay in touch with leads using targeted and automated email campaigns.</p>
+      <h3 className="text-xl font-semibold text-blue-900 mb-2">Influencer Marketing</h3>
+      <p className="text-gray-600 text-sm mb-3">Leverage niche influencers to promote and convey your brand message. We offer influencer marketing services to get you in touch with reputable names in your field.</p>
       <ul className="list-disc pl-5 text-sm text-blue-800 space-y-1">
         <li>Drip Campaigns</li>
         <li>Newsletters</li>
@@ -235,8 +236,8 @@ const DigitalMarketing = () => {
     {/* Card 5 - Content Marketing */}
     <div className="bg-white rounded-xl shadow-lg p-6 text-left transition hover:scale-105 hover:shadow-2xl border border-gray-100 hover:border-blue-500">
       <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Content Marketing" className="w-12 h-12 mb-4" />
-      <h3 className="text-xl font-semibold text-blue-900 mb-2">Content Marketing</h3>
-      <p className="text-gray-600 text-sm mb-3">Attract and convert with blogs, videos, and storytelling tailored to your audience.</p>
+      <h3 className="text-xl font-semibold text-blue-900 mb-2">Email-Marketing  </h3>
+      <p className="text-gray-600 text-sm mb-3">Connect with your customers through direct and personalized automated email marketing. We offer full service from drafting an email to performance evaluation.</p>
       <ul className="list-disc pl-5 text-sm text-blue-800 space-y-1">
         <li>Blog & Article Writing</li>
         <li>Video Production</li>
@@ -247,8 +248,8 @@ const DigitalMarketing = () => {
     {/* Card 6 - Analytics & Reporting */}
     <div className="bg-white rounded-xl shadow-lg p-6 text-left transition hover:scale-105 hover:shadow-2xl border border-gray-100 hover:border-blue-500">
       <img src="https://cdn-icons-png.flaticon.com/512/4285/4285807.png" alt="Analytics" className="w-12 h-12 mb-4" />
-      <h3 className="text-xl font-semibold text-blue-900 mb-2">Analytics & Reporting</h3>
-      <p className="text-gray-600 text-sm mb-3">Track campaign performance and user behavior to make data-driven decisions.</p>
+      <h3 className="text-xl font-semibold text-blue-900 mb-2">Content Marketing</h3>
+      <p className="text-gray-600 text-sm mb-3">Increase trust and authority with your audience through useful, SEO-compliant content. Our marketing content team develops blogs, articles, and even infographics and web copies customized for your audience.</p>
       <ul className="list-disc pl-5 text-sm text-blue-800 space-y-1">
         <li>Google Analytics Setup</li>
         <li>Monthly Reports</li>

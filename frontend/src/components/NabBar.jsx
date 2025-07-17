@@ -3,7 +3,6 @@ import ServicesDropdown from "./Dropdowns/ServicesDropdown";
 import SolutionsDropdown from "./Dropdowns/SolutionDropdown";
 import IndustriesDropdown from "./Dropdowns/IndustriesDropdown";
 import {
-  FaPhone,
   FaEnvelope,
   FaFacebook,
   FaTwitter,
@@ -13,7 +12,7 @@ import {
   FaBars,
   FaTimes,
 } from "react-icons/fa";
-import { MdKeyboardArrowDown } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import ProductsDropdown from "./Dropdowns/ProductsDropdown";
 import MobileMenuNavbar from "./Dropdowns/MobileMenuNavbar";
@@ -22,40 +21,38 @@ import Logo2 from "../assets/new MRTPL-Logo.png";
 const NavBar = () => {
   const [activeMenu, setActiveMenu] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [openSubMenu, setOpenSubMenu] = useState(null);
+  const [openSubMenu, setOpenSubMenu] = useState({
+    products: false,
+    education: false,
+    medical: false,
+    corporate: false,
+    public: false,
+  });
   const [isScrolled, setIsScrolled] = useState(false);
-
- const [openDropdown, setOpenDropdown] = useState(null);
+  const [openDropdown, setOpenDropdown] = useState(null);
 
   const handleDropdownToggle = (dropdownName) => {
     if (openDropdown === dropdownName) {
-      setOpenDropdown(null); // Close if same dropdown clicked
+      setOpenDropdown(null);
     } else {
-      setOpenDropdown(dropdownName); // Open clicked dropdown
+      setOpenDropdown(dropdownName);
     }
   };
-
-
-  // const [isSolutionsOpen, setIsSolutionsOpen] = useState(false);
-  // const [isIndustriesOpen, setIsIndustriesOpen] = useState(false);
-  
-
-  // const toggleSolutions = () => {
-  //   setIsSolutionsOpen(!isSolutionsOpen);
-  //   setIsIndustriesOpen(false);
-  // };
-
-  // const toggleIndustries = () => {
-  //   setIsIndustriesOpen(!isIndustriesOpen);
-  //   setIsSolutionsOpen(false);
-  // };
 
   const handleMouseEnter = (menu) => setActiveMenu(menu);
   const handleMouseLeave = () => setActiveMenu(null);
 
-  const toggleMenu = () => setMenuOpen(!menuOpen);
-  const toggleSubMenu = (menu) =>
-    setOpenSubMenu(openSubMenu === menu ? null : menu);
+  const toggleSubMenu = (menu) => {
+    setOpenSubMenu((prev) => ({
+      ...prev,
+      [menu]: !prev[menu],
+    }));
+  };
+
+  // ✅ Missing function added
+  const toggleMenu = () => {
+    setMenuOpen((prev) => !prev);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -74,11 +71,13 @@ const NavBar = () => {
         </div>
         <div className="relative flex justify-between px-4 lg:px-20 items-center h-full z-10">
           <div className="flex items-center gap-2">
-            <FaPhone />
+            <FaPhoneAlt />
             <span>+9999910150</span>
             <span className="px-1 md:px-2">|</span>
             <FaEnvelope />
-            <a href="#" className="hover:underline">mohitrajit@gmail.com</a>
+            <a href="#" className="hover:underline">
+              mohitrajit@gmail.com
+            </a>
           </div>
           <div className="hidden md:flex items-center gap-3 text-orange-500">
             <a href="#"><FaFacebook /></a>
@@ -91,14 +90,20 @@ const NavBar = () => {
       </div>
 
       {/* Main Navbar */}
-      <nav className={`fixed top-8 md:top-10 w-full z-50 transition-all duration-300 ${
-        isScrolled
-          ? "bg-white text-black shadow-md"
-          : "bg-transparent text-white "
-      }`}>
+      <nav
+        className={`fixed top-8 md:top-10 w-full z-50 transition-all duration-300 ${
+          isScrolled
+            ? "bg-white text-black shadow-md"
+            : "bg-transparent text-white"
+        }`}
+      >
         <div className="h-16 md:h-20 flex justify-between items-center px-4 lg:px-20">
           <Link to="/">
-            <img src={Logo2} alt="MRTPL Logo" className="h-10 md:h-12 lg:h-16 w-auto cursor-pointer" />
+            <img
+              src={Logo2}
+              alt="MRTPL Logo"
+              className="h-10 md:h-12 lg:h-16 w-auto cursor-pointer"
+            />
           </Link>
 
           <ul className="hidden md:flex gap-4 lg:gap-6 items-center text-sm md:text-md font-semibold">
@@ -108,32 +113,23 @@ const NavBar = () => {
 
             <ProductsDropdown
               openDropdown={openDropdown}
-  handleDropdownToggle={handleDropdownToggle}
+              setOpenDropdown={setOpenDropdown}
             />
-
             <ServicesDropdown
               openDropdown={openDropdown}
-  handleDropdownToggle={handleDropdownToggle}
+              setOpenDropdown={setOpenDropdown}
             />
-
-            {/* Solutions */}
-           <SolutionsDropdown 
-           
-           openDropdown={openDropdown}
-  handleDropdownToggle={handleDropdownToggle}
-           
-           />
-
-            {/* Industries */}
-           <IndustriesDropdown
-            openDropdown={openDropdown}
-  handleDropdownToggle={handleDropdownToggle}
-           
-           />
-
-            <li><a href="/blog">BLOG</a></li>
+            <SolutionsDropdown
+              openDropdown={openDropdown}
+              setOpenDropdown={setOpenDropdown}
+            />
+            <IndustriesDropdown
+              openDropdown={openDropdown}
+              setOpenDropdown={setOpenDropdown}
+            />
+            <li><a href="/blog">BLOGS</a></li>
             <li><a href="/career">CAREER</a></li>
-            <li><a href="/contact">CONTACT</a></li>
+            <li><a href="/contact">CONTACT US</a></li>
           </ul>
 
           <div className="md:hidden">
@@ -143,13 +139,11 @@ const NavBar = () => {
           </div>
 
           <div className="hidden md:block">
-            <Link to="/admin/login" className="bg-yellow-500 font-semibold px-5 py-2 rounded-md text-white text-2xl md:text-sm">
-              Login
-            </Link>
-          </div>
-           <div className="hidden md:block">
-            <Link to="/register" className="bg-yellow-500 font-semibold px-5 py-2 rounded-md text-white text-2xl md:text-sm">
-              Register
+            <Link
+              to="/contact"
+              className="bg-yellow-500 font-semibold px-5 py-2 rounded-md text-white text-2xl md:text-sm"
+            >
+              GET IN TOUCH
             </Link>
           </div>
         </div>

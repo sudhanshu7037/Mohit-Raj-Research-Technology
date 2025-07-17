@@ -1,61 +1,83 @@
- const mongoose = require("mongoose");
-const validator = require("validator");
-
-const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
+import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema(
   {
-    firstname: {
-      type: String,
-      required: true,
+    userId: { type: String, required: true, unique: true }, // EMP001 etc.
+    firstName: { type: String, required: true },
+    middleName: { type: String },
+    lastName: { type: String },
+    department: { type: String },
+    designation: { type: String },
+    level: { type: String }, // For internal role level
+    userType: {
+  type: String,
+  enum: [
+    "Admin",         // Super admin managing the whole platform
+    "Employee",      // General company staff
+    "HR",            // Human Resources team
+    "Manager",       // Project/Team Managers
+    "Marketing",     // Marketing team
+    "Sales",         // Sales team
+    "IT",            // Technical/IT staff
+    "Finance",       // Accounting/Finance team
+    "Customer",      // Registered customer/client using the services/products
+    "Guest",         // Unregistered or limited access user
+    "Pending",       // Awaiting approval
+  ],
+  default: "Pending",
+},
+    email: { type: String, unique: true, lowercase: true },
+    phone: { type: String },
+    mobile: { type: String },
+    password: { type: String, required: true },
+
+    gender: { type: String, enum: ["Male", "Female", "Other"] },
+    age: { type: Number },
+    maritalStatus: { type: String },
+    qualification: { type: String },
+    bloodGroup: { type: String },
+    nationality: { type: String },
+    specialization: { type: String },
+    dateOfBirth: { type: Date },
+    dateOfJoining: { type: Date },
+    dateOfLeave: { type: Date, default: null },
+    panNumber: { type: String },
+
+    // Address fields
+    currentAddress: {
+      street: String,
+      city: String,
+      state: String,
+      country: String,
+      pin: String,
     },
-    lastname: {
-      type: String,
-      required: true,
+    permanentAddress: {
+      street: String,
+      city: String,
+      state: String,
+      country: String,
+      pin: String,
     },
 
-    email: {
-      type: String,
-      required: true,
-      unique: true,
+    // Auth/Status
+    isActive: { type: Boolean, default: false },
+    resetToken: { type: String, default: null },
+    resetTokenExpiry: { type: Date, default: null },
+
+    createdBy: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
+      default: null,
     },
-    password: {
-      type: String,
-      required: true,
-    },
-    role: {
-      type: String,
-      enum: ["user", "admin"],
-      default: "user",
+    updatedBy: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
+      default: null,
     },
   },
-  { timestamps: true }
+  {
+    timestamps: true,
+  }
 );
 
-userSchema.methods.getJWT = async function () {
-  const user = this;
-  const token = await jwt.sign({ _id: user._id, role: user.role }, process.env.JWT_SECRET, {
-    expiresIn: "1d",
-  });
-  return token;
-};
-
-userSchema.methods.validatePassword = async function (passwordInputByUser) {
-  const user = this;
-
-  const passwordHash = user.password;
-
-  const isPasswordValid = await bcrypt.compare(
-    passwordInputByUser,
-    passwordHash
-  );
-
-  return isPasswordValid;
-};
-
-const User = mongoose.model("User", userSchema);
-
-module.exports = User;
-
-
+export default mongoose.model("User", userSchema);

@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState , useRef} from "react";
 import { Link } from "react-router-dom";
 import { FaUniversity, FaHospital, FaBuilding, FaUsers } from "react-icons/fa";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
-const ProductsDropdown = ({ openDropdown, handleDropdownToggle }) => {
+const ProductsDropdown = ({ openDropdown, setOpenDropdown }) => {
   const isOpen = openDropdown === "products";
   const [activeDomain, setActiveDomain] = useState(null);
+  const timeoutRef = useRef(null);
 
   useEffect(() => {
     if (!isOpen) {
@@ -66,12 +67,24 @@ const ProductsDropdown = ({ openDropdown, handleDropdownToggle }) => {
     },
   ];
 
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setOpenDropdown("products");
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setOpenDropdown(null);
+    }, 1000); // Delay of 1 second
+  };
+
   return (
-    <div className="relative">
-      <div
-        className="text-md font-semibold cursor-pointer hover:text-yellow-500 flex items-center gap-1"
-        onClick={() => handleDropdownToggle("products")}
-      >
+    <div
+      className="relative"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <div className="text-md font-semibold cursor-pointer hover:text-yellow-500 flex items-center gap-1">
         OUR PRODUCTS
         <MdKeyboardArrowDown
           className={`transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
@@ -81,6 +94,7 @@ const ProductsDropdown = ({ openDropdown, handleDropdownToggle }) => {
       {isOpen && (
         <div className="fixed left-1/2 top-[120px] transform -translate-x-1/2 w-[80vw] bg-[#fdf1f4] shadow-xl z-50 rounded-md px-6 py-8 border border-red-200">
           <div className="flex justify-center">
+            {/* Left Sidebar */}
             <div className="w-1/4 bg-[#fdeaea] p-6 rounded-md shadow-inner">
               <h2 className="text-xl font-bold text-red-800 mb-4">Our products</h2>
               <p className="text-sm text-black mb-6">
@@ -91,7 +105,9 @@ const ProductsDropdown = ({ openDropdown, handleDropdownToggle }) => {
               </button>
             </div>
 
+            {/* Right Content */}
             <div className="flex w-3/4 px-6 justify-center">
+              {/* Categories */}
               <div className="w-1/3 space-y-4 pr-4 border-r border-red-300 bg-blue-100 rounded-md p-2">
                 {categories.map((cat, idx) => (
                   <div
@@ -107,6 +123,7 @@ const ProductsDropdown = ({ openDropdown, handleDropdownToggle }) => {
                 ))}
               </div>
 
+              {/* Subdomain Items */}
               <div className="w-2/3 pl-6">
                 {activeDomain !== null && (
                   <ul className="space-y-2">

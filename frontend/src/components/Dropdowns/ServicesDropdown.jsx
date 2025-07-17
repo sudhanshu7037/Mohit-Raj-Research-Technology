@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import {
   FaLaptopCode,
@@ -13,12 +13,22 @@ import {
 } from "react-icons/fa";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
-const ServicesDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) => {
-  const [isServicesOpen, setIsServicesOpen] = useState(false); // arrow toggle ke liye
+const ServicesDropdown = ({ openDropdown, setOpenDropdown }) => {
+  const isOpen = openDropdown === "services";
   const [activeService, setActiveService] = useState(null);
+  const timeoutRef = useRef(null);
   const navigate = useNavigate();
 
-  const toggleServices = () => setIsServicesOpen(!isServicesOpen); // toggle function
+  const handleMouseEnter = () => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setOpenDropdown("services");
+  };
+
+  const handleMouseLeave = () => {
+    timeoutRef.current = setTimeout(() => {
+      setOpenDropdown(null);
+    }, 1000); // 1 seconds delay
+  };
 
   const serviceCategories = [
     {
@@ -39,7 +49,7 @@ const ServicesDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
       ],
     },
     {
-      icon: <FaNetworkWired className="text-xl text-red-700" />, 
+      icon: <FaNetworkWired className="text-xl text-red-700" />,
       title: "Development, Hosting & Promotion",
       path: "/DevelopmentHosting",
       items: [
@@ -54,7 +64,7 @@ const ServicesDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
       ],
     },
     {
-      icon: <FaNetworkWired className="text-xl text-red-700" />, 
+      icon: <FaNetworkWired className="text-xl text-red-700" />,
       title: "Hardware & Networking",
       path: "/HardwareNetworking",
       items: [
@@ -70,7 +80,7 @@ const ServicesDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
       ],
     },
     {
-      icon: <FaFilm className="text-xl text-red-700" />, 
+      icon: <FaFilm className="text-xl text-red-700" />,
       title: "Multimedia & Animation",
       path: "/MultimediaAnimation",
       items: [
@@ -96,33 +106,22 @@ const ServicesDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
       ],
     },
     {
-      icon: <FaFilm className="text-xl text-red-700" />, 
+      icon: <FaFilm className="text-xl text-red-700" />,
       title: "Digital marketing",
       path: "/DigitalMarketing",
       items: [
-        "Multimedia DVD / CDROM",
-        "Multimedia Presentation",
-        "Interactive Demo",
-        "Interactive Flash Development",
-        "DVD Authoring",
-        "CBT Development",
-        "Creative Design Services",
-        "Video Production",
-        "3D Animation",
-        "3D Modeling",
-        "Broadcast Design",
-        "Virtual Reality",
-        "Special Effects",
-        "User Interface (UI) Design",
-        "Interactive Web Design",
-        "Graphics Design",
-        "Brochure Design",
-        "Corporate Identity",
-        "Design Print Media",
+        " Search Engine Optimization (SEO)",
+        "Pay-Per-Click Advertising (PPC)",
+        "Email-Marketing",
+        "Content Marketing:-",
+        "Online Reputation Management (ORM)",
+        "Influencer Marketing",
+        
+        
       ],
     },
     {
-      icon: <FaServer className="text-xl text-red-700" />, 
+      icon: <FaServer className="text-xl text-red-700" />,
       title: "Data Centers Development",
       path: "/DataCentersDevelopment",
       items: [
@@ -140,7 +139,7 @@ const ServicesDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
       ],
     },
     {
-      icon: <FaBook className="text-xl text-red-700" />, 
+      icon: <FaBook className="text-xl text-red-700" />,
       title: "E-Learning",
       path: "/Elearning",
       items: [
@@ -156,8 +155,8 @@ const ServicesDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
         "Simulation based CBT/WBT Development",
       ],
     },
-     {
-      icon: <FaVideo className="text-xl text-red-700" />, 
+    {
+      icon: <FaVideo className="text-xl text-red-700" />,
       title: "Video Conferencing",
       path: "/VideoConferencing",
       items: [
@@ -172,7 +171,7 @@ const ServicesDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
       ],
     },
     {
-      icon: <FaLock className="text-xl text-red-700" />, 
+      icon: <FaLock className="text-xl text-red-700" />,
       title: "Security & Surveillance",
       path: "/SecuritySurvillance",
       items: [
@@ -193,23 +192,24 @@ const ServicesDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
       ],
     },
     {
-      icon: <FaDatabase className="text-xl text-red-700" />, 
+      icon: <FaDatabase className="text-xl text-red-700" />,
       title: "Data Digitization",
       path: "/DataDigitization",
-
       items: [
-        "Document Scanning",
-        "Data Entry Services",
-        "Image Processing",
-        "OCR and Data Extraction",
-        "Document Management",
-        "Archiving Solutions",
-        "Data Conversion",
-        "Microfilm Digitization",
+        " OMR/OCR Sheets Processing",
+        "Data Scanning and  Indexing services",
+        "Data Conversion Services",
+        "Data Editing",
+        ".Data Entry Services",
+        "Data Processing Services",
+        ".Data transcription Services",
+        "Data Digitization Services",
+        " Form Filling Services",
+        "Scanning Services",
       ],
     },
     {
-      icon: <FaDatabase className="text-xl text-red-700" />, 
+      icon: <FaDatabase className="text-xl text-red-700" />,
       title: "Remote Infrastructure",
       path: "/RemoteInfrastructure",
       items: [
@@ -221,20 +221,14 @@ const ServicesDropdown = ({ handleMouseEnter, handleMouseLeave, activeMenu }) =>
   ];
 
   return (
-    <div className="relative">
-      <div
-        className="text-md font-semibold cursor-pointer hover:text-yellow-500 flex items-center gap-1"
-        onClick={toggleServices} // toggle on click
-      >
+    <div className="relative" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+      <div className="text-md font-semibold cursor-pointer hover:text-yellow-500 flex items-center gap-1">
         WHAT WE DO
-        <MdKeyboardArrowDown
-          className={`transition-transform duration-300 ${isServicesOpen ? "rotate-180" : ""}`} // rotate jab open
-        />
+        <MdKeyboardArrowDown className={`transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} />
       </div>
 
-      {isServicesOpen && (
+      {isOpen && (
         <div className="fixed left-1/2 top-[120px] transform -translate-x-1/2 w-[90vw] md:w-[80vw] bg-[#fdf1f4] shadow-xl z-50 rounded-md px-4 py-6 border border-red-200 max-h-[80vh] overflow-y-auto">
-          {/* baaki ka pura dropdown bilkul same - koi chhed chhaad nahi */}
           <div className="flex flex-col lg:flex-row gap-4">
             <div className="lg:w-1/4 bg-[#fbeaec] p-4 rounded-md shadow-inner">
               <h2 className="text-xl font-bold text-red-800 mb-4">Our Services</h2>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import backimage from "../../assets/backimage.png";
+import backimage from "../../assets/Elearningbanner.png";
 import DevImage from "../../assets/backimage.png";
 import {FaChalkboard, FaGraduationCap,  FaLaptop,FaUsers, FaCheckCircle,FaLaptopCode, FaChalkboardTeacher, FaBookOpen, FaMobileAlt, FaVideo,FaCloud } from "react-icons/fa";
 import { FiChevronDown,FiChevronUp } from 'react-icons/fi';
@@ -189,9 +189,12 @@ const Elearning = () => {
             E-LEARNING SERVICES
           </h1>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed mb-6 sm:mb-8">
-            With over 21 years of excellence, we provide reliable and scalable hardware
-            infrastructure, networking setup, server configuration, and enterprise-grade
-            IT solutions that power your business performance.
+           "Empowering Minds, Enriching Knowledge ".
+
+ 
+
+Mohitraj Research and Technology Private Limited E-learning System, a leading software development company, is engineered to transform the delivery and consumption of education. 
+
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
             <button className="bg-blue-600 hover:bg-blue-700 px-4 py-2 sm:px-6 sm:py-3 rounded-md text-sm sm:text-base md:text-lg font-medium transition">

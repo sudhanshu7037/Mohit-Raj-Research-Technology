@@ -27,7 +27,24 @@ import Register from "./Admin/Register";
 import AdminRoute from "./Admin/AdminRoute";
 import UniversityAutomationProductsPage from "./components/Products/Education/UniversityAutomation";
 import EngineeringCollegeMgt from "./components/Products/Education/EngineeringCollegeMgt";
+import EntranceExamManagementandInformationSystem from "./components/Products/Education/EntranceExamManagementandInformationSystem";
+import CollegeInstituteManagementSystems from "./components/Products/Education/CollegeInstituteManagementSystems";
+import SchoolManagementSystem from "./components/Products/Education/SchoolManagementSystem";
+import LibraryManagementSystem from "./components/Products/Education/LibraryManagementSystem";
+import SmartLearningContentManagementSystem from "./components/Products/Education/SmartLearningContentManagementSystem";
+import OnlineExaminationManagementSystem from "./components/Products/Education/OnlineExaminationManagementSystem";
+
+
 import UniversityDigitalization from "./components/solution/UniversityDigitalization";
+
+
+import MedicalCollegeManagementandInformationSystem from "./components/Products/Medical/MedicalCollegeManagementandInformationSystem";
+import HospitalManagementInformationsystem from "./components/Products/Medical/HospitalManagementInformationsystem";
+import EHospitalManagement from "./components/Products/Medical/EHospitalManagement";
+import EclinicManagement from "./components/Products/Medical/EclinicManagement";
+import  BioinformaticsManagementandInformationSystem from "./components/Products/Medical/BioinformaticsManagementandInformationSystem";
+
+
 
 const App = () => {
   return (
@@ -76,7 +93,20 @@ const App = () => {
           <Route path="/register" element={<Register />} />
           <Route path="/university-automation-software" element= {<UniversityAutomationProductsPage/>} />
           <Route path = "/engineering-college-management-system" element = {<EngineeringCollegeMgt/>} />
+          <Route path = "/college-institute-management" element = {<CollegeInstituteManagementSystems/>} />
+          <Route path = "/school-management-system" element = {<SchoolManagementSystem/>} />
+          <Route path = "/library-management-system" element = {<LibraryManagementSystem/>} />
+          <Route path = "/online-examination-management" element = {<OnlineExaminationManagementSystem/>} />
+          <Route path = "/smart-learning-content-management" element = {<SmartLearningContentManagementSystem/>} />
+          <Route path = "/entrance-exam-management" element = {<EntranceExamManagementandInformationSystem/>} />
           <Route path = "/UniversityDigitalizatio" element = {<UniversityDigitalization/>} />
+
+
+          <Route path = "/medical-college-management" element = {<MedicalCollegeManagementandInformationSystem/>} />
+          <Route path = "/hospital-management-system" element = {<HospitalManagementInformationsystem/>} />
+          <Route path = "/e-hospital-management" element = {<EHospitalManagement/>} />
+          <Route path = "/e-clinic-management" element = {< EclinicManagement />} />
+          <Route path = "/bioinformatics-management" element = {< BioinformaticsManagementandInformationSystem  />} />
           <Route
             path="/admin/dashboard"
             element={

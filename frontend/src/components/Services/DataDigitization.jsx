@@ -71,7 +71,7 @@ Our dedication to accuracy and innovation ensures your precious data is precisel
 {/* Second div */}
 <div className="bg-white py-16 px-4 lg:px-24 text-center">
   {/* Top Text */}
-  <h1 className="text-blue-500 text-4xl font-bold">Overview</h1>
+  <h1 className="text-blue-500 text-4xl font-bold font-houschka">Overview</h1>
   <p className="text-gray-700 text-base md:text-lg max-w-4xl mx-auto mb-12 leading-relaxed font-basis text-justify mt-4">
     We at Mohitraj Research and Technology Private Limited, a premier software development  and Data Digitization company, provide unmatched Data Digitilization Services that will accelerate your business by providing smooth digital transformation. We also provides end-to-end solutions for handling pre-examination and post-examination processes in multiple sectors
 
@@ -256,7 +256,7 @@ Our dedication to accuracy and innovation ensures your precious data is precisel
   </div>
 
   <div className="max-w-5xl mx-auto bg-white rounded shadow-lg overflow-hidden">
-    <div className="bg-blue-700 text-white py-3 text-center text-xl font-semibold">
+    <div className="bg-blue-700 text-white py-3 text-center text-xl font-semibold font-houschka">
       Industries We Digitize For
     </div>
     <div className="p-8 text-gray-800">
@@ -429,7 +429,7 @@ Our dedication to accuracy and innovation ensures your precious data is precisel
 </div>
 
 <div className="max-w-7xl mx-auto px-4 py-16">
-  <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-houschka bg-gradient-to-r from-purple-600 via-blue-800 to-pink-500 bg-clip-text text-transparent animate-pulse drop-shadow-lg">
+  <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 font-houschka bg-gradient-to-r from-purple-600 via-blue-800 to-pink-500 bg-clip-text text-transparent animate-pulse drop-shadow-lg font-houschka">
     How to Start Your Data Digitization Project With MRT?
   </h2>
 

@@ -125,7 +125,7 @@ const DigitalMarketing = () => {
   ></div>
 
   <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
-    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6">
+    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 font-houschka">
       DIGITAL MARKETING SERVICES
     </h1>
     <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed mb-6 sm:mb-8">
@@ -177,7 +177,7 @@ const DigitalMarketing = () => {
   <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4 font-houschka animate-fade-in-down">
     Our Digital Marketing Services
   </h2>
-  <p className="text-gray-600 max-w-3xl mx-auto mb-12 text-base md:text-lg leading-relaxed font-basis animate-fade-in">
+  <p className="text-gray-600 max-w-3xl mx-auto mb-12 text-base md:text-lg leading-relaxed font-basis animate-fade-in font-houschka">
     As Our Clients You Will Enjoy The Following Key Services 
 
   </p>
@@ -269,7 +269,7 @@ const DigitalMarketing = () => {
 
         {/* Text Content */}
         <div className="max-w-2xl text-center md:text-left">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900 group-hover:text-orange-600 leading-tight tracking-tight transition duration-300">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-900 group-hover:text-orange-600 leading-tight tracking-tight transition duration-300 font-houschka">
             Boost Your Brand With Strategic Digital Marketing
           </h2>
           <p className="mt-4 text-gray-700 group-hover:text-blue-800 text-base sm:text-lg transition duration-300">
@@ -313,7 +313,7 @@ const DigitalMarketing = () => {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto text-white text-center mb-12">
-        <h2 className="text-4xl sm:text-5xl font-bold font-houschka mb-4 tracking-tight">
+        <h2 className="text-4xl sm:text-5xl font-bold font-houschka mb-4 tracking-tight font-houschka">
           Strategic Digital Marketing Services
         </h2>
         <p className="text-base sm:text-lg max-w-3xl mx-auto text-gray-300">
@@ -323,7 +323,7 @@ const DigitalMarketing = () => {
 
       {/* Glass Box */}
       <div className="relative z-10 max-w-6xl mx-auto bg-white/20 backdrop-blur-md border border-white/30 rounded-2xl p-8 sm:p-12 shadow-xl">
-        <h3 className="text-xl sm:text-2xl text-white font-semibold mb-8 text-center">
+        <h3 className="text-xl sm:text-2xl text-white font-semibold mb-8 text-center font-houschka">
           Industries We Empower
         </h3>
 

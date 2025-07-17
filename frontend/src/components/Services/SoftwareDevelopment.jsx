@@ -665,29 +665,33 @@ const SoftwareDevelopment = () => {
       {/*new  div*/}
 
       <div className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-4xl font-bold text-blue-900 text-center mb-4 font-houschka">
-          Why Choose MRT?
-        </h2>
-        <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-         
-When you partner with MOHITRAJ RESEARCH  TECHNOLOGY PRIVATE LIMITED, you can trust that professionals will handle your software solution. Let us help you turn your ideas into reality and grow your business.
-        </p>
+  <h2 className="text-4xl font-bold text-blue-900 text-center mb-4 font-houschka">
+    Why Choose MRT?
+  </h2>
+  <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+    When you partner with MOHITRAJ RESEARCH TECHNOLOGY PRIVATE LIMITED, you can trust that professionals will handle your software solution. Let us help you turn your ideas into reality and grow your business.
+  </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="border border-gray-500 p-6 rounded-md text-center hover:shadow-lg transition-shadow duration-300"
-            >
-              <div className="flex justify-center mb-4">{feature.icon}</div>
-              <h3 className="text-lg font-semibold text-blue-900 mb-2">
-                {feature.title}
-              </h3>
-              <p className="text-sm text-gray-600">{feature.description}</p>
-            </div>
-          ))}
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {features.map((feature, index) => (
+      <div
+        key={index}
+        className="group border border-gray-500 p-6 rounded-md text-center bg-red-100 hover:bg-blue-900 hover:shadow-lg transition-shadow duration-300"
+      >
+        <div className="flex justify-center mb-4 text-blue-900 group-hover:text-white transition-colors duration-300">
+          {feature.icon}
         </div>
+        <h3 className="text-lg font-semibold text-blue-900 mb-2 group-hover:text-white transition-colors duration-300">
+          {feature.title}
+        </h3>
+        <p className="text-sm text-gray-600 group-hover:text-white transition-colors duration-300">
+          {feature.description}
+        </p>
       </div>
+    ))}
+  </div>
+</div>
+
       {/* Benifits*/}
          
    <div>

@@ -19,24 +19,24 @@ const features = [
       icon: <FaUniversity size={50} className="text-indigo-600" />,
       title: "Institute Management",
       points: [
-        "Automates and streamlines the educational processes of colleges",
-        "Enables courses, eligibility criteria, and seat allocation",
+        "Automated eligibility criteria, course offerings, and seat allocation",
+        "Curriculum updates and syllabus changes can be carried out seamlessly.",
       ],
     },
     {
       icon: <FaUserGraduate size={50} className="text-indigo-600" />,
       title: "Students Management",
       points: [
-        "Turns students' complete educational life cycle digital",
-        "Makes forms, verification, and results fully online",
+        "Student admission, form submissions, verification, and tracking of documents digitized.",
+        "Online results, academic performance tracking, and generation of digital ID.",
       ],
     },
     {
       icon: <FaChalkboardTeacher size={50} className="text-indigo-600" />,
       title: "Staff Management",
       points: [
-        "Automates onboarding & teaching processes for staff",
-        "Manages performance, tasks, and digital records",
+        "Tracks performance, activity, attendance, and distribution of workload.",
+        "Digital records, pay slips, leave logs, and HR documentation are available.",
       ],
     },
   ];
@@ -45,330 +45,330 @@ const features = [
 const functionality = [
   {
     icon: <FaUserTie />,
-    title: "Vice Chancellor Office Management",
+    title: "VC Office Automation",
     points: [
-      "Digitally manage VC office workflow and communications.",
-      "Supports approvals, scheduling, and document handling.",
+      "Manage all Vice Chancellor-level operations with centralized control.",
+      
     ],
   },
   {
     icon: <FaUserTie />,
-    title: "Registrar Office Management",
+    title: "Registrar Workflow System",
     points: [
-      "Centralizes registrar records and approvals.",
-      "Simplifies certificate issuance and admin coordination.",
+      " Digitize and streamline registrar-related administrative tasks.",
+      
     ],
   },
   {
     icon: <FaUserCheck />,
-    title: "Student Admission Management",
+    title: "Digital Admission Suite",
     points: [
-      "End-to-end digital admission process handling.",
-      "Track applications, eligibility, and enrollment status.",
+      "Simplify student admission with a smart online system.",
+      
     ],
   },
   {
     icon: <FaUserShield />,
-    title: "Student Information Management",
+    title: "Student Data Hub",
     points: [
-      "Stores all student records securely in one place.",
-      "Eases access to academic, personal, and history data.",
+      "Store, manage, and access student records securely.",
+      
     ],
   },
   {
     icon: <FaClipboardList />,
-    title: "Examination Management System",
+    title: "Exam Control System",
     points: [
-      "Schedule and manage exams and invigilation duties.",
-      "Auto-generate results, hall tickets, and mark sheets.",
+      "Automate exam scheduling, results, and evaluation processes.",
+      
     ],
   },
   {
     icon: <FaUserShield />,
-    title: "Confidential Management",
+    title: "Confidential Data Shield",
     points: [
-      "Handle classified university files with high security.",
-      "Access-controlled document and report management.",
+      "Securely handle and restrict access to sensitive documents.",
+      
     ],
   },
   {
     icon: <FaMoneyCheckAlt />,
-    title: "Finance Office Management",
+    title: "Finance Operations Suite",
     points: [
-      "Manage all institutional financial operations digitally.",
-      "Automate payment tracking, approvals, and budgeting.",
+      "Manage university financials with transparency and accuracy.",
+      
     ],
   },
   {
     icon: <FaFileSignature />,
-    title: "E-Financial Proposal Management",
+    title: "E-Proposal Engine",
     points: [
-      "Create, approve, and monitor financial proposals online.",
-      "Track project-wise funding and utilization.",
+      "Create, review, and track financial proposals online.",
+      
     ],
   },
   {
     icon: <FaMoneyCheckAlt />,
-    title: "Budget Management",
+    title: "Budget Management Tool",
     points: [
-      "Define, allocate, and track budgets for departments.",
-      "Monitor expenses and avoid overspending.",
+      " Plan and monitor institutional budgets efficiently.",
+      
     ],
   },
   {
     icon: <FaBalanceScale />,
-    title: "Account & Finance Management",
+    title: "Accounts Automation Platform",
     points: [
-      "Maintain accounts ledger, payments & reconciliation.",
-      "Automate balance sheets, audits, and reports.",
+      "Automate accounting processes for error-free operations.",
+      
     ],
   },
   {
     icon: <FaUsersCog />,
-    title: "Staff Salary Management",
+    title: "Salary Processing System",
     points: [
-      "Automated salary calculation and payroll generation.",
-      "Supports bonuses, deductions, and tax handling.",
+      "Streamline salary calculations and disbursements.",
+      
     ],
   },
   {
     icon: <FaBalanceScale />,
-    title: "Tax Management System",
+    title: "Tax Filing Module",
     points: [
-      "Handles TDS, GST, and tax reporting tasks.",
-      "Reduces compliance risks and simplifies filing.",
+      "Automate staff and institutional tax management.",
+      
     ],
   },
   {
     icon: <FaUsersCog />,
-    title: "PF Management System",
+    title: "PF Tracker System",
     points: [
-      "Track PF contributions, withdrawals, and transfers.",
-      "Auto-generate PF statements and compliance files.",
+      "Manage Provident Fund contributions and reports digitally.",
+      
     ],
   },
   {
     icon: <FaUsersCog />,
-    title: "Pension & Retirement Management",
+    title: "Pension Management Tool",
     points: [
-      "Manages pension plans and retirement benefits.",
-      "Ensures timely processing and transparent tracking.",
+      "Handle employee pension claims and data seamlessly.",
+      
     ],
   },
   {
     icon: <FaUserCheck />,
-    title: "Employee Management System",
+    title: "Employee Central Hub",
     points: [
-      "Central platform for all staff-related operations.",
-      "Track roles, performance, and history.",
+      "Manage complete employee lifecycle from hiring to retirement.",
+      
     ],
   },
   {
     icon: <FaUserEdit />,
-    title: "Employee Recruitment Management",
+    title: "Recruitment Automation",
     points: [
-      "Post vacancies, manage applicants & selection.",
-      "Streamlines hiring process with workflow tools.",
+      "Digitize the recruitment and onboarding process.",
+      
     ],
   },
   {
     icon: <FaUserEdit />,
-    title: "Employee Information System",
+    title: "Staff Info Manager",
     points: [
-      "Secure storage of employee personal and job data.",
-      "Easy access to career history and documents.",
+      "Maintain detailed staff records in one place.",
+      
     ],
   },
   {
     icon: <FaCalendarCheck />,
-    title: "Employee Leave Management",
+    title: "Leave Tracking Suite",
     points: [
-      "Request, approve and track staff leaves easily.",
-      "Real-time leave balance & holiday calendar.",
+      "Automate leave applications and approvals efficiently.",
+      
     ],
   },
   {
     icon: <FaCalendarCheck />,
-    title: "Employee Attendance Management",
+    title: "Attendance Monitor Tool",
     points: [
-      "Capture daily attendance with biometric/RFID.",
-      "Auto-sync with payroll and leave data.",
+      " Track employee attendance in real-time.",
+      
     ],
   },
   {
     icon: <FaCogs />,
-    title: "Employee Administration & Monitoring",
+    title: "HR Admin Console",
     points: [
-      "Track daily tasks, projects, and compliance.",
-      "Monitor productivity with real-time logs.",
+      " Monitor and manage all employee-related activities.",
+      
     ],
   },
   {
     icon: <FaUniversity />,
-    title: "College & Department Management",
+    title: "Departmental Workflow",
     points: [
-      "Manage multiple colleges and departments easily.",
-      "Organize staff, students, and course mapping.",
+      "Enhance coordination among colleges and departments.",
+      
     ],
   },
   {
     icon: <FaBook />,
-    title: "Learning Management System",
+    title: "LMS Integration Suite",
     points: [
-      "Deliver and track online learning content.",
-      "Supports quizzes, assignments, and progress.",
+      "Deliver and manage courses with a learning management system.",
+      
     ],
   },
   {
     icon: <FaBuilding />,
-    title: "Infrastructure Management",
+    title: "Infrastructure Manager",
     points: [
-      "Maintain buildings, labs, and campus assets.",
-      "Schedule repairs and facility usage.",
+      " Oversee campus infrastructure and facilities digitally.",
+      
     ],
   },
   {
     icon: <FaFlask />,
-    title: "Laboratory Management",
+    title: "Lab Resource Tracker",
     points: [
-      "Track lab inventory, schedules, and safety.",
-      "Assign experiments and manage submissions.",
+      "Manage laboratory equipment, usage, and scheduling.",
+      
     ],
   },
   {
     icon: <FaClipboardList />,
-    title: "Student Attendance Management",
+    title: "Attendance Digitizer",
     points: [
-      "Daily attendance tracking via digital registers.",
-      "Auto alerts for low attendance.",
+      "Monitor and record student attendance online.",
+      
     ],
   },
   {
     icon: <FaBox />,
-    title: "Store & Purchase Management System",
+    title: "Store & Purchase Tool",
     points: [
-      "Manage stock requests, GRN, and suppliers.",
-      "Supports quotations, approvals, and invoices.",
+      "Manage institutional procurement and inventory..",
+     
     ],
   },
   {
     icon: <FaUsersCog />,
-    title: "Central Purchase Committee Management",
+    title: "Purchase Committee Suite",
     points: [
-      "Committee-based review and approval workflow.",
-      "Transparent purchase decision making.",
+      " Digitize decision-making for purchases and approvals.",
+     
     ],
   },
   {
     icon: <FaBox />,
-    title: "Purchase Management System",
+    title: "Procurement Manager",
     points: [
-      "Procure goods with full approval workflow.",
-      "Track vendor quotations and orders.",
+      "Streamline purchasing and vendor communication.",
+      
     ],
   },
   {
     icon: <FaFileSignature />,
-    title: "E-Tendering",
+    title: "E-Tendering System",
     points: [
-      "Online bidding and tender process automation.",
-      "Supports vendor registration and tracking.",
+      "Conduct tenders and bidding processes online.",
+      
     ],
   },
   {
     icon: <FaBox />,
-    title: "Store Management System",
+    title: "Inventory Oversight",
     points: [
-      "Track stock movement and reorder alerts.",
-      "Auto-generate reports and consumption logs.",
+      "Track, audit, and manage store inventory accurately.",
+      
     ],
   },
   {
     icon: <FaBook />,
-    title: "Research Management System",
+    title: "Research Control System",
     points: [
-      "Manage research projects, proposals, and grants.",
-      "Track publications and compliance.",
+      "Manage research proposals, grants, and progress.",
+      
     ],
   },
   {
     icon: <FaTools />,
-    title: "Construction Management System",
+    title: "Contractor Oversight",
     points: [
-      "Plan, track and budget construction works.",
-      "Monitor progress, resources and vendors.",
+      " Automate contractor management and project tracking.",
+      
     ],
   },
   {
     icon: <FaChalkboardTeacher />,
-    title: "Student Counseling & Placement",
+    title: "Placement Automation Hub",
     points: [
-      "Track student guidance, interviews and offers.",
-      "Connect students with recruiters easily.",
+      "Track student counseling and placement activities.",
+      
     ],
   },
   {
     icon: <FaHotel />,
-    title: "Hostel & Guest House Management",
+    title: "Hostel Management Suite",
     points: [
-      "Assign rooms, track visitors and fees.",
-      "Manage guest house reservations and logistics.",
+      " Automate room allocation and hostel services.",
+      
     ],
   },
   {
     icon: <FaBook />,
-    title: "Library Management System",
+    title: "Library Digital Platform",
     points: [
-      "Issue/return tracking, catalog and fines.",
-      "Digital library and search features.",
+      "Manage books, access, and student usage seamlessly.",
+      
     ],
   },
   {
     icon: <FaFileAlt />,
-    title: "File Management System",
+    title: "Document Filing System",
     points: [
-      "Digitize and organize institutional documents.",
+      "Digitally organize and retrieve official files.",
       "Quick retrieval and role-based access.",
     ],
   },
   {
     icon: <FaFileInvoice />,
-    title: "E-Filing & Proposal Management",
+    title: "Proposal Filing Tool",
     points: [
-      "Submit proposals and reports electronically.",
-      "Track status, feedback, and history.",
+      "File and manage institutional proposals effectively.",
+      
     ],
   },
   {
     icon: <FaMailBulk />,
-    title: "Local Mailing System",
+    title: "Smart Mailing System",
     points: [
-      "Internal communication across departments.",
-      "Secure and trackable message delivery.",
+      "Simplify internal and external email communications.",
+      
     ],
   },
   {
     icon: <FaAddressCard />,
-    title: "Reception Management",
+    title: "Reception Tracking App",
     points: [
-      "Manage front desk, visitor logs, and bookings.",
-      "Print passes and notify departments.",
+      "Manage visitor records and front-desk operations.",
+      
     ],
   },
   {
     icon: <FaTools />,
-    title: "Compliant Repair & Maintenance",
+    title: "Repair & Maintenance",
     points: [
-      "Log and resolve repair requests efficiently.",
-      "Track completion, vendor, and SLA.",
+      "Track complaints and maintenance work orders.",
+      
     ],
   },
   {
     icon: <FaUsersCog />,
-    title: "User Management System",
+    title: "User Access System",
     points: [
-      "Create and control user roles and access rights.",
-      "Enable secure login and role-based features.",
+      " Control system access for all users and roles.",
+      
     ],
   },
 ];
@@ -396,13 +396,13 @@ const UniversityAutomation = () => {
       {/* Text Content */}
       <div className="absolute inset-0 flex items-center justify-start px-6 md:px-16">
         <div className="text-white max-w-2xl">
-          <h1 className="text-2xl md:text-4xl font-bold text-white">
+          <h1 className="text-2xl md:text-4xl font-bold text-white font-houschka">
             University Management System Software
           </h1>
-          <p className="text-lg md:text-xl text-green-400 font-semibold mt-4">
+          <p className="text-lg md:text-xl text-green-400 font-basis mt-4">
             Robust, All-Inclusive & Scalable ERP Solution for Streamlining Universities
           </p>
-          <p className="text-gray-200 mt-3">
+          <p className="text-gray-200 mt-3 font-basis">
             Enables flawless management of all academic and non-academic activities
           </p>
           <button className="mt-6 bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-300">
@@ -415,12 +415,12 @@ const UniversityAutomation = () => {
 <section className="bg-white px-4 md:px-12 lg:px-20 py-16 text-gray-800 mt-20">
       {/* Header */}
       <div className="max-w-7xl mx-auto text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-800">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-800 font-houschka">
           University Management System Features and Functionalities
         </h2>
-        <p className="text-gray-600 max-w-4xl mx-auto text-lg">
-          Our solution empowers universities with efficient modules that enhance administration,
-          automate academics, and ensure transparent performance and decision-making.
+        <p className="text-gray-600 max-w-4xl mx-auto text-lg font-basis">
+          Mohitraj Research and Technology Pvt. Ltd. is known for providing an all-encompassing University
+           Automation System which evolves the operations of a university into a smart digital ecosystem.
         </p>
       </div>
 
@@ -454,12 +454,13 @@ const UniversityAutomation = () => {
 
 <section className="bg-gradient-to-br from-blue-100 via-red-100 to-green-100 py-16 px-4 md:px-20">
   <div className="text-center mb-12">
-    <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
-      How Mohitraj Research Tech Empowers Businesses to Scale
+    <h2 className="text-3xl md:text-4xl font-bold text-blue-900 font-houschka">
+      Empowering Institutions with Digital Transformation 
     </h2>
-    <p className="text-gray-700 max-w-3xl mx-auto mt-2">
-      With our intelligent software platforms, Mohitraj Research Tech Pvt. Ltd. enables businesses to automate
-      operations, streamline project delivery, and enhance workforce productivity — all from a single connected ecosystem.
+    <p className="text-gray-700 max-w-3xl mx-auto mt-2 font-basis">
+     Mohitraj Research Tech Pvt. Ltd., as a vendor company, designs customized Education ERP Solutions
+      for digitalization in educational institutions.
+      
     </p>
   </div>
 
@@ -510,22 +511,22 @@ const UniversityAutomation = () => {
       {/* Left Content */}
       <div className="lg:w-1/2">
         <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6 relative group inline-block">
-          <span className="hover:text-red-600 transition-all duration-300">
-            Why Choose Mohitraj University Automation Software?
+          <span className="hover:text-red-600 transition-all duration-300 font-houschka">
+            Why should you consider Mohitraj University Automation Software?
           </span>
         </h2>
-        <p className="text-gray-700 mb-6 text-base md:text-lg leading-relaxed">
-          Mohitraj Research Tech Pvt. Ltd. offers future-ready University Automation Software designed to
-          transform traditional campus operations into a digital-first, data-driven experience. Our intelligent
-          systems empower institutions to streamline administration, improve compliance, and enhance student outcomes.
-        </p>
-        <h4 className="font-semibold text-lg text-blue-800 mb-2">Here’s what makes us stand out:</h4>
-        <ul className="list-disc list-inside mt-3 text-gray-800 space-y-2">
-          <li>Smart automation from admissions to alumni</li>
-          <li>Real-time data for decision-making</li>
-          <li>Modular, scalable, and customizable architecture</li>
-          <li>Fully cloud-enabled and secure access</li>
-        </ul>
+        <p className="text-gray-700 mb-6 text-base md:text-lg leading-relaxed font-basis">
+           Mohitraj Research Tech Pvt. Ltd. provides the next-generation University Automation Software that 
+           transforms campus management by digitizing and streamlining institutional processes. 
+           Our integrated cloud-based campus automation is designed to transform the manual operation 
+           into a data-driven digital-first environment — improving institutional efficiency,
+            compliance, and student experience.  
+            <br></br> 
+            
+            With powerful modules for academic management, administrative automation, and student lifecycle
+            tracking, our solution empowers universities, colleges, and higher education institutions 
+            to achieve operational excellence.     </p>
+        
       </div>
 
       {/* Right Cards */}
@@ -533,23 +534,23 @@ const UniversityAutomation = () => {
         {[
           {
             icon: "⚙️",
-            title: "Centralized Campus Ops",
-            desc: "All academic and administrative functions under one seamless platform.",
+            title: "Complete Digital Transformation",
+            desc: " Automate all aspects, from admission management to student enrollment, fee collection, and exam processing to alumni interaction.",
           },
           {
             icon: "📚",
-            title: "Smart Academic Tracking",
-            desc: "Monitor student lifecycle, attendance, marks, and academic progress with ease.",
+            title: "Interconnected Modules",
+            desc: "Create an integrated system that can facilitate seamless cooperation across departments through modules linking with synchronizing academic.",
           },
           {
             icon: "🔐",
-            title: "Role-Based Access & Security",
-            desc: "Enable secure logins with defined user roles for staff, admin, and students.",
+            title: "Cloud-Based Scalable & Secure",
+            desc: "99.9% uptime, data encryption, and role-based access control: Safe, founded on a powerful, secure cloud infrastructure",
           },
           {
             icon: "📊",
-            title: "Powerful Analytics",
-            desc: "Generate insightful reports and dashboards that support smart decisions.",
+            title: "Future Proof Your Campus with Mohitraj",
+            desc: " Mohitraj is dedicated to providing scalable, secure, and sustainable solutions.",
           },
         ].map((card, idx) => (
           <div
@@ -572,7 +573,7 @@ const UniversityAutomation = () => {
               </h3>
               <p className="text-sm text-gray-600 transition-all duration-300 
                 group-hover:bg-clip-text group-hover:text-transparent 
-                group-hover:bg-gradient-to-r group-hover:from-blue-700 group-hover:via-red-500 group-hover:to-green-600">
+                group-hover:bg-gradient-to-r group-hover:from-blue-700 group-hover:via-red-500 group-hover:to-green-600 font-basis">
                 {card.desc}
               </p>
             </div>
@@ -586,7 +587,7 @@ const UniversityAutomation = () => {
 {/*new section */}
 {/* Products Showcase Slider Section */}
 <section className="bg-white py-20 px-4 md:px-20">
-  <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-10">
+  <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-10 font-houschka">
     Our Featured University Software Solutions
   </h2>
 
@@ -646,13 +647,13 @@ const UniversityAutomation = () => {
   </Swiper>
 </section>
 
-{}
+{/*new section benefits */}
 <section className="w-full py-20 px-4 md:px-16 bg-gradient-to-br from-blue-100 via-red-100 to-green-100">
   <div className="max-w-6xl mx-auto text-center">
-    <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
+    <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6 font-houschka">
       Key Benefits of Mohitraj University Automation Software
     </h2>
-    <p className="text-gray-800 text-lg md:text-xl max-w-3xl mx-auto mb-10">
+    <p className="text-gray-800 text-lg md:text-xl max-w-3xl mx-auto mb-10 font-basis">
       Empower your institution with scalable, secure and intelligent digital infrastructure
       for academic and administrative excellence.
     </p>
@@ -685,11 +686,11 @@ const UniversityAutomation = () => {
 
      {/*demo*/}
     
-      <section className="bg-red-600 bg-dotted-pattern text-white py-16 px-4 text-center">
-      <h2 className="text-2xl md:text-3xl font-bold mb-4">
+      <section className="bg-red-700 bg-dotted-pattern text-white py-16 px-4 text-center">
+      <h2 className="text-2xl md:text-3xl font-bold mb-4 font-houschka">
         Ready to Digitally Transform Your Organization with Mohitraj?
       </h2>
-      <p className="max-w-3xl mx-auto text-base md:text-lg mb-6">
+      <p className="max-w-3xl mx-auto text-base md:text-lg mb-6 font-basis ">
         Automate, Centralize, and Streamline your Operations with Mohitraj Research Tech Pvt. Ltd. —
         India's trusted digital transformation partner for government, enterprise, and education sectors.
       </p>

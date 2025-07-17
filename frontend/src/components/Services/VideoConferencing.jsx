@@ -145,7 +145,7 @@ const VideoConferencing=() =>{
 {/* Second div */}
 <div className="bg-white py-16 px-4 lg:px-24 text-center">
   {/* Top Text */}
-  <h1 className="text-blue-500 text-4xl font-bold">Overview</h1>
+  <h1 className="text-blue-500 text-4xl font-bold font-houschka">Overview</h1>
   <p className="text-gray-700 text-base md:text-lg max-w-4xl mx-auto mb-12 leading-relaxed font-basis text-justify mt-4">
     MOHITRAJ RESEARCH AND TECHNOLOGY PRIVATE LIMITED delivers secure, scalable, and feature-rich video conferencing solutions
     tailored for modern enterprises, educational institutions, and healthcare providers. Our platform empowers teams to connect,
@@ -230,7 +230,7 @@ const VideoConferencing=() =>{
           {/* Left Side */}
           <div className="flex items-center gap-4">
             <div className="w-1 h-16 bg-blue-600"></div>
-            <h2 className="text-2xl md:text-3xl font-semibold text-blue-900 leading-snug">
+            <h2 className="text-2xl md:text-3xl font-semibold text-blue-900 leading-snug font-houschka">
               Need Custom Video Conferencing <br /> Solutions for Your Organization?
             </h2>
           </div>
@@ -255,7 +255,7 @@ const VideoConferencing=() =>{
 
   {/* Content */}
   <div className="relative max-w-7xl mx-auto px-6">
-    <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-12">
+    <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-12 font-houschka">
       Video Conferencing Experience
     </h2>
 
@@ -514,10 +514,11 @@ const VideoConferencing=() =>{
 </div>
 
 {/* === Why Choose MRT for Video Conferencing === */}
-<div className="max-w-7xl mx-auto px-4 py-16 bg-blue-50">
+<div className="max-w-7xl mx-auto px-4 py-16 bg-red-100">
   <h2 className="text-4xl font-bold text-blue-900 text-center mb-4 font-houschka">
     Why Choose MRT for Video Conferencing?
   </h2>
+
   <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto hover:text-blue-800 transition duration-300">
     MRT delivers secure, scalable, and customizable video conferencing platforms tailored to your business needs. With robust features and technical expertise, we ensure your communication is always seamless and reliable.
   </p>
@@ -551,19 +552,23 @@ const VideoConferencing=() =>{
     ].map((feature, index) => (
       <div
         key={index}
-        className="border border-gray-500 p-6 rounded-md text-center hover:shadow-lg transition-shadow duration-300 group"
+        className="border border-gray-500 p-6 rounded-md text-center transition-shadow duration-300 group hover:bg-blue-900"
       >
         <div className="flex justify-center mb-4">{feature.icon}</div>
-        <h3 className="text-lg font-semibold text-blue-900 mb-2 group-hover:text-pink-600 transition-colors duration-300">
-          {feature.title}
-        </h3>
-        <p className="text-sm text-gray-600 group-hover:text-gray-800 transition-colors duration-300">
-          {feature.description}
-        </p>
+
+        <h3 className="text-lg font-semibold text-blue-900 mb-2 group-hover:text-white transition-colors duration-300">
+  {feature.title}
+</h3>
+
+<p className="text-sm text-gray-600 group-hover:text-white transition-colors duration-300">
+  {feature.description}
+</p>
+
       </div>
     ))}
   </div>
 </div>
+
 
 {/*benefits*/}
 {/* === Benefits Section: Video Conferencing === */}

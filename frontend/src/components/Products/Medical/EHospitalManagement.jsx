@@ -5,108 +5,114 @@ import 'swiper/css';
 
 
 const modules = [
-  "Genomic Data Management",
-  "Sequence Analysis",
-  "Gene Expression Tracking",
-  "Clinical Genomics Integration",
-  "Bioinformatics Reporting",
-  "Sample Registration",
-  "Patient Genomic History",
-  "Research Collaboration",
-  "Biomarker Discovery",
-  "Genetic Counseling Workflow",
-  "Database Interoperability",
-  "Secure Data Archiving"
+  "Patient Registration",
+  "Appointment Scheduling",
+  "Doctor Consultation",
+  "Lab Test Requests",
+  "Radiology Integration",
+  "Billing & Payments",
+  "Discharge Summary",
+  "Pharmacy Requests",
+  "IPD Management",
+  "Inventory Tracking",
+  "Bed Availability",
+  "Ambulance Services",
+  "Staff Rostering",
+  "Medical Records"
 ];
 
 const departments = [
-  "Genomics",
-  "Proteomics",
-  "Transcriptomics",
-  "Metabolomics",
-  "Clinical Research",
-  "Patient Genetic Profiling",
-  "Biostatistics",
-  "Health Informatics",
-  "Lab Information Systems",
-  "Data Science",
-  "Ethics & Compliance",
-  "Bioinformatics Admin"
+  "Telemedicine",
+  "Health Information Systems",
+  "Clinical Services",
+  "Diagnostics & Imaging",
+  "Pharmacy",
+  "Ambulance Services",
+  "Billing & Insurance",
+  "In-Patient Services",
+  "Out-Patient Services",
+  "Health Analytics",
+  "Medical Records",
+  "Support Services"
 ];
 
+
 const lifecycle = [
-  "Sample Collection",
-  "Genomic Sequencing",
-  "Data Processing",
-  "Annotation & Mapping",
-  "Result Interpretation",
-  "Clinical Reporting",
-  "Research Utilization",
-  "Follow-up & Genetic Counseling"
+  "Online Appointment",
+  "Patient Registration",
+  "Doctor Consultation",
+  "Diagnosis Entry",
+  "Lab/Radiology Requests",
+  "ePrescription Issuance",
+  "Billing & Payment",
+  "Inpatient Admission",
+  "Bed & Ward Assignment",
+  "Treatment & Monitoring",
+  "Discharge Processing",
+  "Insurance & Claims",
+  "Health Record Archiving"
 ];
 
 const whyChooseUs = [
-  { title: 'Precision Workflow', desc: 'Automated modules for genomic research and clinical use' },
-  { title: 'Data Security', desc: 'HIPAA & GDPR compliant genomic data handling' },
-  { title: 'Lab Integration', desc: 'Smooth integration with genomic labs and sequencing machines' },
-  { title: 'Customizable Pipelines', desc: 'Adaptable for diverse bioinformatics research needs' },
-  { title: 'Collaboration Ready', desc: 'Facilitates cross-departmental data sharing' },
-  { title: 'Real-Time Access', desc: 'Live insights into genomic profiles and sample status' }
+  { title: 'Secure Patient Data', desc: 'Advanced encryption & HIPAA compliance' },
+  { title: 'Custom Workflows', desc: 'Configurable modules per hospital needs' },
+  { title: 'Real-Time Updates', desc: 'Live status across all departments' },
+  { title: 'Cloud Hosting', desc: 'Access anytime from anywhere' },
+  { title: 'Interconnected Systems', desc: 'OPD, IPD, Pharmacy & Lab integration' },
+  { title: 'Doctor-Friendly UI', desc: 'Clean interface with smart shortcuts' }
 ];
 
 const analyticsImages = [
   {
-    url: "https://www.encstore.com/assets/blogs/bcat1/1719855955-rfid-labels-and-blood-sample-tube-tracking-for-accuracy.webp",
-    title: "Sample Tracking Overview",
-    desc: "Real-time tracking of sequencing samples, metadata, and pipeline stage."
+    url: "https://psiborg.in/wp-content/uploads/2024/12/RHMS.webp",
+    title: "Live Appointment Statistics",
+    desc: "Real-time overview of online appointments, scheduling, and patient queue status."
   },
   {
-    url: "https://media.springernature.com/lw685/springer-static/image/art%3A10.1186%2Fs13059-019-1724-1/MediaObjects/13059_2019_1724_Fig2_HTML.png",
-    title: "Genomic Data Analytics",
-    desc: "Detailed visualization of genomic variations and gene expression maps."
+    url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlE5e74WekEOVXKfxi1DQY_lluafU3NTW5AQ&s",
+    title: "Digital Medical Records",
+    desc: "Secure storage and instant access to patients’ EMR, prescriptions, and discharge summaries."
   },
   {
-    url: "https://www.ebmconsult.com/app/article/images/100205",
-    title: "Cross-Study Integration",
-    desc: "Aggregate genomic data from multiple studies and trials for meta-analysis."
+    url: "https://www.projectmanager.com/wp-content/uploads/2024/05/portfolio-dashboard-screenshot-lightmode-1600x786.png",
+    title: "Departmental Resource Utilization",
+    desc: "Track diagnostics, beds, ambulance availability, and pharmacy operations efficiently."
   }
 ];
 
 const benefits = [
-  "Enhances bioinformatics workflow efficiency and traceability.",
-  "Supports multi-omics data integration and analysis.",
-  "Improves clinical interpretation through structured genomic data.",
-  "Centralized database with easy access to research outcomes.",
-  "Speeds up research timelines with automation & AI tools.",
-  "Cost-effective and scalable for labs and research centers."
+  "Comprehensive patient registration, history & EMR tracking.",
+  "Centralized appointment scheduling & queue management.",
+  "Integrated billing, pharmacy & laboratory systems.",
+  "Real-time bed availability & ward/ICU management.",
+  "Doctor & staff workflow optimization with role-based access.",
+  "Inventory, procurement & equipment tracking automation."
 ];
 
-const BioinformaticsManagementandInformationSystem = () => {
-  
-    
-    
-    const [activeIndex, setActiveIndex] = useState(0);
 
+const EHospitalManagement = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  
   return (
     <>
-      {/* Hero Section */}
+ {/* 0. Hero Section */}
       <div className="relative w-full h-screen">
         <img
-          src="https://media.istockphoto.com/id/1221783874/photo/holographic-display-of-advance-dna-sequence-analysis.jpg?s=612x612&w=0&k=20&c=gMXUnHhW-lM5cuua9qUVwirihUVuArGmxj8VwFl-uD4="
-          alt="Genomic Background"
+          src="https://media.istockphoto.com/id/1476261444/photo/young-pharmaceutic-seller-explaining-something-to-doctor-in-hospital.jpg?s=612x612&w=0&k=20&c=pEJ7PefqTUcR5hPhB3jLIvAUOzPA6FVPlw391Oxqnrw="
+          alt="Hospital Background"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="absolute inset-0 flex items-center justify-start px-6 md:px-16">
           <div className="text-white max-w-2xl">
             <h1 className="text-2xl md:text-4xl font-bold text-white font-houschka">
-              Bioinformatic Management & Information System
+              E-Hospital Management System
             </h1>
             <p className="text-lg md:text-xl text-green-400 font-basis mt-4">
-              Integrated Platform for Genomic Research & Clinical Data
+              Integrated Digital Solution for Modern Healthcare
             </p>
             <p className="text-gray-200 mt-3 font-basis">
-              Empowering labs and researchers with real-time genomics data, analytics, and structured patient records.
+              Simplifies patient care, diagnostics, billing, and admin workflows through one platform.
             </p>
             <button className="mt-6 bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-300">
               REQUEST A QUICK DEMO TODAY!
@@ -115,19 +121,21 @@ const BioinformaticsManagementandInformationSystem = () => {
         </div>
       </div>
 
-      {/* Modules Section */}
+      {/* 1. Modules Section */}
       <section className="relative w-full py-24 bg-gradient-to-br from-blue-100 via-red-100 to-green-100 overflow-hidden">
         <div className="max-w-6xl mx-auto text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4 font-houschka">
-            Bioinformatics Features & Functionality
+           E- Hospital Management Features & Functionality
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto font-basis">
-            Explore structured genomic processes seamlessly integrated into a single research ecosystem.
+            "Interactive overview of E-Hospital modules centered around a unified digital healthcare core system."
+
+
           </p>
         </div>
         <div className="relative h-[600px] w-[600px] mx-auto">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-700 text-white font-bold flex items-center justify-center h-40 w-40 rounded-full shadow-lg">
-            BMIS
+            EHMS
           </div>
           {modules.map((title, index) => {
             const angle = (index / modules.length) * 2 * Math.PI;
@@ -150,14 +158,14 @@ const BioinformaticsManagementandInformationSystem = () => {
         </div>
       </section>
 
-      {/* Department Section */}
+      {/* 2. Department Section */}
       <section className="py-16 px-6 bg-gradient-to-br from-blue-100 via-red-100 to-green-100">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-blue-900 mb-6 font-houschka">
             Supported Departments & Clinical Integration
           </h2>
           <p className="text-gray-700 mb-6 font-basis">
-            BMIS integrates multiple departments including Genomics, Transcriptomics, and Clinical Research to streamline multi-omics workflows.
+            Our E-Hospital ERP seamlessly integrates with departments like telemedicine, diagnostics, pharmacy, billing, and emergency care to deliver a unified healthcare experience.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             {departments.map((dept, i) => (
@@ -172,21 +180,21 @@ const BioinformaticsManagementandInformationSystem = () => {
         </div>
       </section>
 
-      {/* Lifecycle Section */}
+      {/* 3. Lifecycle Section */}
       <section className="w-full py-20 px-4 md:px-16 bg-gradient-to-br from-blue-100 via-red-100 to-green-100">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-700 via-pink-600 to-green-700 text-transparent bg-clip-text mb-12 font-houschka">
-            Bioinformatics Research Lifecycle
+            Patient Lifecycle Management
           </h2>
           <div className="mb-12">
             <img
-              src="https://img.freepik.com/free-photo/lab-scientist-research-sequencing-data-genomics_53876-102351.jpg"
-              alt="genomic research lifecycle"
+              src="https://img.freepik.com/free-photo/doctor-consulting-patient-hospital-office_107420-84726.jpg"
+              alt="hospital patient lifecycle banner"
               className="w-full h-[450px] md:h-[550px] object-cover rounded-xl shadow-md"
             />
           </div>
           <div className="py-10">
-            <h3 className="text-3xl font-bold text-blue-900 mb-10 font-houschka">BMIS Workflow Stages</h3>
+            <h3 className="text-3xl font-bold text-blue-900 mb-10 font-houschka">Hospital Patient Lifecycle</h3>
             <div className="flex flex-wrap justify-center gap-4">
               {lifecycle.map((step, i) => (
                 <div
@@ -200,14 +208,15 @@ const BioinformaticsManagementandInformationSystem = () => {
           </div>
         </div>
       </section>
-       {/* Analytics Section */}
+
+      {/* 4. Analytics Section */}
       <section className="py-20 px-4 md:px-16 bg-blue-100">
         <div className="max-w-7xl mx-auto mb-12 text-center">
           <h2 className="text-4xl font-bold text-blue-900 font-houschka">
-            Bioinformatics Dashboard & Analytics
+            Hospital Dashboard & Analytics
           </h2>
           <p className="text-gray-700 mt-2 max-w-3xl mx-auto font-basis">
-            Monitor critical genomics and sample data including sequencing pipelines, annotation stages, and research utilization metrics.
+            Get a live view of critical hospital data including patient activity, diagnostics, staff workflow, and resource utilization.
           </p>
         </div>
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
@@ -243,11 +252,11 @@ const BioinformaticsManagementandInformationSystem = () => {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
+      {/* 5. Why Choose Us Section */}
       <section className="py-20 px-4 md:px-16 bg-white">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-12 font-houschka">
-            Why Choose Our Bioinformatic System?
+            Why Choose Our E-Hospital Management System?
           </h2>
           <div className="flex flex-wrap justify-center gap-10">
             {whyChooseUs.map((item, index) => (
@@ -257,7 +266,7 @@ const BioinformaticsManagementandInformationSystem = () => {
               >
                 <div className="absolute text-center w-full transform -rotate-45">
                   <h4 className="text-lg font-bold mb-1">{item.title}</h4>
-                  <p className="text-sm text-gray-600 px-2 font-basis">{item.desc}</p>
+                  <p className="text-sm text-gray-600 px-2">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -265,14 +274,14 @@ const BioinformaticsManagementandInformationSystem = () => {
         </div>
       </section>
 
-      {/* Benefits Section */}
+      {/* 6. Benefits Section */}
       <section className="w-full py-20 px-6 md:px-16 bg-gradient-to-br from-blue-50 via-white to-green-50">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-800 via-purple-600 to-green-700 mb-8 font-houschka">
-            Benefits of Bioinformatics Management System
+            Benefits of E-Hospital Management System
           </h2>
           <p className="text-gray-700 text-lg mb-12 font-basis">
-            A robust digital platform to manage multi-omics data, streamline lab workflows, and accelerate clinical genomics research.
+            A robust ERP system to efficiently manage clinical operations, patient care, billing, departmental workflows, and hospital infrastructure.
           </p>
           <ol className="list-decimal list-inside space-y-6 text-left max-w-3xl mx-auto">
             {benefits.map((benefit, i) => (
@@ -287,10 +296,9 @@ const BioinformaticsManagementandInformationSystem = () => {
           </ol>
         </div>
       </section>
-      
-    
+
     </>
   )
 }
 
-export default BioinformaticsManagementandInformationSystem
+export default EHospitalManagement

@@ -185,7 +185,7 @@ const Elearning = () => {
         ></div>
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 font-houschka">
             E-LEARNING SERVICES
           </h1>
           <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed mb-6 sm:mb-8">
@@ -210,7 +210,7 @@ Mohitraj Research and Technology Private Limited E-learning System, a leading so
       {/* Second div */}
 <div className="bg-white py-16 px-4 lg:px-24 text-center">
   {/* Top Text */}
-  <h1 className="text-blue-500 text-4xl font-bold">Overview</h1>
+  <h1 className="text-blue-500 text-4xl font-bold font-houschka">Overview</h1>
   <p className="text-gray-700 text-base md:text-lg max-w-4xl mx-auto mb-12 leading-relaxed font-basis text-justify mt-4">
     MOHITRAJ RESEARCH AND TECHNOLOGY PRIVATE LIMITED is a pioneering provider of
     comprehensive <strong>e-learning solutions</strong> in India. We specialize in

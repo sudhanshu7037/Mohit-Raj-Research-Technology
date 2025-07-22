@@ -17,7 +17,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 
-import bgImage from "../../assets/Softwarebanner.png";
+import BannerImage from "../../assets/servicespage/softwaredevelopmentimages/bannerimage/softwarebanner.jpg"
 import DevImage from "../../assets/sproject.png";
 import {
   FaServer,
@@ -371,7 +371,7 @@ const SoftwareDevelopment = () => {
       <div className="relative w-full h-screen overflow-hidden">
         {/* Background Image */}
         <img
-          src={bgImage}
+          src={BannerImage}
           alt="Custom Software Development"
           className="w-full h-full object-cover"
         />
@@ -380,27 +380,34 @@ const SoftwareDevelopment = () => {
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
         {/* Hero Content */}
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
-          <h3 className="text-white text-xl md:text-6xl font-semibold leading-tight mb-6 font-houschka">
-            Transform your Business with Innovative Software Development
-            Technology
-          </h3>
-          <p className="text-white">Power your business with innovative software development solutions that advance innovation, enhance efficiency, and foster digital transformation. 
-            Mohitraj Research and Technology Private Limited provides future-proof technologies adapted to your distinctive objectives.</p>
-          <div className="flex gap-4">
-            <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition mt-2">
-              GET IN TOUCH
-            </button>
-            <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition mt-2">
-              VIEW PORTFOLIO
-            </button>
-          </div>
-        </div>
+       <div className="absolute inset-0 flex flex-col justify-center items-start text-left px-4">
+  <h3 className="text-white text-xl md:text-6xl font-semibold leading-tight mb-10 font-houschka">
+    Transform Your Business With 
+    <br />
+    Custom Software Development
+    <br />
+  
+    Development Services
+  </h3>
+  {/* <p className="text-white">
+    Power your business with innovative software development solutions that advance innovation, enhance efficiency, and foster digital transformation. 
+    Mohitraj Research and Technology Private Limited provides future-proof technologies adapted to your distinctive objectives.
+  </p> */}
+  <div className="flex gap-4">
+    <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition mt-6">
+      GET IN TOUCH
+    </button>
+    {/* <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition mt-6">
+      VIEW PORTFOLIO
+    </button> */}
+  </div>
+</div>
+
       </div>
       {/* Second div */}
-      <div className="bg-white py-16 px-4 lg:px-24 text-center">
+      <div className="bg-blue-50 py-16 px-4 lg:px-24 text-center">
         {/* Top Text */}
-        <h1 className="text-blue-500 text-4xl font-bold">Overview</h1>
+        <h1 className="text-blue-500 text-4xl font-bold font-houschka">Overview</h1>
         <p className="text-gray-700 text-base md:text-lg max-w-4xl mx-auto mb-12 leading-relaxed font-basis text-justify mt-4">
           MOHITRAJ RESEARCH AND TECHNOLOGY PRIVATE LIMITED is the leading
           software development company in India , it is specializes in software
@@ -419,47 +426,14 @@ const SoftwareDevelopment = () => {
           surpass your expectations.
         </p>
 
-        {/* Stats Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto mb-8">
-          {/* Stat 1 */}
-          <div className="flex flex-col items-center">
-            <h3 className="text-blue-800 text-3xl font-bold">1800+</h3>
-            <p className="text-gray-600 mt-2 text-center">
-              Completed <br /> Projects
-            </p>
-          </div>
+        
 
-          {/* Stat 2 */}
-          <div className="flex flex-col items-center">
-            <h3 className="text-blue-800 text-3xl font-bold">21+</h3>
-            <p className="text-gray-600 mt-2 text-center">
-              Years of <br /> Experience
-            </p>
-          </div>
-
-          {/* Stat 3 */}
-          <div className="flex flex-col items-center">
-            <h3 className="text-blue-800 text-3xl font-bold">810+</h3>
-            <p className="text-gray-600 mt-2 text-center">
-              Global <br /> Customers
-            </p>
-          </div>
-
-          {/* Stat 4 */}
-          <div className="flex flex-col items-center">
-            <h3 className="text-blue-800 text-3xl font-bold">36</h3>
-            <p className="text-gray-600 mt-2 text-center">
-              Countries <br /> Clients Served
-            </p>
-          </div>
-        </div>
-
-        {/* Divider Line */}
-        <hr className="border-gray-300 max-w-5xl mx-auto" />
+        
+        
       </div>
 
       {/* Third div */}
-<div className="bg-red-100 hover:bg-blue-100 py-16 px-4 lg:px-24 text-center">
+<div className="bg-red-50  py-16 px-4 lg:px-24 text-center">
   {/* Title */}
   <h2 className="text-4xl md:text-4xl font-bold text-blue-900 mb-4 font-houschka">
     Our Software Development Services
@@ -476,7 +450,7 @@ const SoftwareDevelopment = () => {
         className="relative backdrop-blur-xl bg-white/80 hover:bg-white border border-blue-200 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden group"
       >
         {/* Glowing Edge */}
-        <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500 via-pink-400 to-purple-500 rounded-2xl blur-lg opacity-0 group-hover:opacity-40 transition-all duration-500 pointer-events-none" />
+        <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-200 via-red-100 to-orange-100 rounded-2xl blur-lg opacity-0 group-hover:opacity-40 transition-all duration-500 pointer-events-none" />
 
         {/* Image */}
         <img
@@ -496,18 +470,7 @@ const SoftwareDevelopment = () => {
         </p>
 
         {/* Buttons */}
-        <div className="flex flex-wrap gap-3 justify-center mt-4">
-          {card.button && (
-            <button className="bg-gradient-to-r from-blue-700 to-blue-900 text-white px-4 py-2 rounded-md hover:from-pink-600 hover:to-purple-700 transition-all duration-300">
-              {card.button}
-            </button>
-          )}
-          {card.button1 && (
-            <button className="bg-gradient-to-r from-blue-700 to-blue-900 text-white px-4 py-2 rounded-md hover:from-pink-600 hover:to-purple-700 transition-all duration-300">
-              {card.button1}
-            </button>
-          )}
-        </div>
+       
       </div>
     ))}
   </div>
@@ -569,7 +532,7 @@ const SoftwareDevelopment = () => {
         </div>
       </div>
       {/*new  div*/}
-      <div className="max-w-7xl mx-auto px-4 py-16 bg-blue-100">
+      <div className="w-full mx-auto px-4 py-16 bg-blue-50">
         <h2 className="text-4xl text-center font-bold text-blue-900 mb-12 font-houschka">
           Technology Stack
         </h2>
@@ -593,7 +556,7 @@ const SoftwareDevelopment = () => {
                 {section.items.map((item, index) => (
                   <div
                     key={index}
-                    className="bg-gray-100 bg-red-200 hover:bg-white text-gray-800 px-4 py-2  border border-black text-sm font-medium"
+                    className=" bg-red-200 hover:bg-white text-gray-800 px-4 py-2  border border-black text-sm font-medium"
                   >
                     {item}
                   </div>
@@ -604,7 +567,7 @@ const SoftwareDevelopment = () => {
         </div>
       </div>
       {/* New Section – Custom Software Types we offer */}
-<div className="max-w-7xl mx-auto px-4 py-16 text-center">
+<div className="w-full mx-auto px-4 py-16 text-center bg-red-50">
   <h2 className="text-4xl font-bold text-blue-900 mb-4 font-houschka">
     Custom Software Types, We Offer
   </h2>
@@ -616,7 +579,7 @@ const SoftwareDevelopment = () => {
     {services.map((service, index) => (
       <div
         key={index}
-        className={`bg-red-100  hover:bg-red-200 ~rounded-xl border-t-4 border-red-500 p-6 shadow-md hover:shadow-xl transition-all duration-300 ${
+        className={` ~rounded-xl border-t-4 border-red-500 p-6 shadow-md hover:shadow-xl transition-all duration-300 ${
           index === 1 ? "bg-blue-100" : ""
         }`}
       >
@@ -665,29 +628,33 @@ const SoftwareDevelopment = () => {
       {/*new  div*/}
 
       <div className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-4xl font-bold text-blue-900 text-center mb-4 font-houschka">
-          Why Choose MRT?
-        </h2>
-        <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-         
-When you partner with MOHITRAJ RESEARCH  TECHNOLOGY PRIVATE LIMITED, you can trust that professionals will handle your software solution. Let us help you turn your ideas into reality and grow your business.
-        </p>
+  <h2 className="text-4xl font-bold text-blue-900 text-center mb-4 font-houschka">
+    Why Choose MRT?
+  </h2>
+  <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+    When you partner with MOHITRAJ RESEARCH TECHNOLOGY PRIVATE LIMITED, you can trust that professionals will handle your software solution. Let us help you turn your ideas into reality and grow your business.
+  </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="border border-gray-500 p-6 rounded-md text-center hover:shadow-lg transition-shadow duration-300"
-            >
-              <div className="flex justify-center mb-4">{feature.icon}</div>
-              <h3 className="text-lg font-semibold text-blue-900 mb-2">
-                {feature.title}
-              </h3>
-              <p className="text-sm text-gray-600">{feature.description}</p>
-            </div>
-          ))}
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    {features.map((feature, index) => (
+      <div
+        key={index}
+        className="group border border-gray-500 p-6 rounded-md text-center bg-red-100 hover:bg-blue-900 hover:shadow-lg transition-shadow duration-300"
+      >
+        <div className="flex justify-center mb-4 text-blue-900 group-hover:text-white transition-colors duration-300">
+          {feature.icon}
         </div>
+        <h3 className="text-lg font-semibold text-blue-900 mb-2 group-hover:text-white transition-colors duration-300">
+          {feature.title}
+        </h3>
+        <p className="text-sm text-gray-600 group-hover:text-white transition-colors duration-300">
+          {feature.description}
+        </p>
       </div>
+    ))}
+  </div>
+</div>
+
       {/* Benifits*/}
          
    <div>
@@ -721,71 +688,7 @@ When you partner with MOHITRAJ RESEARCH  TECHNOLOGY PRIVATE LIMITED, you can tru
 
              
 {/* Case Study*/}
-      <div className="w-full mt-4 ">
-        {/* Heading */}
-        <div className="text-center mb-10">
-          <h2 className="text-4xl md:text-4xl font-bold text-blue-900 mb-4 font-houschka">
-            Custom Software Development Case Studies
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto font-basis">
-            Getting into the nitty-gritty of each software project and achieving
-            a measurable result is what we do for the world's leading companies.
-            Take a look!
-          </p>
-        </div>
-
-        {/* Slider */}
-        <Swiper
-          modules={[Navigation]}
-          navigation
-          spaceBetween={20}
-          slidesPerView={1}
-          loop={true}
-          className="w-full  "
-        >
-          {caseStudies.map((caseStudy, index) => (
-            <SwiperSlide key={index}>
-              <div className="flex flex-col md:flex-row bg-white  shadow-lg overflow-hidden w-full h-[460px] ">
-                {/* Image */}
-                <div className="md:w-1/2">
-                  <img
-                    src={caseStudy.image}
-                    alt={caseStudy.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-
-                {/* Content */}
-                <div className="md:w-1/2 bg-slate-600 text-white p-8 flex flex-col justify-center">
-                  <h3 className="text-3xl font-houschka font-semibold mb-4">
-                    {caseStudy.title}
-                  </h3>
-
-                  {/* Tags */}
-                  <div className="flex gap-2 mb-4">
-                    {caseStudy.tags.map((tag, idx) => (
-                      <span
-                        key={idx}
-                        className="border border-white px-2 py-1 text-sm rounded"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-
-                  {/* Description */}
-                  <p className="text-gray-200 mb-6">{caseStudy.description}</p>
-
-                  {/* Button */}
-                  <Link to={'/MedicalCollegeManagement'} className="border border-white px-2 py-1 text-sm hover:bg-white hover:text-blue-900 transition w-fit ">
-                    VIEW CASE STUDY
-                  </Link>
-                </div>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+      
 
 
       {/*new  div*/}

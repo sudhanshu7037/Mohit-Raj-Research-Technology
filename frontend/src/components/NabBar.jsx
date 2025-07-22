@@ -140,10 +140,10 @@ const NavBar = () => {
 
           <div className="hidden md:block">
             <Link
-              to="/contact"
+              to=""
               className="bg-yellow-500 font-semibold px-5 py-2 rounded-md text-white text-2xl md:text-sm"
             >
-              GET IN TOUCH
+              Login
             </Link>
           </div>
         </div>

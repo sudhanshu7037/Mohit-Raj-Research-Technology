@@ -27,11 +27,13 @@ app.use(express.json());
 // import routes
 import authRoutes from "./routes/authRoutes.js";
 import adminRoutes from "./routes/adminRoutes.js";
+import roleRoutes from "./routes/roleRoutes.js";
 
 
 // api route
-app.use("/", authRoutes);
-app.use("/", adminRoutes);
+app.use("/api/auth", authRoutes);
+app.use("/api/admin", adminRoutes);
+app.use("/api/role", roleRoutes);
 
 connectdb()
   .then(() => {

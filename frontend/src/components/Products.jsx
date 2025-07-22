@@ -71,61 +71,89 @@ const Products = () => {
           Transform Your Business with Advanced Technologies
         </h2>
         <p className="text-red-600 font-semibold mt-4 text-2xl">
-          OUR DEDICATED PRODUCTS
+          
         </p>
       </div>
 
+      <section className="w-full px-6 py-12 ">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8">
+              {/* Left Side Image */}
+              <div className="w-full md:w-1/2">
+                <img
+                  src=""
+                  alt="our products"
+                  className="rounded-2xl  w-full object-cover"
+                />
+              </div>
+      
+              {/* Right Side Content */}
+              <div className="w-full md:w-1/2">
+                <h2 className="text-4xl font-bold text-red-600 mb-4 font-houschka ">
+                  OUR DEDICATED PRODUCTS
+                </h2>
+               <p className="text-gray-700 mb-4">
+  We offer an extensive range of automation software solutions tailored to the diverse needs of the Education, Medical, Corporate, and Government sectors. Our product line includes University and Engineering College Management Systems, School ERP, Online and Entrance Exam Management Systems, Smart Learning Platforms, and Library Management Systems. In the healthcare domain, we provide advanced solutions like Hospital Information Systems, E-Hospital and E-Clinic Management, and Bioinformatics Systems. For corporate and enterprise needs, we deliver powerful tools such as CRM Software, E-Business Management, Trulymax Accounting Systems (S, M, L variants), HR Management, Inventory and Purchase Management, and Finance Solutions. Additionally, our offerings extend to E-Governance tools like Police Management Systems, E-Govt. Office Management, and Credit Cooperative Society MIS, all built to ensure efficiency, transparency, and seamless digital operations.
+</p>
+
+                {/* <ul className="list-disc pl-5 space-y-2 text-gray-800">
+                  <li>Expert team with deep domain knowledge</li>
+                  <li>Custom-built software solutions</li>
+                  <li>24x7 technical support and maintenance</li>
+                  <li>Transparent process & timely delivery</li>
+                  <li>Scalable and secure architecture</li>
+                </ul> */}
+              </div>
+            </div>
+          </section>
+
+      
+
       {/* carousel */}
-      <Swiper
-        modules={[Autoplay, Navigation]}
-        spaceBetween={30}
-        slidesPerView={1}
-        breakpoints={{ 640: { slidesPerView: 2 }, 1024: { slidesPerView: 4 } }}
-        autoplay={{ delay: 2000, disableOnInteraction: false }}
-        onSwiper={(swiper) => (swiperRef.current = swiper)} // keep reference
-        className="w-full"
-      >
-        {servicesData.map((service) => (
-          <SwiperSlide key={service.id}>
-            <motion.div
-              whileHover={{ scale: 1.07, rotate: 2 }}
-              className="h-[300px] backdrop-blur-lg bg-white/30 border border-white/40 rounded-3xl shadow-xl p-6 flex flex-col justify-center items-center text-center transition-all duration-500"
-            >
-              <img
-                src={service.icon}
-                alt={service.title}
-                className="w-20 h-20 mb-4 rounded-xl shadow-lg object-cover"
-              />
-              <h3 className="text-lg font-semibold text-gray-800 mb-2">
-                {service.title}
-              </h3>
-              <button
-                onClick={() => navigate(service.link)}
-                className="mt-4 px-5 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full text-sm shadow-md hover:from-purple-500 hover:to-pink-500 transition-all duration-500"
-              >
-                Read More →
-              </button>
-            </motion.div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+  <Swiper
+  modules={[Autoplay, Navigation]}
+  spaceBetween={20}
+  slidesPerView={1}
+  breakpoints={{
+    640: { slidesPerView: 2 },
+    1024: { slidesPerView: 4 },
+  }}
+  autoplay={{ delay: 3000, disableOnInteraction: false }}
+  navigation
+  onSwiper={(swiper) => (swiperRef.current = swiper)}
+  className="w-full"
+>
+  {servicesData.map((service) => (
+    <SwiperSlide key={service.id}>
+      <div className="h-[250px] bg-white border rounded-xl  p-4 flex flex-col justify-between items-center text-center mt-6">
+        <img
+          src={service.icon}
+          alt={service.title}
+          className="w-16 h-16 mb-3 object-cover"
+        />
+        <h3 className="text-base font-medium text-gray-900 mb-2">
+          {service.title}
+        </h3>
+        <button
+          onClick={() => navigate(service.link)}
+          className="px-4 py-1.5 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition"
+        >
+          Read More
+        </button>
+      </div>
+    </SwiperSlide>
+  ))}
+</Swiper>
 
       {/* navigation buttons */}
-      <button
-        aria-label="Previous slide"
-        onClick={() => swiperRef.current?.slidePrev()}
-        className="absolute left-0 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/80 hover:bg-white shadow-lg backdrop-blur-md transition-all duration-300 group"
-      >
-        <MdChevronLeft size={32} className="group-hover:-translate-x-1 transition-transform" />
-      </button>
+     
 
-      <button
+      {/* <button
         aria-label="Next slide"
         onClick={() => swiperRef.current?.slideNext()}
         className="absolute right-0 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/80 hover:bg-white shadow-lg backdrop-blur-md transition-all duration-300 group"
       >
         <MdChevronRight size={32} className="group-hover:translate-x-1 transition-transform" />
-      </button>
+      </button> */}
     </section>
   );
 };

@@ -8,10 +8,10 @@ import TeamSection from "../components/TeamSection";
 import TestimonialSlider from "../components/TestimonialSlider";
 import VideoSection from "../components/VideoSection";
 import NewsSection from "../components/NewsSection";
-
 import Products from "../components/Products";
 import Solutions from "../components/Solutions";
 import DiscriptionFooter from "../components/DiscriptionFooter";
+import WhyChoose from "../components/whychoose";
 
 const Home = () => {
   return (
@@ -23,6 +23,7 @@ const Home = () => {
         <Products />
         <MainBanner />
         <Solutions />
+        <WhyChoose/>
         <MoreInfo />
         <TeamSection />
         <TestimonialSlider />

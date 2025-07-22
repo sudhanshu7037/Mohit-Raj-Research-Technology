@@ -175,7 +175,7 @@ const SecuritySurvillance = () => {
           {/* Second div */}
 <div className="bg-white py-16 px-4 lg:px-24 text-center">
   {/* Top Text */}
-  <h1 className="text-blue-500 text-4xl font-bold">Overview</h1>
+  <h1 className="text-blue-500 text-4xl font-bold font-houschka">Overview</h1>
   <p className="text-gray-700 text-base md:text-lg max-w-4xl mx-auto mb-12 leading-relaxed font-basis text-justify mt-4">
     At MOHITRAJ RESEARCH AND TECHNOLOGY PRIVATE LIMITED, we provide comprehensive Security and Surveillance solutions that protect assets, people, and data across industries. Our expertise spans across smart monitoring systems, intrusion detection, access control, and real-time analytics. We deploy cutting-edge technologies like AI-based surveillance, IoT-enabled sensors, and cloud-based control centers to ensure seamless and proactive security infrastructure.
     <br /><br />
@@ -329,7 +329,7 @@ const SecuritySurvillance = () => {
     {/* Left Side */}
     <div className="flex items-center gap-4">
       <div className="w-1 h-16 bg-blue-600"></div>
-      <h2 className="text-2xl md:text-3xl font-semibold text-blue-900 leading-snug">
+      <h2 className="text-2xl md:text-3xl font-semibold text-blue-900 leading-snug font-houschka">
         Looking for Smart Security & Surveillance <br /> Solutions for Your Premises?
       </h2>
     </div>
@@ -360,7 +360,7 @@ const SecuritySurvillance = () => {
   </div>
 
   <div className="max-w-5xl mx-auto bg-white rounded shadow-lg overflow-hidden">
-    <div className="bg-blue-700 text-white py-3 text-center text-xl font-semibold">
+    <div className="bg-blue-700 text-white py-3 text-center text-xl font-semibold font-houschka">
       Industries We Secure
     </div>
     <div className="p-8 text-gray-800">

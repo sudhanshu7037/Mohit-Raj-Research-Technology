@@ -162,10 +162,39 @@ const MainBanner = () => {
         <h1 className="text-5xl font-bold text-[#2b2a7f] font-houschka drop-shadow-md">
           Excellent Services For Your Business
         </h1>
-        <h2 className="text-[#ff4d4f] font-semibold mb-1 mt-3 tracking-wide uppercase text-2xl">
-          Our Dedicated Services
-        </h2>
+        
       </div>
+
+        <section className="w-full px-6 py-12 ">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8">
+              {/* Left Side Image */}
+              <div className="w-full md:w-1/2">
+                <img
+                  src=""
+                  alt="our products"
+                  className="rounded-2xl  w-full object-cover"
+                />
+              </div>
+      
+              {/* Right Side Content */}
+              <div className="w-full md:w-1/2">
+                <h2 className="text-4xl font-bold text-red-600 mb-4 font-houschka ">
+                  OUR DEDICATED SERVICES
+                </h2>
+               <p className="text-gray-700 mb-4">
+  We offer an extensive range of automation software solutions tailored to the diverse needs of the Education, Medical, Corporate, and Government sectors. Our product line includes University and Engineering College Management Systems, School ERP, Online and Entrance Exam Management Systems, Smart Learning Platforms, and Library Management Systems. In the healthcare domain, we provide advanced solutions like Hospital Information Systems, E-Hospital and E-Clinic Management, and Bioinformatics Systems. For corporate and enterprise needs, we deliver powerful tools such as CRM Software, E-Business Management, Trulymax Accounting Systems (S, M, L variants), HR Management, Inventory and Purchase Management, and Finance Solutions. Additionally, our offerings extend to E-Governance tools like Police Management Systems, E-Govt. Office Management, and Credit Cooperative Society MIS, all built to ensure efficiency, transparency, and seamless digital operations.
+</p>
+
+                {/* <ul className="list-disc pl-5 space-y-2 text-gray-800">
+                  <li>Expert team with deep domain knowledge</li>
+                  <li>Custom-built software solutions</li>
+                  <li>24x7 technical support and maintenance</li>
+                  <li>Transparent process & timely delivery</li>
+                  <li>Scalable and secure architecture</li>
+                </ul> */}
+              </div>
+            </div>
+          </section>
 
       {/* service cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -87,10 +87,39 @@ const ServicesSection = () => {
         <h2 className="text-4xl md:text-5xl font-houschka font-bold text-blue-800 drop-shadow">
           Cutting edge solutions with digital technologies
         </h2>
-        <p className="text-[#ff4d4f] font-semibold mt-3 tracking-wide uppercase text-2xl">
-          OUR DEDICATED SOLUTIONS
-        </p>
+        
       </div>
+
+        <section className="w-full px-6 py-12 ">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8">
+              {/* Left Side Image */}
+              <div className="w-full md:w-1/2">
+                <img
+                  src=""
+                  alt="our products"
+                  className="rounded-2xl  w-full object-cover"
+                />
+              </div>
+      
+              {/* Right Side Content */}
+              <div className="w-full md:w-1/2">
+                <h2 className="text-4xl font-bold text-red-600 mb-4 font-houschka ">
+                  OUR DEDICATED SOLUTIONS
+                </h2>
+               <p className="text-gray-700 mb-4">
+  We offer an extensive range of automation software solutions tailored to the diverse needs of the Education, Medical, Corporate, and Government sectors. Our product line includes University and Engineering College Management Systems, School ERP, Online and Entrance Exam Management Systems, Smart Learning Platforms, and Library Management Systems. In the healthcare domain, we provide advanced solutions like Hospital Information Systems, E-Hospital and E-Clinic Management, and Bioinformatics Systems. For corporate and enterprise needs, we deliver powerful tools such as CRM Software, E-Business Management, Trulymax Accounting Systems (S, M, L variants), HR Management, Inventory and Purchase Management, and Finance Solutions. Additionally, our offerings extend to E-Governance tools like Police Management Systems, E-Govt. Office Management, and Credit Cooperative Society MIS, all built to ensure efficiency, transparency, and seamless digital operations.
+</p>
+
+                {/* <ul className="list-disc pl-5 space-y-2 text-gray-800">
+                  <li>Expert team with deep domain knowledge</li>
+                  <li>Custom-built software solutions</li>
+                  <li>24x7 technical support and maintenance</li>
+                  <li>Transparent process & timely delivery</li>
+                  <li>Scalable and secure architecture</li>
+                </ul> */}
+              </div>
+            </div>
+          </section>
 
       {/* Cards grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaInstagram } from "react-icons/fa6";
-import Logo from "../assets/PNG.png"                                                                                  
+import Logo2 from "../assets/new MRTPL-Logo.png";
 
 export default function Footer() {
   return (
@@ -15,7 +15,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 flex flex-col lg:flex-row justify-between items-center lg:items-start">
         {/* Left Section - Logo */}
         <div className="flex items-center mb-4 lg:mb-0">
-          <img src={Logo} alt="Footer Logo" className="h-12 w-auto lg:h-16 mt-2 ml-4 " />
+          <img src={Logo2} alt="Footer Logo" className="h-12 w-auto lg:h-16 mt-2 ml-4 " />
         </div>
         {/* Center Section */}
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left">

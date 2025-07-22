@@ -45,7 +45,7 @@ const MobileMenuNavbar = ({ openSubMenu, toggleSubMenu }) => {
           {openSubMenu.services && (
             <ul className="ml-4 mt-3 space-y-4 text-sm text-gray-800 font-normal">
               <li
-                onClick={() => navigate("/services/university-digitalization")}
+                onClick={() => navigate("/SoftwareDevelopment")}
                 className="cursor-pointer"
               >
                 <div className="flex items-center gap-2 font-semibold text-base border-b pb-2 hover:text-blue-600">
@@ -56,7 +56,7 @@ const MobileMenuNavbar = ({ openSubMenu, toggleSubMenu }) => {
 
               <li
                 onClick={() =>
-                  navigate("/solutions/medical-college-digitalization")
+                  navigate("/DevelopmentHosting")
                 }
                 className="cursor-pointer"
               >
@@ -67,7 +67,7 @@ const MobileMenuNavbar = ({ openSubMenu, toggleSubMenu }) => {
               </li>
 
               <li
-                onClick={() => navigate("/solutions/mrtion-digital-education")}
+                onClick={() => navigate("/HardwareNetworking")}
                 className="cursor-pointer"
               >
                 <div className="flex items-center gap-2 font-semibold text-base border-b pb-2 hover:text-blue-600">
@@ -77,7 +77,7 @@ const MobileMenuNavbar = ({ openSubMenu, toggleSubMenu }) => {
               </li>
 
               <li
-                onClick={() => navigate("/solutions/library-digitalization")}
+                onClick={() => navigate("/MultimediaAnimation")}
                 className="cursor-pointer"
               >
                 <div className="flex items-center gap-2 font-semibold text-base border-b pb-2 hover:text-blue-600">
@@ -87,7 +87,7 @@ const MobileMenuNavbar = ({ openSubMenu, toggleSubMenu }) => {
               </li>
 
               <li
-                onClick={() => navigate("/solutions/smart-learning")}
+                onClick={() => navigate("/DigitalMarketing")}
                 className="cursor-pointer"
               >
                 <div className="flex items-center gap-2 font-semibold text-base border-b pb-2 hover:text-blue-600">
@@ -97,7 +97,7 @@ const MobileMenuNavbar = ({ openSubMenu, toggleSubMenu }) => {
               </li>
 
               <li
-                onClick={() => navigate("/solutions/conference-room")}
+                onClick={() => navigate("/DataCentersDevelopment")}
                 className="cursor-pointer"
               >
                 <div className="flex items-center gap-2 font-semibold text-base border-b pb-2 hover:text-blue-600">
@@ -107,7 +107,7 @@ const MobileMenuNavbar = ({ openSubMenu, toggleSubMenu }) => {
               </li>
 
               <li
-                onClick={() => navigate("/solutions/auditorium")}
+                onClick={() => navigate("/Elearning")}
                 className="cursor-pointer"
               >
                 <div className="flex items-center gap-2 font-semibold text-base border-b pb-2 hover:text-blue-600">
@@ -117,7 +117,7 @@ const MobileMenuNavbar = ({ openSubMenu, toggleSubMenu }) => {
               </li>
 
               <li
-                onClick={() => navigate("/solutions/security-surveillance")}
+                onClick={() => navigate("/VideoConferencing")}
                 className="cursor-pointer"
               >
                 <div className="flex items-center gap-2 font-semibold text-base border-b pb-2 hover:text-blue-600">
@@ -127,7 +127,7 @@ const MobileMenuNavbar = ({ openSubMenu, toggleSubMenu }) => {
               </li>
 
               <li
-                onClick={() => navigate("/solutions/multimedia-animation")}
+                onClick={() => navigate("/SecuritySurvillance")}
                 className="cursor-pointer"
               >
                 <div className="flex items-center gap-2 font-semibold text-base border-b pb-2 hover:text-blue-600">
@@ -137,7 +137,7 @@ const MobileMenuNavbar = ({ openSubMenu, toggleSubMenu }) => {
               </li>
 
               <li
-                onClick={() => navigate("/solutions/police-automation")}
+                onClick={() => navigate("/DataDigitization")}
                 className="cursor-pointer"
               >
                 <div className="flex items-center gap-2 font-semibold text-base border-b pb-2 hover:text-blue-600">
@@ -147,7 +147,7 @@ const MobileMenuNavbar = ({ openSubMenu, toggleSubMenu }) => {
               </li>
 
               <li
-                onClick={() => navigate("/solutions/audio-video-broadcasting")}
+                onClick={() => navigate("/RemoteInfrastructure")}
                 className="cursor-pointer"
               >
                 <div className="flex items-center gap-2 font-semibold text-base border-b pb-2 hover:text-blue-600">

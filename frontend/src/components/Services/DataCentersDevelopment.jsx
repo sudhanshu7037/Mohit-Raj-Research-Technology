@@ -372,7 +372,7 @@ From server room optimization to modular data center design, network cabling, po
               <FaCheckCircle />
             </div>
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold leading-snug mb-3 text-yellow-500 transition-colors duration-300 hover:text-red-500">
+              <h2 className="text-3xl md:text-4xl font-bold leading-snug mb-3 text-yellow-500 transition-colors duration-300 hover:text-red-500 font-houschka">
                 Powering Digital Infrastructure <br className="hidden md:block" />
                 with Data Center Excellence
               </h2>

@@ -487,7 +487,7 @@ With our custom software development, we aim to turn your vision into high-perfo
                    {/* Left Side */}
                    <div className="flex items-center">
                      <div className="w-1 h-16 bg-orange-500 mr-4"></div>
-                     <h2 className="text-2xl md:text-3xl font-semibold text-blue-900 leading-snug">
+                     <h2 className="text-2xl md:text-3xl font-semibold text-blue-900 leading-snug font-houschka">
                        Have a Custom Software <br /> Development Challenge to address?
                      </h2>
                    </div>

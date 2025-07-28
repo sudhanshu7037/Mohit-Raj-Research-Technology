@@ -4,7 +4,8 @@ import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import { Server } from "lucide-react";
 import backimage from "../../assets/backimage.png";
 import Enterprizes from "../../assets/enterprizes.png";
-import Banner from "../../assets/Banner.png";
+import BannerImage from "../../assets/servicespage/hardwareandnetworking/images/network_01[1].png";
+import Banner from "../../assets/servicespage/hardwareandnetworking/images/network_banner_image[1].png"
 import {
   FaServer,
   FaLaptopCode,
@@ -26,7 +27,7 @@ import {
   FaTools,
   
 } from "react-icons/fa";
-import DevImage from "../../assets/whychoseus.png";
+import DevImage from "../../assets/servicespage/hardwareandnetworking/images/image1.jpg";
 
 const techStack = [
   {
@@ -203,44 +204,51 @@ const HardwareNetworking = () => {
   return (
     <>
       {/* === Hero Section === */}
-      <section className="relative bg-black text-white font-sans min-h-screen flex items-center justify-center">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-20"
-          style={{ backgroundImage: `url(${backimage})` }}
-        ></div>
-
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6">
-            HARDWARE & NETWORKING SERVICES
-          </h1>
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed mb-6 sm:mb-8">
-            With over 21 years of excellence, we provide reliable and scalable hardware
-            infrastructure, networking setup, server configuration, and enterprise-grade
-            IT solutions that power your business performance.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
-            <button className="bg-blue-600 hover:bg-blue-700 px-4 py-2 sm:px-6 sm:py-3 rounded-md text-sm sm:text-base md:text-lg font-medium transition">
-              GET IN TOUCH
-            </button>
-            <button className="bg-transparent border border-white hover:bg-white hover:text-black px-4 py-2 sm:px-6 sm:py-3 rounded-md text-sm sm:text-base md:text-lg font-medium transition">
-              VIEW PORTFOLIO
-            </button>
-          </div>
+        <div className="relative w-full h-screen overflow-hidden">
+              {/* Background Image */}
+              <img
+                src={BannerImage}
+                alt="Custom Software Development"
+                className="w-full h-full object-cover"
+              />
+      
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      
+              {/* Hero Content */}
+             <div className="absolute inset-0 flex flex-col justify-center items-start text-left px-4">
+        <h3 className="text-white text-xl md:text-6xl font-semibold leading-tight mb-10 font-houschka">
+          Transform Your Business With 
+          <br />
+          Hardware Networking
+          <br />
+        
+          Development Services
+        </h3>
+        
+        <div className="flex gap-4">
+          <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition mt-6">
+            GET IN TOUCH
+          </button>
+         
         </div>
-      </section>
-
+      </div>
+      
+            </div>
       {/* === Second Section: About + Stats === */}
-      <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 bg-white text-gray-800">
+      <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 bg-blue-100 text-gray-800">
         <div className="max-w-6xl mx-auto text-center mb-6 sm:mb-8 md:mb-12">
-          <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed">
-            Our expert team of hardware and networking professionals ensures seamless connectivity,
-            secure installations, and dependable IT support across industries. From LAN/WAN setups to
-            cloud server deployments, we deliver end-to-end solutions tailored to your needs. Join
-            hundreds of satisfied clients who've transformed their infrastructure with us.
-          </p>
+          <h1 className="text-blue-500 text-4xl font-bold font-houschka">Overview</h1>
+          <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed text-justify mt-4">
+              At MRT, we provide comprehensive Hardware and Networking services tailored to meet the IT infrastructure needs of modern businesses. 
+              Our team of certified professionals excels in deploying and maintaining reliable hardware systems and secure network architectures.
+              From server installations, structured cabling, and workstation setups to firewall configurations, LAN/WAN solutions, and network 
+              troubleshooting—we ensure your business stays connected, efficient, and secure. With a focus on scalability and performance,
+              we help you build a strong digital backbone for long-term success.
+            </p>
         </div>
 
-        <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 text-center">
+        {/* <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 text-center">
           <div>
             <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-700">1800+</p>
             <p className="mt-2 text-xs sm:text-sm md:text-base">Completed Projects</p>
@@ -257,24 +265,18 @@ const HardwareNetworking = () => {
             <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-700">36</p>
             <p className="mt-2 text-xs sm:text-sm md:text-base">Countries Served</p>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* === Third Section: Server & Storage Solutions (with heading + para + cards) === */}
-      <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 bg-gray-100 text-gray-900">
+      <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 bg-red-100 text-gray-900">
         <div className="max-w-6xl mx-auto">
           {/* Heading & Paragraph */}
           <div className="text-center mb-6 sm:mb-8 md:mb-12">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 mb-4">
+            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 mb-4 font-houschka">
               Hardware and Network Services
             </h2>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed">
-              At MRT, we provide comprehensive Hardware and Networking services tailored to meet the IT infrastructure needs of modern businesses. 
-              Our team of certified professionals excels in deploying and maintaining reliable hardware systems and secure network architectures.
-              From server installations, structured cabling, and workstation setups to firewall configurations, LAN/WAN solutions, and network 
-              troubleshooting—we ensure your business stays connected, efficient, and secure. With a focus on scalability and performance,
-              we help you build a strong digital backbone for long-term success.
-            </p>
+            
           </div>
 
           {/* Cards */}
@@ -334,44 +336,7 @@ const HardwareNetworking = () => {
       </section>
 
       {/* === Fourth Section: Hardware & Networking Case Studies === */}
-      <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 bg-white text-gray-900">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-6 sm:mb-8 md:mb-12">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-blue-900 mb-4">
-              Hardware & Networking Case Studies
-            </h2>
-            <p className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-700 leading-relaxed">
-              We boast a vast pool of hardware and networking experts who have successfully delivered robust IT infrastructure solutions for a diverse range of clients. Exploring these projects will underscore our proficiency in hardware setups, network configurations, and enterprise IT solutions. Feel free to dive in!
-            </p>
-          </div>
-
-          {/* Case Study Item */}
-          <div className="flex flex-col md:flex-row items-center bg-gray-100 rounded-lg overflow-hidden">
-            <div className="w-full md:w-1/2 h-48 sm:h-64 md:h-80 lg:h-96">
-              <img
-                src={Enterprizes}
-                alt="enterprizes networking"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="w-full md:w-1/2 min-h-48 sm:min-h-64 md:h-80 lg:h-96 p-4 sm:p-6 bg-blue-900 text-white flex flex-col justify-center">
-              <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2">
-                Enterprise Network Deployment
-              </h3>
-              <div className="flex gap-2 mb-4">
-                <span className="bg-blue-600 text-white px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm">Cisco</span>
-                <span className="bg-blue-600 text-white px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm">Enterprise IT</span>
-              </div>
-              <p className="text-gray-200 mb-4 text-xs sm:text-sm md:text-base">
-                With the growing demand for seamless connectivity in large enterprises, MRT assisted a UK-based multinational company to deploy a robust network infrastructure. We implemented high-performance Cisco routers, switches, and firewalls to ensure secure and scalable LAN/WAN connectivity, enabling efficient operations across multiple locations.
-              </p>
-              <button className="bg-white text-blue-900 px-3 sm:px-4 py-1 sm:py-2 rounded-md font-medium hover:bg-gray-200 transition text-xs sm:text-sm md:text-base">
-                VIEW CASE STUDY
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
+  
 
       {/* === Fifth Section: Call to Action === */}
       <section className="py-8 sm:py-12 md:py-16 px-4 sm:px-6 bg-white text-gray-800">
@@ -450,7 +415,7 @@ const HardwareNetworking = () => {
 
 {/*new section*/}
                {/*new  div*/}
-      <div className="max-w-7xl mx-auto px-4 py-16">
+      <div className="max-w-7xl mx-auto px-4 py-16 bg-blue-100">
         <h2 className="text-4xl text-center font-bold text-blue-900 mb-12 font-houschka">
           Technology Stack
         </h2>
@@ -538,7 +503,7 @@ const HardwareNetworking = () => {
 </div>
 
 {/*new  div*/}
-      <div className="max-w-7xl mx-auto px-4 py-16">
+      <div className="mx-w-7xl mx-auto px-4 py-16 bg-red-100">
         <h2 className="text-4xl font-bold text-blue-900 text-center mb-12 font-houschka">
           How to Start Your hardware and networking Project With MRT
         </h2>
@@ -572,7 +537,7 @@ const HardwareNetworking = () => {
 
       {/*new  div*/}
 
-      <div className="max-w-7xl mx-auto px-4 py-16">
+      <div className="mx-w-7xl mx-auto px-4 py-16 bg-blue-100">
         <h2 className="text-4xl font-bold text-blue-900 text-center mb-4 font-houschka">
           Why Choose MRT
         </h2>
@@ -598,7 +563,7 @@ const HardwareNetworking = () => {
         </div>
       </div>
       {/* === Hardware & Networking FAQs Section === */}
-<div className="max-w-3xl mx-auto p-4">
+<div className="max-w-3xl mx-auto p-4 ">
   <h2 className="text-4xl font-semibold text-center mb-8 font-houschka text-blue-500">
     Hardware & Networking FAQs
   </h2>

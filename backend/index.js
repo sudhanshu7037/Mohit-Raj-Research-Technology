@@ -14,7 +14,6 @@ const PORT = process.env.PORT || 5000;
 const app = express();
 app.use(cookieParser());
 app.use(express.json());
-// app.use("/uploads", express.static(path.join(__dirname, "./uploads")));
 
 // middleware
  app.use(

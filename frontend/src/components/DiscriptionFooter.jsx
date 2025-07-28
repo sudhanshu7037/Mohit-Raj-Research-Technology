@@ -41,7 +41,23 @@ const DiscriptionFooter = () => {
                 Products & Platform
                 
               </span>
+              
             </h1>
+              <ul className="space-y-2 text-md  ">
+              <li>University Automation Software</li>
+              <li>Medical College Management and Information System.</li>
+              <li>Engineering College Management and Information System</li>
+              <li>E-Company System</li>
+              <li>Hospital Management & Information system.</li>
+              <li>Bioinformatics Management and Information System</li>
+              <li>CRM Software</li>
+              <li>College/Institute Management Systems</li>
+              <li>School Management System</li>
+              <li>ERP Software</li>
+              <li>Smart Learning & Content Management System (SLCMS)</li>
+              <li>Account Management System (Trulymax-S)</li>
+              
+            </ul>
 
 
           </div>

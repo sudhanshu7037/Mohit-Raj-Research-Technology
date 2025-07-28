@@ -46,24 +46,17 @@ const DataDigitization = () => {
   <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
   {/* Hero Content */}
-  <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+  <div className="absolute inset-0 flex flex-col justify-center items-start text-left px-4">
     <h3 className="text-white text-xl md:text-6xl font-semibold leading-tight mb-6 font-houschka">
       Empower Your Business with Efficient <br className="hidden md:block" /> Data Digitization Solutions
     </h3>
 
-    <p className="text-white max-w-2xl text-base md:text-lg mb-6">
-      Welcome to Mohitraj Research and Technology Private Limited's Data Digitization Services.
-"Unlocking the Power of Digital Transformation"
-Our dedication to accuracy and innovation ensures your precious data is precisely digitized and kept safe
-    </p>
-
+   
     <div className="flex flex-wrap gap-4 justify-center">
       <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition mt-2">
         GET IN TOUCH
       </button>
-      <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition mt-2">
-        VIEW PORTFOLIO
-      </button>
+      
     </div>
   </div>
 </div>
@@ -77,40 +70,7 @@ Our dedication to accuracy and innovation ensures your precious data is precisel
 
   </p>
 
-  {/* Stats Section */}
-  <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto mb-8">
-    {/* Stat 1 */}
-    <div className="flex flex-col items-center">
-      <h3 className="text-blue-800 text-3xl font-bold">25M+</h3>
-      <p className="text-gray-600 mt-2 text-center">
-        Documents <br /> Digitized
-      </p>
-    </div>
-
-    {/* Stat 2 */}
-    <div className="flex flex-col items-center">
-      <h3 className="text-blue-800 text-3xl font-bold">22+</h3>
-      <p className="text-gray-600 mt-2 text-center">
-        Years of <br /> Industry Expertise
-      </p>
-    </div>
-
-    {/* Stat 3 */}
-    <div className="flex flex-col items-center">
-      <h3 className="text-blue-800 text-3xl font-bold">1000+</h3>
-      <p className="text-gray-600 mt-2 text-center">
-        Clients Across <br /> Sectors
-      </p>
-    </div>
-
-    {/* Stat 4 */}
-    <div className="flex flex-col items-center">
-      <h3 className="text-blue-800 text-3xl font-bold">40+</h3>
-      <p className="text-gray-600 mt-2 text-center">
-        Team of <br /> Digitization Experts
-      </p>
-    </div>
-  </div>
+  
 
   {/* Divider Line */}
   <hr className="border-gray-300 max-w-5xl mx-auto" />

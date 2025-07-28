@@ -1,16 +1,16 @@
 import React from 'react';
-import Logo6 from "../../assets/Multimediabanner.png";
+import Logo6 from "../../assets/servicespage/multimediaanimation/images/multimediabanner.png";
 import Logo1 from "../../assets/SofwareConsulting.png";
 import Logo2 from "../../assets/Custom.png";
 import Logo4 from "../../assets/Erp.png";
 import { FaPaintBrush, FaVideo, FaArrowRight } from "react-icons/fa";
 import bgImage from "../../assets/Backgroundsoftware.jpg";
 import { FaCheckCircle } from "react-icons/fa";
-import video from "../../assets/animation vedio.mp4"
+import video from "../../assets/servicespage/multimediaanimation/video/animation vedio.mp4"; 
 import { FaTools, FaLaptopCode, FaMagic } from "react-icons/fa";
 import {   FaPalette, FaRocket } from "react-icons/fa";
 import { FaHeadphones, FaRegLightbulb,FaMap, FaUsers, FaClipboardCheck } from "react-icons/fa";
-import DevImage from "../../assets/whychoseus.png";
+import DevImage from "../../assets/servicespage/multimediaanimation/images/image1.jpg";
 
 const techStack = [
   {
@@ -188,48 +188,42 @@ const MultimediaAnimation = () => {
   return (
     <>
       {/* First div */}
-      <div className="relative w-full h-screen overflow-hidden">
-        {/* Background Image */}
-        <img
-          src={Logo6}
-          alt="Multimedia and Animation Services"
-          className="w-full h-full object-cover"
-        />
-
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-
-        {/* Hero Content */}
-        <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
-          <h1 className="text-white text-4xl md:text-6xl font-semibold leading-tight mb-6 font-houschka">
-            MULTIMEDIA & ANIMATION SERVICES
-          </h1>
-          <p className="text-white text-base md:text-lg max-w-2xl mb-8">
-            Explore Our Cutting-Edge Multimedia & Animation Solutions for Transformative Visual Experiences At MohitRaj Research and Technology Private Limited
-            we understands the need of multimedia and animation for enhancing your digital experience with transformational potential. 
-          </p>
-          <div className="flex gap-4 flex-wrap justify-center">
-            <button
-              type="button"
-              aria-label="Contact us to get started"
-              className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition focus:outline-none focus:ring-2 focus:ring-white"
-            >
-              GET IN TOUCH
-            </button>
-            <button
-              type="button"
-              aria-label="View our portfolio"
-              className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition focus:outline-none focus:ring-2 focus:ring-white"
-            >
-              VIEW PORTFOLIO
-            </button>
-          </div>
+        <div className="relative w-full h-screen overflow-hidden">
+              {/* Background Image */}
+              <img
+                src={Logo6}
+                alt="Custom Software Development"
+                className="w-full h-full object-cover"
+              />
+      
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+      
+              {/* Hero Content */}
+             <div className="absolute inset-0 flex flex-col justify-center items-start text-left px-4">
+        <h3 className="text-white text-xl md:text-6xl font-semibold leading-tight mb-10 font-houschka">
+          Transform Your Business With 
+          <br />
+          Multimedia Animation
+          <br />
+        
+          Development Services
+        </h3>
+        
+        <div className="flex gap-4">
+          <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition mt-6">
+            GET IN TOUCH
+          </button>
+         
         </div>
       </div>
+      
+            </div>
 
       {/* Second div */}
       <div className="bg-white py-16 px-4 lg:px-24 text-center">
         {/* Top Text */}
+        <h1 className="text-blue-500 text-4xl font-bold font-houschka">Overview</h1>
         <p className="text-gray-700 text-base md:text-lg max-w-4xl mx-auto mb-12 leading-relaxed font-basis">
           Our expertise in multimedia and animation offers the flexibility to you to engage with your audience, and tell stories through a visual experience.
            Let us work together to leverage the collaborative creativity of multimedia experiences that can engage your audience and create a connection. 
@@ -580,67 +574,6 @@ const MultimediaAnimation = () => {
       </section>
 
       {/* === New Section: Multimedia & Animation === */}
-<section className="bg-gray-100 py-16 px-4 md:px-10 font-sans">
-  <div className="max-w-7xl mx-auto">
-
-    {/* === Top Heading === */}
-    <h2 className="text-4xl font-bold text-center text-purple-800 mb-12 font-houschka">
-      Multimedia & Animation Case Study
-    </h2>
-
-    <div className="flex flex-col md:flex-row gap-10 items-stretch">
-      
-      {/* === Left: Image === */}
-      <div className="w-full md:w-1/2 relative group overflow-hidden rounded-2xl shadow-lg cursor-pointer">
-        <img
-          src={Logo6}
-          alt="Multimedia & Animation Case Study"
-          className="w-full h-full object-cover transform group-hover:scale-105 transition duration-700"
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:bg-opacity-50 transition duration-500" />
-      </div>
-
-      {/* === Right: Content === */}
-      <div className="w-full md:w-1/2 bg-white rounded-2xl shadow-lg p-6 flex flex-col justify-center">
-        <h2 className="text-3xl font-bold text-purple-800 mb-4">
-          Multimedia & Animation Solutions
-        </h2>
-
-        <p className="text-gray-700 text-lg mb-6">
-          Mohitraj Research and Technology Pvt. Ltd. was approached by a rapidly expanding creative studio looking to add more vibrance, clarity, and interactivity to their digital content. Their existing assets felt too static, and they strived to achieve a higher level of audience engagement visually across multiple platforms.
-<br></br>
-<br></br>
-<b>Our Strategy</b>
-<br></br>
-
-We didn’t just complete the animations. 
-<br></br>
-
-We completed an intent-driven visual narrative.
-<br></br>
-To meet the client’s requirements, we carefully crafted a multimedia approach that incorporated high-quality 2D/3D animations, interactive motion graphics, and real-time rendering to reflect the client’s brand voice, capture attention, and command interest across every screen.
-
-Solutions Delivered
-
-
-
-        </p>
-        <ul className="list-disc ml-6 text-gray-700 space-y-2 mb-6">
-          <li> 2D & 3D Animation Production</li>
-          <li>Motion Graphics for UI/UX </li>
-          <li>Real Time Rendering + VFX</li>
-          <li>Custom Multimedia Portfolios & Storytelling</li>
-        </ul>
-        <button className="w-28 bg-purple-700 hover:bg-purple-500 text-white text-xs sm:text-sm py-1.5 sm:py-2 rounded-md shadow-sm transition duration-300">
-          View Case Study
-        </button>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
 
       
     </>

@@ -4,7 +4,7 @@ const LibraryManagementSystem = () => {
   return (
     <>
     
-      <div className="relative w-full h-screen">
+      <div className="">
         {/* Background Image */}
         <img
           src="https://img.freepik.com/free-photo/bookshelf-library_53876-143932.jpg"

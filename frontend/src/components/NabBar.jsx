@@ -140,7 +140,7 @@ const NavBar = () => {
 
           <div className="hidden md:block">
             <Link
-              to=""
+              to="admin/login"
               className="bg-yellow-500 font-semibold px-5 py-2 rounded-md text-white text-2xl md:text-sm"
             >
               Login

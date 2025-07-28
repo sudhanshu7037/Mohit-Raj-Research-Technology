@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Logo3 from "../../assets/softwaredev.png";
 import Logo1 from "../../assets/SofwareConsulting.png";
 import Logo2 from "../../assets/Custom.png";
 import Logo4 from "../../assets/Erp.png";
@@ -17,8 +16,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 
-import BannerImage from "../../assets/servicespage/softwaredevelopmentimages/bannerimage/softwarebanner.jpg"
-import DevImage from "../../assets/sproject.png";
+import BannerImage from "../../assets/servicespage/softwaredevelopmentimages/bannerimage/softwarebanner.jpg";
+import DevImage from "../../assets/servicespage/softwaredevelopmentimages/bannerimage/softwareimage.jpg";
 import {
   FaServer,
   FaLaptopCode,
@@ -47,8 +46,8 @@ const cardsData = [
     title: "Business Consulting & Transformation",
     description:
       "Mohitraj Research and Technology Private Limited offers strategic business consulting and transformation services to assist companies in increasing operational efficiency, fostering innovation, and delivering sustainable growth. We offer tailored solutions that harmonize technology, people, and processes for measurable impact",
-      button : "Download Catalog",
-      button1:"Get a Quote",
+    button: "Download Catalog",
+    button1: "Get a Quote",
   },
   {
     img: Logo4,
@@ -56,8 +55,8 @@ const cardsData = [
     title: "ERP Software Development",
     description:
       "Streamline your process with tailored University Management and Information System , Medical College Management and Information System ,Online Examination System ,Police Management System , Banking Management System ,College and institute management system , school management system ,E-Library Management System , Hospital  Management and Information System, CRM Software , E-Company Management System  and Business Intelligence System",
-       button : "Download Catalog",
-      button1:"Get a Quote",
+    button: "Download Catalog",
+    button1: "Get a Quote",
   },
   {
     img: Logo2,
@@ -65,8 +64,8 @@ const cardsData = [
     title: "Custom Software Development",
     description:
       "Let us handle all the hassles of cloud infrastructure. We help you transition to cloud models and streamline operations to improve overall agility. ",
-      button : "Download Catalog",
-      button1:"Get a Quote",
+    button: "Download Catalog",
+    button1: "Get a Quote",
   },
   {
     img: Logo5,
@@ -74,8 +73,8 @@ const cardsData = [
     title: "E-Commerce Platform Development",
     description:
       "We create powerful e-commerce storefronts to maximize sales and improve user experience while strengthening your digital retail operations.",
-      button : "Download Catalog",
-      button1:"Get a Quote",
+    button: "Download Catalog",
+    button1: "Get a Quote",
   },
   {
     img: Logo6,
@@ -83,8 +82,8 @@ const cardsData = [
     title: "Web Application Development",
     description:
       "We develop state-of-the-art web applications designed to attract users and generate web traffic while improving both online visibility and user interaction.",
-      button : "Download Catalog",
-      button1:"Get a Quote",
+    button: "Download Catalog",
+    button1: "Get a Quote",
   },
   {
     img: Logo7,
@@ -92,8 +91,8 @@ const cardsData = [
     title: "Mobile Application Development",
     description:
       "Our Mobile App Development software delivers accessible mobile applications designed for diverse users while strengthening mobile engagement and presence.",
-      button : "Download Catalog",
-      button1:"Get a Quote",
+    button: "Download Catalog",
+    button1: "Get a Quote",
   },
   {
     img: Logo8,
@@ -101,8 +100,8 @@ const cardsData = [
     title: "Software Testing & QA",
     description:
       "Our rigorous testing procedures together with performance optimization strategies deliver high-quality software and improved user experiences.",
-      button : "Download Catalog",
-      button1:"Get a Quote",
+    button: "Download Catalog",
+    button1: "Get a Quote",
   },
   {
     img: Logo9,
@@ -110,8 +109,8 @@ const cardsData = [
     title: "Performance Engineering",
     description:
       "By applying advanced optimization techniques we enhance software performance which results in better speed and reliability while heightening user satisfaction.",
-      button : "Download Catalog",
-      button1:"Get a Quote",
+    button: "Download Catalog",
+    button1: "Get a Quote",
   },
   {
     img: Logo11,
@@ -119,8 +118,8 @@ const cardsData = [
     title: "Migration & Re-engineering",
     description:
       "Your systems can move smoothly to modern platforms which enhance efficiency while optimizing performance to future-proof your technology stack.",
-      button : "Download Catalog",
-      button1:"Get a Quote",
+    button: "Download Catalog",
+    button1: "Get a Quote",
   },
   {
     img: Logo10,
@@ -128,8 +127,8 @@ const cardsData = [
     title: "Software Maintenance & Support",
     description:
       "Let us handle all the hassles of cloud infrastructure. We help you transition to cloud models and streamline operations to improve overall agility.",
-      button : "Download Catalog",
-      button1:"Get a Quote",
+    button: "Download Catalog",
+    button1: "Get a Quote",
   },
 ];
 
@@ -145,8 +144,7 @@ const caseStudies = [
     title: "Industrial Automation",
     tags: ["Python", "Manufacturing"],
     description:
-      "Transform Industrial Operations with Intelligent Automation Solutionsjoin the future of production and manufacturing with state-of-the-art industrial automation software from Mohitraj Research and Technology Private Limited. "
-    
+      "Transform Industrial Operations with Intelligent Automation Solutionsjoin the future of production and manufacturing with state-of-the-art industrial automation software from Mohitraj Research and Technology Private Limited. ",
   },
   {
     title: " Revolutionizing Customer Engagement with an AI-Powered Mobile App",
@@ -380,34 +378,55 @@ const SoftwareDevelopment = () => {
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
         {/* Hero Content */}
-       <div className="absolute inset-0 flex flex-col justify-center items-start text-left px-4">
-  <h3 className="text-white text-xl md:text-6xl font-semibold leading-tight mb-10 font-houschka">
-    Transform Your Business With 
-    <br />
-    Custom Software Development
-    <br />
-  
-    Development Services
-  </h3>
-  {/* <p className="text-white">
-    Power your business with innovative software development solutions that advance innovation, enhance efficiency, and foster digital transformation. 
-    Mohitraj Research and Technology Private Limited provides future-proof technologies adapted to your distinctive objectives.
-  </p> */}
-  <div className="flex gap-4">
-    <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition mt-6">
-      GET IN TOUCH
-    </button>
-    {/* <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition mt-6">
-      VIEW PORTFOLIO
-    </button> */}
-  </div>
-</div>
+         <div className="absolute inset-0 flex flex-col justify-center items-start text-left px-4">
+    <h3 className="text-white text-xl md:text-6xl font-semibold leading-tight mb-6 font-houschka">
+      Transform Your Business
+      <br />
+       With Custom Software
+      <br />
+      Development Services
+    </h3>
 
+    <div className="flex gap-4">
+      <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition mt-2">
+        GET IN TOUCH
+      </button>
+      
+    </div>
+  </div>
+
+        <div
+          className=""
+          absolute
+          inset-0
+          flex
+          flex-col
+          justify-center
+          items-start
+          text-left
+          px-4
+        >
+          <h3 className="text-white text-xl md:text-6xl font-semibold leading-tight mb-10 font-houschka">
+            Transform Your Business With
+            <br />
+            Custom Software Development
+            <br />
+            Development Services
+          </h3>
+
+          <div className="flex gap-4">
+            <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition mt-6">
+              GET IN TOUCH
+            </button>
+          </div>
+        </div>
       </div>
       {/* Second div */}
       <div className="bg-blue-50 py-16 px-4 lg:px-24 text-center">
         {/* Top Text */}
-        <h1 className="text-blue-500 text-4xl font-bold font-houschka">Overview</h1>
+        <h1 className="text-blue-500 text-4xl font-bold font-houschka">
+          Overview
+        </h1>
         <p className="text-gray-700 text-base md:text-lg max-w-4xl mx-auto mb-12 leading-relaxed font-basis text-justify mt-4">
           MOHITRAJ RESEARCH AND TECHNOLOGY PRIVATE LIMITED is the leading
           software development company in India , it is specializes in software
@@ -425,57 +444,51 @@ const SoftwareDevelopment = () => {
           development through custom software solutions which consistently
           surpass your expectations.
         </p>
-
-        
-
-        
-        
       </div>
 
       {/* Third div */}
-<div className="bg-red-50  py-16 px-4 lg:px-24 text-center">
-  {/* Title */}
-  <h2 className="text-4xl md:text-4xl font-bold text-blue-900 mb-4 font-houschka">
-    Our Software Development Services
-  </h2>
-  <p className="text-gray-600 max-w-3xl mx-auto mb-12 text-2xl md:text-lg font-semibold">
-    We offer a comprehensive suite of software development services, meticulously designed to meet the user requirements.
-  </p>
-
-  {/* Cards */}
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
-    {cardsData.map((card, index) => (
-      <div
-        key={index}
-        className="relative backdrop-blur-xl bg-white/80 hover:bg-white border border-blue-200 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden group"
-      >
-        {/* Glowing Edge */}
-        <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-200 via-red-100 to-orange-100 rounded-2xl blur-lg opacity-0 group-hover:opacity-40 transition-all duration-500 pointer-events-none" />
-
-        {/* Image */}
-        <img
-          src={card.img}
-          alt={card.alt}
-          className="h-16 mb-5 mx-auto group-hover:scale-110 transition-transform duration-300"
-        />
-
+      <div className="bg-red-50  py-16 px-4 lg:px-24 text-center">
         {/* Title */}
-        <h3 className="text-xl font-bold text-blue-900 mb-2 group-hover:text-pink-600 transition-all duration-300">
-          {card.title}
-        </h3>
-
-        {/* Description */}
-        <p className="text-gray-700 text-sm mb-4 leading-relaxed">
-          {card.description}
+        <h2 className="text-4xl md:text-4xl font-bold text-blue-900 mb-4 font-houschka">
+          Our Software Development Services
+        </h2>
+        <p className="text-gray-600 max-w-3xl mx-auto mb-12 text-2xl md:text-lg font-semibold">
+          We offer a comprehensive suite of software development services,
+          meticulously designed to meet the user requirements.
         </p>
 
-        {/* Buttons */}
-       
-      </div>
-    ))}
-  </div>
-</div>
+        {/* Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+          {cardsData.map((card, index) => (
+            <div
+              key={index}
+              className="relative backdrop-blur-xl bg-white/80 hover:bg-white border border-blue-200 rounded-2xl p-6 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 overflow-hidden group"
+            >
+              {/* Glowing Edge */}
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-200 via-red-100 to-orange-100 rounded-2xl blur-lg opacity-0 group-hover:opacity-40 transition-all duration-500 pointer-events-none" />
 
+              {/* Image */}
+              <img
+                src={card.img}
+                alt={card.alt}
+                className="h-16 mb-5 mx-auto group-hover:scale-110 transition-transform duration-300"
+              />
+
+              {/* Title */}
+              <h3 className="text-xl font-bold text-blue-900 mb-2 group-hover:text-pink-600 transition-all duration-300">
+                {card.title}
+              </h3>
+
+              {/* Description */}
+              <p className="text-gray-700 text-sm mb-4 leading-relaxed">
+                {card.description}
+              </p>
+
+              {/* Buttons */}
+            </div>
+          ))}
+        </div>
+      </div>
 
       {/*Contact us div*/}
       <div className="w-full bg-white py-8 px-4 flex justify-center items-center gap-12 max-w-7xl mx-auto h-[200px]">
@@ -496,7 +509,7 @@ const SoftwareDevelopment = () => {
         </div>
       </div>
       {/*new  div*/}
-      <div
+      {/* <div
         className="w-full bg-cover bg-center py-16 px-4"
         style={{ backgroundImage: `url(${Logo3})` }} // 👈 imported image yaha laga di
       >
@@ -530,9 +543,9 @@ const SoftwareDevelopment = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/*new  div*/}
-      <div className="w-full mx-auto px-4 py-16 bg-blue-50">
+      <div className="max-w-7xl mx-auto px-4 py-16 bg-blue-50">
         <h2 className="text-4xl text-center font-bold text-blue-900 mb-12 font-houschka">
           Technology Stack
         </h2>
@@ -567,36 +580,36 @@ const SoftwareDevelopment = () => {
         </div>
       </div>
       {/* New Section – Custom Software Types we offer */}
-<div className="w-full mx-auto px-4 py-16 text-center bg-red-50">
-  <h2 className="text-4xl font-bold text-blue-900 mb-4 font-houschka">
-    Custom Software Types, We Offer
-  </h2>
-  <p className="text-gray-600 max-w-4xl mx-auto mb-12">
-    We offer a comprehensive suite of software development services ,meticulously designed to meet the user requirements:-
-  </p>
+      <div className="max-w-7xl mx-auto px-4 py-16 text-center bg-red-50">
+        <h2 className="text-4xl font-bold text-blue-900 mb-4 font-houschka">
+          Custom Software Types, We Offer
+        </h2>
+        <p className="text-gray-600 max-w-4xl mx-auto mb-12">
+          We offer a comprehensive suite of software development services
+          ,meticulously designed to meet the user requirements:-
+        </p>
 
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left ">
-    {services.map((service, index) => (
-      <div
-        key={index}
-        className={` ~rounded-xl border-t-4 border-red-500 p-6 shadow-md hover:shadow-xl transition-all duration-300 ${
-          index === 1 ? "bg-blue-100" : ""
-        }`}
-      >
-        <h3 className="text-xl font-semibold text-blue-900 mb-2">
-          {service.title}
-        </h3>
-        <p className="text-gray-700 text-sm">{service.description}</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left ">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className={` ~rounded-xl border-t-4 border-red-500 p-6 shadow-md hover:shadow-xl transition-all duration-300 ${
+                index === 1 ? "bg-blue-100" : ""
+              }`}
+            >
+              <h3 className="text-xl font-semibold text-blue-900 mb-2">
+                {service.title}
+              </h3>
+              <p className="text-gray-700 text-sm">{service.description}</p>
+            </div>
+          ))}
+        </div>
       </div>
-    ))}
-  </div>
-</div>
 
       {/*new  div*/}
       <div className="max-w-7xl mx-auto px-4 py-16">
         <h2 className="text-4xl font-bold text-blue-900 text-center mb-12 font-houschka">
-         How to Begin Your Custom Software Development Project with MRT
-
+          How to Begin Your Custom Software Development Project with MRT
         </h2>
 
         <div className="flex flex-col md:flex-row items-center gap-12">
@@ -628,68 +641,84 @@ const SoftwareDevelopment = () => {
       {/*new  div*/}
 
       <div className="max-w-7xl mx-auto px-4 py-16">
-  <h2 className="text-4xl font-bold text-blue-900 text-center mb-4 font-houschka">
-    Why Choose MRT?
-  </h2>
-  <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
-    When you partner with MOHITRAJ RESEARCH TECHNOLOGY PRIVATE LIMITED, you can trust that professionals will handle your software solution. Let us help you turn your ideas into reality and grow your business.
-  </p>
-
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-    {features.map((feature, index) => (
-      <div
-        key={index}
-        className="group border border-gray-500 p-6 rounded-md text-center bg-red-100 hover:bg-blue-900 hover:shadow-lg transition-shadow duration-300"
-      >
-        <div className="flex justify-center mb-4 text-blue-900 group-hover:text-white transition-colors duration-300">
-          {feature.icon}
-        </div>
-        <h3 className="text-lg font-semibold text-blue-900 mb-2 group-hover:text-white transition-colors duration-300">
-          {feature.title}
-        </h3>
-        <p className="text-sm text-gray-600 group-hover:text-white transition-colors duration-300">
-          {feature.description}
+        <h2 className="text-4xl font-bold text-blue-900 text-center mb-4 font-houschka">
+          Why Choose MRT?
+        </h2>
+        <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+          When you partner with MOHITRAJ RESEARCH TECHNOLOGY PRIVATE LIMITED,
+          you can trust that professionals will handle your software solution.
+          Let us help you turn your ideas into reality and grow your business.
         </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {features.map((feature, index) => (
+            <div
+              key={index}
+              className="group border border-gray-500 p-6 rounded-md text-center bg-red-100 hover:bg-blue-900 hover:shadow-lg transition-shadow duration-300"
+            >
+              <div className="flex justify-center mb-4 text-blue-900 group-hover:text-white transition-colors duration-300">
+                {feature.icon}
+              </div>
+              <h3 className="text-lg font-semibold text-blue-900 mb-2 group-hover:text-white transition-colors duration-300">
+                {feature.title}
+              </h3>
+              <p className="text-sm text-gray-600 group-hover:text-white transition-colors duration-300">
+                {feature.description}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
-    ))}
-  </div>
-</div>
 
       {/* Benifits*/}
-         
-   <div>
-  <section className="bg-gray-50 py-16 px-4 md:px-16 lg:px-24">
-    <div className="max-w-6xl mx-auto flex flex-col items-start gap-8">
-      {/* Left Side */}
-      <div className="flex-1">
-        <p className="text-2xl uppercase tracking-widest text-blue-600 mb-2 font-houschka font-bold">
-          Benefits
-        </p>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-blue-900 leading-snug font-houschka">
-          Future-proof your business with solutions tailored for you.
-        </h2>
+
+      <div>
+        <section className="bg-gray-50 py-16 px-4 md:px-16 lg:px-24">
+          <div className="max-w-6xl mx-auto flex flex-col items-start gap-8">
+            {/* Left Side */}
+            <div className="flex-1">
+              <p className="text-2xl uppercase tracking-widest text-blue-600 mb-2 font-houschka font-bold">
+                Benefits
+              </p>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-blue-900 leading-snug font-houschka">
+                Future-proof your business with solutions tailored for you.
+              </h2>
+            </div>
+
+            {/* Right Side */}
+            <div className="flex-1 border-l-4 border-blue-600 pl-6">
+              <ul className="space-y-4 text-gray-700 text-base md:text-lg">
+                <li>
+                  • Imaginenew possibilities with intelligent, scalable
+                  technologies
+                </li>
+                <li>
+                  • Transform, adapt, and evolve through purpose-led digital
+                  ecosystems.
+                </li>
+                <li>
+                  • Construct and scale innovative business models that align to
+                  market expectations.
+                </li>
+                <li>
+                  • Tap into emerging technologies to unlock operational
+                  excellence.
+                </li>
+                <li>
+                  • Drive lasting transformation and unlock unrealized growth
+                  potential.
+                </li>
+                <li>
+                  • Collaborate with us to fuel innovation that lasts—and
+                  solutions that adapt to you.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </div>
 
-      {/* Right Side */}
-      <div className="flex-1 border-l-4 border-blue-600 pl-6">
-        <ul className="space-y-4 text-gray-700 text-base md:text-lg">
-          <li>• Imaginenew possibilities with intelligent, scalable technologies</li>
-          <li>• Transform, adapt, and evolve through purpose-led digital ecosystems.</li>
-          <li>• Construct and scale innovative business models that align to market expectations.</li>
-          <li>• Tap into emerging technologies to unlock operational excellence.</li>
-          <li>• Drive lasting transformation and unlock unrealized growth potential.</li>
-          <li>• Collaborate with us to fuel innovation that lasts—and solutions that adapt to you.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-</div>
-
-
-             
-{/* Case Study*/}
-      
-
+      {/* Case Study*/}
 
       {/*new  div*/}
       <div className="max-w-3xl mx-auto p-4">
@@ -714,12 +743,6 @@ const SoftwareDevelopment = () => {
           </div>
         ))}
       </div>
-
-      
-
-      
-
-      
     </>
   );
 };

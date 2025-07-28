@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import bgImage from "../../assets/securitybanner.png";
-import Image from "../../assets/backimage.png";
+import Image from "../../assets/servicespage/securityservillance/images/image1.jpg";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
 
@@ -153,7 +153,7 @@ const SecuritySurvillance = () => {
   <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
   {/* Hero Content */}
-  <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+  <div className="absolute inset-0 flex flex-col justify-center items-start text-left px-4">
     <h3 className="text-white text-xl md:text-6xl font-semibold leading-tight mb-6 font-houschka">
       Safeguard Your Premises with Smart Security & Surveillance Solutions
     </h3>
@@ -162,9 +162,7 @@ const SecuritySurvillance = () => {
       <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition mt-2">
         GET IN TOUCH
       </button>
-      <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition mt-2">
-        VIEW SOLUTIONS
-      </button>
+      
     </div>
   </div>
 </div>
@@ -182,41 +180,8 @@ const SecuritySurvillance = () => {
     From educational institutions and healthcare centers to retail chains and industrial parks, our tailored security systems are scalable, secure, and compliant. We focus on designing intelligent surveillance systems that adapt to evolving threats and enhance situational awareness. By integrating advanced video analytics and centralized management, we deliver actionable insights and faster response to critical incidents.
   </p>
 
-  {/* Stats Section */}
-  <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto mb-8">
-    {/* Stat 1 */}
-    <div className="flex flex-col items-center">
-      <h3 className="text-blue-800 text-3xl font-bold">1200+</h3>
-      <p className="text-gray-600 mt-2 text-center">
-        Secured <br /> Locations
-      </p>
-    </div>
 
-    {/* Stat 2 */}
-    <div className="flex flex-col items-center">
-      <h3 className="text-blue-800 text-3xl font-bold">15+</h3>
-      <p className="text-gray-600 mt-2 text-center">
-        Years of <br /> Security Expertise
-      </p>
-    </div>
-
-    {/* Stat 3 */}
-    <div className="flex flex-col items-center">
-      <h3 className="text-blue-800 text-3xl font-bold">50+</h3>
-      <p className="text-gray-600 mt-2 text-center">
-        Industry <br /> Sectors Covered
-      </p>
-    </div>
-
-    {/* Stat 4 */}
-    <div className="flex flex-col items-center">
-      <h3 className="text-blue-800 text-3xl font-bold">99%</h3>
-      <p className="text-gray-600 mt-2 text-center">
-        Threat <br /> Detection Accuracy
-      </p>
-    </div>
-  </div>
-
+  
   {/* Divider Line */}
   <hr className="border-gray-300 max-w-5xl mx-auto" />
 </div>

@@ -93,7 +93,7 @@ const functionality = [
 const CollegeInstituteManagement = () => {
   return (
     <>
-      <div className="relative w-full h-screen">
+      <div className="">
         <img
           src="https://www.shutterstock.com/image-photo/man-look-dashboard-graphs-charts-600nw-2440357647.jpg"
           alt="College Background"

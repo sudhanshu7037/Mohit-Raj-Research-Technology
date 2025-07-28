@@ -18,6 +18,7 @@ import icon13 from "../assets/homepageicons/servicesicons/Robotic_Process_Automa
 import icon14 from "../assets/homepageicons/servicesicons/CCTV_Security_and_Surveillance_Solutions[1].png";
 import icon15 from "../assets/homepageicons/servicesicons/Data_Center_Development_and_Management[1].png";
 import icon16 from "../assets/homepageicons/servicesicons/Create_immersive_experiences_with_VR_and_AR_technologies[1].png";
+import ServiceImage from "../assets/homepageimages/servicesimage/serviceimage.png"
 
 // ----- component -----
 const MainBanner = () => {
@@ -170,9 +171,9 @@ const MainBanner = () => {
               {/* Left Side Image */}
               <div className="w-full md:w-1/2">
                 <img
-                  src=""
+                  src={ServiceImage}
                   alt="our products"
-                  className="rounded-2xl  w-full object-cover"
+                  className="  w-full object-cover"
                 />
               </div>
       

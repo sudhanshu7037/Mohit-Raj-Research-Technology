@@ -2,15 +2,12 @@
 import React from 'react';
 import bgImage from "../../assets/Datacenterbanner.png";
 import ImagebgEx from "../../assets/ImagebgEx.jpg";
-import Logo6 from "../../assets/NEWIMG.png";
-import Logo1 from "../../assets/SofwareConsulting.png";
-import Logo2 from "../../assets/Custom.png";
-import Logo4 from "../../assets/Erp.png";
+
 import { FaServer, FaNetworkWired, FaArrowRight,FaCheckCircle } from "react-icons/fa";
 import {  FaDatabase, FaCloud, FaLock } from "react-icons/fa";
 import {    FaRegClock,FaClipboardList,FaCloudUploadAlt, FaCogs, FaTools, FaShieldAlt } from "react-icons/fa";
-import DevImage from "../../assets/project.png";
-import Image from "../../assets/backImage.png";
+import DevImage from "../../assets/servicespage/datacenterdevelopment/images/image1.jpg";
+
 
 
 
@@ -23,7 +20,7 @@ const services = [
     title: "Web Servers",
     description:
       "Host and serve websites, web applications, and services with high reliability and performance Infrastructure that scales and provides smooth user experiences even under heavy traffic loads.",
-    img: Logo6,
+    
     alt: "Web Servers",
     points: ["High uptime", "Secure access", "Scalable infrastructure"],
   },
@@ -31,7 +28,7 @@ const services = [
     title: "Application Servers",
     description:
       "Offer a secure platform to execute critical enterprise applications and services.Enable effective implementation of business logic, bridging front-end clients and back-end systems.",
-    img: Logo1,
+   
     alt: "Application Servers",
     points: ["Fast performance", "Middleware support", "Managed solutions"],
   },
@@ -39,7 +36,7 @@ const services = [
     title: "Database Server",
     description:
       "Handle and store structured data with high integrity, security, and accessibility.Tuned for high-performance querying, data replication, and backup operations.",
-    img: Logo2,
+    
     alt: "Database Server",
     points: ["Data integrity", "High availability", "Backup support"],
   },
@@ -47,7 +44,7 @@ const services = [
     title: "Staging Server",
     description:
       "Act as a replica environment for pre-deployment testing and validation of updates or new features.Reduce downtime and production issues by maintaining quality control in a controlled environment.",
-    img: Logo4,
+    
     alt: "Staging Server",
     points: ["Safe testing", "Bug tracking", "Integration workflows"],
   },
@@ -55,7 +52,7 @@ const services = [
     title: "Backup Server",
     description:
       "Maintain data redundancy and business continuity through scheduled and incremental backups.	Essential for disaster recovery planning and regulatory compliance.",
-    img: Logo6,
+    
     alt: "Backup Server",
     points: ["Disaster recovery", "Automated backups", "Cloud storage"],
   },
@@ -63,7 +60,7 @@ const services = [
     title: "Directory Server, DNS & DHCP Server",
     description:
       "Efficiently manage centralized authentication, network identity, and resource allocation.Offer automated IP address management and domain name resolution for smooth connectivity.",
-    img: Logo1,
+    
     alt: "Firewall Servers",
     points: ["Threat detection", "Access control", "Firewall setup"],
   },
@@ -226,19 +223,19 @@ const DataCentersDevelopment = () => {
             <div className="absolute inset-0 bg-black bg-opacity-50"></div>
     
             {/* Hero Content */}
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+            <div className="absolute inset-0 flex flex-col justify-center items-start text-left px-4">
               <h3 className="text-white text-xl md:text-6xl font-semibold leading-tight mb-6 font-houschka">
-                Transform your Business with Innovative Software Development
+                Transform your Business with Innovative
+                <br />  
+                 Data Center Development
                 Technology
               </h3>
-              <p className='text-white'>MOHITRAJ RESEARCH AND TECHNOLOGY PRIVATE LIMITED is a reliable leader in Data Center Development, providing next-generation infrastructure solutions that meet the changing demands of businesses today</p>
+            
               <div className="flex gap-4">
                 <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition mt-2">
                   GET IN TOUCH
                 </button>
-                <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition mt-2">
-                  VIEW PORTFOLIO
-                </button>
+               
               </div>
             </div>
           </div>
@@ -247,8 +244,8 @@ const DataCentersDevelopment = () => {
           {/* Second div */}
       <div className="bg-white py-16 px-4 lg:px-24 text-center">
         {/* Top Text */}
-        <h1 className="text-blue-500 text-4xl font-bold">Overview</h1>
-        <p className="text-gray-700 text-base md:text-lg max-w-4xl mx-auto mb-12 leading-relaxed font-basis text-justify mt-4">
+        <h1 className="text-blue-500 text-4xl font-bold font-houschka">Overview</h1>
+        <p className="text-gray-700 text-base md:text-lg max-w-4xl mx-auto mb-12 leading-relaxed font-basis text-justify mt-4 ">
          
           At Mohitraj, we understand that data centers power digital transformation. Our dedication to performance, security, and quality guarantees every deployment improves uptime, enhances data security, and increases your enterprise's resilience and agility in a competitive economy.
 From server room optimization to modular data center design, network cabling, power management, and disaster recovery planning, we provide a complete set of data center development services that add value and scalability to your operation.
@@ -257,43 +254,10 @@ From server room optimization to modular data center design, network cabling, po
 
         </p>
 
-        {/* Stats Section */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto mb-8">
-          {/* Stat 1 */}
-          <div className="flex flex-col items-center">
-            <h3 className="text-blue-800 text-3xl font-bold">1800+</h3>
-            <p className="text-gray-600 mt-2 text-center">
-              Completed <br /> Projects
-            </p>
-          </div>
+       
+      
 
-          {/* Stat 2 */}
-          <div className="flex flex-col items-center">
-            <h3 className="text-blue-800 text-3xl font-bold">21+</h3>
-            <p className="text-gray-600 mt-2 text-center">
-              Years of <br /> Experience
-            </p>
-          </div>
-
-          {/* Stat 3 */}
-          <div className="flex flex-col items-center">
-            <h3 className="text-blue-800 text-3xl font-bold">810+</h3>
-            <p className="text-gray-600 mt-2 text-center">
-              Global <br /> Customers
-            </p>
-          </div>
-
-          {/* Stat 4 */}
-          <div className="flex flex-col items-center">
-            <h3 className="text-blue-800 text-3xl font-bold">36</h3>
-            <p className="text-gray-600 mt-2 text-center">
-              Countries <br /> Clients Served
-            </p>
-          </div>
-        </div>
-
-        {/* Divider Line */}
-        <hr className="border-gray-300 max-w-5xl mx-auto" />
+       
       </div>
 
 {/* Third div - Revamped Attractive Design */}
@@ -314,11 +278,7 @@ From server room optimization to modular data center design, network cabling, po
             style={{ animationDelay: `${index * 0.1}s` }}
           >
             <div className="relative w-16 h-16 mb-4 mx-auto">
-              <img
-                src={card.img}
-                alt={card.alt}
-                className="w-full h-full object-contain rounded-md"
-              />
+              
               <div className="absolute inset-0 bg-blue-100 opacity-10 rounded-md"></div>
             </div>
 

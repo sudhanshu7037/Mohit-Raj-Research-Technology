@@ -7,7 +7,8 @@ import {
   deactivateUser,
   assignRole,
   resetPassword,
-  deleteUser
+  deleteUser,
+  getAllRegisteredUsers
 } from "../controllers/adminController.js";
 
 import { protect, authenticateAdmin } from "../middleware/authMiddleware.js";
@@ -24,6 +25,7 @@ router.use(authenticateAdmin); // ✅ Must be admin
 
 // Get all pending users
 router.get("/pending-users", getPendingUsers);
+ router.get("/all-registered-users", getAllRegisteredUsers);
 
 // Assign role to user
 router.patch("/assign-role/:id", assignRole);

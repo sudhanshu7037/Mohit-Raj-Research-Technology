@@ -120,6 +120,19 @@ export const getPendingUsers = async (req, res) => {
     res.status(500).json({ message: "Error fetching users", error: err.message });
   }
 };
+// ✅ Get All Registered Users
+export const getAllRegisteredUsers = async (req, res) => {
+  try {
+    const users = await User.find({ userType: { $ne: "Pending" } })
+      .select("firstName middleName lastName department designation isActive"); // fetch only needed fields
+
+    res.status(200).json(users);
+  } catch (err) {
+    console.error("Error fetching users:", err);
+    res.status(500).json({ message: "Server error", error: err.message });
+  }
+};
+
 
 // ✅ Activate User
 export const activateUser = async (req, res) => {
@@ -129,16 +142,23 @@ export const activateUser = async (req, res) => {
 
     const updatedUser = await User.findByIdAndUpdate(
       req.params.id,
-      { isActive: true },
+      {
+        isActive: true,
+        activateDate: new Date(),        // ✅ Activation timestamp
+        deactivateDate: null             // (optional) clear deactivateDate
+      },
       { new: true }
     );
-    if (!updatedUser) return res.status(404).json({ message: "User not found" });
+
+    if (!updatedUser)
+      return res.status(404).json({ message: "User not found" });
 
     res.json({ message: "User activated", user: updatedUser });
   } catch (err) {
     res.status(500).json({ message: "Error activating user", error: err.message });
   }
 };
+
 
 // ✅ Deactivate User
 export const deactivateUser = async (req, res) => {

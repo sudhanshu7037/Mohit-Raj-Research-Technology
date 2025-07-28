@@ -1,6 +1,6 @@
 
 import React, { useState } from "react";
-import image1 from "../../assets/videoconferencingbanner.png"
+import image1 from "../../assets/servicespage/videoconfrencing/images/image1.jpg"
 import Banner from "../../assets/Banner.png"
 import enterprizes from "../../assets/videoconferencingbanner.png"
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
@@ -122,22 +122,16 @@ const VideoConferencing=() =>{
   <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
   {/* Hero Content */}
-  <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
+  <div className="absolute inset-0 flex flex-col justify-center items-start text-left px-4">
     <h1 className="text-white text-4xl md:text-6xl font-semibold leading-tight mb-6 font-houschka">
-      VIDEO CONFERENCING SOLUTIONS
+      VIDEO CONFERENCING SERVICES
     </h1>
-    <p className="text-white text-base md:text-lg max-w-2xl mb-8">
-      Empower your remote teams with our secure, high-quality video conferencing platforms.
-      We offer scalable, real-time communication solutions with screen sharing, cloud recording,
-      and cross-platform compatibility to boost productivity and collaboration.
-    </p>
+    
     <div className="flex gap-4 flex-wrap justify-center">
       <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition">
         REQUEST A DEMO
       </button>
-      <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition">
-        VIEW FEATURES
-      </button>
+      
     </div>
   </div>
 </div>
@@ -155,43 +149,10 @@ const VideoConferencing=() =>{
     meetings, webinars, and live sessions with confidence and control — ensuring maximum productivity and engagement.
   </p>
 
-  {/* Stats Section */}
-  <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-5xl mx-auto mb-8">
-    {/* Stat 1 */}
-    <div className="flex flex-col items-center">
-      <h3 className="text-blue-800 text-3xl font-bold">2500+</h3>
-      <p className="text-gray-600 mt-2 text-center">
-        Secure <br /> Sessions Delivered
-      </p>
-    </div>
+  
+      
 
-    {/* Stat 2 */}
-    <div className="flex flex-col items-center">
-      <h3 className="text-blue-800 text-3xl font-bold">20+</h3>
-      <p className="text-gray-600 mt-2 text-center">
-        Industries <br /> Served
-      </p>
-    </div>
-
-    {/* Stat 3 */}
-    <div className="flex flex-col items-center">
-      <h3 className="text-blue-800 text-3xl font-bold">99.9%</h3>
-      <p className="text-gray-600 mt-2 text-center">
-        Uptime <br /> Guaranteed
-      </p>
-    </div>
-
-    {/* Stat 4 */}
-    <div className="flex flex-col items-center">
-      <h3 className="text-blue-800 text-3xl font-bold">1000+</h3>
-      <p className="text-gray-600 mt-2 text-center">
-        Clients <br /> Worldwide
-      </p>
-    </div>
-  </div>
-
-  {/* Divider Line */}
-  <hr className="border-gray-300 max-w-5xl mx-auto" />
+  
 </div>
 
 {/*third section*/}

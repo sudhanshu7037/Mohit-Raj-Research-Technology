@@ -130,7 +130,7 @@ const UniversityAutomation = () => {
 
   return (
     <>
-     <div className="relative w-full h-screen">
+     <div className="">
       {/* Background Image */}
       <img
         src="https://image-static.collegedunia.com/public/college_data/images/appImage/12734_AITAMCOver.png?h=260&w=360&mode=crop"

@@ -4,7 +4,7 @@ import { FaCheckCircle } from "react-icons/fa";
 import bgImage from "../../assets/background.png";
 import { FaBullhorn, FaSearch, FaMailBulk, FaChartLine } from "react-icons/fa";
 import { FaLightbulb,FaShieldAlt, FaCogs,FaRocket ,FaUsers,FaMobileAlt } from "react-icons/fa";
-import DevImage from "../../assets/digitalmarket2.png";
+import DevImage from "../../assets/servicespage/digitalmarketing/images/digital_marketing_image[1].png";
 
 const techStack = [
   {
@@ -123,52 +123,33 @@ const DigitalMarketing = () => {
     className="absolute inset-0 bg-cover bg-center opacity-20"
     style={{ backgroundImage: `url(${DigitalMarketingimg })` }}
   ></div>
-
-  <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
-    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 font-houschka">
-      DIGITAL MARKETING SERVICES
-    </h1>
-    <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl leading-relaxed mb-6 sm:mb-8">
-      All-Inclusive Digital Marketing Solutions Provided by Mohitraj Research and Technology Pvt. Ltd. 
-
-    </p>
-    <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
-      <button className="bg-blue-600 hover:bg-blue-700 px-4 py-2 sm:px-6 sm:py-3 rounded-md text-sm sm:text-base md:text-lg font-medium transition">
-        GET STARTED
-      </button>
-      <button className="bg-transparent border border-white hover:bg-white hover:text-black px-4 py-2 sm:px-6 sm:py-3 rounded-md text-sm sm:text-base md:text-lg font-medium transition">
-        EXPLORE SERVICES
-      </button>
-    </div>
+      <div className="absolute inset-0 flex flex-col justify-center items-start text-left px-4">
+  <h3 className="text-white text-xl md:text-6xl font-semibold leading-tight mb-10 font-houschka">
+    Digital Marketing Services
+    <br />
+    
+  </h3>
+  
+  <div className="flex gap-4">
+    <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition mt-6">
+      GET IN TOUCH
+    </button>
+   
   </div>
+</div>
+
 </section>
 
 {/* === Second Section: About + Stats for Digital Marketing === */}
-<section className="py-10 sm:py-14 md:py-16 px-4 sm:px-6 bg-white text-gray-800">
+<section className="py-10 sm:py-14 md:py-16 px-4 sm:px-6 bg-white text-blue-900">
   <div className="max-w-6xl mx-auto text-center mb-8 sm:mb-10 md:mb-14">
-    <p className="text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed font-medium text-gray-700">
+    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 font-houschka ">Overview</h1>
+    <p className="text-gray-700 text-base md:text-lg max-w-4xl mx-auto mb-12 leading-relaxed font-basis text-justify mt-4">
       Here at Mohitraj Research and Technology Private Limited, our full range of offerings in digital marketing will enable your business to succeed in the ever-changing online world. With a focus on improving brand recognition, enhancing customer relations, and achieving tangible growth through creative data driven approaches, our services will deliver business results. 
     </p>
   </div>
 
-  <div className="max-w-5xl mx-auto grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
-    <div className="bg-gradient-to-b from-purple-50 to-white rounded-lg py-6 px-4 shadow hover:shadow-md transition">
-      <p className="text-3xl sm:text-4xl font-extrabold text-purple-700">1200+</p>
-      <p className="mt-2 text-sm sm:text-base font-medium text-gray-600">Campaigns Delivered</p>
-    </div>
-    <div className="bg-gradient-to-b from-blue-50 to-white rounded-lg py-6 px-4 shadow hover:shadow-md transition">
-      <p className="text-3xl sm:text-4xl font-extrabold text-purple-700">10+</p>
-      <p className="mt-2 text-sm sm:text-base font-medium text-gray-600">Years in Digital Marketing</p>
-    </div>
-    <div className="bg-gradient-to-b from-pink-50 to-white rounded-lg py-6 px-4 shadow hover:shadow-md transition">
-      <p className="text-3xl sm:text-4xl font-extrabold text-purple-700">950+</p>
-      <p className="mt-2 text-sm sm:text-base font-medium text-gray-600">Clients Served Globally</p>
-    </div>
-    <div className="bg-gradient-to-b from-yellow-50 to-white rounded-lg py-6 px-4 shadow hover:shadow-md transition">
-      <p className="text-3xl sm:text-4xl font-extrabold text-purple-700">40</p>
-      <p className="mt-2 text-sm sm:text-base font-medium text-gray-600">Industries Covered</p>
-    </div>
-  </div>
+  
 </section>
 
 {/* === Third Section: Digital Marketing Services === */}

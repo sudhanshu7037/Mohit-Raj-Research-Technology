@@ -26,6 +26,8 @@ const userSchema = new mongoose.Schema(
   ],
   default: "Pending",
 },
+activateDate: { type: Date },
+deactivateDate: { type: Date },
     email: { type: String, unique: true, lowercase: true },
     phone: { type: String },
     mobile: { type: String },

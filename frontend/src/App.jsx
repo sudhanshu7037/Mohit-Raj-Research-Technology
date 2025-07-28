@@ -6,6 +6,7 @@ import Layout from "./Layout";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
 import Career from "./pages/Career";
+import { Navigate  } from "react-router-dom";
 
 // Services
 import SoftwareDevelopment from "./components/Services/SoftwareDevelopment";
@@ -110,7 +111,7 @@ const App = () => {
   <Route path="/entrance-exam-management" element={<EntranceExamManagementandInformationSystem />} />
 
   {/* ==== Solutions Pages ==== */}
-  <Route path="/UniversityDigitalizatio" element={<UniversityDigitalization />} />
+  <Route path="/UniversityDigitalization" element={<UniversityDigitalization />} />
   <Route path="/smart-learning" element={<SmartLearning />} />
   <Route path="/security-surveillance" element={<SecuritySurveillance />} />
   <Route path="/police-automation" element={<PoliceAutomation />} />
@@ -137,9 +138,12 @@ const App = () => {
   <Route
     path="/admin/dashboard"
     element={
-      <AdminRoute>
-        <AdminDashboard />
-      </AdminRoute>
+      
+      localStorage.getItem("token") ? (
+      <AdminDashboard />
+    ) : (
+      <Navigate to="/admin/login" />
+    )
     }
   />
 </Routes>

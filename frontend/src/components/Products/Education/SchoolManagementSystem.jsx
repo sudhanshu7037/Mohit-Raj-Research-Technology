@@ -3,7 +3,7 @@ import React from 'react'
 const SchoolManagementSystem = () => {
   return (
      <>
-      <div className="relative w-full h-screen">
+      <div className="relative ">
         {/* Background Image */}
         <img
           src="https://img.freepik.com/free-photo/empty-school-classroom-without-students-due-coronavirus-pandemic_23-2148895987.jpg"

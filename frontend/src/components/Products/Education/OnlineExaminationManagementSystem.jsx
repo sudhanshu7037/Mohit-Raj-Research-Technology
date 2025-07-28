@@ -3,7 +3,7 @@ import React from 'react'
 const OnlineExaminationManagementSystem = () => {
   return (
     <>
-      <div className="relative w-full h-screen">
+      <div className="">
         {/* Background Image */}
         <img
           src="https://img.freepik.com/free-photo/student-taking-online-test-home_23-2149627063.jpg"

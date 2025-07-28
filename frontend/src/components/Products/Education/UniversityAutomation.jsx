@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import BannerImage from "../../../assets/produtspage/education/images/university automation banner image03[1].png";
 
 import {
   FaUserTie,
@@ -62,146 +63,146 @@ const features = [
 const functionality = [
   {
     icon: <FaUserTie />,
-    title: "VC Office Automation",
+    title: "Vice Chancellor office Management",
     points: [
       "Manage all Vice Chancellor-level operations with centralized control.",
     ],
   },
   {
     icon: <FaUserTie />,
-    title: "Registrar Workflow System",
+    title: "Registrar office Management",
     points: [
       " Digitize and streamline registrar-related administrative tasks.",
     ],
   },
   {
     icon: <FaUserCheck />,
-    title: "Digital Admission Suite",
+    title: "Student Admission Management",
     points: ["Simplify student admission with a smart online system."],
   },
   {
     icon: <FaUserShield />,
-    title: "Student Data Hub",
+    title: "Student Information Management",
     points: ["Store, manage, and access student records securely."],
   },
   {
     icon: <FaClipboardList />,
-    title: "Exam Control System",
+    title: "Examination management system",
     points: ["Automate exam scheduling, results, and evaluation processes."],
   },
   {
     icon: <FaUserShield />,
-    title: "Confidential Data Shield",
+    title: "Confidential Management",
     points: ["Securely handle and restrict access to sensitive documents."],
   },
   {
     icon: <FaMoneyCheckAlt />,
-    title: "Finance Operations Suite",
+    title: "Finance Office Management   ",
     points: ["Manage university financials with transparency and accuracy."],
   },
   {
     icon: <FaFileSignature />,
-    title: "E-Proposal Engine",
+    title: "E-financial proposal Management",
     points: ["Create, review, and track financial proposals online."],
   },
   {
     icon: <FaMoneyCheckAlt />,
-    title: "Budget Management Tool",
+    title: "Budget Management",
     points: [" Plan and monitor institutional budgets efficiently."],
   },
   {
     icon: <FaBalanceScale />,
-    title: "Accounts Automation Platform",
+    title: "Account & Finance Management  ",
     points: ["Automate accounting processes for error-free operations."],
   },
   {
     icon: <FaUsersCog />,
-    title: "Salary Processing System",
+    title: "Staff Salary Management ",
     points: ["Streamline salary calculations and disbursements."],
   },
   {
     icon: <FaBalanceScale />,
-    title: "Tax Filing Module",
+    title: "Tax Management system",
     points: ["Automate staff and institutional tax management."],
   },
   {
     icon: <FaUsersCog />,
-    title: "PF Tracker System",
+    title: "P F management system",
     points: ["Manage Provident Fund contributions and reports digitally."],
   },
   {
     icon: <FaUsersCog />,
-    title: "Pension Management Tool",
+    title: "Pension & Retirement Management",
     points: ["Handle employee pension claims and data seamlessly."],
   },
   {
     icon: <FaUserCheck />,
-    title: "Employee Central Hub",
+    title: "Employee Management System",
     points: ["Manage complete employee lifecycle from hiring to retirement."],
   },
   {
     icon: <FaUserEdit />,
-    title: "Recruitment Automation",
+    title: "Employee Recruitment Management ",
     points: ["Digitize the recruitment and onboarding process."],
   },
   {
     icon: <FaUserEdit />,
-    title: "Staff Info Manager",
+    title: "Employee Information System",
     points: ["Maintain detailed staff records in one place."],
   },
   {
     icon: <FaCalendarCheck />,
-    title: "Leave Tracking Suite",
+    title: "Employee Leave Management ",
     points: ["Automate leave applications and approvals efficiently."],
   },
   {
     icon: <FaCalendarCheck />,
-    title: "Attendance Monitor Tool",
+    title: "Employee attendance Management",
     points: [" Track employee attendance in real-time."],
   },
   {
     icon: <FaCogs />,
-    title: "HR Admin Console",
+    title: "Employee Administration & Monitoring ",
     points: [" Monitor and manage all employee-related activities."],
   },
   {
     icon: <FaUniversity />,
-    title: "Departmental Workflow",
+    title: "College & department management",
     points: ["Enhance coordination among colleges and departments."],
   },
   {
     icon: <FaBook />,
-    title: "LMS Integration Suite",
+    title: "Learning Management System",
     points: ["Deliver and manage courses with a learning management system."],
   },
   {
     icon: <FaBuilding />,
-    title: "Infrastructure Manager",
+    title: "Infrastructure Management System",
     points: [" Oversee campus infrastructure and facilities digitally."],
   },
   {
     icon: <FaFlask />,
-    title: "Lab Resource Tracker",
+    title: "Laboratory management",
     points: ["Manage laboratory equipment, usage, and scheduling."],
   },
   {
     icon: <FaClipboardList />,
-    title: "Attendance Digitizer",
+    title: "Student Attendance management",
     points: ["Monitor and record student attendance online."],
   },
   {
     icon: <FaBox />,
-    title: "Store & Purchase Tool",
+    title: "Store & Purchase Management system",
     points: ["Manage institutional procurement and inventory.."],
   },
   {
     icon: <FaUsersCog />,
-    title: "Purchase Committee Suite",
+    title: "Central Purchase Committee Management",
     points: [" Digitize decision-making for purchases and approvals."],
   },
   {
     icon: <FaBox />,
-    title: "Procurement Manager",
+    title: "Purchase Management system",
     points: ["Streamline purchasing and vendor communication."],
   },
   {
@@ -211,37 +212,37 @@ const functionality = [
   },
   {
     icon: <FaBox />,
-    title: "Inventory Oversight",
+    title: "Store management system",
     points: ["Track, audit, and manage store inventory accurately."],
   },
   {
     icon: <FaBook />,
-    title: "Research Control System",
+    title: "Research Management system",
     points: ["Manage research proposals, grants, and progress."],
   },
   {
     icon: <FaTools />,
-    title: "Contractor Oversight",
+    title: "Contraction management system",
     points: [" Automate contractor management and project tracking."],
   },
   {
     icon: <FaChalkboardTeacher />,
-    title: "Placement Automation Hub",
+    title: "Student counseling & Placement Management",
     points: ["Track student counseling and placement activities."],
   },
   {
     icon: <FaHotel />,
-    title: "Hostel Management Suite",
+    title: "Hostel & Guest House Management",
     points: [" Automate room allocation and hostel services."],
   },
   {
     icon: <FaBook />,
-    title: "Library Digital Platform",
+    title: "Library management system",
     points: ["Manage books, access, and student usage seamlessly."],
   },
   {
     icon: <FaFileAlt />,
-    title: "Document Filing System",
+    title: "File Management System",
     points: [
       "Digitally organize and retrieve official files.",
       "Quick retrieval and role-based access.",
@@ -249,40 +250,40 @@ const functionality = [
   },
   {
     icon: <FaFileInvoice />,
-    title: "Proposal Filing Tool",
+    title: "E- Filling  & Proposal  Management ",
     points: ["File and manage institutional proposals effectively."],
   },
   {
     icon: <FaMailBulk />,
-    title: "Smart Mailing System",
+    title: "Local Mailing System",
     points: ["Simplify internal and external email communications."],
   },
   {
     icon: <FaAddressCard />,
-    title: "Reception Tracking App",
+    title: "Reception management",
     points: ["Manage visitor records and front-desk operations."],
   },
   {
     icon: <FaTools />,
-    title: "Repair & Maintenance",
+    title: "Compliant Repair & Maintenance Management",
     points: ["Track complaints and maintenance work orders."],
   },
   {
     icon: <FaUsersCog />,
-    title: "User Access System",
+    title: "User Management System",
     points: [" Control system access for all users and roles."],
   },
 ];
 
 const UniversityAutomation = () => {
   return (
-    <>
-      <div className="relative w-full h-screen">
+   
+      <div className="">
         {/* Background Image */}
         <img
-          src="https://www.shutterstock.com/image-photo/man-look-dashboard-graphs-charts-600nw-2440357647.jpg"
+          src={BannerImage}
           alt="University Background"
-          className="w-full h-full object-cover"
+          className="w-full h-screen   object-cover"
         />
 
         {/* Overlay for better contrast (optional) */}
@@ -291,8 +292,8 @@ const UniversityAutomation = () => {
         {/* Text Content */}
         <div className="absolute inset-0 flex items-center justify-start px-6 md:px-16">
           <div className="text-white max-w-2xl">
-            <h1 className="text-2xl md:text-4xl font-bold text-white font-houschka">
-              University Management System Software
+            <h1 className="text-4xl md:text-4xl font-bold text-white font-houschka">
+              University Management System Software 
             </h1>
             <p className="text-lg md:text-xl text-green-400 font-basis mt-4">
               Robust, All-Inclusive & Scalable ERP Solution for Streamlining
@@ -309,7 +310,7 @@ const UniversityAutomation = () => {
         </div>
 
         {/*new section for functionality*/}
-        <section className="bg-white px-4 md:px-12 lg:px-20 py-16 text-gray-800 mt-20">
+        <section className="bg-blue-100 px-4 md:px-12 lg:px-20 py-16 text-gray-800 mt-20">
           {/* Header */}
           <div className="max-w-7xl mx-auto text-center mb-10">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-800 font-houschka">
@@ -350,7 +351,7 @@ const UniversityAutomation = () => {
 
         {/*new section*/}
 
-        <section className="bg-gradient-to-br from-blue-100 via-red-100 to-green-100 py-16 px-4 md:px-20">
+        <section className="bg-red-100 py-16 px-4 md:px-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900 font-houschka">
               Empowering Institutions with Digital Transformation
@@ -389,17 +390,9 @@ const UniversityAutomation = () => {
 
         {/*new section */}
 
-        <section className="px-4 md:px-12 lg:px-20 py-20 bg-white">
+        <section className="px-4 md:px-12 lg:px-20 py-20 bg-blue-100">
           <div className="max-w-7xl mx-auto">
-            {/* ✅ Top Banner Image */}
-            <div className="mb-12">
-              <img
-                src="https://www.bannerbuzz.co.uk/blog/wp-content/uploads/2023/09/Rigid-Signs-2-1024x441.webp"
-                alt="University Automation Banner"
-                className="w-full h-64 md:h-96 object-cover rounded-xl shadow-md"
-              />
-            </div>
-
+           
             {/* Main Grid */}
             <div className="flex flex-col lg:flex-row gap-12 items-start">
               {/* Left Content */}
@@ -551,7 +544,7 @@ const UniversityAutomation = () => {
         </section>
 
         {/*new section benefits */}
-        <section className="w-full py-20 px-4 md:px-16 bg-gradient-to-br from-blue-100 via-red-100 to-green-100">
+        <section className="w-full py-20 px-4 md:px-16 bg-red-100                ">
           <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6 font-houschka">
               Key Benefits of Mohitraj University Automation Software
@@ -586,7 +579,7 @@ const UniversityAutomation = () => {
 
         {/*demo*/}
 
-        <section className="bg-red-700 bg-dotted-pattern text-white py-16 px-4 text-center">
+        <section className="bg-blue-900 bg-dotted-pattern text-white py-16 px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4 font-houschka">
             Ready to Digitally Transform Your Organization with Mohitraj?
           </h2>
@@ -601,9 +594,12 @@ const UniversityAutomation = () => {
           >
             SCHEDULE A QUICK DEMO
           </a>
+
+           <hr className="border-gray-300 my-8 " />
         </section>
+       
       </div>
-    </>
+    
   );
 };
 

@@ -8,51 +8,51 @@ const SolutionsDropdown = ({ openDropdown, setOpenDropdown }) => {
 
   const solutionItems = [
     {
-      title: "University Digitalization",
+      title: "University Digitalization Solution",
       path: "/solutions/university-digitalization",
     },
     {
-      title: "Medical College Digitalization",
+      title: "Medical College Digitalization Solution",
       path: "/solutions/medical-college-digitalization",
     },
     {
-      title: "MRTiON Digital Education",
+      title: "MRTiON Digital Education Solution",
       path: "/solutions/mrtion-digital-education",
     },
     {
-      title: "Library Digitalization",
+      title: "Library Digitalization Solution",
       path: "/solutions/library-digitalization",
     },
     {
-      title: "Digital Marketing Solutions",
+      title: "Digital Marketing Solution",
       path: "/solutions/digital-marketing",
     },
     {
-      title: "Smart Learning",
+      title: "Smart Learning Solution",
       path: "/solutions/smart-learning",
     },
     {
-      title: "Conference Room Solutions",
+      title: "Conference Room Solution",
       path: "/solutions/conference-room",
     },
     {
-      title: "Auditorium Solutions",
+      title: "Auditorium Solution",
       path: "/solutions/auditorium",
     },
     {
-      title: "Security & Surveillance",
+      title: " CCTV & Security & Surveillance Solution",
       path: "/solutions/security-surveillance",
     },
     {
-      title: "Multimedia & Animation",
+      title: "Multimedia & Animation Solution",
       path: "/solutions/multimedia-animation",
     },
     {
-      title: "Police Automation",
+      title: "Police Automation Solution",
       path: "/solutions/police-automation",
     },
     {
-      title: "Audio Video Broadcasting",
+      title: "Audio Video Broadcasting Solution",
       path: "/solutions/audio-video-broadcasting",
     },
   ];
@@ -84,7 +84,7 @@ const SolutionsDropdown = ({ openDropdown, setOpenDropdown }) => {
       </div>
 
       {isSolutionsOpen && (
-        <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[250px] md:w-[300px] bg-blue-100 text-black p-4 shadow-lg z-50 rounded-md">
+        <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[250px] md:w-[300px] bg-red-100 text-black p-4 shadow-lg z-50 rounded-md">
           <ul className="flex flex-col gap-2 text-xs md:text-sm">
             {solutionItems.map((item, index) => (
               <li key={index}>

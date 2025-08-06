@@ -1,7 +1,7 @@
 import React from 'react';
-import DigitalMarketingimg from "../../assets/digitalmarketingbanner.png";
+import DigitalMarketingimg from "../../assets/servicespage/digitalmarketing/images/image2.png";
 import { FaCheckCircle } from "react-icons/fa";
-import bgImage from "../../assets/background.png";
+import bgImage from "../../assets/servicespage/digitalmarketing/images/image1.png";
 import { FaBullhorn, FaSearch, FaMailBulk, FaChartLine } from "react-icons/fa";
 import { FaLightbulb,FaShieldAlt, FaCogs,FaRocket ,FaUsers,FaMobileAlt } from "react-icons/fa";
 import DevImage from "../../assets/servicespage/digitalmarketing/images/digital_marketing_image[1].png";
@@ -120,7 +120,7 @@ const DigitalMarketing = () => {
 {/* === Hero Section: Digital Marketing === */}
 <section className="relative bg-black text-white font-sans min-h-screen flex items-center justify-center">
   <div
-    className="absolute inset-0 bg-cover bg-center opacity-20"
+    className="absolute inset-0 bg-cover bg-center opacity-30"
     style={{ backgroundImage: `url(${DigitalMarketingimg })` }}
   ></div>
       <div className="absolute inset-0 flex flex-col justify-center items-start text-left px-4">
@@ -158,7 +158,7 @@ const DigitalMarketing = () => {
   <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4 font-houschka animate-fade-in-down">
     Our Digital Marketing Services
   </h2>
-  <p className="text-gray-600 max-w-3xl mx-auto mb-12 text-base md:text-lg leading-relaxed font-basis animate-fade-in font-houschka">
+  <p className="text-gray-600 max-w-3xl mx-auto mb-12 text-base md:text-lg leading-relaxed  animate-fade-in font-houschka">
     As Our Clients You Will Enjoy The Following Key Services 
 
   </p>
@@ -294,7 +294,7 @@ const DigitalMarketing = () => {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto text-white text-center mb-12">
-        <h2 className="text-4xl sm:text-5xl font-bold font-houschka mb-4 tracking-tight font-houschka">
+        <h2 className="text-4xl sm:text-5xl font-bold font-houschka mb-4 tracking-tight ">
           Strategic Digital Marketing Services
         </h2>
         <p className="text-base sm:text-lg max-w-3xl mx-auto text-gray-300">

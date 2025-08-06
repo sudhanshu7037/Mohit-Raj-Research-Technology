@@ -1,27 +1,164 @@
 import React, { useState } from 'react';
-import { FaHospitalAlt, FaUserMd, FaNotesMedical,FaShieldAlt,FaCogs,FaSyncAlt,FaServer,FaNetworkWired,FaLaptopMedical , FaBed, FaCapsules, FaFileInvoiceDollar, FaCalculator, FaBoxes, FaUsersCog, FaIdCardAlt, FaProcedures, FaHeartbeat, FaVials, FaStethoscope } from 'react-icons/fa';
+import { FaHospitalAlt, FaUserMd, FaNotesMedical,FaShieldAlt,FaCogs,FaSyncAlt,FaServer,FaNetworkWired,FaLaptopMedical , FaBed, FaCapsules, FaFileInvoiceDollar, FaCalculator, FaBoxes, FaUsersCog, FaIdCardAlt, FaProcedures, FaHeartbeat, FaVials, FaStethoscope ,FaUserShield,FaFileMedical,FaClinicMedical,FaUserNurse ,FaMicroscope,FaPills ,FaMoneyCheckAlt  , FaTasks , FaStore  } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
 
-const modules = [
-    { title: "Discharge Summary", icon: <FaFileInvoiceDollar size={24} /> },
-    { title: "OPD", icon: <FaStethoscope size={24} /> },
-    { title: "ER", icon: <FaHeartbeat size={24} /> },
-    { title: "Ward A/D", icon: <FaProcedures size={24} /> },
-    { title: "Billing", icon: <FaCalculator size={24} /> },
-    { title: "Accounting", icon: <FaFileInvoiceDollar size={24} /> },
-    { title: "Inventory", icon: <FaBoxes size={24} /> },
-    { title: "Pharmacy", icon: <FaCapsules size={24} /> },
-    { title: "HR Mgmt", icon: <FaUsersCog size={24} /> },
-    { title: "Patient Profile", icon: <FaIdCardAlt size={24} /> },
-    { title: "Bed Mgmt", icon: <FaBed size={24} /> },
-    { title: "OT Notes", icon: <FaNotesMedical size={24} /> },
-    { title: "Pathology", icon: <FaVials size={24} /> },
-    { title: "Nursing", icon: <FaUserMd size={24} /> },
-  ];
-
+const features = [
+  {
+    icon: <FaUserShield size={50} className="text-indigo-600" />,
+    title: "Director Office Management",
+    points: [
+      "Centralized oversight of all hospital departments and operations.",
+      "Performance dashboards, reporting, and compliance monitoring.",
+    ],
+  },
+  {
+    icon: <FaFileMedical size={50} className="text-indigo-600" />,
+    title: "Patient Registrar Models",
+    points: [
+      "Patient registration, demographics, and identification digitized.",
+      "Quick search, unique ID generation, and history tracking.",
+    ],
+  },
+  {
+    icon: <FaClinicMedical size={50} className="text-indigo-600" />,
+    title: "OPD Management",
+    points: [
+      "Manage walk-in patients, appointment scheduling, and doctor allocation.",
+      "Medical records, billing, and prescriptions integrated.",
+    ],
+  },
+  {
+    icon: <FaProcedures size={50} className="text-indigo-600" />,
+    title: "IPD Management",
+    points: [
+      "Track admitted patients, room assignments, and progress notes.",
+      "Integrated with nursing, pharmacy, and billing workflows.",
+    ],
+  },
+  {
+    icon: <FaHospitalAlt size={50} className="text-indigo-600" />,
+    title: "Emergency/Casualty Management",
+    points: [
+      "Handle emergency admissions, triage, and real-time status updates.",
+      "Prioritized workflows for critical patient handling.",
+    ],
+  },
+  {
+    icon: <FaUserMd size={50} className="text-indigo-600" />,
+    title: "Doctors Workbench",
+    points: [
+      "Unified dashboard for patient lists, lab results, and prescriptions.",
+      "Supports e-prescriptions, documentation, and scheduling.",
+    ],
+  },
+  {
+    icon: <FaStethoscope size={50} className="text-indigo-600" />,
+    title: "OPD/IPD/Casualty Consultation",
+    points: [
+      "Consultation notes, clinical findings, and diagnosis logging.",
+      "Template-driven documentation and follow-up scheduling.",
+    ],
+  },
+  {
+    icon: <FaUserNurse size={50} className="text-indigo-600" />,
+    title: "Nursing & Supporting Staff Management",
+    points: [
+      "Shift scheduling, patient care tracking, and task assignments.",
+      "Daily activity logs and documentation.",
+    ],
+  },
+  {
+    icon: <FaBed size={50} className="text-indigo-600" />,
+    title: "Bed & Ward Management",
+    points: [
+      "Real-time bed occupancy tracking and ward allocation.",
+      "Ward transfer, discharge summary, and cleaning cycle logging.",
+    ],
+  },
+  {
+    icon: <FaMicroscope size={50} className="text-indigo-600" />,
+    title: "Diagnosis Management",
+    points: [
+      "Standardized diagnosis coding and categorization.",
+      "Supports clinical decision-making and statistical analysis.",
+    ],
+  },
+  {
+    icon: <FaNotesMedical size={50} className="text-indigo-600" />,
+    title: "Procedure Management",
+    points: [
+      "Schedule and log procedures across departments.",
+      "Pre-op, intra-op, and post-op details integrated.",
+    ],
+  },
+  {
+    icon: <FaLaptopMedical size={50} className="text-indigo-600" />,
+    title: "OT Management",
+    points: [
+      "OT scheduling, equipment preparation, and surgeon availability.",
+      "Sterilization logs and surgery documentation.",
+    ],
+  },
+  {
+    icon: <FaPills size={50} className="text-indigo-600" />,
+    title: "Pharmacy Management",
+    points: [
+      "Stock monitoring, drug dispensing, and prescription linking.",
+      "Expiry alerts and procurement integration.",
+    ],
+  },
+  {
+    icon: <FaVials size={50} className="text-indigo-600" />,
+    title: "Laboratory Management",
+    points: [
+      "Test order tracking, sample collection, and result generation.",
+      "Reports auto-linked with patient records.",
+    ],
+  },
+  {
+    icon: <FaMoneyCheckAlt size={50} className="text-indigo-600" />,
+    title: "Financial Accounting & Hospital Budgeting",
+    points: [
+      "Manage hospital accounts, income/expense tracking.",
+      "Supports budgeting, forecasting, and audits.",
+    ],
+  },
+  {
+    icon: <FaUsersCog size={50} className="text-indigo-600" />,
+    title: "Human Resource Management",
+    points: [
+      "HR records, payroll, attendance, and leaves management.",
+      "Employee lifecycle tracking and document handling.",
+    ],
+  },
+  {
+    icon: <FaTasks size={50} className="text-indigo-600" />,
+    title: "Task Schedule & Work Management",
+    points: [
+      "Daily task assignment and tracking across departments.",
+      "Work calendars and notifications for due tasks.",
+    ],
+  },
+  {
+    icon: <FaStore size={50} className="text-indigo-600" />,
+    title: "Store & Purchase Management",
+    points: [
+      "Inventory tracking, purchase orders, and vendor management.",
+      "Auto-replenishment based on stock levels.",
+    ],
+  },
+  {
+    icon: <FaUserShield size={50} className="text-indigo-600" />,
+    title: "Admin & User Management",
+    points: [
+      "Role-based access control for all users and staff.",
+      "Audit logs, user activity, and permissions handling.",
+    ],
+  },
+];
   const departments = [
     "OPD",
     "IPD",
@@ -127,32 +264,34 @@ const HospitalManagementInformationsystem = () => {
         </p>
       </div>
 
-      <div className="relative h-[600px] w-[600px] mx-auto">
-        {/* Central Circle */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-700 text-white font-bold flex items-center justify-center h-40 w-40 rounded-full shadow-lg">
-          HMIS
-        </div>
+      <div className="">
+        
+        
 
         {/* Outer Modules */}
-        {modules.map((module, index) => {
-          const angle = (index / modules.length) * 2 * Math.PI;
-          const radius = 220;
-          const x = Math.cos(angle) * radius;
-          const y = Math.sin(angle) * radius;
-          return (
-            <div
-              key={index}
-              className="absolute flex flex-col items-center justify-center h-28 w-28 bg-white hover:bg-red-200 rounded-full shadow-md hover:shadow-xl transition-transform duration-300 hover:scale-110 text-sm font-semibold text-blue-700 text-center px-2"
-              style={{
-                top: `calc(50% + ${y}px - 56px)`,
-                left: `calc(50% + ${x}px - 56px)`
-              }}
-            >
-              <div className="mb-1">{module.icon}</div>
-              <div>{module.title}</div>
-            </div>
-          );
-        })}
+         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+            {features.map((item, index) => (
+              <div
+                key={index}
+                className="group bg-white rounded-2xl border border-gray-200 p-6 shadow-md 
+        hover:bg-blue-900 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transition-all duration-300"
+              >
+                <div className="flex justify-center mb-4 text-4xl text-indigo-600 group-hover:text-white transition-all duration-300">
+                  {item.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2 group-hover:text-white transition-all duration-300">
+                  {item.title}
+                </h3>
+                <ul className="mt-2 text-gray-600 text-sm space-y-2 group-hover:text-gray-200 transition-all duration-300">
+                  {item.points.map((point, i) => (
+                    <li key={i} className="list-disc list-inside">
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
       </div>
     </section>
 

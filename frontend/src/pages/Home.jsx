@@ -12,6 +12,9 @@ import Products from "../components/Products";
 import Solutions from "../components/Solutions";
 import DiscriptionFooter from "../components/DiscriptionFooter";
 import WhyChoose from "../components/whychoose";
+import Godigitally from "../components/Godigitally";
+import CaseStudies from "../components/CaseStudies";
+import FAQS from "../components/FAQS";
 
 const Home = () => {
   return (
@@ -19,18 +22,20 @@ const Home = () => {
       <NavBar />
       <div className="">
         <Banner />
+        <Godigitally />
         <BuisnessDeal />
         <Products />
         <MainBanner />
         <Solutions />
-        <WhyChoose/>
+        <WhyChoose />
         <MoreInfo />
         <TeamSection />
         <TestimonialSlider />
         <VideoSection />
         <NewsSection />
+        <CaseStudies />
+        <FAQS />
         <DiscriptionFooter />
-        
       </div>
     </div>
   );

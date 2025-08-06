@@ -1,13 +1,24 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Banner3 from "../assets/bannerimages/digital_university_solutions[1].png"
-import Banner1 from "../assets/bannerimages/poiuy[1].png"
-import Banner2 from "../assets/bannerimages/0987654[1].png"
+
+import Banner1 from "../assets/bannerimages/poiuy[1].png";
+import Banner2 from "../assets/bannerimages/0987654[1].png";
+import Banner3 from "../assets/bannerimages/Digital university banner image[1].png";
+import Banner4 from "../assets/bannerimages/Digital medical collage[1].png";
+import Banner5 from "../assets/bannerimages/hospitalandmedical.png";
+import Banner6 from "../assets/bannerimages/network 01[1].png";
+
 const slides = [
   {
     image: Banner1,
     title: "Excellent Services For Your Business",
     description: "We design secure, scalable, and innovative IT solutions for businesses around the globe.",
+  },
+  
+  {
+    image: Banner3,
+    title: "University digitalization solution for digital transformation of universities",
+    description: "Revolutionizing Learning , Innovative Education, Elevate Excellence by our unique Digital University Solution" ,
   },
   {
     image: Banner2,
@@ -15,10 +26,23 @@ const slides = [
     description: "Transform your ideas into reality with our cutting-edge technology and expert solutions.",
   },
   {
-    image: Banner3,
-    title: "University digitalization solution for digital transformation of universities",
+    image: Banner4,
+    title: "Medical college digitalization solution for digital transformation of medical colleges",
     description: "Revolutionizing Learning , Innovative Education, Elevate Excellence by our unique Digital University Solution" ,
   },
+  {
+    image: Banner5,
+    title: "Medical college digitalization solution for digital transformation of medical colleges",
+    description: "Revolutionizing Learning , Innovative Education, Elevate Excellence by our unique Digital University Solution" ,
+  },
+   {
+    image: Banner6,
+    title: "Medical college digitalization solution for digital transformation of medical colleges",
+    description: "Revolutionizing Learning , Innovative Education, Elevate Excellence by our unique Digital University Solution" ,
+  },
+  
+  
+
  
 ];
 

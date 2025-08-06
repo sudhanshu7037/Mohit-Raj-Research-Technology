@@ -3,210 +3,184 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
+import EntranceExamBanner from "../../../assets/produtspage/education/images/MohitrajOnline_Entrance_Examination_Management_System[1].png";
 
 
 
-import {
-  FaUniversity, FaUserTie, FaUserCheck, FaClipboardList, FaFileInvoice,
-  FaChalkboardTeacher, FaCalendarCheck, FaBook, FaTools,FaUserGraduate, FaUsersCog
-} from "react-icons/fa";
-
-
-const features = [
-  {
-    icon: <FaUniversity size={50} className="text-indigo-600" />,
-    title: "Academic Infrastructure Management",
-    points: [
-      "Digitally manage departments, programs, and labs",
-      "Track academic assets and maintain infrastructure records",
-    ],
-  },
-  {
-    icon: <FaUserGraduate size={50} className="text-indigo-600" />,
-    title: "Student Lifecycle Automation",
-    points: [
-      "Manage student data from admission to graduation",
-      "Automate attendance, assessments, and performance tracking",
-    ],
-  },
-  {
-    icon: <FaChalkboardTeacher size={50} className="text-indigo-600" />,
-    title: "Faculty & Staff Management",
-    points: [
-      "Digitize faculty recruitment, workload, and evaluations",
-      "Enable seamless timetable, leave, and payroll handling",
-    ],
-  },
-];
 
 const functionality = [
   {
-    icon: <FaUniversity />,
-    title: "Course & Department Management",
+    title: "Online Registration & Fee Payment",
     points: [
-      "Manage departments, programs, and subjects easily.",
-      "Track intake, eligibility, and academic structure.",
-    ],
+      "Candidate self-registration with unique ID generation",
+      "Secure online payment integration for exam fees"
+    ]
   },
   {
-    icon: <FaUserTie />,
-    title: "Faculty Information System",
+    title: "Admit Card Generation",
     points: [
-      "Maintain faculty profiles, workload, and schedules.",
-      "Manage qualifications, appraisals, and leaves.",
-    ],
+      "Auto-generated admit cards with QR code/Barcode",
+      "Email/SMS notifications for download alerts"
+    ]
   },
   {
-    icon: <FaUserCheck />,
-    title: "Student Lifecycle Management",
+    title: "Exam Scheduling & Slot Management",
     points: [
-      "Complete student journey from admission to graduation.",
-      "Track academic performance, fees, and activities.",
-    ],
+      "Dynamic exam slot assignment based on capacity",
+      "Real-time center mapping and availability check"
+    ]
   },
   {
-    icon: <FaClipboardList />,
-    title: "Examination & Evaluation System",
+    title: "Online & Offline Exam Support",
     points: [
-      "Schedule exams and publish results digitally.",
-      "Generate report cards and performance analytics.",
-    ],
+      "Supports CBT (Computer Based Tests) and pen-paper modes",
+      "Integrated timer, question shuffling, and anti-cheat features"
+    ]
   },
   {
-    icon: <FaFileInvoice />,
-    title: "Fee & Finance Management",
+    title: "Question Paper Management",
     points: [
-      "Online fee collection with receipts and reminders.",
-      "Scholarships, concessions, and ledger tracking.",
-    ],
+      "Secure question bank with role-based access",
+      "Auto-randomization and encrypted paper delivery"
+    ]
   },
   {
-    icon: <FaChalkboardTeacher />,
-    title: "Timetable & Academic Planning",
+    title: "Result Processing & Analytics",
     points: [
-      "Generate class and exam timetables smartly.",
-      "Auto-adjustments for faculty leaves and holidays.",
-    ],
+      "Auto-evaluation of objective responses",
+      "Detailed performance analysis and merit list generation"
+    ]
   },
   {
-    icon: <FaCalendarCheck />,
-    title: "Attendance Monitoring System",
+    title: "Counseling & Admission Integration",
     points: [
-      "Daily attendance via biometric or RFID devices.",
-      "Alerts for low attendance and defaulters.",
-    ],
+      "Rank-based counseling and seat allotment workflows",
+      "Direct integration with student admission modules"
+    ]
   },
   {
-    icon: <FaBook />,
-    title: "Library & Digital Resources",
+    title: "Secure Data Storage & Audit Trail",
     points: [
-      "Catalog, issue/return, and e-book access.",
-      "Integration with academic portals and journals.",
-    ],
+      "Encrypted data storage for candidate records",
+      "Full audit log for system access and actions"
+    ]
   },
   {
-    icon: <FaTools />,
-    title: "Laboratory Management",
+    title: "Mobile-Friendly Candidate Portal",
     points: [
-      "Lab scheduling, experiment logs, and safety tracking.",
-      "Manage inventory and consumables efficiently.",
-    ],
-  },
-  {
-    icon: <FaUsersCog />,
-    title: "Training & Placement Portal",
-    points: [
-      "Record internships, placements, and offers.",
-      "Recruiter management and student shortlisting.",
-    ],
-  },
+      "Responsive UI for application status tracking",
+      "Real-time updates and push notifications"
+    ]
+  }
 ];
 
-const UniversityAutomation = () => {
-
-
-
+const features = [
+  {
+    title: "Online Registration & Payment",
+    points: [
+      "Student self-registration with secure login access",
+      "Integrated online payment gateway for exam fees"
+    ]
+  },
+  {
+    title: "Admit Card & Hall Ticket Generation",
+    points: [
+      "Auto-generated admit cards with unique candidate codes",
+      "Instant access and notifications via email/SMS"
+    ]
+  },
+  {
+    title: "Slot Allocation & Exam Scheduling",
+    points: [
+      "Intelligent scheduling based on center availability",
+      "Flexible slot management with capacity tracking"
+    ]
+  },
   
+  
+  
+];
 
+
+const EntranceExamManagementandInformationSystem = () => {
   return (
+  
+    
     <>
-     <div className="">
-      {/* Background Image */}
-      <img
-        src="https://image-static.collegedunia.com/public/college_data/images/appImage/12734_AITAMCOver.png?h=260&w=360&mode=crop"
-        alt="University Background"
-        className="w-full h-full object-cover"
-      />
+      <div className="relative w-full h-screen">
+        {/* Background Image */}
+        <img
+          src={EntranceExamBanner}
+          alt="Entrance Examination Background"
+          className="w-full h-full object-cover"
+        />
 
-      {/* Overlay for better contrast (optional) */}
-      <div className="absolute inset-0 bg-black/30" />
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/30" />
 
-      {/* Text Content */}
-      <div className="absolute inset-0 flex items-center justify-start px-6 md:px-16">
-        <div className="text-white max-w-2xl">
-          <h1 className="text-2xl md:text-4xl font-bold text-white font-houschka">
-            Engineering College Management and Information System
-          </h1>
-          <p className="text-lg md:text-xl text-green-400 font-basis mt-4">
-            Robust, All-Inclusive & Scalable ERP Solution for Streamlining Universities
-          </p>
-          <p className="text-gray-200 mt-3 font-basis">
-            Enables flawless management of all academic and non-academic activities
-          </p>
-          <button className="mt-6 bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-300">
-            REQUEST A QUICK DEMO TODAY!
-          </button> 
+        {/* Text Content */}
+        <div className="absolute inset-0 flex items-center justify-start px-6 md:px-16">
+          <div className="text-white max-w-2xl">
+            <h1 className="text-2xl md:text-4xl font-bold text-white font-houschka">
+              Entrance Examination Management System
+            </h1>
+            <p className="text-lg md:text-xl text-red-300 font-basis mt-4">
+              End-to-End Digital Solution for Conducting Secure & Transparent Entrance Exams
+            </p>
+            <p className="text-gray-200 mt-3 font-basis">
+              Manage registration, admit cards, online/offline tests, proctoring, evaluation, and results — all in one centralized platform.
+            </p>
+            <button className="mt-6 bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full transition-all duration-300">
+              REQUEST A QUICK DEMO TODAY!
+            </button>
+          </div>
         </div>
       </div>
-     {/*new section for functionality*/}
 
-     
-{/*new section for functionality*/}
+      
+      {/* New section for functionality */}
 <section className="bg-white px-4 md:px-12 lg:px-20 py-16 text-gray-800 mt-20">
-      {/* Header */}
-      <div className="max-w-7xl mx-auto text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-800">
-          Engineering college Management And Information System
-        </h2>
-        <p className="text-gray-600 max-w-4xl mx-auto text-lg font-basis ">
-          Our Engineering College Management and Information System offers smart, scalable tools that automate academic
-and administrative operations, boost institutional productivity, and ensure transparent, outcome-driven governance.
+  {/* Header */}
+  <div className="max-w-7xl mx-auto text-center mb-10">
+    <h2 className="text-3xl md:text-4xl font-bold mb-4 text-blue-800">
+      Entrance Examination Management and Information System
+    </h2>
+    <p className="text-gray-600 max-w-4xl mx-auto text-lg font-basis">
+      Our Entrance Examination Management System streamlines exam planning, registration, scheduling, secure delivery, and result processing—ensuring transparency, efficiency, and compliance throughout the examination lifecycle.
+    </p>
+  </div>
 
-        </p>
+  {/* Cards Grid */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto bg-blue-100">
+    {functionality.map((feature, idx) => (
+      <div
+        key={idx}
+        className="bg-white rounded-xl border border-gray-200 shadow-md p-6 
+        hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group 
+        hover:bg-gradient-to-r hover:from-blue-100 hover:via-red-100 hover:to-green-100 hover:text-white"
+      >
+        <div className="flex items-center gap-3 mb-3 text-indigo-600 text-3xl group-hover:text-indigo-800">
+          {feature.icon}
+          <h3 className="text-lg font-semibold text-gray-800 group-hover:text-indigo-800">{feature.title}</h3>
+        </div>
+        <ul className="list-disc list-inside text-gray-600 text-sm space-y-1 pl-1">
+          {feature.points.map((point, i) => (
+            <li key={i}>{point}</li>
+          ))}
+        </ul>
       </div>
+    ))}
+  </div>
+</section>
 
-      {/* Cards Grid */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto bg-blue-100">
-        {functionality.map((feature, idx) => (
-          <div
-            key={idx}
-            className="bg-white rounded-xl border border-gray-200 shadow-md p-6 
-            hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group 
-            hover:bg-gradient-to-r hover:from-blue-100 hover:via-red-100 hover:to-green-100 hover:text-white"
-
-          >
-            <div className="flex items-center gap-3 mb-3 text-indigo-600 text-3xl group-hover:text-indigo-800">
-              {feature.icon}
-              <h3 className="text-lg font-semibold text-gray-800 group-hover:text-indigo-800">{feature.title}</h3>
-            </div>
-            <ul className="list-disc list-inside text-gray-600 text-sm space-y-1 pl-1">
-              {feature.points.map((point, i) => (
-                <li key={i}>{point}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-    </section>
-
-    <section className="bg-gradient-to-br from-blue-100 via-red-100 to-green-100 py-16 px-4 md:px-20">
+{/* new section */}
+<section className="bg-gradient-to-br from-blue-100 via-red-100 to-green-100 py-16 px-4 md:px-20">
   <div className="text-center mb-12">
     <h2 className="text-3xl md:text-4xl font-bold text-blue-900 font-houschka">
-      How Mohitraj Research Tech Empowers Engineering Colleges to Excel
+      How Mohitraj Research Tech Empowers Entrance Examination Systems
     </h2>
     <p className="text-gray-700 max-w-3xl mx-auto mt-2 font-basis">
-      Our cutting-edge Engineering College Management and Information System streamlines administration, automates academic workflows,
-      and equips institutions to deliver smarter, data-driven education.
+      Our Entrance Examination Management and Information System ensures secure, efficient, and transparent handling of end-to-end exam workflows—from registration to result declaration—empowering institutions to conduct exams with confidence and integrity.
     </p>
   </div>
 
@@ -217,9 +191,6 @@ and administrative operations, boost institutional productivity, and ensure tran
         className="group bg-white rounded-2xl border border-gray-200 p-6 shadow-md 
         hover:bg-blue-900 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transition-all duration-300"
       >
-        <div className="flex justify-center mb-4 text-4xl text-indigo-600 group-hover:text-white transition-all duration-300">
-          {item.icon}
-        </div>
         <h3 className="text-xl font-semibold text-gray-800 text-center mb-2 group-hover:text-white transition-all duration-300">
           {item.title}
         </h3>
@@ -234,10 +205,8 @@ and administrative operations, boost institutional productivity, and ensure tran
     ))}
   </div>
 </section>
-     {/*new section for why choose our software*/}
 
-     
-
+{/* new section for why choose our software */}
 <section className="px-4 md:px-12 lg:px-20 py-20 bg-red-100">
   <div className="max-w-7xl mx-auto">
 
@@ -245,7 +214,7 @@ and administrative operations, boost institutional productivity, and ensure tran
     <div className="mb-12">
       <img
         src="https://www.bannerbuzz.co.uk/blog/wp-content/uploads/2023/09/Rigid-Signs-2-1024x441.webp"
-        alt="Engineering College Management Banner"
+        alt="Examination Management Banner"
         className="w-full h-64 md:h-96 object-cover rounded-xl shadow-md"
       />
     </div>
@@ -257,44 +226,40 @@ and administrative operations, boost institutional productivity, and ensure tran
       <div className="lg:w-1/2">
         <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6 relative group inline-block">
           <span className="hover:text-red-600 transition-all duration-300 font-houschka">
-            Why Choose Mohitraj Engineering College Management System?
+            Why Choose Mohitraj Entrance Examination Management System?
           </span>
         </h2>
         <p className="text-gray-700 mb-6 text-base md:text-lg leading-relaxed font-basis">
-          Mohitraj Research Tech Pvt. Ltd. delivers intelligent Engineering College Management and Information Systems
-          to streamline academic operations, simplify administrative workflows, and enhance transparency across the institution.
+          Mohitraj Research Tech Pvt. Ltd. offers a robust and secure Entrance Examination Management System 
+          that simplifies candidate registration, streamlines exam delivery, and ensures transparency at every step of the examination lifecycle.
         </p>
-        <h4 className="font-semibold text-lg text-blue-800 mb-2">Here’s what makes us stand out:</h4>
+        <h4 className="font-semibold text-lg text-blue-800 mb-2">Key advantages of our solution include:</h4>
         <ul className="list-disc list-inside mt-3 text-gray-800 space-y-2">
-          <li>Digitized workflows from admissions to placements</li>
-          <li>Real-time analytics for academic and admin decisions</li>
-          <li>Modular, customizable architecture for colleges</li>
-          <li>Secure, cloud-based multi-user access system</li>
+          <li>End-to-end digital exam management – from registration to result</li>
+          <li>Secure online/offline examination delivery with audit trails</li>
+          
+          
         </ul>
       </div>
 
-      {/* Right Cards */}
+      {/* Right Cards (No Icons) */}
       <div className="lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-6">
         {[
           {
-            icon: "🏛️",
-            title: "Academic Infrastructure",
-            desc: "Manage departments, labs, and programs digitally across the institution.",
+            title: "Candidate Registration",
+            desc: "Streamlined online registration with secure login and document verification.",
           },
           {
-            icon: "🎓",
-            title: "Student Lifecycle",
-            desc: "Track students’ academic journey from enrollment to graduation.",
+            title: "Exam Slot Management",
+            desc: "Flexible scheduling and intelligent slot allocation based on capacity.",
           },
           {
-            icon: "👨‍🏫",
-            title: "Faculty Operations",
-            desc: "Automate teaching loads, schedules, and performance evaluations.",
+            title: "Result Declaration",
+            desc: "Auto-processed results with scorecards, ranking, and cutoff insights.",
           },
           {
-            icon: "📈",
-            title: "Insightful Dashboards",
-            desc: "Monitor KPIs, results, and compliance with live analytics dashboards.",
+            title: "Counseling & Allotment",
+            desc: "Integrated system for merit-based counseling and seat assignment.",
           },
         ].map((card, idx) => (
           <div
@@ -309,7 +274,6 @@ and administrative operations, boost institutional productivity, and ensure tran
 
             {/* Content */}
             <div className="relative z-10 text-center space-y-3">
-              <div className="text-4xl">{card.icon}</div>
               <h3 className="text-lg font-semibold text-gray-800 transition-all duration-300 
                 group-hover:bg-clip-text group-hover:text-transparent 
                 group-hover:bg-gradient-to-r group-hover:from-blue-700 group-hover:via-red-500 group-hover:to-green-600">
@@ -328,11 +292,12 @@ and administrative operations, boost institutional productivity, and ensure tran
   </div>
 </section>
 
+{/*new section*/}
 
 {/* Products Showcase Slider Section */}
 <section className="bg-white py-20 px-4 md:px-20">
   <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-900 mb-10 font-houschka">
-    Our Engineering College management and information system software Solution
+    Our Entrance Examination Management System Modules
   </h2>
 
   <Swiper
@@ -353,24 +318,24 @@ and administrative operations, boost institutional productivity, and ensure tran
   >
     {[
       {
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-NKhVEy_DQ6QSiW4zNYjsDphFcAuMibo-GA&s",
-        title: "University ERP Software",
+        img: "https://img.freepik.com/free-vector/online-registration-concept-illustration_114360-7881.jpg",
+        title: "Candidate Registration Portal",
       },
       {
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFTTkFedUiVBbJ-8EVTNKbjLazfuWTkAuYaw&s",
-        title: "Online Examination System",
+        img: "https://img.freepik.com/free-vector/online-test-concept-illustration_114360-4864.jpg",
+        title: "Online Exam Interface",
       },
       {
-        img: "https://i.pinimg.com/originals/13/96/62/1396621cb55390941a9215dcf315b423.jpg",
-        title: "Student Information Portal",
+        img: "https://img.freepik.com/premium-vector/id-card-concept-illustration_610956-48.jpg",
+        title: "Admit Card & Hall Ticket Module",
       },
       {
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyq02lDER9BnavXiipBF2ZcAeI4TbKrdlVJA&s",
-        title: "Library Automation Software",
+        img: "https://img.freepik.com/free-vector/results-concept-illustration_114360-7887.jpg",
+        title: "Result Processing System",
       },
       {
-        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSE5iNrFKHGK5Hu-e_nnk8wUgxzACGy-kHfA&s",
-        title: "Education Data Analytics",
+        img: "https://img.freepik.com/free-vector/hiring-concept-illustration_114360-496.jpg",
+        title: "Counseling & Seat Allotment",
       },
     ].map((item, index) => (
       <SwiperSlide key={index}>
@@ -391,17 +356,15 @@ and administrative operations, boost institutional productivity, and ensure tran
   </Swiper>
 </section>
 
-{/*benefits */}
-
-{/* new section benefits */}
+{/* Benefits Section */}
 <section className="w-full py-20 px-4 md:px-16 bg-gradient-to-br from-blue-100 via-red-100 to-green-100">
   <div className="max-w-6xl mx-auto text-center">
     <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6 font-houschka">
-      Key Benefits of Engineering College Management & Information System
+      Key Benefits of Entrance Examination Management System
     </h2>
     <p className="text-gray-800 text-lg md:text-xl max-w-3xl mx-auto mb-10 font-basis">
-      Enable your engineering college with an advanced, scalable, and secure digital system to simplify operations,
-      enhance student lifecycle management, and boost institutional performance.
+      Revolutionize your entrance exam process with a secure, automated, and end-to-end digital platform designed
+      to simplify registrations, enhance exam integrity, and deliver real-time insights.
     </p>
   </div>
 
@@ -409,11 +372,11 @@ and administrative operations, boost institutional productivity, and ensure tran
   <div className="max-w-5xl mx-auto bg-white/70 backdrop-blur-md border border-gray-200 shadow-xl rounded-2xl p-8">
     <ol className="list-decimal list-inside space-y-4 text-left">
       {[
-        "Centralized management of departments, courses, and student lifecycle.",
-        "Digital faculty workload tracking, attendance, and performance records.",
-        "Automated admissions, examinations, result processing, and transcript generation.",
-        "Role-based secured access for students, faculty, and administrators.",
-        "Insightful dashboards for academic KPIs, compliance, and decision making.",
+        "End-to-end automation of exam cycle: registration, admit cards, results, counseling.",
+        "Real-time monitoring of exam progress, attendance, and malpractice detection.",
+        "Scalable CBT platform with multilingual support and dynamic question paper sets.",
+        "Secure cloud-based system ensuring data encryption, audit trails, and role-based access.",
+        "Advanced analytics dashboards for performance insights and merit generation.",
       ].map((point, idx) => (
         <li
           key={idx}
@@ -427,29 +390,27 @@ and administrative operations, boost institutional productivity, and ensure tran
   </div>
 </section>
 
+{/* Demo Section for Entrance Examination System */}
+<section className="bg-red-700 bg-dotted-pattern text-white py-16 px-4 text-center">
+  <h2 className="text-2xl md:text-3xl font-bold mb-4 font-houschka">
+    Ready to Modernize Your Entrance Examination Process with Mohitraj?
+  </h2>
+  <p className="max-w-3xl mx-auto text-base md:text-lg mb-6 font-basis">
+    Experience secure, scalable, and fully automated entrance exam solutions with Mohitraj Research Tech Pvt. Ltd.
+    — trusted by institutions and government bodies for digital assessment transformation.
+  </p>
+  <a
+    href="#contact"
+    className="inline-block border border-white px-6 py-2 rounded-full text-white hover:bg-white hover:text-green-700 transition-all duration-300"
+  >
+    SCHEDULE A LIVE DEMO
+  </a>
+</section>
 
 
-
-      {/*demo*/}
-      <section className="bg-red-700 bg-dotted-pattern text-white py-16 px-4 text-center">
-      <h2 className="text-2xl md:text-3xl font-bold mb-4 font-houschka">
-        Ready to Digitally Transform Your Organization with Mohitraj?
-      </h2>
-      <p className="max-w-3xl mx-auto text-base md:text-lg mb-6 font-basis">
-        Automate, Centralize, and Streamline your Operations with Mohitraj Research Tech Pvt. Ltd. —
-        India's trusted digital transformation partner for government, enterprise, and education sectors.
-      </p>
-      <a
-        href="#contact"
-        className="inline-block border border-white px-6 py-2 rounded-full text-white hover:bg-white hover:text-green-700 transition-all duration-300"
-      >
-        SCHEDULE A QUICK DEMO
-      </a>
-    </section>
-    </div>
     
     </>
   )
 }
 
-export default UniversityAutomation
+export default EntranceExamManagementandInformationSystem

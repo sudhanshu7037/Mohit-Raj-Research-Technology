@@ -1,33 +1,369 @@
 import React, { useState } from 'react';
-import { FaHospitalAlt, FaUserMd, FaNotesMedical,FaShieldAlt,FaCogs,FaSyncAlt,FaServer,FaNetworkWired,FaLaptopMedical , FaBed, FaCapsules, FaFileInvoiceDollar, FaCalculator, FaBoxes, FaUsersCog, FaIdCardAlt, FaProcedures, FaHeartbeat, FaVials, FaStethoscope } from 'react-icons/fa';
+import {
+  FaHospitalAlt,
+  FaUserMd,
+  FaNotesMedical,
+  FaShieldAlt,
+  FaCogs,
+  FaSyncAlt,
+  FaServer,
+  FaNetworkWired,
+  FaLaptopMedical,
+  FaBed,
+  FaCapsules,
+  FaFileInvoiceDollar,
+  FaCalculator,
+  FaBoxes,
+  FaUsersCog,
+  FaIdCardAlt,
+  FaProcedures,
+  FaHeartbeat,
+  FaVials,
+  FaStethoscope,
+  FaUniversity,
+  FaRegClipboard,
+  FaUserGraduate,
+  FaIdCard,
+  FaFileAlt,
+  FaChartBar,
+  FaMoneyCheckAlt,
+  FaBalanceScale,
+  FaCalendarAlt,
+  FaClock,
+  FaUserShield,
+  FaBuilding,
+  FaLaptopCode,
+  FaFlask,
+  FaUserCheck,
+  FaShoppingCart,
+  FaBook,
+  FaFileMedical,
+  FaClinicMedical,
+  FaUserNurse,
+  FaMicroscope,
+  FaPills,
+  FaTasks,
+  FaStore
+} from 'react-icons/fa';
+
 import { MdOutlineMedicalServices } from "react-icons/md";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
-import BannerImage from "../../../assets/medicalbanner.png"
+import BannerImage from "../../../assets/produtspage/medical/images/hospitalandbanner.png"
 
 
-const modules = [
-    { title: "Vice Chancellor office Management" },
-    { title: "Registrar office Management" },
-    { title: "Student Admission Management" },
-    { title: "Student Information Management" },
-    { title: "Examination management system" },
-    { title: "Result analysis & processing Management" },
-    { title: "Account & Finance Management" },
-    { title: "Budget Management" },
-    { title: "Employee Management & Information System" },
-    { title: "Employee Leave Management" },
-    { title: "Employee attendance Management" },
-    { title: "Employee Administration & Monitoring" },
-    { title: "College & department management" },
-    { title: "Learning Management System" },
-    { title: "Laboratory Management" },
-    { title: "Student Attendance Management" },
-    { title: "Store & Purchase Management system" },
-    { title: "Library Management System" },
-    { title: "Tax Management System" },
+const features = [
+  {
+    icon: <FaUniversity size={50} className="text-indigo-600" />,
+    title: "Vice Chancellor office Management",
+    points: [
+      "Streamlined administrative decision-making tools.",
+      "Dashboard for real-time performance & notifications.",
+    ],
+  },
+  {
+    icon: <FaRegClipboard size={50} className="text-indigo-600" />,
+    title: "Registrar office Management",
+    points: [
+      "Centralized data of student records & faculty.",
+      "Manage approvals, notifications, and official documents.",
+    ],
+  },
+  {
+    icon: <FaUserGraduate size={50} className="text-indigo-600" />,
+    title: "Student Admission Management",
+    points: [
+      "Online application, screening & selection process.",
+      "Track seat allotments, merit lists, and status.",
+    ],
+  },
+  {
+    icon: <FaIdCard size={50} className="text-indigo-600" />,
+    title: "Student Information Management",
+    points: [
+      "Maintain academic, personal, and financial records.",
+      "Quick access to student performance and documents.",
+    ],
+  },
+  {
+    icon: <FaFileAlt size={50} className="text-indigo-600" />,
+    title: "Examination management system",
+    points: [
+      "Exam scheduling, hall ticket, and result generation.",
+      "Online/offline exam support with security features.",
+    ],
+  },
+  {
+    icon: <FaChartBar size={50} className="text-indigo-600" />,
+    title: "Result analysis & processing Management",
+    points: [
+      "Automated marks processing and result publishing.",
+      "Statistical result analysis for performance tracking.",
+    ],
+  },
+  {
+    icon: <FaMoneyCheckAlt size={50} className="text-indigo-600" />,
+    title: "Account & Finance Management",
+    points: [
+      "Manage income, expenses, and fee payments.",
+      "Generate financial reports and audit trails.",
+    ],
+  },
+  {
+    icon: <FaBalanceScale size={50} className="text-indigo-600" />,
+    title: "Budget Management",
+    points: [
+      "Track annual and departmental budgets.",
+      "Forecasting tools with allocation workflows.",
+    ],
+  },
+  {
+    icon: <FaUsersCog size={50} className="text-indigo-600" />,
+    title: "Employee Management & Information System",
+    points: [
+      "Manage employee records and job profiles.",
+      "Track promotions, transfers, and qualifications.",
+    ],
+  },
+  {
+    icon: <FaCalendarAlt size={50} className="text-indigo-600" />,
+    title: "Employee Leave Management",
+    points: [
+      "Automate leave requests, approvals, and balances.",
+      "Real-time visibility into department availability.",
+    ],
+  },
+  {
+    icon: <FaClock size={50} className="text-indigo-600" />,
+    title: "Employee attendance Management",
+    points: [
+      "Biometric or digital attendance tracking system.",
+      "Generate daily, weekly & monthly reports.",
+    ],
+  },
+  {
+    icon: <FaUserShield size={50} className="text-indigo-600" />,
+    title: "Employee Administration & Monitoring",
+    points: [
+      "Track job responsibilities and task management.",
+      "Monitor employee performance and activities.",
+    ],
+  },
+  {
+    icon: <FaBuilding size={50} className="text-indigo-600" />,
+    title: "College & department management",
+    points: [
+      "Manage departmental structure and responsibilities.",
+      "Track faculty, infrastructure, and course allocations.",
+    ],
+  },
+  {
+    icon: <FaLaptopCode size={50} className="text-indigo-600" />,
+    title: "Learning Management System",
+    points: [
+      "Host and manage courses, assignments & quizzes.",
+      "Monitor student progress and course engagement.",
+    ],
+  },
+  {
+    icon: <FaFlask size={50} className="text-indigo-600" />,
+    title: "Laboratory Management",
+    points: [
+      "Track lab equipment, usage, and maintenance.",
+      "Manage lab bookings and safety compliance.",
+    ],
+  },
+  {
+    icon: <FaUserCheck size={50} className="text-indigo-600" />,
+    title: "Student Attendance Management",
+    points: [
+      "Track daily attendance with alerts for defaulters.",
+      "Support for manual and biometric entry.",
+    ],
+  },
+  {
+    icon: <FaShoppingCart size={50} className="text-indigo-600" />,
+    title: "Store & Purchase Management system",
+    points: [
+      "Manage inventory, suppliers, and purchase orders.",
+      "Track consumption, requests, and deliveries.",
+    ],
+  },
+  {
+    icon: <FaBook size={50} className="text-indigo-600" />,
+    title: "Library Management System",
+    points: [
+      "Catalog books, track issues/returns, and fines.",
+      "Searchable digital library with user portal.",
+    ],
+  },
+  {
+    icon: <FaFileInvoiceDollar size={50} className="text-indigo-600" />,
+    title: "Tax Management System",
+    points: [
+      "Track institutional taxes, returns, and compliance.",
+      "Generate automated tax reports and summaries.",
+    ],
+  },
 ];
+
+const featureshospital = [
+  {
+    icon: <FaUserShield size={50} className="text-indigo-600" />,
+    title: "Director Office Management",
+    points: [
+      "Centralized oversight of all hospital departments and operations.",
+      "Performance dashboards, reporting, and compliance monitoring.",
+    ],
+  },
+  {
+    icon: <FaFileMedical size={50} className="text-indigo-600" />,
+    title: "Patient Registrar Models",
+    points: [
+      "Patient registration, demographics, and identification digitized.",
+      "Quick search, unique ID generation, and history tracking.",
+    ],
+  },
+  {
+    icon: <FaClinicMedical size={50} className="text-indigo-600" />,
+    title: "OPD Management",
+    points: [
+      "Manage walk-in patients, appointment scheduling, and doctor allocation.",
+      "Medical records, billing, and prescriptions integrated.",
+    ],
+  },
+  {
+    icon: <FaProcedures size={50} className="text-indigo-600" />,
+    title: "IPD Management",
+    points: [
+      "Track admitted patients, room assignments, and progress notes.",
+      "Integrated with nursing, pharmacy, and billing workflows.",
+    ],
+  },
+  {
+    icon: <FaHospitalAlt size={50} className="text-indigo-600" />,
+    title: "Emergency/Casualty Management",
+    points: [
+      "Handle emergency admissions, triage, and real-time status updates.",
+      "Prioritized workflows for critical patient handling.",
+    ],
+  },
+  {
+    icon: <FaUserMd size={50} className="text-indigo-600" />,
+    title: "Doctors Workbench",
+    points: [
+      "Unified dashboard for patient lists, lab results, and prescriptions.",
+      "Supports e-prescriptions, documentation, and scheduling.",
+    ],
+  },
+  {
+    icon: <FaStethoscope size={50} className="text-indigo-600" />,
+    title: "OPD/IPD/Casualty Consultation",
+    points: [
+      "Consultation notes, clinical findings, and diagnosis logging.",
+      "Template-driven documentation and follow-up scheduling.",
+    ],
+  },
+  {
+    icon: <FaUserNurse size={50} className="text-indigo-600" />,
+    title: "Nursing & Supporting Staff Management",
+    points: [
+      "Shift scheduling, patient care tracking, and task assignments.",
+      "Daily activity logs and documentation.",
+    ],
+  },
+  {
+    icon: <FaBed size={50} className="text-indigo-600" />,
+    title: "Bed & Ward Management",
+    points: [
+      "Real-time bed occupancy tracking and ward allocation.",
+      "Ward transfer, discharge summary, and cleaning cycle logging.",
+    ],
+  },
+  {
+    icon: <FaMicroscope size={50} className="text-indigo-600" />,
+    title: "Diagnosis Management",
+    points: [
+      "Standardized diagnosis coding and categorization.",
+      "Supports clinical decision-making and statistical analysis.",
+    ],
+  },
+  {
+    icon: <FaNotesMedical size={50} className="text-indigo-600" />,
+    title: "Procedure Management",
+    points: [
+      "Schedule and log procedures across departments.",
+      "Pre-op, intra-op, and post-op details integrated.",
+    ],
+  },
+  {
+    icon: <FaLaptopMedical size={50} className="text-indigo-600" />,
+    title: "OT Management",
+    points: [
+      "OT scheduling, equipment preparation, and surgeon availability.",
+      "Sterilization logs and surgery documentation.",
+    ],
+  },
+  {
+    icon: <FaPills size={50} className="text-indigo-600" />,
+    title: "Pharmacy Management",
+    points: [
+      "Stock monitoring, drug dispensing, and prescription linking.",
+      "Expiry alerts and procurement integration.",
+    ],
+  },
+  {
+    icon: <FaVials size={50} className="text-indigo-600" />,
+    title: "Laboratory Management",
+    points: [
+      "Test order tracking, sample collection, and result generation.",
+      "Reports auto-linked with patient records.",
+    ],
+  },
+  {
+    icon: <FaMoneyCheckAlt size={50} className="text-indigo-600" />,
+    title: "Financial Accounting & Hospital Budgeting",
+    points: [
+      "Manage hospital accounts, income/expense tracking.",
+      "Supports budgeting, forecasting, and audits.",
+    ],
+  },
+  {
+    icon: <FaUsersCog size={50} className="text-indigo-600" />,
+    title: "Human Resource Management",
+    points: [
+      "HR records, payroll, attendance, and leaves management.",
+      "Employee lifecycle tracking and document handling.",
+    ],
+  },
+  {
+    icon: <FaTasks size={50} className="text-indigo-600" />,
+    title: "Task Schedule & Work Management",
+    points: [
+      "Daily task assignment and tracking across departments.",
+      "Work calendars and notifications for due tasks.",
+    ],
+  },
+  {
+    icon: <FaStore size={50} className="text-indigo-600" />,
+    title: "Store & Purchase Management",
+    points: [
+      "Inventory tracking, purchase orders, and vendor management.",
+      "Auto-replenishment based on stock levels.",
+    ],
+  },
+  {
+    icon: <FaUserShield size={50} className="text-indigo-600" />,
+    title: "Admin & User Management",
+    points: [
+      "Role-based access control for all users and staff.",
+      "Audit logs, user activity, and permissions handling.",
+    ],
+  },
+];
+
+
 
 
 const departments = [
@@ -105,27 +441,21 @@ const MedicalCollegeManagementandInformationSystem = () => {
 
       <div className="relative w-full h-screen">
       {/* Background Image */}
-      <img
-        src={BannerImage}
-        alt="University Background"
-        className="w-full h-full object-cover"
-      />
-
+     <img
+  src={BannerImage}
+  alt="University Background"
+  className="w-full h-[70vh] md:h-screen object-cover"
+/>
       {/* Overlay for better contrast (optional) */}
       <div className="absolute inset-0 bg-black/30" />
 
       {/* Text Content */}
       <div className="absolute inset-0 flex items-center justify-start px-6 md:px-16">
         <div className="text-white max-w-2xl">
-          <h1 className="text-2xl md:text-4xl font-bold text-white font-houschka">
+          <h1 className="text-3xl md:text-4xl font-bold text-white font-houschka">
             Medical College Management & Information System
           </h1>
-          <p className="text-lg md:text-xl text-green-400 font-semibold mt-4 font-basis ">
-            Robust, All-Inclusive & Scalable ERP Solution for Streamlining Universities
-          </p>
-          <p className="text-gray-200 mt-3 font-basis">
-            Enables flawless management of all academic and non-academic activities
-          </p>
+         
           <button className="mt-6 bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-300">
             REQUEST A QUICK DEMO TODAY!
           </button> 
@@ -142,37 +472,81 @@ const MedicalCollegeManagementandInformationSystem = () => {
     </p>
   </div>
 
-  <div className="relative h-[600px] w-[600px] mx-auto">
-    {/* Central Circle */}
-    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-700 text-white font-bold flex items-center justify-center h-40 w-40 rounded-full shadow-lg z-10 transition-all duration-500 hover:scale-110 hover:shadow-[0_0_20px_5px_rgba(59,130,246,0.6)] hover:ring-4 hover:ring-blue-300 hover:text-yellow-300 hover:tracking-wide">
-  MCMIS
-</div>
+  <div className="">
+    
 
 
     {/* Outer Modules */}
-    {modules.map((module, index) => {
-      const angle = (index / modules.length) * 2 * Math.PI;
-      const radius = 220;
-      const x = Math.cos(angle) * radius;
-      const y = Math.sin(angle) * radius;
-      return (
-        <div
-          key={index}
-          className="absolute group flex flex-col items-center justify-center h-28 w-28 bg-white rounded-full shadow-md text-sm font-semibold text-blue-700 text-center px-2 transition-all duration-300"
-          style={{
-            top: `calc(50% + ${y}px - 56px)`,
-            left: `calc(50% + ${x}px - 56px)`,
-          }}
-        >
-          <div className="z-10 transition-all duration-300 group-hover:scale-110 group-hover:z-50 group-hover:-translate-y-2 group-hover:bg-red-200 group-hover:shadow-xl flex flex-col items-center justify-center h-full w-full rounded-full px-2">
-            <div className="mb-1">{module.icon}</div>
-            <div>{module.title}</div>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+            {features.map((item, index) => (
+              <div
+                key={index}
+                className="group bg-white rounded-2xl border border-gray-200 p-6 shadow-md 
+        hover:bg-blue-900 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transition-all duration-300"
+              >
+                <div className="flex justify-center mb-4 text-4xl text-indigo-600 group-hover:text-white transition-all duration-300">
+                  {item.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2 group-hover:text-white transition-all duration-300">
+                  {item.title}
+                </h3>
+                <ul className="mt-2 text-gray-600 text-sm space-y-2 group-hover:text-gray-200 transition-all duration-300">
+                  {item.points.map((point, i) => (
+                    <li key={i} className="list-disc list-inside">
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
-        </div>
-      );
-    })}
   </div>
 </section>
+
+
+
+
+      <section className="relative w-full py-24 bg-gradient-to-br from-blue-100 via-red-100 to-green-100 overflow-hidden">
+  <div className="max-w-6xl mx-auto text-center mb-16">
+    <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4 font-houschka">
+      Hospital Management features and functionality
+    </h2>
+    <p className="text-gray-600 max-w-2xl mx-auto font-basis">
+      Visual representation of MCMIS modules placed around a central core system.
+    </p>
+  </div>
+
+  <div className="">
+    
+
+
+    {/* Outer Modules */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+            {featureshospital.map((item, index) => (
+              <div
+                key={index}
+                className="group bg-white rounded-2xl border border-gray-200 p-6 shadow-md 
+        hover:bg-blue-900 hover:shadow-2xl hover:scale-[1.03] hover:-translate-y-1 transition-all duration-300"
+              >
+                <div className="flex justify-center mb-4 text-4xl text-indigo-600 group-hover:text-white transition-all duration-300">
+                  {item.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-gray-800 text-center mb-2 group-hover:text-white transition-all duration-300">
+                  {item.title}
+                </h3>
+                <ul className="mt-2 text-gray-600 text-sm space-y-2 group-hover:text-gray-200 transition-all duration-300">
+                  {item.points.map((point, i) => (
+                    <li key={i} className="list-disc list-inside">
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+  </div>
+</section>
+
 
 
 
@@ -354,33 +728,63 @@ const MedicalCollegeManagementandInformationSystem = () => {
 
 <section className="w-full py-20 px-6 md:px-16 bg-gradient-to-br from-blue-50 via-white to-green-50">
   <div className="max-w-6xl mx-auto text-center">
-    {/* 🌈 Gradient Heading */}
-    <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-800 via-purple-600 to-green-700 mb-8 font-houschka">
-      Benefits of Medical College Management System
+    {/* Heading */}
+    <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-800 via-purple-600 to-green-700 mb-6 font-houschka">
+      Key Benefits of Smart Medical College Management System
     </h2>
-    <p className="text-gray-700 text-lg mb-12 font-basis">
-      A smart ERP solution to digitally manage academic, clinical, administrative, and student services of medical colleges.
+    <p className="text-gray-700 text-lg mb-16 font-basis max-w-3xl mx-auto">
+      Unlock streamlined operations, academic precision, and integrated hospital systems with our advanced medical college ERP.
     </p>
 
-    {/* 🔢 Ordered List with Styled LI */}
-    <ol className="list-decimal list-inside space-y-6 text-left max-w-3xl mx-auto">
+    {/* Benefits Grid */}
+    <div className="grid gap-10 md:grid-cols-2">
       {[
-        "Streamlined student admission, registration, and academic records.",
-        "Centralized faculty workload & class scheduling.",
-        "Real-time attendance & exam performance tracking.",
-        "Hospital rounds, patient logs & clinical integration.",
-        "Inventory, pharmacy & lab equipment monitoring.",
-        
-      ].map((benefit, i) => (
-        <li
+        {
+          title: "Centralized Academic Management",
+          desc: "Automate curriculum, exam scheduling, internal assessments, and grading processes.",
+        },
+        {
+          title: "Integrated Hospital Collaboration",
+          desc: "Seamlessly link hospital data with student case studies, rounds, and clinical logs.",
+        },
+        {
+          title: "Smart Attendance & Biometrics",
+          desc: "Track attendance via biometric/RFID with real-time dashboards for faculty & students.",
+        },
+        {
+          title: "Faculty Workload Optimization",
+          desc: "Balance teaching loads, clinical duties, and research assignments intelligently.",
+        },
+        {
+          title: "Laboratory & Equipment Tracking",
+          desc: "Manage lab inventory, chemical usage, and equipment status efficiently.",
+        },
+        {
+          title: "Student Lifecycle Automation",
+          desc: "From admission to graduation — manage every phase digitally with minimal errors.",
+        },
+        {
+          title: "Mobile & Portal Access",
+          desc: "Empower students, faculty, and admin with secure access anytime, anywhere.",
+        },
+        {
+          title: "Comprehensive Reporting",
+          desc: "Instant insights with pre-built reports on academics, finance, hospital, and HR.",
+        },
+      ].map((item, i) => (
+        <div
           key={i}
-          className="relative bg-white p-5 pl-10 rounded-lg border-l-4 border-blue-500 shadow-md hover:shadow-xl transition duration-300 hover:translate-x-2 hover:border-green-600 group"
+          className="group p-6 rounded-2xl bg-white shadow-md hover:shadow-2xl transition-all duration-300 transform hover:scale-105 hover:bg-green-50"
         >
-          <span className="absolute left-3 top-5 w-2.5 h-2.5 rounded-full bg-blue-500 group-hover:bg-green-600 transition"></span>
-          <span className="text-gray-800 group-hover:text-green-800 font-medium">{benefit}</span>
-        </li>
+          <h3 className="text-xl font-semibold text-blue-800 group-hover:text-green-700 mb-2">
+            {item.title}
+          </h3>
+          <p className="text-gray-700 group-hover:text-gray-900 transition duration-200">
+            {item.desc}
+          </p>
+        </div>
       ))}
-    </ol>
+    </div>
   </div>
 </section>
 {/*new section */}

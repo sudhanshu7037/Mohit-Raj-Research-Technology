@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import backimage from "../../assets/servicespage/elearning/images/Elearningbanner.png";
-import DevImage from "../../assets/servicespage/elearning/images/image1.jpg";
+import backimage from "../../assets/servicespage/elearning/images/image1.jpg";
+import DevImage from "../../assets/servicespage/elearning/images/image2.jpg";
 import {
   FaChalkboard,
   FaGraduationCap,

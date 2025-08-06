@@ -33,8 +33,8 @@ const testimonials = [
 const TestimonialSlider = () => {
   return (
     <section className="bg-[#f3f8fc] py-16 px-4 md:px-20 text-center">
-      <p className="text-yellow-500 uppercase font-semibold text-sm tracking-wide">
-        ● Testimonials.
+      <p className="text-yellow-500 uppercase font-bold text-xl tracking-wide">
+         Testimonials.
       </p>
       <h2 className="text-3xl md:text-4xl font-bold text-blue-900 font-houschka mt-2 mb-10">
         Reviews of Our Clients

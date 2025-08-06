@@ -7,13 +7,13 @@ const IndustriesDropdown = ({ openDropdown, setOpenDropdown }) => {
   const timeoutRef = useRef(null);
 
   const industryLinks = [
-    { name: "Education", path: "/Education" },
-    { name: "Healthcare", path: "/Healthcare" },
-    { name: "Banking", path: "/Banking" },
-    { name: "Manufacturing", path: "/Manufacturing" },
-    { name: "Retail", path: "/Retail" },
-    { name: "Life Sciences", path: "/LifeSciences" },
-    { name: "Consumer Goods", path: "/ConsumerGoods" },
+    { name: "Education", path: "/industries/Education" },
+    { name: "Healthcare", path: "/industries/Healthcare" },
+    { name: "Banking", path: "/industries/Banking" },
+    { name: "Manufacturing", path: "/industries/Manufacturing" },
+    { name: "Retail", path: "/industries/Retail" },
+    { name: "Life Sciences", path: "/industries/LifeSciences" },
+    { name: "Consumer Goods", path: "/industries/ConsumerGoods" },
   ];
 
   const handleMouseEnter = () => {
@@ -41,7 +41,7 @@ const IndustriesDropdown = ({ openDropdown, setOpenDropdown }) => {
       </div>
 
       {isOpen && (
-        <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[250px] md:w-[300px] bg-white text-black p-4 shadow-lg z-50 rounded-md">
+        <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-[250px] md:w-[300px] bg-red-100 text-black p-4 shadow-lg z-50 rounded-md">
           <ul className="flex flex-col gap-2 text-xs md:text-sm">
             {industryLinks.map((item, index) => (
               <li key={index}>

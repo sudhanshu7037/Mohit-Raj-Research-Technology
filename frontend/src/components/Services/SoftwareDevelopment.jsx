@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-import Logo1 from "../../assets/SofwareConsulting.png";
-import Logo2 from "../../assets/Custom.png";
-import Logo4 from "../../assets/Erp.png";
-import Logo5 from "../../assets/E-Commerce Platform Development.png";
-import Logo6 from "../../assets/Web Application Development.png";
-import Logo7 from "../../assets/Mobile Application Development.png";
-import Logo8 from "../../assets/Software Testing & QA.png";
-import Logo9 from "../../assets/Performance Engineering.png";
-import Logo10 from "../../assets/Software Maintenance & Support.png";
-import Logo11 from "../../assets/Migration & Re-engineering.png";
-import Medical from "../../assets/medical collage.png";
+import Logo1 from "../../assets/servicespage/softwaredevelopmentimages/softwareicons/SofwareConsulting.png";
+import Logo2 from "../../assets/servicespage/softwaredevelopmentimages/softwareicons/Custom.png";
+import Logo4 from "../../assets/servicespage/softwaredevelopmentimages/softwareicons/Erp.png";
+import Logo5 from "../../assets/servicespage/softwaredevelopmentimages/softwareicons/E-Commerce Platform Development.png";
+import Logo6 from "../../assets/servicespage/softwaredevelopmentimages/softwareicons/Web Application Development.png";
+import Logo7 from "../../assets/servicespage/softwaredevelopmentimages/softwareicons/Mobile Application Development.png";
+import Logo8 from "../../assets/servicespage/softwaredevelopmentimages/softwareicons/Software Testing & QA.png";
+import Logo9 from "../../assets/servicespage/softwaredevelopmentimages/softwareicons/Performance Engineering.png";
+import Logo10 from "../../assets/servicespage/softwaredevelopmentimages/softwareicons/Software Maintenance & Support.png";
+import Logo11 from "../../assets/servicespage/softwaredevelopmentimages/softwareicons/Migration & Re-engineering.png";
+import Medical from "../../assets/servicespage/softwaredevelopmentimages/softwareicons/medical collage.png";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -378,22 +378,21 @@ const SoftwareDevelopment = () => {
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
 
         {/* Hero Content */}
-         <div className="absolute inset-0 flex flex-col justify-center items-start text-left px-4">
-    <h3 className="text-white text-xl md:text-6xl font-semibold leading-tight mb-6 font-houschka">
-      Transform Your Business
-      <br />
-       With Custom Software
-      <br />
-      Development Services
-    </h3>
+        <div className="absolute inset-0 flex flex-col justify-center items-start text-left px-4">
+          <h3 className="text-white text-xl md:text-6xl font-semibold leading-tight mb-6 font-houschka">
+            Transform Your Business
+            <br />
+            With Custom Software
+            <br />
+            Development Services
+          </h3>
 
-    <div className="flex gap-4">
-      <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition mt-2">
-        GET IN TOUCH
-      </button>
-      
-    </div>
-  </div>
+          <div className="flex gap-4">
+            <button className="bg-transparent text-white border border-white px-6 py-2 rounded hover:bg-white hover:text-black transition mt-2">
+              GET IN TOUCH
+            </button>
+          </div>
+        </div>
 
         <div
           className=""

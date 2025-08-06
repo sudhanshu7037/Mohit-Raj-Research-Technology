@@ -20,10 +20,11 @@ const MoreInfo = () => {
   }, []);
 
   const stats = [
-    { end: 25, suffix: "+", label: "Years Experience" },
-    { end: 23, suffix: "k", label: "Project Completed" },
+    { end: 2000, suffix: "+", label: "Happy Clients" },
+    { end: 20, suffix: "+", label: "Years Experience" },
+    { end: 200, suffix: "+", label: "Project Completed" },
     { end: 226, suffix: "+", label: "Consultation" },
-    { end: 958, suffix: "+", label: "Happy Clients" },
+    
   ];
 
   return (
@@ -52,13 +53,13 @@ const MoreInfo = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 text-center">
             {stats.map((item, index) => (
               <div key={index}>
-                <h2 className="text-4xl font-bold text-[#001d3d]">
+                <h2 className="text-4xl font-bold text-blue-900">
                   {inView && (
                     <CountUp end={item.end} suffix={item.suffix} duration={2} />
                   )}
                 </h2>
                 <div className="h-1 w-12 bg-yellow-400 mx-auto mt-2 mb-1 rounded" />
-                <p className="text-gray-500">{item.label}</p>
+                <p className="text-gray-500 font-bold text-xl">{item.label}</p>
               </div>
             ))}
           </div>

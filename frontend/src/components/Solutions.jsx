@@ -13,24 +13,26 @@ import image9 from "../assets/homepageimages/Solutionimages/SecuritySurveillance
 import image10 from "../assets/homepageimages/Solutionimages/MultimediaAnimation.png";
 import image11 from "../assets/homepageimages/Solutionimages/PoliceAutomation.png";
 import image12 from "../assets/homepageimages/Solutionimages/AudioVideoBroadcasting.png";
+import SolutionImage from "../assets/homepageimages/Solutionimages/solution.png";
+
 const services = [
   {
-    title: "University Digitalization",
+    title: "University Digitalization Solution",
     image: image1,
     path: "/solutions/university-digitalization",
   },
   {
-    title: "Medical College Digitalization",
+    title: "Medical College Digitalization Solution",
     image: image2,
     path: "/solutions/medical-college-digitalization",
   },
   {
-    title: "MRTiON Digital Educations",
+    title: "MRTiON Digital Education Solution",
     image: image3,
     path: "/solutions/mrtion-digital-education",
   },
   {
-    title: "Library Digitalization",
+    title: "Library Digitalization Solution",
     image: image4,
     path: "/solutions/library-digitalization",
   },
@@ -40,7 +42,7 @@ const services = [
     path: "/solutions/digital-marketing",
   },
   {
-    title: "Smart Learning",
+    title: "Smart Learning Solution",
     image: image6,
     path: "/solutions/smart-learning",
   },
@@ -50,27 +52,27 @@ const services = [
     path: "/solutions/conference-room",
   },
   {
-    title: "Auditorium Solutions",
+    title: " Interactive Auditorium Solutions",
     image: image8,
     path: "/solutions/auditorium",
   },
   {
-    title: "Security & Surveillance",
+    title: " CCTV Security & Surveillance Solution",
     image: image9,
     path: "/solutions/security-surveillance",
   },
   {
-    title: "Multimedia & Animation",
+    title: "Multimedia & Animation Solution",
     image: image10,
     path: "/solutions/multimedia-animation",
   },
   {
-    title: "Police Automation",
+    title: "Police Automation Solution",
     image: image11,
     path: "/solutions/police-automation",
   },
   {
-    title: "Audio Video Broadcasting",
+    title: "Audio Video Broadcasting Solution",
     image: image12,
     path: "/solutions/audio-video-broadcasting",
   },
@@ -90,36 +92,33 @@ const ServicesSection = () => {
         
       </div>
 
-        <section className="w-full px-6 py-12 ">
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8">
-              {/* Left Side Image */}
-              <div className="w-full md:w-1/2">
-                <img
-                  src=""
-                  alt="our products"
-                  className="rounded-2xl  w-full object-cover"
-                />
-              </div>
-      
-              {/* Right Side Content */}
-              <div className="w-full md:w-1/2">
-                <h2 className="text-4xl font-bold text-red-600 mb-4 font-houschka ">
-                  OUR DEDICATED SOLUTIONS
-                </h2>
-               <p className="text-gray-700 mb-4">
-  We offer an extensive range of automation software solutions tailored to the diverse needs of the Education, Medical, Corporate, and Government sectors. Our product line includes University and Engineering College Management Systems, School ERP, Online and Entrance Exam Management Systems, Smart Learning Platforms, and Library Management Systems. In the healthcare domain, we provide advanced solutions like Hospital Information Systems, E-Hospital and E-Clinic Management, and Bioinformatics Systems. For corporate and enterprise needs, we deliver powerful tools such as CRM Software, E-Business Management, Trulymax Accounting Systems (S, M, L variants), HR Management, Inventory and Purchase Management, and Finance Solutions. Additionally, our offerings extend to E-Governance tools like Police Management Systems, E-Govt. Office Management, and Credit Cooperative Society MIS, all built to ensure efficiency, transparency, and seamless digital operations.
-</p>
+       <section className="w-full px-6 py-12">
+  <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-stretch gap-8">
+    {/* Left Side Image */}
+    <div className="w-full md:w-1/2 h-full">
+      <img
+        src={SolutionImage}
+        alt="our solutions"
+        className=" w-full h-full object-cover"
+      />
+    </div>
 
-                {/* <ul className="list-disc pl-5 space-y-2 text-gray-800">
-                  <li>Expert team with deep domain knowledge</li>
-                  <li>Custom-built software solutions</li>
-                  <li>24x7 technical support and maintenance</li>
-                  <li>Transparent process & timely delivery</li>
-                  <li>Scalable and secure architecture</li>
-                </ul> */}
-              </div>
-            </div>
-          </section>
+    {/* Right Side Content */}
+    <div className="w-full md:w-1/2 h-full flex items-center">
+      <div>
+        <h2 className="text-4xl font-bold text-red-600 mb-4 font-houschka">
+          OUR INOVATIVE SOLUTIONS
+        </h2>
+        <p className="text-gray-700 mb-4 text-xl text-justify">
+          We offer an extensive range of automation software solutions tailored to the diverse needs of the Education, Medical, Corporate, and Government sectors. Our product line includes University and Engineering College Management Systems, School ERP, Online and Entrance Exam Management Systems, Smart Learning Platforms, and Library Management Systems. In the healthcare domain, we provide advanced solutions like Hospital Information Systems, E-Hospital and E-Clinic Management, and Bioinformatics Systems. For corporate and enterprise needs, we deliver powerful tools such as CRM Software, E-Business Management, Trulymax Accounting Systems (S, M, L variants), HR Management, Inventory and Purchase Management, and Finance Solutions. Additionally, our offerings extend to E-Governance tools like Police Management Systems, E-Govt. Office Management, and Credit Cooperative Society MIS, all built to ensure efficiency, transparency, and seamless digital operations.
+        </p>
+
+        
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Cards grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

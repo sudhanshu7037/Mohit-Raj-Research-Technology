@@ -82,7 +82,7 @@ const AdminLogin = () => {
           Don’t have an account?
           <span className="text-blue-600 hover:underline cursor-pointer font-bold text-md">
             {" "}
-            Sign up
+            Register
           </span>
           .
         </p>

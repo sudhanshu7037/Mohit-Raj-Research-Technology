@@ -92,7 +92,7 @@ const functionality = [
   },
   {
     icon: <FaUserShield />,
-    title: "Confidential Management",
+    title: "Result processing and analysics system",
     points: ["Securely handle and restrict access to sensitive documents."],
   },
   {
@@ -293,17 +293,11 @@ const UniversityAutomation = () => {
         <div className="absolute inset-0 flex items-center justify-start px-6 md:px-16">
           <div className="text-white max-w-2xl">
             <h1 className="text-4xl md:text-4xl font-bold text-white font-houschka">
-              University Management System Software 
+              University Automation Software
             </h1>
-            <p className="text-lg md:text-xl text-green-400 font-basis mt-4">
-              Robust, All-Inclusive & Scalable ERP Solution for Streamlining
-              Universities
-            </p>
-            <p className="text-gray-200 mt-3 font-basis">
-              Enables flawless management of all academic and non-academic
-              activities
-            </p>
-            <button className="mt-6 bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-300">
+          
+           
+            <button className="mt-8 bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 ">
               REQUEST A QUICK DEMO TODAY!
             </button>
           </div>
@@ -549,14 +543,14 @@ const UniversityAutomation = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-6 font-houschka">
               Key Benefits of Mohitraj University Automation Software
             </h2>
-            <p className="text-gray-800 text-lg md:text-xl max-w-3xl mx-auto mb-10 font-basis">
+            <p className="text-gray-800 text-xlg md:text-xl max-w-3xl mx-auto mb-10 font-basis ">
               Empower your institution with scalable, secure and intelligent
               digital infrastructure for academic and administrative excellence.
-            </p>
+            </p>  
           </div>
 
           {/* Glassy Card */}
-          <div className="max-w-5xl mx-auto bg-white/70 backdrop-blur-md border border-gray-200 shadow-xl rounded-2xl p-8">
+          <div className="max-w-5xl mx-auto bg-white/70 backdrop-blur-md border border-gray-200 shadow-xl rounded-2xl p-8 text-2xl">
             <ol className="list-decimal list-inside space-y-4 text-left">
               {[
                 "Streamlined admission to alumni management with zero paperwork.",

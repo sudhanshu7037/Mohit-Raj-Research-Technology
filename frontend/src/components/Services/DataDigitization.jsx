@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import bgImage from "../../assets/newdigitalbanner.png";
-import Image from "../../assets/datadigital2.png";
+import bgImage from "../../assets/servicespage/datadigitlization/images/datadigitalizationbanner.png";
+import Image from "../../assets/servicespage/datadigitlization/images/datadigital2.png";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
 import {

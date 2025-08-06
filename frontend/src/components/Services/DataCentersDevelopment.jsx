@@ -1,7 +1,7 @@
 
 import React from 'react';
-import bgImage from "../../assets/Datacenterbanner.png";
-import ImagebgEx from "../../assets/ImagebgEx.jpg";
+import bgImage from "../../assets/servicespage/datacenterdevelopment/images/image2.jpg";
+import ImagebgEx from "../../assets/servicespage/datacenterdevelopment/images/image1.jpg";
 
 import { FaServer, FaNetworkWired, FaArrowRight,FaCheckCircle } from "react-icons/fa";
 import {  FaDatabase, FaCloud, FaLock } from "react-icons/fa";

@@ -1,231 +1,147 @@
-import React from "react";
-import image1 from "../assets/homepageimages/whoweareimages/background_image[1].png";
+import React from 'react';
 
-
-const About = () => {
+const AboutUs = () => {
   return (
-    <>
-      <section className="relative h-screen w-full flex items-start justify-start bg-black text-white pt-28">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <img
-            src={image1}
-            className="w-full h-full object-cover brightness-50"
-          />
-        </div>
+    <div className="font-sans">
 
-        {/* Content */}
-        <div className="relative z-10 pl-10 md:pl-20 max-w-2xl w-full">
-          <p className="text-sm tracking-widest uppercase text-white/70 mb-4 ml-10 mt-10">
-            Who We Are
-          </p>
-
-          {/* Horizontal Line */}
-          <div className="w-[90%] ml-10 border-t border-white/40 mb-6"></div>
-
-          <h1 className="text-5xl md:text-6xl font-light leading-tight ml-10 font-houschka">
-            About  <span className="font-normal text-blue-900">Us</span>
-          </h1>
+      {/* Hero Section */}
+      <section className="bg-gradient-to-r from-blue-900 to-blue-700 text-white py-24 px-6 text-center">
+        <div className="max-w-5xl mx-auto">
+          <h1 className="text-5xl font-bold mb-4">About Mohitraj Research Tech</h1>
+          <p className="text-lg">Empowering Global Businesses with Next-Gen IT Solutions</p>
         </div>
       </section>
 
-      <div>
-        <section className="bg-orange-100 min-h-screen px-6 py-12 md:px-20 relative">
-          {/* Get Quotation Button */}
-          <button className="fixed bottom-6 right-6 bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-2 px-4 rounded-lg shadow-lg z-50">
-            Get Quotation
-          </button>
-
-          {/* About Header */}
-          <div className="mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-blue-900 mb-4 font-houschka">
-              About Mohitraj
-            </h2>
-            <p className="text-gray-700 leading-relaxed font-basis">
-              Mohitraj Research Tech Pvt. Ltd. is incorporated under the Company
-              Act 1956 by the Registrar of Companies, NCT of Delhi & Haryana. We
-              provide world-class consultancy and services in the field of
-              Education & Development, IT-enabled services, marketing research,
-              Industrial Research, Media Research, Social Research, and more.
-            </p>
-            <p className="text-red-600 mt-4 font-semibold text-2xl">
-              Our Focus :
-            </p>
-            <p className="text-gray-700 font-basis">
-              To provide complete solutions to educational and business problems
-              with complete customer satisfaction under one roof.
+      {/* Who We Are Section */}
+      <section className="bg-white py-20 px-6">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <h2 className="text-4xl font-bold text-blue-900 mb-4 font-houschka">Who We Are</h2>
+            <p className="text-gray-700 text-lg text-justify">
+               Mohitraj Research Tech Pvt Ltd is leading ISO 9001:2015 and ISO
+            27001:2022 certified company providing wordclass consultancy and
+            services from more than 20 years under the brand name <span className="text-red-600 text-xl font-bold">Godigitally</span> and deliver his services from a
+            cluster to international level. We at Mohitraj Research 
+            Tech Private Limited are experts in providing innovative
+            software development for multiple platforms and domains , IT
+            consulting solutions and IT Infrastructure development that empower
+            enterprises to succeed in the constantly changing digital world.
+            From idea to code, strategy to scaling, we help organizations
+            convert ideas into smart, scalable, and secure digital solutions.
             </p>
           </div>
-
-          {/* Company Details */}
-          <div className="bg-white shadow-md rounded-lg overflow-hidden">
-            <div className="bg-gray-200 px-4 py-2 font-bold text-gray-800 text-lg">
-              COMPANY DETAILS
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x">
-              {/* Row 1 */}
-              <div className="p-4 font-medium text-gray-600">
-                Name of the Company
-              </div>
-              <div className="p-4 text-gray-800 font-semibold">
-                MOHITRAJ RESEARCH TECH. PVT. LTD.
-              </div>
-
-              {/* Row 2 */}
-              <div className="p-4 font-medium text-gray-600">
-                Registered Office
-              </div>
-              <div className="p-4 text-gray-800">
-                K14/2, Blok-k Gangotri Vihar, Delhi-110053
-              </div>
-
-              {/* Row 3 */}
-              <div className="p-4 font-medium text-gray-600">
-                Corporate Office
-              </div>
-              <div className="p-4 text-gray-800">
-                IIIrd Floor, Shiva Tower, G.T. Road, Ghaziabad, U.P. (INDIA),
-                PIN-201001
-              </div>
-
-              {/* Row 4 */}
-              <div className="p-4 font-medium text-gray-600">Contact No</div>
-              <div className="p-4 text-gray-800 space-y-1">
-                <p>
-                  <strong>Mobile:</strong> 099999-10150
-                </p>
-                <p>
-                  <strong>Phone:</strong> 0120-2860826, 1204151925
-                </p>
-                <p>
-                  <strong>Email:</strong>{" "}
-                  <a
-                    href="mailto:mohitraj@mohitraj.com"
-                    className="text-blue-600 underline"
-                  >
-                    mohitraj@mohitraj.com
-                  </a>
-                </p>
-                <p>
-                  <strong>Website:</strong>{" "}
-                  <a
-                    href="http://www.mohitraj.com"
-                    className="text-blue-600 underline"
-                  >
-                    www.mohitraj.com
-                  </a>
-                </p>
-              </div>
-
-              {/* Row 5 */}
-              <div className="p-4 font-medium text-gray-600">
-                Status of the Company
-              </div>
-              <div className="p-4 text-gray-800 font-basis">
-                Private Limited Company registered under Company Act 1956 by the
-                Registrar of Companies, NCT of Delhi & Haryana.
-              </div>
-
-              {/* Row 6 */}
-              <div className="p-4 font-medium text-gray-600">Location</div>
-              <div className="p-4 text-gray-800 font-basis">
-                Office located in prime area on G.T. Road, Ghaziabad (near
-                Choudhri More), just 0.5 Km from Ghaziabad Railway Station & 1.0
-                Km from Bus Stand. Well-connected to Anand Vihar ISBT, New Delhi
-                Railway Station, Nehru Place, Connaught Place, Meerut, Agra etc.
-              </div>
-            </div>
+          <div>
+            <img src="/assets/aboutus/office.jpg" alt="Our Office" className="rounded-xl w-full shadow-md" />
           </div>
+        </div>
+      </section>
 
-          {/* Office Infrastructure */}
-          <div className="mt-10">
-            <h3 className="text-xl font-semibold text-red-600 mb-2">
-              Office and Infrastructure of the Company
-            </h3>
-            <p className="text-gray-700 font-basis">
-              The company has a well-equipped infrastructure to operate
-              efficiently across India and abroad. Spacious, air-conditioned
-              offices with elegant furniture ensure a comfortable and
-              professional environment for both staff and clients.
-            </p>
+      {/* Global Presence & Stats */}
+      <section className="bg-gray-100 py-20 px-6 text-center">
+        <h2 className="text-3xl font-bold text-blue-900 mb-12">Our Global Presence</h2>
+        <img src="/assets/aboutus/world-map.png" alt="Global Map" className="mx-auto mb-10 max-w-full h-auto" />
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-blue-900">
+          <div>
+            <h3 className="text-4xl font-bold">50+</h3>
+            <p className="text-sm">Countries Served</p>
           </div>
-        </section>
-      </div>
-      <div>
-        <section className="bg-blue-100 px-6 py-12 md:px-20 min-h-screen flex flex-col md:flex-row gap-10">
-          {/* Left Image with height matching right content */}
-          <div className="w-full md:w-1/2 flex">
-            <img
-              src="https://img.freepik.com/free-photo/rendering-anime-doctors-work_23-2151151905.jpg?ga=GA1.1.615919452.1728815623&semt=ais_items_boosted&w=740"
-              alt="Why Choose Us"
-              className="rounded-lg shadow-md object-cover w-full h-full"
-            />
+          <div>
+            <h3 className="text-4xl font-bold">200+</h3>
+            <p className="text-sm">Global Clients</p>
           </div>
-
-          {/* Right Content */}
-          <div className="w-full md:w-1/2 flex flex-col justify-start items-start">
-            <h2 className="text-2xl md:text-3xl font-semibold text-blue-900 mb-4">
-              Why Choose Mohitraj
-            </h2>
-            <p className="text-gray-700 text-base leading-relaxed font-basis">
-              Mohitraj Research Tech Pvt. Ltd. is dedicated to providing
-              innovative and comprehensive solutions for educational and
-              business challenges. Our focus is on delivering exceptional
-              service and ensuring complete customer satisfaction. With a team
-              of experts and a commitment to excellence, we strive to empower
-              businesses with the latest technology and research-driven
-              insights.
-            </p>
-
-            <h2 className="text-2xl font-semibold text-blue-900 mt-8">
-              Our Mission
-            </h2>
-            <p className="text-gray-700 text-base leading-relaxed mt-2 font-basis">
-              Using cutting-edge research and technology, we aim to develop
-              practical remedies for present-day problems in all sectors. Our
-              objective is to promote transformational change through
-              innovation, integrity and a strong commitment to excellence in our
-              services.
-            </p>
-
-            <h2 className="text-2xl font-semibold text-blue-900 mt-8">
-              Our Vision
-            </h2>
-            <p className="text-gray-700 text-base leading-relaxed mt-2 font-basis">
-              Our vision is to be an Catalyst in technology and a researcher on
-              the world stage. With the goal of transforming industry practices
-              and solutions to shape the future Helping individuals and
-              businesses with innovative technologies and solutions that enhance
-              their abilities.
-            </p>
-
-            <h2 className="text-2xl font-semibold text-blue-900 mt-8">
-              Objectives
-            </h2>
-            <p className="text-gray-700 text-base leading-relaxed mt-2 font-basis">
-              The main objective of Mohitraj Research and Technology Private
-              Limited is to use advance technological solutions for developing ,
-              deploying and maintaining IT services and product . With the goal
-              of achieving excellence in research and technology, we've evolved
-              into a dynamic entity that prioritizes innovation of new products
-              and ideas.
-            </p>
-
-            <h2 className="text-2xl font-semibold text-blue-900 mt-8">
-              Quality Policy
-            </h2>
-            <p className="text-gray-700 text-base leading-relaxed mt-2 font-basis">
-              Using cutting-edge research and technology, we aim to develop
-              practical remedies for present-day problems in all sectors Our
-              objective is to promote transformational change through
-              innovation, integrity and a strong commitment to excellence in our
-              services.
-            </p>
+          <div>
+            <h3 className="text-4xl font-bold">15+</h3>
+            <p className="text-sm">Years Experience</p>
           </div>
-        </section>
-      </div>
-    </>
+          <div>
+            <h3 className="text-4xl font-bold">ISO</h3>
+            <p className="text-sm">Certified Company</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Vision, Mission, Values */}
+      <section className="bg-white py-20 px-6">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 text-center">
+          <div>
+            <img src="/assets/icons/vision.png" alt="Vision" className="w-14 h-14 mx-auto mb-4" />
+            <h4 className="text-xl font-semibold text-blue-900">Our Vision</h4>
+            <p className="text-gray-600">To become a global leader in delivering innovative technology solutions.</p>
+          </div>
+          <div>
+            <img src="/assets/icons/mission.png" alt="Mission" className="w-14 h-14 mx-auto mb-4" />
+            <h4 className="text-xl font-semibold text-blue-900">Our Mission</h4>
+            <p className="text-gray-600">Empowering clients through excellence, innovation, and dedication.</p>
+          </div>
+          <div>
+            <img src="/assets/icons/values.png" alt="Values" className="w-14 h-14 mx-auto mb-4" />
+            <h4 className="text-xl font-semibold text-blue-900">Our Values</h4>
+            <p className="text-gray-600">Integrity, Collaboration, Responsibility, and Continuous Growth.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Leadership Section */}
+      <section className="bg-gray-50 py-20 px-6">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl font-bold text-blue-900 mb-12">Meet Our Leadership</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              { name: 'Sudhanshu Tomar', title: 'Founder & CEO', image: '/assets/team/ceo.jpg' },
+              { name: 'Amit Sharma', title: 'Chief Technology Officer', image: '/assets/team/cto.jpg' },
+              { name: 'Neha Verma', title: 'Chief Marketing Officer', image: '/assets/team/cmo.jpg' },
+            ].map((leader, idx) => (
+              <div key={idx} className="text-center">
+                <img src={leader.image} alt={leader.name} className="w-40 h-40 rounded-full mx-auto mb-4 object-cover" />
+                <h4 className="text-xl font-semibold text-gray-800">{leader.name}</h4>
+                <p className="text-sm text-gray-500">{leader.title}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Company Timeline */}
+      <section className="bg-white py-20 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-center text-blue-900 mb-12">Our Journey</h2>
+          <ul className="space-y-10 border-l-4 border-blue-600 pl-6">
+            <li>
+              <h4 className="text-xl font-semibold text-blue-800">2015 - Company Founded</h4>
+              <p>Started with a small team focused on enterprise solutions.</p>
+            </li>
+            <li>
+              <h4 className="text-xl font-semibold text-blue-800">2018 - Global Expansion</h4>
+              <p>Secured our first Fortune 500 clients from the US and Europe.</p>
+            </li>
+            <li>
+              <h4 className="text-xl font-semibold text-blue-800">2022 - SaaS Product Launch</h4>
+              <p>Launched healthcare and logistics cloud-based products.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      {/* Certifications Section */}
+      <section className="bg-gray-100 py-16 px-6 text-center">
+        <h2 className="text-3xl font-bold text-blue-900 mb-8">Certifications & Partnerships</h2>
+        <div className="flex flex-wrap justify-center items-center gap-10">
+          <img src="/assets/certs/iso.png" alt="ISO" className="h-14" />
+          <img src="/assets/certs/microsoft.png" alt="Microsoft Partner" className="h-14" />
+          <img src="/assets/certs/gdpr.png" alt="GDPR" className="h-14" />
+          <img src="/assets/certs/cmmi.png" alt="CMMI" className="h-14" />
+        </div>
+      </section>
+
+      {/* Call to Action */}
+      <section className="bg-blue-800 py-20 px-6 text-white text-center">
+        <h2 className="text-3xl font-bold mb-4">Let's Build the Future Together</h2>
+        <p className="mb-6">Reach out to explore how we can transform your business digitally.</p>
+        <a href="/contact" className="inline-block bg-white text-blue-800 font-semibold px-6 py-3 rounded-full hover:bg-gray-200 transition">Contact Us</a>
+      </section>
+
+    </div>
   );
 };
 
-export default About;
+export default AboutUs;

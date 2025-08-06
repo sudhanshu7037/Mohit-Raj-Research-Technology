@@ -55,7 +55,8 @@ export default function NewsSection() {
   }
 
   return (
-    <section className="max-w-7xl mx-auto px-4 py-16 text-center">
+    <div  className='bg-red-50 w-full'>
+      <section className="max-w-7xl mx-auto px-4 py-16 text-center bg-red-50">
       {/* Heading */}
       <motion.div
         ref={ref}
@@ -66,7 +67,7 @@ export default function NewsSection() {
           visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
         }}
       >
-        <p className="text-yellow-400 uppercase tracking-widest mb-2">Lastest News</p>
+        <p className="text-yellow-400 uppercase tracking-widest mb-2 text-xl font-bold">Lastest News</p>
         <h2 className="text-4xl font-extrabold mb-12 font-houschka text-blue-900">News & Articles</h2>
       </motion.div>
 
@@ -109,5 +110,6 @@ export default function NewsSection() {
         VIEW ALL BLOG
       </motion.button>
     </section>
+    </div>
   )
 }

@@ -1,8 +1,8 @@
 import React from 'react';
-import Logo6 from "../../assets/servicespage/multimediaanimation/images/multimediabanner.png";
-import Logo1 from "../../assets/SofwareConsulting.png";
-import Logo2 from "../../assets/Custom.png";
-import Logo4 from "../../assets/Erp.png";
+import Logo6 from "../../assets/servicespage/multimediaanimation/images/image1.jpg";
+// import Logo1 from "../../assets/SofwareConsulting.png";
+// import Logo2 from "../../assets/Custom.png";
+// import Logo4 from "../../assets/Erp.png";
 import { FaPaintBrush, FaVideo, FaArrowRight } from "react-icons/fa";
 import bgImage from "../../assets/Backgroundsoftware.jpg";
 import { FaCheckCircle } from "react-icons/fa";
@@ -10,7 +10,7 @@ import video from "../../assets/servicespage/multimediaanimation/video/animation
 import { FaTools, FaLaptopCode, FaMagic } from "react-icons/fa";
 import {   FaPalette, FaRocket } from "react-icons/fa";
 import { FaHeadphones, FaRegLightbulb,FaMap, FaUsers, FaClipboardCheck } from "react-icons/fa";
-import DevImage from "../../assets/servicespage/multimediaanimation/images/image1.jpg";
+import DevImage from "../../assets/servicespage/multimediaanimation/images/image3.png";
 
 const techStack = [
   {
@@ -77,7 +77,7 @@ const services = [
     title: "2D & 3D Animation",
     description:
       "Turn your imagination, or your ideas, into spectacular 3D animation that can showcase your ideas , products, services or concepts, with accurate detail.Our animators can construct immersive worlds to capture your audience's imagination.",
-    img: Logo6,
+    // img: Logo6,
     alt: "2D & 3D Animation",
     points: ["High-quality visuals", "Custom animations", "Engaging storytelling"],
   },
@@ -85,7 +85,7 @@ const services = [
     title: "Motion Graphics & VFX",
     description:
       "Our experts blend creativity and technology to produce high-quality motion graphics and visual effects. Ideal for promotional videos, presentations, and films that demand a cinematic touch.",
-    img: Logo1,
+    // img: Logo1,
     alt: "Motion Graphics & VFX",
     points: ["Cinematic effects", "Dynamic visuals", "Brand-focused design"],
   },
@@ -93,7 +93,7 @@ const services = [
     title: "Interactive Media Design",
     description:
       "We specialize in interactive multimedia that engages users through interactive videos, presentations, and simulations. Perfect for e-learning, product demos, and digital storytelling.",
-    img: Logo2,
+    // img: Logo2,
     alt: "Interactive Media Design",
     points: ["User engagement", "Interactive storytelling", "E-learning solutions"],
   },
@@ -101,7 +101,7 @@ const services = [
     title: "Character Design & Storyboarding",
     description:
       "Bring your story to life! With our visual storytelling capability, whether a promotional video, an interactive presentation, or an animated explainers, we can produce visuals essential to showcasing your brand's story.",
-    img: Logo4,
+    // img: Logo4,
     alt: "Character Design & Storyboarding",
     points: ["Unique character creation", "Detailed storyboards", "Concept visualization"],
   },
@@ -109,7 +109,7 @@ const services = [
     title: "Multimedia Presentations",
     description:
       "Make an impact on your audience and engage them with compelling dynamic and engaging interactive multimedia presentations.",
-    img: Logo6,
+    // img: Logo6,
     alt: "Multimedia Presentations",
     points: ["Engaging presentations", "Multimedia integration", "Corporate branding"],
   },
@@ -117,7 +117,7 @@ const services = [
     title: "Video Editing & Post Production",
     description:
       "From basic editing to advanced post-production including color correction, sound design, and transitions — we provide end-to-end video enhancement services tailored to your brand voice.",
-    img: Logo1,
+    // img: Logo1,
     alt: "Video Editing & Post Production",
     points: ["Professional editing", "Sound design", "Color correction"],
   },
@@ -282,14 +282,14 @@ const MultimediaAnimation = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               {/* Image/Icon */}
-              <div className="relative w-16 h-16 mb-4">
+              {/* <div className="relative w-16 h-16 mb-4">
                 <img
                   src={card.img}
                   alt={card.alt}
                   className="w-full h-full object-contain rounded-md"
                 />
                 <div className="absolute inset-0 bg-blue-100 opacity-10 rounded-md"></div>
-              </div>
+              </div> */}
 
               {/* Title */}
               <h3 className="text-xl font-semibold text-blue-900 mb-3">

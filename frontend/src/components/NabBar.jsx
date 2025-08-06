@@ -16,7 +16,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import ProductsDropdown from "./Dropdowns/ProductsDropdown";
 import MobileMenuNavbar from "./Dropdowns/MobileMenuNavbar";
-import Logo2 from "../assets/new MRTPL-Logo.png";
+import Logo2 from "../assets/logo/new MRTPL-Logo.png";
 
 const NavBar = () => {
   const [activeMenu, setActiveMenu] = useState(null);

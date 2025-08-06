@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaInstagram } from "react-icons/fa6";
-import Logo2 from "../assets/new MRTPL-Logo.png";
+import Logo2 from "../assets/logo/new MRTPL-Logo.png";
 
 export default function Footer() {
   return (
@@ -21,7 +21,7 @@ export default function Footer() {
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
           {/* Row 1 - Copyright */}
           <div className="mb-2">
-            <p>©2025 MOHIT RAJ Research tech pvt ltd</p>
+            <p>©2025 Mohitraj Research Tech Pvt Ltd</p>
           </div>
           {/* Row 2 - Services and Policies */}
           <div className="mb-2 tracking-wider">

@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-
+import EngCollgeBanner from "../../../assets/produtspage/education/images/Engineering_Institute_Management_System[1].png";
 
 
 import {
@@ -133,9 +133,9 @@ const UniversityAutomation = () => {
      <div className="">
       {/* Background Image */}
       <img
-        src="https://image-static.collegedunia.com/public/college_data/images/appImage/12734_AITAMCOver.png?h=260&w=360&mode=crop"
+        src={EngCollgeBanner}
         alt="University Background"
-        className="w-full h-full object-cover"
+        className="w-full h-screen object-cover"
       />
 
       {/* Overlay for better contrast (optional) */}

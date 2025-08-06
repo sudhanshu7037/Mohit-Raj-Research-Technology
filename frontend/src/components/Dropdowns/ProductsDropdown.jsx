@@ -19,50 +19,50 @@ const ProductsDropdown = ({ openDropdown, setOpenDropdown }) => {
       icon: <FaUniversity className="text-2xl text-red-700" />,
       title: "Education Domain",
       items: [
-        { name: "University Automation Software", path: "/university-automation-software" },
-        { name: "Engineering College Management and Information System", path: "/engineering-college-management-system" },
-        { name: "College/Institute Management Systems", path: "/college-institute-management" },
-        { name: "School Management System", path: "/school-management-system" },
-        { name: "Online Examination Management System", path: "/online-examination-management" },
-        { name: "Entrance Exam Management and Information System", path: "/entrance-exam-management" },
-        { name: "Smart Learning & Content Management System (SLCMS)", path: "/smart-learning-content-management" },
-        { name: "Library Management System", path: "/library-management-system" },
+        { name: "University Automation Software", path: "/product/education/university-automation-software" },
+        { name: "Engineering College Management and Information System", path: "/product/education/engineering-college-management-system" },
+        { name: "College/Institute Management Systems", path: "/product/education/college-institute-management" },
+        { name: "School Management System", path: "/product/education/school-management-system" },
+        { name: "Online Examination Management System", path: "/product/education/online-examination-management" },
+        { name: "Entrance Exam Management and Information System", path: "/product/education/entrance-exam-management" },
+        { name: "Smart Learning & Content Management System (SLCMS)", path: "/product/education/smart-learning-content-management" },
+        { name: "Library Management System", path: "/product/education/library-management-system" },
       ],
     },
     {
       icon: <FaHospital className="text-2xl text-red-700" />,
       title: "Medical Domain",
       items: [
-        { name: "Medical College Management and Information System.", path: "/medical-college-management" },
-        { name: "Hospital Management & Information system.", path: "/hospital-management-system" },
-        { name: "E-Hospital Management", path: "/e-hospital-management" },
-        { name: "E-clinic Management", path: "/e-clinic-management" },
-        { name: "Bioinformatics Management and Information System", path: "/bioinformatics-management" },
+        { name: "Medical College Management and Information System.", path: "/product/medical/medical-college-management" },
+        { name: "Hospital Management & Information system.", path: "/product/medical/hospital-management-system" },
+        { name: "E-Hospital Management", path: "/product/medical/e-hospital-management" },
+        { name: "E-clinic Management", path: "/product/medical/e-clinic-management" },
+        { name: "Bioinformatics Management and Information System", path: "/product/medical/bioinformatics-management" },
       ],
     },
     {
       icon: <FaBuilding className="text-2xl text-red-700" />,
       title: "Corporate Domain",
       items: [
-        { name: "E-Company System", path: "/e-company-system" },
-        { name: "E- Business Management", path: "/e-business-management" },
-        { name: "CRM Software", path: "/crm-software" },
-        { name: "Account Management System (Trulymax-S)", path: "/account-management-trulymax-s" },
-        { name: "Account Management System (Trulymax-M)", path: "/account-management-trulymax-m" },
-        { name: "Finance Account Management System (Trulymax-L)", path: "/finance-account-management-trulymax-l" },
-        { name: "Human Resource Management System", path: "/human-resource-management" },
-        { name: "Inventory Management System", path: "/inventory-management" },
-        { name: "Purchase Management System", path: "/purchase-management" },
-        { name: "E-Banking Management System", path: "/e-banking-management" },
+        { name: "E-Company System", path: "/product/corporate/e-company-system" },
+        { name: "E- Business Management", path: "/product/corporate/e-business-management" },
+        { name: "CRM Software", path: "/product/corporate/crm-software" },
+        { name: "Account Management System (Trulymax-S)", path: "/product/corporate/account-management-trulymax-s" },
+        { name: "Account Management System (Trulymax-M)", path: "/product/corporate/account-management-trulymax-m" },
+        { name: "Finance Account Management System (Trulymax-L)", path: "/product/corporate/finance-account-management-trulymax-l" },
+        { name: "Human Resource Management System", path: "/product/corporate/human-resource-management" },
+        { name: "Inventory Management System", path: "/product/corporate/inventory-management" },
+        { name: "Purchase Management System", path: "/product/corporate/purchase-management" },
+        { name: "E-Banking Management System", path: "/product/corporate/e-banking-management" },
       ],
     },
     {
       icon: <FaUsers className="text-2xl text-red-700" />,
       title: "Public & Mixed Domain",
       items: [
-        { name: "Police Management System", path: "/police-management-system" },
-        { name: "E-Govt.Office Management System", path: "/e-govt-office-management" },
-        { name: "Credit Cooperative Society Management Information System", path: "/credit-cooperative-society-management" },
+        { name: "Police Management System", path: "/product/Public & Mixed Domain /police-management-system" },
+        { name: "E-Govt.Office Management System", path: "/product/Public & Mixed Domain/e-govt-office-management" },
+        { name: "Credit Cooperative Society Management Information System", path: "/product/Public & Mixed Domain/credit-cooperative-society-management" },
       ],
     },
   ];
@@ -96,11 +96,11 @@ const ProductsDropdown = ({ openDropdown, setOpenDropdown }) => {
           <div className="flex justify-center">
             {/* Left Sidebar */}
             <div className="w-1/4 bg-[#fdeaea] p-6 rounded-md shadow-inner">
-              <h2 className="text-xl font-bold text-red-800 mb-4">Our products</h2>
-              <p className="text-sm text-black mb-6">
+              <h2 className="text-3xl font-bold text-blue-900 mb-4 font-houschka">Our Products</h2>
+              <p className="text-xl text-black mb-6">
                 MRTPL offers a variety of software solutions tailored to different sectors to enhance automation and efficiency.
               </p>
-              <button className="bg-blue-500 text-white py-2 px-4 rounded-full shadow-lg hover:bg-green-600 transition">
+              <button className="bg-blue-500 text-white py-2 px-4 rounded-full shadow-lg  transition">
                 Contact Us
               </button>
             </div>

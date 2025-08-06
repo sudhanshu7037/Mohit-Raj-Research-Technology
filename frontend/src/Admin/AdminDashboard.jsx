@@ -157,6 +157,7 @@ const AdminDashboard = () => {
                   <table className="min-w-full bg-white shadow rounded">
                     <thead>
                       <tr className="bg-gray-200">
+                        <th className="border px-4 py-2 ">userId</th>
                         <th className="border px-4 py-2">Fristname</th>
                         <th className="border px-4 py-2">Middlename</th>
                         <th className="border px-4 py-2">Lastname</th>
@@ -169,6 +170,7 @@ const AdminDashboard = () => {
                     <tbody>
                       {users.map((user) => (
                         <tr key={user._id || user.id}>
+                          <td className="border px-4 py-2">{user.userId}</td>
                           <td className="border px-4 py-2">{user.firstName}</td>
                           <td className="border px-4 py-2">
                             {user.middleName}

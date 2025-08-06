@@ -34,7 +34,7 @@ const ServicesDropdown = ({ openDropdown, setOpenDropdown }) => {
     {
       icon: <FaLaptopCode className="text-xl text-red-700" />,
       title: "Software Development",
-      path: "/SoftwareDevelopment",
+      path: "/service/Software-Development",
       items: [
         "Software Consulting & Transformation",
         "ERP Software Development",
@@ -51,7 +51,7 @@ const ServicesDropdown = ({ openDropdown, setOpenDropdown }) => {
     {
       icon: <FaNetworkWired className="text-xl text-red-700" />,
       title: "Development, Hosting & Promotion",
-      path: "/DevelopmentHosting",
+      path: "/service/DevelopmentHosting",
       items: [
         "Web Development Services",
         "Cloud Hosting Solutions",
@@ -66,7 +66,7 @@ const ServicesDropdown = ({ openDropdown, setOpenDropdown }) => {
     {
       icon: <FaNetworkWired className="text-xl text-red-700" />,
       title: "Hardware & Networking",
-      path: "/HardwareNetworking",
+      path: "/service/HardwareNetworking",
       items: [
         "Local Area Network (LANs)",
         "Wide Area Network (WAN)",
@@ -82,7 +82,7 @@ const ServicesDropdown = ({ openDropdown, setOpenDropdown }) => {
     {
       icon: <FaFilm className="text-xl text-red-700" />,
       title: "Multimedia & Animation",
-      path: "/MultimediaAnimation",
+      path: "/service/MultimediaAnimation",
       items: [
         "Multimedia DVD / CDROM",
         "Multimedia Presentation",
@@ -108,7 +108,7 @@ const ServicesDropdown = ({ openDropdown, setOpenDropdown }) => {
     {
       icon: <FaFilm className="text-xl text-red-700" />,
       title: "Digital marketing",
-      path: "/DigitalMarketing",
+      path: "/service/DigitalMarketing",
       items: [
         " Search Engine Optimization (SEO)",
         "Pay-Per-Click Advertising (PPC)",
@@ -123,7 +123,7 @@ const ServicesDropdown = ({ openDropdown, setOpenDropdown }) => {
     {
       icon: <FaServer className="text-xl text-red-700" />,
       title: "Data Centers Development",
-      path: "/DataCentersDevelopment",
+      path: "/service/DataCentersDevelopment",
       items: [
         "Web Servers",
         "Application Servers",
@@ -141,7 +141,7 @@ const ServicesDropdown = ({ openDropdown, setOpenDropdown }) => {
     {
       icon: <FaBook className="text-xl text-red-700" />,
       title: "E-Learning",
-      path: "/Elearning",
+      path: "/service/Elearning",
       items: [
         "E-Learning Consultancy",
         "E-Learning Lectures Development",
@@ -158,7 +158,7 @@ const ServicesDropdown = ({ openDropdown, setOpenDropdown }) => {
     {
       icon: <FaVideo className="text-xl text-red-700" />,
       title: "Video Conferencing",
-      path: "/VideoConferencing",
+      path: "/service/VideoConferencing",
       items: [
         "Reservation Based Video Conference",
         "Reservation Less Video Conference",
@@ -173,7 +173,7 @@ const ServicesDropdown = ({ openDropdown, setOpenDropdown }) => {
     {
       icon: <FaLock className="text-xl text-red-700" />,
       title: "Security & Surveillance",
-      path: "/SecuritySurvillance",
+      path: "/service/SecuritySurvillance",
       items: [
         "Banking",
         "Education",
@@ -194,7 +194,7 @@ const ServicesDropdown = ({ openDropdown, setOpenDropdown }) => {
     {
       icon: <FaDatabase className="text-xl text-red-700" />,
       title: "Data Digitization",
-      path: "/DataDigitization",
+      path: "/service/DataDigitization",
       items: [
         " OMR/OCR Sheets Processing",
         "Data Scanning and  Indexing services",
@@ -211,7 +211,7 @@ const ServicesDropdown = ({ openDropdown, setOpenDropdown }) => {
     {
       icon: <FaDatabase className="text-xl text-red-700" />,
       title: "Remote Infrastructure",
-      path: "/RemoteInfrastructure",
+      path: "/service/RemoteInfrastructure",
       items: [
         "Remote Monitoring",
         "Remote Infrastructure Management",
@@ -231,11 +231,11 @@ const ServicesDropdown = ({ openDropdown, setOpenDropdown }) => {
         <div className="fixed left-1/2 top-[120px] transform -translate-x-1/2 w-[90vw] md:w-[80vw] bg-[#fdf1f4] shadow-xl z-50 rounded-md px-4 py-6 border border-red-200 max-h-[80vh] overflow-y-auto">
           <div className="flex flex-col lg:flex-row gap-4">
             <div className="lg:w-1/4 bg-[#fbeaec] p-4 rounded-md shadow-inner">
-              <h2 className="text-xl font-bold text-red-800 mb-4">Our Services</h2>
-              <p className="text-sm text-black mb-6">
+              <h2 className="text-3xl font-bold text-blue-900 mb-4 font-houschka">Our Services</h2>
+              <p className="text-md  text-black mb-6">
                 MRTPL provides a wide range of IT services to meet diverse business needs.
               </p>
-              <button className="bg-blue-500 text-white py-2 px-4 rounded-full shadow-lg hover:bg-green-600 transition">
+              <button className="bg-blue-500 text-white py-2 px-4 rounded-full shadow-lg  transition">
                 Contact Us
               </button>
             </div>

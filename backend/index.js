@@ -18,21 +18,14 @@ app.use(express.json());
 // middleware
  app.use(
    cors({
-     origin: "http://localhost:5173", // ✅ Allow frontend origin
-     credentials: true, // Agar cookies use kar rahe ho future me
+     origin: "http://localhost:5173", 
+     credentials: true, 
    })
  );
 
-// import routes
-import authRoutes from "./routes/authRoutes.js";
-import adminRoutes from "./routes/adminRoutes.js";
-import roleRoutes from "./routes/roleRoutes.js";
 
 
-// api route
-app.use("/api/auth", authRoutes);
-app.use("/api/admin", adminRoutes);
-app.use("/api/role", roleRoutes);
+
 
 connectdb()
   .then(() => {

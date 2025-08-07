@@ -1,4 +1,5 @@
 import React from 'react';
+import Image1 from "../assets/homepageimages/whoweareimages/company_image[1].png";
 
 const AboutUs = () => {
   return (
@@ -31,7 +32,7 @@ const AboutUs = () => {
             </p>
           </div>
           <div>
-            <img src="/assets/aboutus/office.jpg" alt="Our Office" className="rounded-xl w-full shadow-md" />
+            <img src={Image1} alt="Our Office" className="rounded-xl w-full shadow-md" />
           </div>
         </div>
       </section>
@@ -42,16 +43,16 @@ const AboutUs = () => {
         <img src="/assets/aboutus/world-map.png" alt="Global Map" className="mx-auto mb-10 max-w-full h-auto" />
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-blue-900">
           <div>
-            <h3 className="text-4xl font-bold">50+</h3>
-            <p className="text-sm">Countries Served</p>
+            <h3 className="text-4xl font-bold">2,000+</h3>
+            <p className="text-sm">Happy Clients</p>
+          </div>
+          <div>
+            <h3 className="text-4xl font-bold">20+</h3>
+            <p className="text-sm">Years Experiences</p>
           </div>
           <div>
             <h3 className="text-4xl font-bold">200+</h3>
-            <p className="text-sm">Global Clients</p>
-          </div>
-          <div>
-            <h3 className="text-4xl font-bold">15+</h3>
-            <p className="text-sm">Years Experience</p>
+            <p className="text-sm">Project Completed</p>
           </div>
           <div>
             <h3 className="text-4xl font-bold">ISO</h3>
@@ -65,18 +66,30 @@ const AboutUs = () => {
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 text-center">
           <div>
             <img src="/assets/icons/vision.png" alt="Vision" className="w-14 h-14 mx-auto mb-4" />
-            <h4 className="text-xl font-semibold text-blue-900">Our Vision</h4>
-            <p className="text-gray-600">To become a global leader in delivering innovative technology solutions.</p>
+            <h4 className="text-4xl font-bold text-blue-900 font-houschka ">Our Vision</h4>
+            <p className="text-gray-600 text-justify">To become a global leader in innovative IT services by delivering actionable business, institutional, and community software solutions through high-quality immersive multimedia, digital transformation, and software solution services empowering them to thrive in our digital era We envision Mohitraj Research and Technology Pvt. Ltd. as a respectable name in the IT service industry, prided for converting concepts into scalable web applications, software systems, and data digitization solutions embracing excellence, innovation, creative approaches and new technologies</p>
           </div>
           <div>
             <img src="/assets/icons/mission.png" alt="Mission" className="w-14 h-14 mx-auto mb-4" />
-            <h4 className="text-xl font-semibold text-blue-900">Our Mission</h4>
-            <p className="text-gray-600">Empowering clients through excellence, innovation, and dedication.</p>
+            <h4 className="text-4xl font-bold text-blue-900 font-houschka">Our Mission</h4>
+            <p className="text-gray-600 text-justify">To optimize client operational frameworks and drive business metrics with industry-altering efficiency and enhanced profitability by prescribing bespoke IT systems encompassing software development, mobile and web application creation, multimedia, and digital data management services.</p>
           </div>
           <div>
             <img src="/assets/icons/values.png" alt="Values" className="w-14 h-14 mx-auto mb-4" />
-            <h4 className="text-xl font-semibold text-blue-900">Our Values</h4>
-            <p className="text-gray-600">Integrity, Collaboration, Responsibility, and Continuous Growth.</p>
+            <h4 className="text-3xl font-bold text-blue-900 font-houschka">Our Values</h4>
+             <p className="text-gray-700 mb-4 text-xl font-semibold">
+            Achievements for Mohitraj Research and Technology include:
+          </p>
+          <ul className="list-disc pl-5 space-y-2 text-gray-800 text-md font-semibold">
+            <li>Attain software development and website solution capabilities designed around clients’ requirements</li>
+            <li>Attain comprehensive data digitization services to aid organizations in going paperless.</li>
+            <li>Facilitate enhanced digital communication through custom multimedia, and 2D/3D animation services.</li>
+            <li>Attain enduring relations through agile backed development and quality assurance, and on-time delivery of projects.</li>
+            {/* <li>Custom-built software solutions</li>
+            <li>24x7 technical support and maintenance</li>
+            <li>Transparent process & timely delivery</li>
+            <li>Scalable and secure architecture</li> */}
+          </ul>
           </div>
         </div>
       </section>
@@ -107,15 +120,31 @@ const AboutUs = () => {
           <h2 className="text-3xl font-bold text-center text-blue-900 mb-12">Our Journey</h2>
           <ul className="space-y-10 border-l-4 border-blue-600 pl-6">
             <li>
-              <h4 className="text-xl font-semibold text-blue-800">2015 - Company Founded</h4>
+              <h4 className="text-xl font-semibold text-blue-800">2004 - Company Founded</h4>
               <p>Started with a small team focused on enterprise solutions.</p>
             </li>
             <li>
-              <h4 className="text-xl font-semibold text-blue-800">2018 - Global Expansion</h4>
+              <h4 className="text-xl font-semibold text-blue-800">2006 - Company start Automate the universities</h4>
               <p>Secured our first Fortune 500 clients from the US and Europe.</p>
             </li>
             <li>
-              <h4 className="text-xl font-semibold text-blue-800">2022 - SaaS Product Launch</h4>
+              <h4 className="text-xl font-semibold text-blue-800">2011 - Company start Automete the Medical colleges and Hospitals</h4>
+              <p>Launched healthcare and logistics cloud-based products.</p>
+            </li>
+            <li>
+              <h4 className="text-xl font-semibold text-blue-800">2014 - Company start Automation of banking and financial sector</h4>
+              <p>Launched healthcare and logistics cloud-based products.</p>
+            </li>
+            <li>
+              <h4 className="text-xl font-semibold text-blue-800">2018 - Company start Automation of manufacturing and retail sector</h4>
+              <p>Launched healthcare and logistics cloud-based products.</p>
+            </li>
+            <li>
+              <h4 className="text-xl font-semibold text-blue-800">2020 - Company start Digitalization of universities</h4>
+              <p>Launched healthcare and logistics cloud-based products.</p>
+            </li>
+            <li>
+              <h4 className="text-xl font-semibold text-blue-800">2022 - Company start Digitalization of medical college and hospitals</h4>
               <p>Launched healthcare and logistics cloud-based products.</p>
             </li>
           </ul>
